@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title> jQuery </title>
+		<link rel="stylesheet" type="text/css" href="../common/css/reset.css">
+		<script type="text/javascript" src="../common/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../common/js/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery.parallax-1.1.3.js"></script>
+
+		<!-- 스타일 -->
+		<style type="text/css">
+		#wrap { width:100%; font-size:12px; line-height:18px; }
+		#profile { position:relative; height:800px; background:url(img/parallax/bg.jpg) 50% 0 repeat-x fixed; }
+		#order { position:relative; height:800px; background:url(img/parallax/bg2.jpg) 50% 0 repeat-x fixed; }
+
+		#project .sort { height:30px; line-height:30px; padding-left:33px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; }
+		#project .sort li { float:left; padding-left:18px; cursor:pointer} 
+		#project .sort li a { color:#999292; font-weight:bold; font-family:Tahoma, Geneva, sans-serif; font-size:13px }
+		#project .sort li:first-child { padding-left:0; background:none }
+		#project .sort li a:hover,
+		#project .sort li.on a { color:#000; }
+		.project_list { overflow:hidden; }
+		.project_list .list { float:left; width:210px; padding:15px 20px; border:1px solid #ccc; border-top:0; }
+		.project_list .list .thum { margin-bottom:20px }
+		.project_list .list .thum img { width:210px; }
+		.project_list .list .txt { color:#555; margin-bottom:15px }
+		.project_list .list .txt strong { color:#222; font-weight:bold }
+		.project_list .list:hover { background:#333; }
+		.project_list .list:hover .txt,
+		.project_list .list:hover .txt strong { color:#fff; }
+		</style>
+		<!-- // 스타일 -->
+
+	</head>
+	<body>
+
+		<div class="container">
+			<div id="project">
+				<ul class="sort">
+					<li class="on"  data-filter="*"><a href="#">ALL</a></li>
+					<li data-filter=".web"><a href="#">Web</a></li>
+					<li data-filter=".mob"><a href="#">Mobile</a></li>
+					<li data-filter=".other"><a href="#">Other</a></li>
+				</ul>
+				<div id="proj_list" class="project_list">
+					<div class="list web">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s1.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>WEB</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list mob">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s2.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>WEB</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list web">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s1.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>WEB</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list other">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s3.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>OTHER</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list other">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s3.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>OTHER</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list mob">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s2.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>MOBILE</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list web">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s1.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>WEB</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list mob">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s2.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>MOBILE</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list web">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s1.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>WEB</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list web">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s1.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>WEB</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list web">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s1.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>WEB</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list web">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s1.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>WEB</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list web">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s1.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>WEB</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list web">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s1.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>WEB</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list mob">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s2.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>MOBILE</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list other">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s3.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>OTHER</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list mob">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s2.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>MOBILE</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list web">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s1.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>WEB</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list web">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s1.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>WEB</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list other">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s3.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>OTHER</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list web">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s1.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>WEB</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list mob">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s2.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>MOBILE</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list other">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s3.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>OTHER</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+					<div class="list mob">
+						<p class="thum"><a href="#" target="_blank"><img src="img/parallax/s2.png"></a></p>
+						<p class="txt"><strong>Title</strong><br>MOBILE</p>
+						<p class="txt">HTML/CSS/jQuery</p>
+					</div>
+				</div>
+			</div>
+			<div id="profile"></div>
+			<div id="order"></div>
+		</div>
+		<!-- // container -->
+
+		<!-- 스크립트 -->
+		<script type="text/javascript">
+		$(window).load(function(){
+			var $container = $('#proj_list');
+			$container.isotope({
+				itemSelector: '.list'
+			});
+
+			$('.sort li').on( 'click', function() {
+				var filterValue = $(this).attr('data-filter');
+				$container.isotope({ filter: filterValue });
+				$(this).addClass('on').siblings().removeClass();
+			});
+
+			$('#profile').parallax("50%", 0.1);
+			$('#order').parallax("50%", 0.1);
+		});
+		</script>
+		<!-- // 스크립트 -->
+
+	</body>
+
+
+</html>

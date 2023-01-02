@@ -1,0 +1,220 @@
+<script>window.window = window.window || {};window.gl_data = {"gl_outputLocation":"https:\/\/suru.tympanus.net\/","gl_code_output":"<!doctype html>\n<html>\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>Codrops-Demo<\/title>\n\n\t\t\n\t<style>\/* Main styles *\/\n@import url(http:\/\/fonts.googleapis.com\/css?family=Open+Sans:800);\n\n.mask__shape {\n  fill: white;\n}\n\n.p-rect {\n  fill: rgba(238, 167, 101, 0.55);\n  fill-opacity: 0.2;\n}\n\n.p-path {\n  stroke: #bf8651;\n  stroke-width: 1;\n}\n\n.shape--fill {\n  fill: url(#p-lines);\n}\n\n.shape--stroke {\n  fill: none;\n  stroke-width: 3;\n  stroke-opacity: 0.4;\n  stroke: #bf8651;\n}\n\n.text--stroke {\n  fill: none;\n  stroke-width: 3;\n  stroke-opacity: 0.4;\n  stroke: #bf8651;\n}\n\n.box-with-text {\n  position: relative;\n  width: 100vw;\n  height: 100vh;\n  margin: 0 auto;\n}\n\n.text-fill {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.video {\n  display: block;\n  position: absolute;\n  bottom: 0;\n  min-width: 100%;\n  min-height: 100%;\n}\n\n\/* Other stuff *\/\nhtml, body {\n  height: 100%;\n}\n\nbody {\n  background: #a2876e;\n  font: 12em\/1 Open Sans, Impact;\n  text-transform: uppercase;\n  margin: 0;\n}\n\n.svg-inverted-mask {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n}\n\n.svg-defs {\n  position: absolute;\n  width: 0;\n  height: 0;\n}<\/style><\/head>\n\t<body>\n\t\n\t<!-- Invisible SVG -->\n<svg viewBox=\"0 0 600 600\" \n     class=\"svg-defs\">\n\n  <!-- Symbol with text -->\n  <symbol id=\"s-text\">\n    <text text-anchor=\"middle\"\n          x=\"50%\"\n          y=\"50%\"\n          dy=\".35em\"\n          class=\"text\"\n          >\n      Text\n    <\/text>    \n  <\/symbol>\n\n  <!-- Mask with text -->\n  <mask id=\"m-text\"\n        maskunits=\"userSpaceOnUse\"\n        maskcontentunits=\"userSpaceOnUse\">\n\n    <rect\n          width=\"100%\"\n          height=\"100%\"\n          class=\"mask__shape\">\n    <\/rect>\n    <use xlink:href=\"#s-text\"\n         class=\"mask__text\"\n         ><\/use>\n\n  <\/mask>\n\n  <!-- Pattern with lines -->\n  <pattern\n           id=\"p-lines\"\n           width=\"10\"\n           height=\"10\"\n           viewBox=\"0 0 10 10\"\n           patternUnits=\"userSpaceOnUse\"\n           >\n    <rect\n          width=\"100%\"\n          height=\"100%\"\n          class=\"p-rect\"><\/rect>    \n    <path d=\"M10,0 0,10\"\n          class=\"p-path\"\n          ><\/path>\n  <\/pattern>\n<\/svg>\n\n<div class=\"box-with-text\">\n\n  <!-- Container for video -->\n  <div class=\"text-fill\">\n    <video \n           class=\"video\" src=\"http:\/\/tympanus.net\/codrops-playground\/assets\/images\/posts\/23145\/bokeh2.mp4\"\n           autoplay loop\n           ><\/video>\n  <\/div>\n\n  <!-- Visible SVG -->\n  <svg viewBox=\"0 0 600 600\"\n       class=\"svg-inverted-mask\">\n    <!-- Big shape with hole in form of text -->\n    <circle r=\"47%\"\n            cx=\"50%\"\n            cy=\"50%\"\n            class=\"shape--fill\"\n            mask=\"url(#m-text)\"\n            ><\/circle>\n    <!-- Shape with stroke -->\n    <circle r=\"48.5%\"\n            cx=\"50%\"\n            cy=\"50%\"\n            class=\"shape--stroke\"\n            ><\/circle>\n    <!-- Text with stroke -->\n    <use xlink:href=\"#s-text\"\n         class=\"text--stroke\"\n         ><\/use>\n  <\/svg> \n<\/div><script><\/script><\/body>\n<\/html>"};</script><!DOCTYPEhtml>
+
+<html lang="en" class="page-default">
+
+	<head>
+				<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		
+		<title>SVG text with mask layer without background blending | Embed - Codrops Playground</title>
+
+		<link rel="stylesheet" type="text/css" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/css/all-css-embed.min.css" />
+
+		
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59174661-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body>
+		<noscript>
+	<div class="no-js-message"><i class="fa fa-fw fa-exclamation-triangle"></i><span>This web application requires JavaScript to work. Please enable JavaScript in your browser.</span></div>
+</noscript>		
+		<div class="embed">
+	<nav id="embed-nav" class="embed-nav">
+		<h1 class="logo"><img src="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/codrops.svg" alt="Codrops Logo"><span>Codrops Editor</span></h1>
+		<div class="embed-tabs js-tabs">
+			<span class="embed-tab ">HTML</span>			<span class="embed-tab ">CSS</span>						<span data-result class="embed-tab selected">Result</span>		</div>
+		<select class="embed-tabs-select js-tabs-select">
+			<option >HTML</option>			<option >CSS</option>						<option selected>Result</option>		</select>
+		<a class="embed-button js-demo--location" target="_blank" href="https://tympanus.net/codrops-playground/yoksel/KhSELnTv/editor/html,css,result"><i class="icon icon-edit"></i><span>Edit</span></a>
+		
+								<a class="embed-button js-run-demo" id="rerun" href="#"><i class="icon icon-refresh"></i><span>Run</span></a>	
+						</nav>
+	<div id="embed-content" class="embed-content-wrap">
+				<div class="embed-content embed-content--code embed-content--html ">
+			<pre><code class="html">&lt;!-- Invisible SVG --&gt;
+&lt;svg viewBox=&quot;0 0 600 600&quot; 
+     class=&quot;svg-defs&quot;&gt;
+
+  &lt;!-- Symbol with text --&gt;
+  &lt;symbol id=&quot;s-text&quot;&gt;
+    &lt;text text-anchor=&quot;middle&quot;
+          x=&quot;50%&quot;
+          y=&quot;50%&quot;
+          dy=&quot;.35em&quot;
+          class=&quot;text&quot;
+          &gt;
+      Text
+    &lt;/text&gt;    
+  &lt;/symbol&gt;
+
+  &lt;!-- Mask with text --&gt;
+  &lt;mask id=&quot;m-text&quot;
+        maskunits=&quot;userSpaceOnUse&quot;
+        maskcontentunits=&quot;userSpaceOnUse&quot;&gt;
+
+    &lt;rect
+          width=&quot;100%&quot;
+          height=&quot;100%&quot;
+          class=&quot;mask__shape&quot;&gt;
+    &lt;/rect&gt;
+    &lt;use xlink:href=&quot;#s-text&quot;
+         class=&quot;mask__text&quot;
+         &gt;&lt;/use&gt;
+
+  &lt;/mask&gt;
+
+  &lt;!-- Pattern with lines --&gt;
+  &lt;pattern
+           id=&quot;p-lines&quot;
+           width=&quot;10&quot;
+           height=&quot;10&quot;
+           viewBox=&quot;0 0 10 10&quot;
+           patternUnits=&quot;userSpaceOnUse&quot;
+           &gt;
+    &lt;rect
+          width=&quot;100%&quot;
+          height=&quot;100%&quot;
+          class=&quot;p-rect&quot;&gt;&lt;/rect&gt;    
+    &lt;path d=&quot;M10,0 0,10&quot;
+          class=&quot;p-path&quot;
+          &gt;&lt;/path&gt;
+  &lt;/pattern&gt;
+&lt;/svg&gt;
+
+&lt;div class=&quot;box-with-text&quot;&gt;
+
+  &lt;!-- Container for video --&gt;
+  &lt;div class=&quot;text-fill&quot;&gt;
+    &lt;video 
+           class=&quot;video&quot; src=&quot;http://tympanus.net/codrops-playground/assets/images/posts/23145/bokeh2.mp4&quot;
+           autoplay loop
+           &gt;&lt;/video&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Visible SVG --&gt;
+  &lt;svg viewBox=&quot;0 0 600 600&quot;
+       class=&quot;svg-inverted-mask&quot;&gt;
+    &lt;!-- Big shape with hole in form of text --&gt;
+    &lt;circle r=&quot;47%&quot;
+            cx=&quot;50%&quot;
+            cy=&quot;50%&quot;
+            class=&quot;shape--fill&quot;
+            mask=&quot;url(#m-text)&quot;
+            &gt;&lt;/circle&gt;
+    &lt;!-- Shape with stroke --&gt;
+    &lt;circle r=&quot;48.5%&quot;
+            cx=&quot;50%&quot;
+            cy=&quot;50%&quot;
+            class=&quot;shape--stroke&quot;
+            &gt;&lt;/circle&gt;
+    &lt;!-- Text with stroke --&gt;
+    &lt;use xlink:href=&quot;#s-text&quot;
+         class=&quot;text--stroke&quot;
+         &gt;&lt;/use&gt;
+  &lt;/svg&gt; 
+&lt;/div&gt;</code></pre>
+		</div>
+		
+				<div class="embed-content embed-content--code embed-content--css ">
+			<pre><code class="css">/* Main styles */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.mask__shape {
+  fill: white;
+}
+
+.p-rect {
+  fill: rgba(238, 167, 101, 0.55);
+  fill-opacity: 0.2;
+}
+
+.p-path {
+  stroke: #bf8651;
+  stroke-width: 1;
+}
+
+.shape--fill {
+  fill: url(#p-lines);
+}
+
+.shape--stroke {
+  fill: none;
+  stroke-width: 3;
+  stroke-opacity: 0.4;
+  stroke: #bf8651;
+}
+
+.text--stroke {
+  fill: none;
+  stroke-width: 3;
+  stroke-opacity: 0.4;
+  stroke: #bf8651;
+}
+
+.box-with-text {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.text-fill {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Other stuff */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #a2876e;
+  font: 12em/1 Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.svg-inverted-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.svg-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+}</code></pre>
+		</div>
+		
+		
+				<div class="embed-content embed-content--result selected">
+			<iframe src="https://suru.tympanus.net/" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"></iframe>
+		</div>
+			</div>
+	</div>
+		<script src="/codrops-playground/332d5270da28388399324d79ffcf4a45/js/p/all-b-embed.min.js"></script>
+	</body>
+</html>

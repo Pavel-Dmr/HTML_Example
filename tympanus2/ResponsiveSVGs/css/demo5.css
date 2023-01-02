@@ -1,0 +1,12 @@
+.container {
+	box-shadow: 0 0 0 10px #b6bdc3;
+	width: 50%;
+	background: #fff;
+	margin: 0 auto;
+	padding-top: 48%; /* just to get an apsect ratio same as the SVG's */
+	height: 0; 
+	background-image: url(../img/logo.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+

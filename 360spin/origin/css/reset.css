@@ -1,0 +1,90 @@
+@charset 'utf-8';
+
+/* CSS 초기화 */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+margin:0;
+padding:0;
+border:0;
+font-size:100%;
+background:transparent;
+}
+
+body{
+font-family:'Oegyeinseolmyeongseo';
+font-size:14px;
+color:#666;
+line-height:1;
+min-width:320px;
+overflow-x:hidden;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{ 
+display:block;
+}
+
+nav ul, li{
+list-style:none;
+}
+
+a{
+margin:0;
+padding:0;
+font-size:100%;
+text-decoration:none;
+color:#666;
+background:transparent;
+}
+
+img{
+vertical-align:top;
+max-width:100%;
+}
+
+table{
+border-collapse:collapse;
+border-spacing:0;
+}
+
+input{
+margin:0;
+padding:0;
+box-sizing:content-box;
+vertical-align:top;
+appearance:none;
+color:#666;
+border-radius:0; 
+font-family:'Oegyeinseolmyeongseo';
+}
+select, textarea{font-family:'Oegyeinseolmyeongseo';}
+
+.hid{
+position:absolute;
+left:-9999px;
+font-size:0;
+width:0;
+height:0;
+text-indent:-9999px;
+overflow:hidden;
+}
+
+/* Setting */
+.mb20 { margin-bottom:20px; }
+.w100 { width:100% !important; }
+
+/* Drag Color */
+::selection { background:#fe7f85; color: #fff; }
+::-moz-selection { background:#fe7f85; color: #fff; }
+::-webkit-selection { background:#fe7f85; color: #fff; }
+
+/* 웹폰트 CSS */
+@font-face{font-family:'ng'; src:url(../../webfont/NanumGothic.eot)}
+@font-face{font-family:'ng'; src:url(../../webfont/NanumGothic.woff)}
+
+@font-face{font-family:'Oegyeinseolmyeongseo'; src:url(../../webfont/THE_Oegyeinseolmyeongseo.eot)}
+@font-face{font-family:'Oegyeinseolmyeongseo'; src:url(../../webfont/THE_Oegyeinseolmyeongseo.woff)}
+
+@font-face{font-family:'NanumSqaure';font-weight:normal;src:url(../../webfont/NanumSquareOTFR.eot)}
+@font-face{font-family:'NanumSqaure';font-weight:normal;src:url(../../webfont/NanumSquareOTFR.woff)}
+@font-face{font-family:'NanumSqaure';font-weight:bold;src:url(../../webfont/NanumSquareOTFB.eot)}
+@font-face{font-family:'NanumSqaure';font-weight:bold;src:url(../../webfont/NanumSquareOTFB.woff)}

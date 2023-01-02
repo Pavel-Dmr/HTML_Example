@@ -1,0 +1,51 @@
+#menu6 ul {
+    list-style:none;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+    float:left;
+    clear:both;
+    margin:20px;
+    border:4px groove #ffe430;
+}
+#menu6 ul li{
+    float:left;
+}
+#menu6 ul li a{
+    display:block;
+    text-decoration:none;
+    padding:10px 10px 5px 10px;
+    color:#fff;
+    background-color:#ffc730;
+    width:170px;
+}
+#menu6 ul li a span{
+    display:block;
+}
+#menu6 ul li a span.title{
+    border-bottom:2px solid #ffc730;
+}
+#menu6 ul li a:hover{
+    background-color:#fff;
+}
+#menu6 ul li a:hover span.title{
+    color:#ffc730;
+    border-bottom:2px solid #ffe430;
+}
+#menu6 ul li a span.text{
+    padding:0px 5px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    background-color:#ffc730;
+    visibility:hidden;
+    color:#fff;
+}
+#menu6 ul li a:hover span.text{
+    visibility:visible;
+}

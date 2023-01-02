@@ -1,0 +1,679 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	
+<!-- Mirrored from heroyooi.ivyro.net/admin/jQuery/tweenmax/tweenmax2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Oct 2018 02:48:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title> jQuery </title>
+		<link rel="stylesheet" type="text/css" href="../common/css/reset.css">
+		<script type="text/javascript" src="../common/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery.superscrollorama.js"></script>
+		<script type="text/javascript" src="../common/js/TweenMax.js"></script>
+
+		<!-- 스타일 -->
+		<style type="text/css">
+		.sight_wrap { min-width:1200px; height:1090px; background:url('img/tweenmax/sight_bg.jpg') 50% 0 no-repeat; overflow:hidden; }
+		.sight_content { position:relative; margin:0 auto; width:1200px; height:1090px; }
+		.sight_tit { position:relative; padding-top:13px; margin:0 auto; width:466px; text-align:center; }
+		.sight_tit dd { padding-top:23px; font-size:13px; color:#818181; }
+		.sight_tit span.sline_l { position:absolute; left:0; top:17px; }
+		.sight_tit span.sline_r { position:absolute; right:0; top:17px; }
+		.sight_circle01 { position:absolute; left:432px; top:276px; text-align:center; }
+		.sight_circle02 { position:absolute; left:306px; top:149px; text-align:center; }
+		.sight_circle03 { position:absolute; left:-56px; top:-194px; text-align:center; width:1341px; height:1300px; }
+		.sight_circle01 p { position:absolute; left:0; top:-20px; width:100%; font-size:16px; color:#7a7a7a; }
+		.sight_circle02 p { position:absolute; left:0; top:-20px; width:100%; font-size:16px; color:#7a7a7a; }
+		.sight_center { position:absolute; left:50%; top:380px; margin-left:-66px; width:133px; text-align:center; }
+		.sight_center dd { padding-top:10px; }
+
+		.sight_wrap div.obj { position:absolute; width:100px; height:100px; background:url('img/tweenmax/sight_obj.png') 0 0 no-repeat; text-align:center; transition: transform .5s; -webkit-transition: transform .5s; transform:scale(1, 1); -webkit-transform:scale(1, 1); }
+
+		.sight_wrap div.obj1 { left:491px; top:444px; }
+		.sight_wrap div.obj2 { left:629px; top:275px; }
+		.sight_wrap div.obj3 { left:689px; top:421px; }
+		.sight_wrap div.obj4 { left:685px; top:519px; }
+		.sight_wrap div.obj5 { left:385px; top:435px; }
+		.sight_wrap div.obj6 { left:717px; top:323px; }
+		.sight_wrap div.obj7 { left:510px; top:548px; }
+		.sight_wrap div.obj8 { left:419px; top:270px; }
+		.sight_wrap div.obj9 { left:354px; top:337px; }
+		.sight_wrap div.obj10 { left:606px; top:574px; }
+		.sight_wrap div.obj11 { left:589px; top:157px; }
+		.sight_wrap div.obj12 { left:793px; top:395px; }
+		.sight_wrap div.obj13 { left:414px; top:570px; }
+		.sight_wrap div.obj14 { left:670px; top:201px; }
+		.sight_wrap div.obj15 { left:441px; top:176px; }
+		.sight_wrap div.obj16 { left:513px; top:136px; }
+		.sight_wrap div.obj17 { left:489px; top:615px; }
+		.sight_wrap div.obj18 { left:790px; top:515px; }
+		.sight_wrap div.obj19 { left:745px; top:232px; }
+		.sight_wrap div.obj20 { left:324px; top:519px; }
+		.sight_wrap div.obj21 { left:205px; top:281px; }
+		.sight_wrap div.obj22 { left:911px; top:428px; }
+		.sight_wrap div.obj23 { left:185px; top:576px; }
+		.sight_wrap div.obj24 { left:276px; top:100px; }
+		.sight_wrap div.obj25 { left:946px; top:120px; }
+		.sight_wrap div.obj26 { left:1019px; top:632px; }
+		.sight_wrap div.obj27 { left:-22px; top:320px; }
+		.sight_wrap div.obj28 { left:1147px; top:355px; }
+		.sight_wrap div.obj29 { left:115px; top:820px; }
+		.sight_wrap div.obj30 { left:1128px; top:198px; }
+		.sight_wrap div.obj31 { left:1056px; top:90px; }
+		.sight_wrap div.obj32 { left:1166px; top:544px; }
+		.sight_wrap div.obj33 { left:984px; top:868px; }
+		.sight_wrap div.obj34 { left:-60px; top:530px; }
+		.sight_wrap div.obj35 { left:-50px; top:630px; }
+		.sight_wrap div.obj36 { left:0; top:730px; }
+		.sight_wrap div.obj37 { left:1238px; top:770px; }
+		.sight_wrap div.obj38 { left:1132px; top:10px; }
+		.sight_wrap div.obj39 { left:-100px; top:0; }
+
+		.sight_wrap div.obj dl { position:relative; right:1px; }
+		.sight_wrap div.obj dt { margin:22px auto 0; width:25px; height:25px; text-indent:-20000px; }
+		.sight_wrap div.obj dt.dt1 { background:url('img/tweenmax/sight_icon01.png') center center no-repeat; }
+		.sight_wrap div.obj dt.dt2 { background:url('img/tweenmax/sight_icon02.png') center center no-repeat; }
+		.sight_wrap div.obj dt.dt3 { background:url('img/tweenmax/sight_icon03.png') center center no-repeat; }
+		.sight_wrap div.obj dd { padding-top:10px; margin-top:8px; background:url('img/tweenmax/sight_obj_line.jpg') center top no-repeat; font-size:12px; color:#e93743; }
+
+		.sight_wrap div.obj div.tooltip { position:absolute; right:-220px; top:-20px; width:222px; height:60px; padding-top:21px; background:url('img/tweenmax/tooltip_bg.png') 0 0 no-repeat; display:none; }
+		.sight_wrap div.obj38 div.tooltip { top:0; }
+		.sight_wrap div.obj39 div.tooltip { top:0; }
+		.sight_wrap div.obj div.tooltip p { padding-left:10px; font-size:14px; color:#000; }
+		.sight_wrap div.obj div.tooltip p.num { padding-top:8px; font-size:11px; }
+		</style>
+		<!-- // 스타일 -->
+
+	</head>
+	<body>
+
+	
+		<div class="sight_wrap">
+			<div class="sight_content">
+
+				<div class="sight_circle01">
+					<img src="img/tweenmax/sight_circle01.png" alt="" />
+					<p>500m</p>
+				</div>
+				<div class="sight_circle02">
+					<img src="img/tweenmax/sight_circle02.png" alt="" />
+					<p>1500m</p>
+				</div>
+				<div class="sight_circle03"><img src="img/tweenmax/sight_circle03.png" alt="" /></div>
+
+				<div class="sight_tit">
+					<dl>
+						<dt><img src="img/tweenmax/sight_tit.png" alt="" /></dt>
+						<dd>라마다 서울 동대문 주위의 매력적인 명소들을 만나 보시기 바랍니다.</dd>
+					</dl>
+					<span class="sline_l"><img src="img/tweenmax/sight_tit_line.jpg" alt="" /></span>
+					<span class="sline_r"><img src="img/tweenmax/sight_tit_line.jpg" alt="" /></span>
+				</div>
+
+				<dl class="sight_center">
+					<dt><img src="img/tweenmax/sight_center_ramada.png" alt="" /></dt>
+					<dd><img src="img/tweenmax/sight_center_gps.png" alt="" /></dd>
+				</dl>
+
+				<div class="obj obj1">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>194m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">중부시장</p>
+							<p class="num">02-2267-5617</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj2">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>416m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">청계천</p>
+							<p class="num"></p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj3">
+					<a href="#">
+						<dl>
+							<dt class="dt2">병원</dt>
+							<dd>442m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">국립중앙의료원</p>
+							<p class="num">1588-1775</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj4">
+					<a href="#">
+						<dl>
+							<dt class="dt3">음식점</dt>
+							<dd>501m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">둘둘치킨</p>
+							<p class="num">02-742-2292</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj5">
+					<a href="#">
+						<dl>
+							<dt class="dt3">음식점</dt>
+							<dd>504m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">BBQ 치킨</p>
+							<p class="num">02-2256-6816</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj6">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>559m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">동대문 롯데 FIT IN</p>
+							<p class="num">02-6262-4000</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj7">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>585m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">을지로 4가역</p>
+							<p class="num">02-6110-2041</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj8">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>598m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">방산시장</p>
+							<p class="num">02-2268-6691</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj9">
+					<a href="#">
+						<dl>
+							<dt class="dt3">음식점</dt>
+							<dd>647m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">팔색 삼겹살</p>
+							<p class="num">02-2264-8388</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj10">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>667m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">굿모닝시티</p>
+							<p class="num">02-2118-8700</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj11">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>704m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">광장시장</p>
+							<p class="num">02-2267-0291</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj12">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>705m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">APM</p>
+							<p class="num"></p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj13">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>735m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">APM PLACE</p>
+							<p class="num">02-2250-2018</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj14">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>793m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">동대문 역사 문화 공원역</p>
+							<p class="num">02-6110-2051</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj15">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>915m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">동대문 디자인 플라자</p>
+							<p class="num">02-2153-0000</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj16">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>930m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">두산타워(면세점)</p>
+							<p class="num">02-3398-2386</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj17">
+					<a href="#">
+						<dl>
+							<dt class="dt3">음식점</dt>
+							<dd>1160m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">장충동 족발 골목</p>
+							<p class="num"></p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj18">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>1230m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">동대문</p>
+							<p class="num"></p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj19">
+					<a href="#">
+						<dl>
+							<dt class="dt3">음식점</dt>
+							<dd>1350m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">동대문 닭한마리</p>
+							<p class="num">02-2266-7181</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj20">
+					<a href="#">
+						<dl>
+							<dt class="dt3">음식점</dt>
+							<dd>1390m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">동대문 백정</p>
+							<p class="num">02-2278-7379</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj21">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>1850m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">신라면세점</p>
+							<p class="num">1688-1110</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj22">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>1890m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">명동</p>
+							<p class="num">02-6110-4241</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj23">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>2090m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">인사동</p>
+							<p class="num"></p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj24">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>2340m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">이마트 청계천점</p>
+							<p class="num"></p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj25">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>2380m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">창덕궁</p>
+							<p class="num">02-3668-2300</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj26">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>2890m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">롯데면세점</p>
+							<p class="num">02-771-2500</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj27">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>3060m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">북촌한옥마을</p>
+							<p class="num">02-2133-1372</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj28">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>3090m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">남대문</p>
+							<p class="num">042-481-4650</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj29">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>3160m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">경복궁</p>
+							<p class="num">02-3700-3900</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj30">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>3160m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">광화문</p>
+							<p class="num">02-3700-3901</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj31">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>3160m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">덕수궁</p>
+							<p class="num">02-771-9951</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj32">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>3430m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">이마트 왕십리점</p>
+							<p class="num">02-2200-1234</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj33">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>3430m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">경희궁</p>
+							<p class="num">02-724-0274</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj34">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>3520m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">서울역</p>
+							<p class="num">1544-7788</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj35">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>4090m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">홈플러스 동대문점</p>
+							<p class="num">02-2173-8000</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj36">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>4130m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">삼청동</p>
+							<p class="num"></p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj37">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>5200m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">롯데마트 서울역점</p>
+							<p class="num">02-390-2500</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj38">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>6520m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">가로수길</p>
+							<p class="num">02-390-2500</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="obj obj39">
+					<a href="#">
+						<dl>
+							<dt class="dt1">건물</dt>
+							<dd>12100m</dd>
+						</dl>
+						<div class="tooltip">
+							<p class="name">롯데월드</p>
+							<p class="num">1661-2000</p>
+						</div>
+					</a>
+				</div>
+
+			</div>
+			<!-- // sight_content -->
+		</div>
+		<!-- // sight_wrap -->
+
+		<!-- 스크립트 -->
+		<script type="text/javascript">
+		var controller = $.superscrollorama({
+			reverse: false
+		});
+		controller.addTween('.sight_content', TweenMax.from($('.sight_circle01'), 2, { delay: .5, css:{opacity:0}, ease: Quad.easeOut}), 1, 100);
+		controller.addTween('.sight_content', TweenMax.from($('.sight_circle02'), 2, { delay: 1, css:{opacity:0}, ease: Quad.easeOut}), 1, 100);
+		controller.addTween('.sight_content', TweenMax.from($('.sight_circle03'), 2, { delay: 2, css:{opacity:0}, ease: Quad.easeOut, onComplete: function(){
+			function autoCircle(){
+				$('.sight_circle03 img').animate({
+					'width':'1291px'
+					}, 2000, function(){
+					$(this).delay(1000).animate({
+						'width':'1341px'
+					}, 2000);
+				});
+				var autoRun = setTimeout(autoCircle, 7000);
+			}
+			var autoRun = setTimeout(autoCircle);
+		}}), 1, 100);
+		controller.addTween('.sight_content', TweenMax.from($('.sight_center'), 2, { delay: 3, css:{opacity:0}, ease: Quad.easeOut}), 1, 100);
+
+		$('.sight_content div.obj').each(function() {
+			controller.addTween('.sight_content', TweenMax.from( $(this), 2, { delay:Math.random()*.2, css:{'left':'47%', 'top':'46%', 'opacity':0 }, ease:Back.easeOut, onComplete: function(){ 
+				$('div.obj').css({'transform': 'scale(0.9, 0.9)'});
+			}}), 1, 300);
+		});
+
+		$('.sight_wrap div.obj').on('mouseenter', function(){
+			$(this).css({
+				'z-index':'2',
+				'transform': 'scale(1, 1)'
+			});
+			$(this).find('div.tooltip').stop().fadeIn('fast');
+		});
+		$('.sight_wrap div.obj').on('mouseleave', function(){
+			$(this).css({
+				'z-index':'1',
+				'transform': 'scale(0.9, 0.9)'
+			});
+			$(this).find('div.tooltip').stop().fadeOut('fast');
+		});
+		</script>
+		<!-- // 스크립트 -->
+
+	</body>
+
+<!-- Mirrored from heroyooi.ivyro.net/admin/jQuery/tweenmax/tweenmax2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Oct 2018 02:48:45 GMT -->
+</html>

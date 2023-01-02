@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title> jQuery </title>
+		<link rel="stylesheet" type="text/css" href="../common/css/reset.css">
+		<script type="text/javascript" src="../common/js/jquery.min.js"></script>
+
+		<!-- 스타일 -->
+		<style type="text/css">
+		#wrap { width:100%; }
+		#wrap img { width:100%; }
+		.money_ani_dimm { position:fixed; left:0; top:0; width:100%; height:100%; background:#000; opacity:0.7; z-index:9998; }
+		.money_ani_wrap { position:fixed; left:0; top:0; width:100%; height:100%; z-index:9999; }
+		.money_ani_wrap > div { position:absolute; }
+		.money_ani_wrap > div.money { display:none; }
+		.money_ani_wrap img { width:100%; }
+		</style>
+		<!-- // 스타일 -->
+
+	</head>
+	<body>
+
+		<div id="wrap">
+			<div><img src="img/page.jpg" alt="" /></div>
+			<div class="money_ani_dimm"></div>
+			<div class="money_ani_wrap">
+				<div class="money"><img src="img/point.png" alt="" /></div>
+			</div>
+		</div>
+		<!-- // wrap -->
+
+		<!-- 스크립트 -->
+		<script type="text/javascript" src="../common/js/TweenMax.js"></script>
+		<script type="text/javascript">
+		var i = 0, len = 30;
+		var pos = [];
+		var moneyRepeatState = true;
+		var wH = $(window).height();
+
+		$('.money_ani_wrap').css( 'height', wH );
+		while(i<len){
+			i++;
+			moneyPos();
+			moneyAction(i);
+		}
+		function moneyAction(i){
+			var RN = Math.round( Math.random()*110 )-10;
+			var RW = [40, 60, 80];
+			var RWS = Math.round( Math.random()*(RW.length-1) ); /* 0 ~ 7 */
+			var RD = 0;
+			$('.money').clone().appendTo('.money_ani_wrap').attr('class', 'money'+i).css({
+				'width': RW[RWS],
+				'left': RN + '%',
+				'top': '-'+RN+'px'
+			});
+
+			$('.money_ani_dimm, .money_ani_wrap').delay( 3000 ).fadeOut('fast');
+			TweenMax.to($('.money'+i), pos[0].speed, {top: '140%', ease: Bounce.easeOut, onComplete:function(_this, num){
+				$_this = _this;
+				$_this.remove();
+			},delay:RD, autoAlpha:pos[0].alpha, onCompleteParams:[$('.money'+i), i]});
+		}
+		function moneyPos(){
+			pos = [
+			{
+				'speed' : Math.round(Math.random()*7 + 2),
+				'delay' : Math.round(Math.random() * 20),
+				'alpha' : 0
+			}
+			];
+		}
+		</script>
+		<!-- // 스크립트 -->
+
+	</body>
+
+
+</html>

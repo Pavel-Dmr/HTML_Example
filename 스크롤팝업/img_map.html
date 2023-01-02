@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+*{margin: 0;padding: 0;}
+#banner{width:1080px;height:1080px;}
+#banner img{width:100%;display: block;}
+
+  </style>
+</head>
+<body>
+  <!-- 이미지맵이란 한이미지를 여러개의 구역으로 나누어 링크 거는것을 말한다. -->
+  <div id="banner">
+    <img src="images/img_map.jpg" usemap="#banner1" alt=''/>
+    <map name="banner1" id="banner1">
+      <area shape="rect" coords="585,745,923,852" href="http://nate.com" alt="네이트로가자" target='_blank'>
+      <area shape="circle" coords="356,333,70" href="https://www.coupang.com/" alt="쿠팡가자" target='_blank'>
+      <area shape="poly" coords="553,321,646,402,607,494,501,497,456,408" href="https://www.starbucks.co.kr/" alt="스타벅스가자" target='_blank'>
+    </map>
+<!-- 사각이미지맵 -->
+<!-- 기본형식 -->
+<!-- <img src="사진주소" usemap="이미지맵명"/> -->
+<!-- <map name=""이미지맵명"> -->
+  <!-- <area shape="rect" coords="시작x좌표,시작y좌표,끝x좌표,끝y좌표" href="링크주소" alt="" target='_blank'> -->
+<!-- </map> -->
+<!-- 원 -->
+<!-- shape = "circle" coords="중심x좌표,중심y좌표,반경" -->
+<!-- 다각형 -->
+<!-- shape = "poly" coords="1번x좌표,1y좌표,2번x좌표,2번y좌표,...." -->
+
+
+  </div>
+</body>
+</html>

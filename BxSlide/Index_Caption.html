@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/jquery.bxslider.css" />
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        width: 960px;
+        height: 200px;
+        margin: 0 auto;
+        background-color: pink;
+      }
+
+      section {
+        width: 960px;
+        height: 800px;
+        margin: 0 auto;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>헤더</header>
+    <section>
+      <ul class="bx4">
+        <li>
+          <img src="IMG/w1.JPG" alt="사진(1)" srcset="" title="메인사진1" />
+        </li>
+        <li>
+          <img src="IMG/w2.jpg" alt="사진(2)" title="메인사진2 <br/> 두줄" />
+        </li>
+        <li>
+          <img src="IMG/w3.jpg" alt="사진(3)" title="메인사진3" />
+        </li>
+        <li><img src="IMG/w4.jpg" alt="사진(4)" title="메인사진4" /></li>
+        <li><img src="IMG/w5.jpg" alt="사진(5)" title="메인사진5" /></li>
+      </ul>
+    </section>
+
+    <script>
+      $(function () {
+        $(".bxslider").bxSlider({
+          auto: true, // false - 기본값 자동 슬라이드
+          mode: "fade", // 슬라이드 (수평 - horizontal , 수직 "-vertical" fade(나타났다 - 사라짐))
+          controls: false, // 화살표 숨김
+          pager: false, // pager - 블릿 숨김
+        });
+
+        $(".bx3").bxSlider({
+          auto: true,
+          moveSlides: 2, // 한번에 슬라이드 되는 사진의 수
+          minSlides: 1,
+          maxSlides: 4,
+          slideWidth: 230,
+          slideMargin: 10,
+        });
+
+        $(".bx4").bxSlider({
+          auto: true,
+          caption: true,
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+#menu3 ul {
+    list-style:none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 44px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    line-height: 1.2em;
+    border-top:4px solid #000;
+    border-bottom:4px solid #666;
+    float:left;
+    clear:both;
+    margin:20px;
+}
+#menu3 ul li{
+    float:left;
+}
+#menu3 ul li a{
+    display:block;
+    text-decoration:none;
+    background-color:#ccc;
+    padding:10px 10px 5px 10px;
+    color:#666;
+    width:170px;
+}
+#menu3 ul li a span{
+    display:block;
+    text-align:center;
+
+}
+#menu3 ul li a span.title{
+
+}
+#menu3 ul li a:hover span.title{
+    color:#000;
+}
+#menu3 ul li a span.text{
+    padding:0px 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 2em;
+    text-align:right;
+    margin-top:-20px;
+    color:#f0f0f0;
+    font-weight:bold;
+    background-color:#000;
+    visibility:hidden;
+}
+#menu3 ul li a:hover span.text{
+    visibility:visible;
+}

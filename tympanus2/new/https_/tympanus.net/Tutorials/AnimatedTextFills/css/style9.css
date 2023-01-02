@@ -1,0 +1,24 @@
+/* Main stuff */
+.text {
+  fill: url(http://tympanus.net/Tutorials/AnimatedTextFills/index9.html#p-fire);
+  stroke: #330000;
+  stroke-width: 8;
+  stroke-opacity: .5; }
+
+/* Other stuff */
+HTML, BODY {
+  height: 100%; }
+
+BODY {
+  background: #000; }
+
+.content {
+  font: 800 14.5em/1  'Open Sans', Impact; }
+
+svg {
+  width: 90%;
+  margin: 0 auto 50px;
+  display: block;
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=style9.css.map */

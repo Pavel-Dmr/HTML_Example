@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title> jQuery </title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/spritespin.js"></script>
+
+		<!-- 스타일 -->
+		<style type="text/css">
+		.shop_list { width:1080px; }
+		.shop_list li { float:left; width:270px; text-align:center; }
+
+		a.bt_rotate { display:inline-block; vertical-align:middle; width:42px; height:42px; overflow:hidden; text-indent:-500px; margin:0 2px; }
+		a.bt_rotate_tp1{ background:url('img/spin/bl_rotation.png') no-repeat 0 0; }
+		a.bt_rotate_tp2{ background:url('img/spin/bl_rotation.png') no-repeat 0 -42px; }
+		a.bt_rotate_tp3{ background:url('img/spin/bl_rotation.png') no-repeat 0 -84px; }
+		a.bt_rotate_tp4{ background:url('img/spin/bl_rotation.png') no-repeat 0 -126px; }
+		</style>
+		<!-- // 스타일 -->
+
+	</head>
+	<body>
+
+		<a href="../index-2.html" class="home">Home</a>
+		<div id="wrap">
+			<ul class="shop_list">
+				<li>
+					<a href="#"><div id="spin1"></div></a>
+			`		<a href="#" class="bt_rotate bt_rotate_tp1">제품 360도 회전</a>
+				</li>
+				<li>
+					<a href="#"><div id="spin2"></div></a>
+			`		<a href="#" class="bt_rotate bt_rotate_tp2">제품 360도 회전</a>
+				</li>
+			</ul>
+		</div>
+		<!-- // wrap -->
+
+		<!-- 스크립트 -->
+		<script type="text/javascript">
+		// 가방1
+		var spin1 = $('#spin1');
+		var api1;
+		var frames1 = [];
+		frames1.push('img/spin/new_stepani.001.jpg');
+		frames1.push('img/spin/new_stepani.002.jpg');
+		frames1.push('img/spin/new_stepani.003.jpg');
+		frames1.push('img/spin/new_stepani.004.jpg');
+		frames1.push('img/spin/new_stepani.005.jpg');
+		frames1.push('img/spin/new_stepani.006.jpg');
+		frames1.push('img/spin/new_stepani.007.jpg');
+		frames1.push('img/spin/new_stepani.008.jpg');
+		frames1.push('img/spin/new_stepani.009.jpg');
+		frames1.push('img/spin/new_stepani.010.jpg');
+		frames1.push('img/spin/new_stepani.011.jpg');
+		frames1.push('img/spin/new_stepani.012.jpg');
+		frames1.push('img/spin/new_stepani.013.jpg');
+		frames1.push('img/spin/new_stepani.014.jpg');
+		frames1.push('img/spin/new_stepani.015.jpg');
+		frames1.push('img/spin/new_stepani.016.jpg');
+		frames1.push('img/spin/new_stepani.017.jpg');
+		frames1.push('img/spin/new_stepani.018.jpg');
+		frames1.push('img/spin/new_stepani.019.jpg');
+		frames1.push('img/spin/new_stepani.020.jpg');
+
+		spin1.spritespin({
+			source: frames1,
+			sense: -1,
+			renderer: 'canvas',
+			animate : false,
+			loop: false,//360도 loop
+			lanes: 1,
+			module: '360',
+			frameTime: 100, //속도조절
+			width: 270,
+			height: 270
+		});
+		api1 = spin1.spritespin("api");
+		$('.bt_rotate_tp1').click(function(){
+				api1.toggleAnimation();
+				return false;
+		});
+
+		// 가방2
+		var spin2 = $('#spin2');
+		var api2;
+		var frames2 = [];
+		frames2.push('img/spin/jackie_001.jpg');
+		frames2.push('img/spin/jackie_002.jpg');
+		frames2.push('img/spin/jackie_003.jpg');
+		frames2.push('img/spin/jackie_004.jpg');
+		frames2.push('img/spin/jackie_005.jpg');
+		frames2.push('img/spin/jackie_006.jpg');
+		frames2.push('img/spin/jackie_007.jpg');
+		frames2.push('img/spin/jackie_008.jpg');
+		frames2.push('img/spin/jackie_009.jpg');
+		frames2.push('img/spin/jackie_010.jpg');
+		frames2.push('img/spin/jackie_011.jpg');
+		frames2.push('img/spin/jackie_012.jpg');
+		frames2.push('img/spin/jackie_013.jpg');
+		frames2.push('img/spin/jackie_014.jpg');
+		frames2.push('img/spin/jackie_015.jpg');
+		frames2.push('img/spin/jackie_016.jpg');
+		frames2.push('img/spin/jackie_017.jpg');
+		frames2.push('img/spin/jackie_018.jpg');
+		frames2.push('img/spin/jackie_019.jpg');
+		frames2.push('img/spin/jackie_020.jpg');
+
+		spin2.spritespin({
+			source: frames2,
+			sense: -1,
+			renderer: 'canvas',
+			animate : false,
+			loop: false,//360도 loop
+			lanes: 1,
+			module: '360',
+			frameTime: 100, //속도조절
+			width: 270,
+			height: 270
+		});
+		api2 = spin2.spritespin("api");
+		$('.bt_rotate_tp2').click(function(){
+				api2.toggleAnimation();
+				return false;
+		});
+		</script>
+		<!-- // 스크립트 -->
+
+	</body>
+
+</html>

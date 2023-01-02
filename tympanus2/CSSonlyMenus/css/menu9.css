@@ -1,0 +1,50 @@
+#menu9 ul {
+    list-style:none;
+    font-family: "Lucida Sans Unicode", sans-serif;
+    font-size: 40px;
+    letter-spacing: -3px;
+    line-height: 1.2em;
+    float:left;
+    clear:both;
+    margin:20px;
+}
+#menu9 ul li{
+    float:left;
+}
+#menu9 ul li a{
+    display:block;
+    text-decoration:none;
+    padding:5px 10px 5px 10px;
+    background-color:#00adef;
+    width:170px;
+    text-align:center;
+}
+#menu9 ul li a span{
+    display:block;
+}
+#menu9 ul li a span.title{
+    color:#fff;
+    border-bottom:2px solid #fff;
+    padding-bottom:5px;
+}
+#menu9 ul li a:hover{
+
+}
+#menu9 ul li a:hover span.title{
+    color:#074a64;
+border-bottom:2px solid #0b6f95;
+}
+#menu9 ul li a span.text{
+    padding:0px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    color:#fff;
+    background-color:#074a64;
+    visibility:hidden;
+}
+#menu9 ul li a:hover span.text{
+    line-height: 3.4em;
+    visibility:visible;
+}

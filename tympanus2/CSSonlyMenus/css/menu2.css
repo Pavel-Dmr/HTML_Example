@@ -1,0 +1,49 @@
+#menu2 ul {
+    list-style:none;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1.2em;
+    border:1px solid #000;
+    border-left:none;
+    float:left;
+    clear:both;
+    margin:20px;
+    border:5px dashed #fff;
+}
+#menu2 ul li{
+    float:left;
+}
+#menu2 ul li a{
+    display:block;
+    text-decoration:none;
+    background-color:#f0f0f0;
+    padding:5px 10px;
+    color:#666;
+    width:140px;
+}
+#menu2 ul li a span{
+    display:block;
+    text-align:center;
+    
+}
+#menu2 ul li a span.title{
+}
+#menu2 ul li a:hover span.title{
+    color:#000;
+}
+#menu2 ul li a span.text{
+    font-size:12px;
+    font-style:italic;
+    padding:0px 5px;
+    border:1px solid #f0f0f0;
+}
+#menu2 ul li a:hover span.text{
+
+}
+#menu2 ul li a:hover span.text{
+    border:1px inset #ccc;
+    background-color:#fff;
+}

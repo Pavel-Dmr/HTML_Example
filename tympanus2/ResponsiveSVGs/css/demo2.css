@@ -1,0 +1,12 @@
+.container {
+	box-shadow: 0 0 0 10px #b6bdc3;
+	width: 50%;
+	background: #fff;
+	margin: 0 auto;
+}
+
+/* Required to make image fluid in IE */
+object {
+	width: 100%;
+}
+

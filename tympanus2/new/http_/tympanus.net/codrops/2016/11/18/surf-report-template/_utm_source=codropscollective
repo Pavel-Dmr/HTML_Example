@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+	<html dir="ltr" lang="en-US"> 
+	<head> 
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Surf Report Template | Codrops</title>
+				<meta name="author" content="Team Codrops">
+		<link rel="stylesheet" type="text/css" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/main.css?v444" />
+		<link rel="stylesheet" type="text/css" media="print" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/main_print.css?v5" />
+		<link rel="profile" href="http://gmpg.org/xfn/11" />	
+		<script src="//use.typekit.net/pdd7wbw.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		<link rel="shortcut icon" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/favicon.ico">
+		<link rel="apple-touch-icon" sizes="144x144" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/apple-touch-icon-144x144.png">
+		<link rel="icon" type="image/png" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/favicon-196x196.png" sizes="196x196">
+		<!-- 857AADD2-739C-4BF6-A8D3-4986BE868A0C -->
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="msapplication-TileImage" content="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/mstile-144x144.png">
+		<meta name="msapplication-config" content="/codrops/wp-content/themes/codropstheme03/favicons/browserconfig.xml">
+			   
+		
+<!-- This site is optimized with the Yoast SEO plugin v13.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="A simple template of a weekly surf report with an animated SVG graph and a sliding content panel. The layout is powered by flexbox and viewport units. Highly experimental."/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://tympanus.net/codrops/2016/11/18/surf-report-template/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Surf Report Template | Codrops" />
+<meta property="og:description" content="A simple template of a weekly surf report with an animated SVG graph and a sliding content panel. The layout is powered by flexbox and viewport units. Highly experimental." />
+<meta property="og:url" content="https://tympanus.net/codrops/2016/11/18/surf-report-template/" />
+<meta property="og:site_name" content="Codrops" />
+<meta property="article:publisher" content="https://www.facebook.com/codrops/" />
+<meta property="article:tag" content="animation" />
+<meta property="article:tag" content="flexbox" />
+<meta property="article:tag" content="layout" />
+<meta property="article:tag" content="svg" />
+<meta property="article:tag" content="template" />
+<meta property="article:section" content="Playground" />
+<meta property="article:published_time" content="2016-11-18T12:37:11+00:00" />
+<meta property="article:modified_time" content="2019-03-30T05:20:25+00:00" />
+<meta property="og:updated_time" content="2019-03-30T05:20:25+00:00" />
+<meta property="og:image" content="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2016/11/SurfReport_800x600.jpg" />
+<meta property="og:image:secure_url" content="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2016/11/SurfReport_800x600.jpg" />
+<meta property="og:image:width" content="800" />
+<meta property="og:image:height" content="600" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://tympanus.net/codrops/#website","url":"https://tympanus.net/codrops/","name":"Codrops","inLanguage":"en-US","description":"Useful resources and inspiration for creative minds","potentialAction":{"@type":"SearchAction","target":"https://tympanus.net/codrops/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://tympanus.net/codrops/2016/11/18/surf-report-template/#primaryimage","inLanguage":"en-US","url":"https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2016/11/SurfReport_800x600.jpg","width":800,"height":600},{"@type":"WebPage","@id":"https://tympanus.net/codrops/2016/11/18/surf-report-template/#webpage","url":"https://tympanus.net/codrops/2016/11/18/surf-report-template/","name":"Surf Report Template | Codrops","isPartOf":{"@id":"https://tympanus.net/codrops/#website"},"inLanguage":"en-US","primaryImageOfPage":{"@id":"https://tympanus.net/codrops/2016/11/18/surf-report-template/#primaryimage"},"datePublished":"2016-11-18T12:37:11+00:00","dateModified":"2019-03-30T05:20:25+00:00","author":{"@id":"https://tympanus.net/codrops/#/schema/person/86f093aed04d33810cd8aa366741b658"},"description":"A simple template of a weekly surf report with an animated SVG graph and a sliding content panel. The layout is powered by flexbox and viewport units. Highly experimental."},{"@type":["Person"],"@id":"https://tympanus.net/codrops/#/schema/person/86f093aed04d33810cd8aa366741b658","name":"Mary Lou","image":{"@type":"ImageObject","@id":"https://tympanus.net/codrops/#authorlogo","inLanguage":"en-US","url":"http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=96&d=retro&r=g","caption":"Mary Lou"},"description":"ML is a freelance web designer and developer with a passion for interaction design. She studied Cognitive Science and Computational Logic and has a weakness for the smell of freshly ground peppercorns.","sameAs":[]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Codrops &raquo; Surf Report Template Comments Feed" href="https://tympanus.net/codrops/2016/11/18/surf-report-template/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='prismatic-blocks-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/prismatic/css/styles-blocks.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='avatar-manager-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/avatar-manager/assets/css/avatar-manager.min.css?ver=1.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=1.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=1.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp_typeahead_css-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/css/typeahead.css?ver=5.3.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/avatar-manager/assets/js/avatar-manager.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[]};
+var log_object = {"ajax_url":"https:\/\/tympanus.net\/codrops\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public.js?ver=1.8.3'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/highlight.pack.js?ver=85'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/highlight.user.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/cos.js?ver=5.3.2'></script>
+<link rel='https://api.w.org/' href='https://tympanus.net/codrops/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://tympanus.net/codrops/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3.2" />
+<link rel='shortlink' href='https://tympanus.net/codrops/?p=28788' />
+<link rel="alternate" type="application/json+oembed" href="https://tympanus.net/codrops/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftympanus.net%2Fcodrops%2F2016%2F11%2F18%2Fsurf-report-template%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://tympanus.net/codrops/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftympanus.net%2Fcodrops%2F2016%2F11%2F18%2Fsurf-report-template%2F&#038;format=xml" />
+<script type="text/javascript">document.documentElement.className += " js";</script>
+		<script type="text/javascript">
+			var cli_flush_cache=1;
+		</script>
+				<script src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/search.js"></script>
+		
+		<script type="text/javascript">
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-7243260-2']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+
+			  function recordOutboundLink(link, category, action) {
+				_gat._getTrackerByName()._trackEvent(category, action);
+				setTimeout('document.location = "' + link.href + '"', 100);
+			}
+		</script>
+		<noscript>
+			<link rel="stylesheet" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/noscript.css"/>
+		</noscript>
+		<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "WebSite",
+		  "url": "https://tympanus.net/codrops/",
+		  "potentialAction": {
+		    "@type": "SearchAction",
+		    "target": "https://tympanus.net/codrops/?s={search_term_string}",
+		    "query-input": "required name=search_term_string"
+		  }
+		}
+		</script>
+		<script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+	</head>
+	<body id="codrops-body">
+				<!-- BuySellAds.com Ad Code -->
+		<script type="text/javascript">
+			(function(){
+				var bsa = document.createElement('script');
+				bsa.type = 'text/javascript';
+				bsa.async = true;
+				bsa.src = '//s3.buysellads.com/ac/bsa.js';
+				(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+			})();
+		</script>
+		<!-- END BuySellAds.com Ad Code -->	
+				<div class="ct-container">
+			<header class="ct-header">
+				<div class="ct-inner ct-cf">
+
+											<div class="ct-branding">
+							<a class="ct-logo" href="/codrops" rel="home"><img src="/codrops/wp-content/themes/codropstheme03/images/codrops-logo.svg" alt="Codrops logo" /></a>
+						</div>
+					
+					<div class="ct-nav-wrapper">
+						<nav class="ct-nav-main">
+						   <ul>
+								<li><a href="/codrops/category/tutorials/">Tutorials</a></li>
+								<li><a href="/codrops/category/playground/">Playground</a></li>
+								<li><a href="/codrops/category/articles/">Articles</a></li>
+								<li><a href="/codrops/collective/">Collective</a></li>
+								<li><a href="/codrops/css_reference/">CSS Reference</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="ct-header-items-right ct-cf">
+						<div class="ct-search" id="ct-search">
+							<form method="get" id="searchform" action="https://tympanus.net/codrops/">
+								<div class="ct-search-input-wrap">
+									<input class="ct-search-input" placeholder="Search on Codrops..." type="text" value="" name="s" id="s"/>
+								</div>
+								<input type="hidden" name="search-type" value="posts" />
+								<input class="ct-search-submit" type="submit" id="go" value=""><span class="ct-icon-search"></span>
+							</form>
+						</div>
+						<ul class="ct-connect">
+							<li><a class="ct-icon-feed" href="http://feeds2.feedburner.com/tympanus"><span>Rss Feed</span></a></li>
+							<li><a class="ct-icon-mail" href="http://eepurl.com/dJBUCo"><span>Email Updates</span></a></li>
+							<li><a class="ct-icon-twitter" href="http://www.twitter.com/codrops"><span>Codrops on Twitter</span></a></li>
+							<li><a class="ct-icon-facebook" href="http://www.facebook.com/pages/Codrops/159107397912"><span>Codrops on Facebook</span></a></li>
+							<li><a class="ct-icon-github" href="https://github.com/codrops"><span>Codrops on Github</span></a></li>
+							<li><a class="ct-icon-instagram" href="https://instagram.com/codropsss"><span>Codrops on Instagram</span></a></li>
+						</ul>
+					</div><!--/ct-header-items-right-->
+
+				</div><!-- ct-inner -->
+			</header><div class="ct-content">
+    <div class="ct-inner">		
+		
+				
+								
+				<div class="ct-main ct-main-post" id="ct-main" role="main">
+					<div class="ct-post">
+						<article id="post-28788" class="post-28788 post type-post status-publish format-standard has-post-thumbnail hentry category-playground tag-animation tag-flexbox tag-layout tag-svg tag-template">
+							<header>
+								<h1 class="ct-h-shd entry-title">
+									Surf Report Template									
+																	</h1>
+								<div class="ct-post-excerpt">A simple template of a weekly surf report with an animated SVG graph and a sliding content panel. The layout is powered by flexbox and viewport units. Highly experimental.</div>								<div class="ct-subline entry-meta ">
+									<div class="ct-subline__author">
+																																	<span class="byline author vcard">
+													By 
+													<a href="https://tympanus.net/codrops/author/crnacura/" title="Posts by Mary Lou" class="author url fn" rel="author">Mary Lou</a>												</span>
+																															in
+										<a href="https://tympanus.net/codrops/category/playground/">Playground</a> on 
+											
+
+										<time class="ct-subline__pubtime" pubdate="pubdate">November 18, 2016</time>
+
+																			</div>
+								</div>
+							</header>		
+							<div class="ct-post-content">
+								
+
+								
+																		    <div class="ct-post-featured-img">
+									    	<a href="http://tympanus.net/Development/SurfReport/" title="Surf Report Template Demo"><img width="800" height="600" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2016/11/SurfReport_800x600.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="surfreport_800x600" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2016/11/SurfReport_800x600.jpg 800w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2016/11/SurfReport_800x600-300x225.jpg 300w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2016/11/SurfReport_800x600-768x576.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></a>
+									    </div>
+									
+								
+																	<div class="ct-demo-links">
+										<a class="ct-demo-link ct-demo-link--view" href="http://tympanus.net/Development/SurfReport/">View demo</a>
+										<a class="ct-demo-link ct-demo-link--download" href="http://tympanus.net/Development/SurfReport/SurfReport.zip">Download Source</a> 
+									</div>
+																
+
+																											
+											<!-- Weekly Sponsor -->
+																						<p class="ct-msponsor-article">
+												<span>From our sponsor:</span> <a href="https://ad.doubleclick.net/ddm/clk/459321073;263127775;j" target="_blank" rel="sponsored nofollow">Market smarter with Mailchimp's automated messaging tools.</a>
+												<IMG SRC="https://ad.doubleclick.net/ddm/ad/N2434.3091281BUYSELLADS/B23623815.263127775;sz=1x1;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?" BORDER="0" HEIGHT="1" WIDTH="1" style="position:absolute;opacity:0;"/>
+											</p>
+																						<!--/ End Weekly Sponsor -->
+											
+																																			
+								<p>Today we&#8217;d like to share a little template with you. This flexbox-based layout represents a weekly (5-day) surf report which shows some data of the day, like temperatures and information on waves. It is accompanied by an animating SVG graph that visualizes the wave data. When hovering over each day, a division of day periods becomes visible, each one showing relevant information depending on the time of the day. Additionally, when clicking on a live cam button, another content panel is slided into view. This panel shows an embedded Video with a live cam recording. We hope this little layout comes in handy for a column-based layout project or for your next animated SVG graph adventure. </p>
+<p><strong>Please note that this is highly experimental and lots of data is hard-coded. You could use it as a rough base to build your dynamic solution with it.</strong></p>
+<div class="box-attention">
+<strong>Attention:</strong> Many modern properties are in use here, like <a href="http://tympanus.net/codrops/css_reference/flexbox/" title="Flexbox CSS reference entry">Flexbox</a> and <a href="http://tympanus.net/codrops/css_reference/length/#section_viewportlengths">viewport units</a>. Gritty browsers only!</div>
+<h2>The structure</h2>
+<p>The initial HTML structure for our layout is the following:</p>
+<pre class="brush:html"><code>&lt;main class="theme-1"&gt;
+	&lt;header class="codrops-header"&gt;&lt;!-- ... --&gt;&lt;/header&gt;
+	&lt;!-- live cam panel --&gt;
+	&lt;div class="content content--cam"&gt;
+		&lt;div data-type="youtube" data-video-id="lqmNApZXnGM"&gt;&lt;/div&gt;
+		&lt;button class="btn btn--close" aria-label="Close Live Cam"&gt;
+			&lt;svg class="icon icon--cross"&gt;
+				&lt;use xlink:href="#icon-cross"&gt;&lt;/use&gt;
+			&lt;/svg&gt;
+		&lt;/button&gt;
+	&lt;/div&gt;
+	&lt;!-- graph panel --&gt;
+	&lt;div class="content content--graph"&gt;
+		&lt;svg class="graph" viewBox="0 0 1440 800" preserveAspectRatio="none"&gt;
+			&lt;defs&gt;
+				&lt;linearGradient id="gradient1"&gt;
+					&lt;stop offset="0%" stop-color="#1231bb" /&gt;
+					&lt;stop offset="100%" stop-color="#238DE0"  /&gt;
+				&lt;/linearGradient&gt;
+				&lt;linearGradient id="gradient2" x1="0" x2="0" y1="0" y2=".7" xlink:href="#gradient1"/&gt;
+			&lt;/defs&gt;
+		&lt;/svg&gt;
+	&lt;/div&gt;
+	&lt;!-- Button for toggling the live cam content --&gt;
+	&lt;button class="btn btn--cam btn--hidden"&gt;
+		&lt;svg class="icon icon--cam icon--btn"&gt;
+			&lt;use xlink:href="#icon-cam"&gt;&lt;/use&gt;
+		&lt;/svg&gt;
+		&lt;span class="btn__text"&gt;Live Cam&lt;/span&gt;
+	&lt;/button&gt;
+&lt;/main&gt;</code></pre>
+<p>This includes the two panels for the live cam view and the graph view. We are going to dynamically build the resting HTML; a division for the day slices, and the graph path data. Furthermore, we&#8217;re using <a href="https://plyr.io/">Plyr.js</a> to embed a YouTube video in the cam panel.</p>
+<p>The resulting HTML is the following: </p>
+<pre class="brush:html"><code>&lt;main class="theme-1"&gt;
+	&lt;header class="codrops-header"&gt;
+		
+	&lt;/header&gt;
+	&lt;div class="content content--cam"&gt;
+		&lt;!-- ... --&gt;
+	&lt;/div&gt;
+	&lt;div class="content content--graph"&gt;
+		&lt;!-- all slices --&gt;
+		&lt;div class="slices"&gt;
+			&lt;!-- single slice --&gt;
+			&lt;div class="slice slice--state-sunny"&gt;
+				&lt;!-- weather states (show by toggling icons) --&gt;
+				&lt;div class="wstate-wrap"&gt;
+					&lt;svg class="wstate wstate--sunny"&gt;
+						&lt;use xlink:href="#state-sunny" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;&lt;/use&gt;
+					&lt;/svg&gt;
+					&lt;svg class="wstate wstate--cloudy"&gt;
+						&lt;use xlink:href="#state-cloudy" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;&lt;/use&gt;
+					&lt;/svg&gt;
+					&lt;svg class="wstate wstate--partlycloudy"&gt;
+						&lt;use xlink:href="#state-partlycloudy" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;&lt;/use&gt;
+					&lt;/svg&gt;
+					&lt;svg class="wstate wstate--rain"&gt;
+						&lt;use xlink:href="#state-rain" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;&lt;/use&gt;
+					&lt;/svg&gt;
+					&lt;svg class="wstate wstate--thunders"&gt;
+						&lt;use xlink:href="#state-thunders" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;&lt;/use&gt;
+					&lt;/svg&gt;
+					&lt;svg class="wstate wstate--clearnight"&gt;
+						&lt;use xlink:href="#state-clearnight" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;&lt;/use&gt;
+					&lt;/svg&gt;
+					&lt;svg class="wstate wstate--partlycloudynight"&gt;
+						&lt;use xlink:href="#state-partlycloudynight" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;&lt;/use&gt;
+					&lt;/svg&gt;
+				&lt;/div&gt;&lt;!-- /wstate-wrap --&gt;
+
+				&lt;!-- weather data --&gt;
+
+				&lt;span class="slice__data slice__data--period slice__data--hidden"&gt;
+					&lt;svg class="icon icon--clock"&gt;&lt;use xlink:href="#icon-clock" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;&lt;/use&gt;&lt;/svg&gt;
+					&lt;span class="slice__data slice__data--time"&gt;&nbsp;&lt;/span&gt;
+				&lt;/span&gt;
+
+				&lt;span class="slice__data slice__data--dateday"&gt;
+					&lt;span class="slice__data slice__data--day"&gt;Today&lt;/span&gt;
+					&lt;span class="slice__data slice__data--date"&gt;11/21&lt;/span&gt;
+				&lt;/span&gt;
+
+				&lt;span class="slice__data slice__data--air"&gt;
+					&lt;svg class="icon icon--thermometer"&gt;&lt;use xlink:href="#icon-thermometer" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;&lt;/use&gt;&lt;/svg&gt;
+					&lt;span class="slice__data slice__data--temperature"&gt;28 °C&lt;/span&gt;
+				&lt;/span&gt;
+
+				&lt;span class="slice__data slice__data--wind"&gt;
+					&lt;svg class="icon icon--direction" style="transform: rotate(136.183deg);"&gt;&lt;use xlink:href="#icon-direction" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;&lt;/use&gt;&lt;/svg&gt;
+					&lt;span class="slice__data slice__data--wind-speed"&gt;3 km/h&lt;/span&gt;
+				&lt;/span&gt;
+
+				&lt;span class="slice__data slice__data--swell"&gt;
+					&lt;svg class="icon icon--wave"&gt;&lt;use xlink:href="#icon-wave" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;&lt;/use&gt;&lt;/svg&gt;
+					&lt;span class="slice__data slice__data--swell-height"&gt;2 m&lt;/span&gt;
+					&lt;span class="slice__data slice__data--swell-period"&gt;14 s&lt;/span&gt;
+				&lt;/span&gt;
+
+				&lt;span class="slice__data slice__data--water"&gt;
+					&lt;svg class="icon icon--thermometer"&gt;&lt;use xlink:href="#icon-thermometer" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;&lt;/use&gt;&lt;/svg&gt;
+					&lt;span class="slice__data slice__data--temperature"&gt;22 °C&lt;/span&gt;
+				&lt;/span&gt;
+
+				&lt;!-- Hover overlay --&gt;
+				&lt;div class="slice__hover"&gt;
+					&lt;div&gt;&lt;/div&gt;
+					&lt;div&gt;&lt;/div&gt;
+					&lt;div&gt;&lt;/div&gt;
+					&lt;div&gt;&lt;/div&gt;
+					&lt;div&gt;&lt;/div&gt;
+					&lt;div&gt;&lt;/div&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+			&lt;div class="slice slice--state-partlycloudy"&gt;&lt;!-- ... --&gt;&lt;/div&gt;
+			&lt;!-- ... other slices --&gt;
+		&lt;/div&gt;
+
+		&lt;svg class="graph" preserveaspectratio="none" viewbox="0 0 1440 800"&gt;
+			&lt;defs&gt;
+				&lt;lineargradient id="gradient1"&gt;
+					&lt;stop offset="0%" stop-color="#1231bb"&gt;&lt;/stop&gt;
+					&lt;stop offset="100%" stop-color="#238DE0"&gt;&lt;/stop&gt;
+				&lt;/lineargradient&gt;
+				&lt;lineargradient id="gradient2" x1="0" x2="0" xlink:href="#gradient1" xmlns:xlink="http://www.w3.org/1999/xlink" y1="0" y2=".7"&gt;&lt;/lineargradient&gt;
+			&lt;/defs&gt;
+			&lt;!-- animated SVG path --&gt;
+			&lt;path class="graph__path" d="..."&gt;&lt;/path&gt;
+		&lt;/svg&gt;
+		
+	&lt;/div&gt;
+	&lt;!-- Button for toggling the live cam content --&gt;
+	&lt;button class="btn btn--cam"&gt;
+		&lt;svg class="icon icon--cam icon--btn"&gt;
+			&lt;use xlink:href="#icon-cam" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;&lt;/use&gt;
+		&lt;/svg&gt;
+		&lt;span class="btn__text"&gt;Live Cam&lt;/span&gt;
+	&lt;/button&gt;
+&lt;/main&gt;</code></pre>
+<div class="ct-ad-article-wrapper ct-ad-article-wrapper-in" style="padding:1rem;"><div class="ct-ad-article"><img class="ct-ad-img" style="display: none;" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/images/advertisement.jpg" /><div id="bsap_1279993" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div><div style="clear:both;"></div></div></div>
+<h2>Some interesting CSS</h2>
+<p>The interesting CSS is the part of the slices and slice data:</p>
+<pre class="brush:html"><code>.slices {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+}
+
+.slice {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	width: 20vw;
+	height: 100%;
+	padding: 5em 0 0 0;
+	pointer-events: none;
+	background: linear-gradient(200deg, #a0cfe4, #e8c37e);
+}
+
+/* The daytime periods show individual backgrounds */
+/* we've grouped them, but you can differentiate it even more */
+.slice--period-1,
+.slice--period-6 {
+	background: linear-gradient(200deg, #6a8a98, #e8c37e);
+}
+
+.slice--period-2,
+.slice--period-5 {
+	background: linear-gradient(200deg, #8db7ca, #e8c37e);
+}
+
+.slice--period-3,
+.slice--period-4 {
+	background: linear-gradient(200deg, #a0cfe4, #e8c37e);
+}
+
+/* The slice data */
+.slice__data {
+	font-size: 1.25vw;
+	line-height: 1.5;
+	position: relative;
+	z-index: 100;
+	display: flex;
+	padding: 1em;
+}
+
+.slice__data .slice__data {
+	display: inline-block;
+	padding: 0 0.5em 0 0;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.slice__data--hidden {
+	opacity: 0;
+}
+
+.slice__data--dateday {
+	color: #4682a5;
+}
+
+.slice__data--air,
+.slice__data--wind,
+.slice__data--water {
+	color: #4682a5;
+}
+
+.slice__data--period,
+.slice__data--swell {
+	color: #fff;
+}
+
+.slice__data--swell {
+	font-size: 1.5vw;
+	margin-top: auto;
+}
+
+.slice__data--water {
+	margin-top: auto;
+}
+
+.slice__data .icon {
+	flex: none;
+	margin: 0 0.5em 0 0;
+}
+
+/* The weather icons */
+/* Depending on the state, we switch the visibility of the respective icon */
+.wstate-wrap {
+	font-size: 2em;
+	position: absolute;
+	z-index: 100;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.wstate {
+	position: absolute;
+	top: 0;
+	right: -40%;
+	width: 100%;
+	max-height: 100%;
+	opacity: 0;
+}
+
+.slice--state-sunny .wstate--sunny,
+.slice--state-cloudy .wstate--cloudy,
+.slice--state-partlycloudy .wstate--partlycloudy,
+.slice--state-rain .wstate--rain,
+.slice--state-thunders .wstate--thunders,
+.slice--state-clearnight .wstate--clearnight,
+.slice--state-partlycloudynight .wstate--partlycloudynight {
+	opacity: 1;
+}
+
+/* Hover areas */
+
+.slice__hover {
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	pointer-events: auto;
+}
+
+.slice__hover div {
+	width: calc(100% / 6);
+	height: 100%;
+}
+
+.slice__hover div:hover {
+	background: rgba(0, 0, 0, 0.03);
+}</code></pre>
+<p>All icons used in this template are included via SVG <code>use</code>. The icons are added to a hidden SVG as symbols in the beginning of the HTML.</p>
+<p>We hope this template is somehow useful to you!</p>
+<strong>Browser Support:</strong> <ul class='browser-support'><li class="bs-chrome bs-supported"><span class="bs-browser">Chrome</span><span class="bs-info">Supported</span></li><li class="bs-firefox bs-supported"><span class="bs-browser">Firefox</span><span class="bs-info">Supported</span></li><li class="bs-ie bs-supported" data-version="E"><span class="bs-browser">Internet Explorer</span><span class="bs-info">Supported from version E</span></li><li class="bs-safari bs-supported"><span class="bs-browser">Safari</span><span class="bs-info">Supported</span></li><li class="bs-opera bs-supported"><span class="bs-browser">Opera</span><span class="bs-info">Supported</span></li></ul>
+<h2>References and Credits</h2>
+<ul>
+<li><a href="https://material.io/icons">Material icons</a> by Google</li>
+<li><a href="http://www.flaticon.com/packs/weather-6">Weather icons</a> by Pixel Buddha</li>
+<li>Other icons made by <a href="http://www.freepik.com/">Freepik</a> from <a href="http://www.flaticon.com/">www.flaticon.com</a></li>
+<li><a href="http://anime-js.com/">Anime.js</a> by Julian Garnier</li>
+<li><a href="https://plyr.io/">Plyr.js</a> by Sam Potts</li>
+<li><a href="https://gist.github.com/njvack/6925609">Catmull-Rom Spline to Bezier Spline Converter</a> by Nate Vack</li>
+<li><a href="https://github.com/filamentgroup/select-css">select-css</a> by Filament Group</li>
+</ul>
+
+																	<div class="ct-github-link"><a href="https://github.com/codrops/SurfReport/">Find this project on Github</a></div>
+								
+																																
+																	<div class="ct-post-nav">
+										<div class="ct-post-prev">        
+											<a href="https://tympanus.net/codrops/2016/11/09/cubes-advent-calendar/" rel="prev">Cubes Advent Calendar</a> 
+										</div>
+										<div class="ct-post-next">
+											<a href="https://tympanus.net/codrops/2016/11/23/tilt-hover-effects/" rel="next">Tilt Hover Effects</a> 
+										</div>
+										<div class="clr"></div>
+									</div> <!-- ct-post-nav -->
+																
+							</div>
+						</article>
+						<p class="ct-tags">
+							Tagged with: <a href="https://tympanus.net/codrops/tag/animation/" rel="tag">animation</a> <a href="https://tympanus.net/codrops/tag/flexbox/" rel="tag">flexbox</a> <a href="https://tympanus.net/codrops/tag/layout/" rel="tag">layout</a> <a href="https://tympanus.net/codrops/tag/svg/" rel="tag">svg</a> <a href="https://tympanus.net/codrops/tag/template/" rel="tag">template</a>						</p>
+						<div class="clr"></div>
+					</div>
+
+																							
+											            <div class="ct-author-info ct-box">
+					                <div class="ct-author-avatar">
+					                    <img alt='' src='http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=80&#038;d=retro&#038;r=g' srcset="http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=160&#038;d=retro&#038;r=g 2x" class='avatar avatar-80 photo' height='80' width='80' />					                </div><!-- .author-avatar -->
+
+					                <div class="ct-author-page-desc">
+					                    <h3><a href="https://tympanus.net/codrops/author/crnacura/">Mary Lou</a></h3>
+					                    <p>ML is a freelance web designer and developer with a passion for interaction design. She studied Cognitive Science and Computational Logic and has a weakness for the smell of freshly ground peppercorns.</p>
+					                    																				<p class="ct-author-page-url">
+											<a href="http://www.codrops.com" target="_blank">http://www.codrops.com</a>
+										</p>
+																				<div>
+											<ul class="ct-social-profiles">
+																																					<li><a class="ct-social-twitter" href="http://twitter.com/crnacura"><span>Twitter</span></a></li>
+																																					<li><a class="ct-social-dribbble" href="http://dribbble.com/crnacura"><span>Dribbble</span></a></li>
+																																					<li><a class="ct-social-instagram" href="https://www.instagram.com/codropsss/"><span>Instagram</span></a></li>
+																																																													<li><a class="ct-social-github" href="https://github.com/crnacura"><span>Github</span></a></li>
+																																																																																			</ul>
+										</div>
+					                </div>
+					            </div>
+					        
+						<!-- Related posts -->
+												<div class="ct-related-post">
+							
+									<div class="ct-related-item">
+										<div class="ct-latest-thumb-related">
+											<a href="https://tympanus.net/codrops/2019/02/26/svg-filter-effects-moving-forward/">
+												<img width="300" height="225" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/02/SVGFilterEffectLearning_featured-300x225.jpg" class="attachment-medium size-medium wp-post-image" alt="SVGFilterEffectLearning_featured" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/02/SVGFilterEffectLearning_featured-300x225.jpg 300w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/02/SVGFilterEffectLearning_featured-768x576.jpg 768w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/02/SVGFilterEffectLearning_featured.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" />											</a>
+										</div>
+										<h3><a href="https://tympanus.net/codrops/2019/02/26/svg-filter-effects-moving-forward/">SVG Filter Effects: Moving Forward</a></h3>
+									</div>
+												
+								
+									<div class="ct-related-item">
+										<div class="ct-latest-thumb-related">
+											<a href="https://tympanus.net/codrops/2019/09/03/how-to-dynamically-change-the-colors-of-product-images-using-css-blend-mode-and-svg/">
+												<img width="400" height="300" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/09/DynamicColorChange_featured-400x300.jpg" class="attachment-medium size-medium wp-post-image" alt="DynamicColorChange_featured" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/09/DynamicColorChange_featured-400x300.jpg 400w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/09/DynamicColorChange_featured-768x576.jpg 768w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/09/DynamicColorChange_featured.jpg 800w" sizes="(max-width: 400px) 100vw, 400px" />											</a>
+										</div>
+										<h3><a href="https://tympanus.net/codrops/2019/09/03/how-to-dynamically-change-the-colors-of-product-images-using-css-blend-mode-and-svg/">How to Dynamically Change the Colors of Product Images using CSS Blend Mode and SVG</a></h3>
+									</div>
+												
+								
+									<div class="ct-related-item">
+										<div class="ct-latest-thumb-related">
+											<a href="https://tympanus.net/codrops/2019/06/11/draggable-image-strip/">
+												<img width="400" height="300" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/06/DraggableImageStrip-400x300.jpg" class="attachment-medium size-medium wp-post-image" alt="DraggableImageStrip" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/06/DraggableImageStrip-400x300.jpg 400w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/06/DraggableImageStrip-768x576.jpg 768w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/06/DraggableImageStrip.jpg 800w" sizes="(max-width: 400px) 100vw, 400px" />											</a>
+										</div>
+										<h3><a href="https://tympanus.net/codrops/2019/06/11/draggable-image-strip/">Draggable Image Strip</a></h3>
+									</div>
+												
+														</div>
+																						<div class="ct-row">
+						
+<div class="ct-sharing ct-box">
+	<!-- Begin Mailchimp Signup Form -->
+	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		#mc_embed_signup{background: transparent; clear:left; width:100%; text-align: left;}
+		/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+		   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+	</style>
+	<style type="text/css">
+		#mc_embed_signup form { text-align: left; padding: 0;}
+		#mc-embedded-subscribe-form input[type=checkbox]{vertical-align: top;display: inline; width: auto;margin-right: 5px;}
+		#mergeRow-gdpr {margin-top: 20px;}
+		#mergeRow-gdpr fieldset label {font-weight: normal;}
+		#mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}
+		#mc_embed_signup input.email {width: 100%;margin: 0 auto 1rem; box-shadow:none;padding:5px 10px;height:50px;font-size: 0.9rem;border-radius:0;font-family:inherit;font-weight:bold;color: rgb(75, 94, 115);border:0;}
+		#mc_embed_signup input.email:focus {border-color: #66afe9; box-shadow: none;outline:none;}
+		#mc_embed_signup label {padding: 0;}    
+		#mc_embed_signup .button {background: #000;color:#fff;border-radius:0;transition:none;height:auto; padding:10px 20px;font-size:0.9rem; line-height:inherit;}
+		#mc_embed_signup .button:hover {background: #333;}
+	</style>
+	<div id="mc_embed_signup">
+		<form action="https://tympanus.us10.list-manage.com/subscribe/post?u=10ffec652b0f54fe5d8682ac0&amp;id=a9cab6dcf0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		    <div id="mc_embed_signup_scroll">
+			<label for="mce-EMAIL"><h3>Subscribe to Codrops</h3></label>
+			<p>Stay up to date with the latest web design and development news and relevant updates from Codrops.</p>
+			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+		    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_10ffec652b0f54fe5d8682ac0_a9cab6dcf0" tabindex="-1" value=""></div>
+		    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+		    </div>
+		</form>
+	</div>
+</div>
+
+
+
+						<div class="ct-bottom-ads ct-box">
+							<h3>CSS Reference</h3>
+							<p>Learn about all important CSS properties from the basics with our extensive and easy-to-read CSS Reference.</p><p>It doesn't matter if you are a beginner or intermediate, <a href="/codrops/css_reference/">start learning CSS now</a>.</p>
+						</div>
+					</div>
+						<section id="comments" class="ct-comments">
+	
+		
+			<div class="ct-commenttitle">
+			<h2 id="comments-title">
+				<span>Feedback</span>
+				<sup>18</sup>
+			</h2>
+						<span>Comments are closed.</span>
+					</div>
+		
+		
+		<ol class="ct-commentlist">
+							<li class="comment even thread-even depth-1" id="li-comment-471622">
+					<article id="comment-471622" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://0.gravatar.com/avatar/c0e86bb9adfba8c7570ccf57bffe0230?s=40&#038;d=retro&#038;r=g' srcset="http://0.gravatar.com/avatar/c0e86bb9adfba8c7570ccf57bffe0230?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Tiago Santana</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-471622" class="ct-commenttime"><time pubdate datetime="2016-11-18T17:11:08+00:00">November 18, 2016 at 17:11</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>Hi, good job as always!<br />
+I found a bug on the location selector: <a href="http://i.imgur.com/Pjs4F3L.png" rel="nofollow ugc">http://i.imgur.com/Pjs4F3L.png</a></p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					<ul class="children">
+				<li class="comment byuser comment-author-crnacura bypostauthor odd alt depth-2" id="li-comment-471624">
+					<article id="comment-471624" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=40&#038;d=retro&#038;r=g' srcset="http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Mary Lou</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-471624" class="ct-commenttime"><time pubdate datetime="2016-11-19T15:23:37+00:00">November 19, 2016 at 15:23</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>Thanks Tiago! Fixed 🙂 Cheers, ML</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+				<li class="comment even thread-odd thread-alt depth-1" id="li-comment-471623">
+					<article id="comment-471623" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://1.gravatar.com/avatar/d5279c8b66d25549a0ec3c8dd46a3d1a?s=40&#038;d=retro&#038;r=g' srcset="http://1.gravatar.com/avatar/d5279c8b66d25549a0ec3c8dd46a3d1a?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Brad Dalton</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-471623" class="ct-commenttime"><time pubdate datetime="2016-11-19T08:30:12+00:00">November 19, 2016 at 08:30</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>Like the cam. Wicked left hander!</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+				<li class="comment odd alt thread-even depth-1" id="li-comment-471626">
+					<article id="comment-471626" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://1.gravatar.com/avatar/d1634aaf95607fd07d6eeab33125904d?s=40&#038;d=retro&#038;r=g' srcset="http://1.gravatar.com/avatar/d1634aaf95607fd07d6eeab33125904d?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">olegatro</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-471626" class="ct-commenttime"><time pubdate datetime="2016-11-19T22:50:16+00:00">November 19, 2016 at 22:50</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>&gt; Anime.js by Julian Garnier<br />
+bad link</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					<ul class="children">
+				<li class="comment byuser comment-author-pbotelho even depth-2" id="li-comment-471629">
+					<article id="comment-471629" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://0.gravatar.com/avatar/01032c326d152e9641c7a03e720b9b49?s=40&#038;d=retro&#038;r=g' srcset="http://0.gravatar.com/avatar/01032c326d152e9641c7a03e720b9b49?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Pedro Botelho</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-471629" class="ct-commenttime"><time pubdate datetime="2016-11-20T10:29:57+00:00">November 20, 2016 at 10:29</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>Fixed. Thanks!</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+				<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-471634">
+					<article id="comment-471634" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://1.gravatar.com/avatar/1f9d9a9efc2f523b2f09629444632b5c?s=40&#038;d=retro&#038;r=g' srcset="http://1.gravatar.com/avatar/1f9d9a9efc2f523b2f09629444632b5c?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">oyecombover</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-471634" class="ct-commenttime"><time pubdate datetime="2016-11-21T01:16:55+00:00">November 21, 2016 at 01:16</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>I feel like the Live Cam button could be much more prominent, didn&#8217;t even realise it was there until I read through the article and went searching. Otherwise, quite cool!</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+				<li class="comment even thread-even depth-1" id="li-comment-471635">
+					<article id="comment-471635" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://1.gravatar.com/avatar/4643c4468556b3a1398c3124cf4336c6?s=40&#038;d=retro&#038;r=g' srcset="http://1.gravatar.com/avatar/4643c4468556b3a1398c3124cf4336c6?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Regardt Nel</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-471635" class="ct-commenttime"><time pubdate datetime="2016-11-21T07:34:12+00:00">November 21, 2016 at 07:34</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>Any idea where we can find the swell data?  Was hoping for a free API 🙂</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					<ul class="children">
+				<li class="comment odd alt depth-2" id="li-comment-471686">
+					<article id="comment-471686" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://2.gravatar.com/avatar/bfa8a5b872d6a1ae9dc38e861886b14b?s=40&#038;d=retro&#038;r=g' srcset="http://2.gravatar.com/avatar/bfa8a5b872d6a1ae9dc38e861886b14b?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Sascha</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-471686" class="ct-commenttime"><time pubdate datetime="2016-11-25T09:25:21+00:00">November 25, 2016 at 09:25</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>There is a site called magicseaweed which provides an API with a fair use policy of 1M request per month.</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+				<li class="comment even thread-odd thread-alt depth-1" id="li-comment-471636">
+					<article id="comment-471636" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://1.gravatar.com/avatar/7e98d8a11ae4d0f10c067dce9ac51f4f?s=40&#038;d=retro&#038;r=g' srcset="http://1.gravatar.com/avatar/7e98d8a11ae4d0f10c067dce9ac51f4f?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Richa Gangwani</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-471636" class="ct-commenttime"><time pubdate datetime="2016-11-21T07:58:44+00:00">November 21, 2016 at 07:58</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>Good one! Thank you for sharing.<br />
+Interesting!</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+				<li class="comment odd alt thread-even depth-1" id="li-comment-471639">
+					<article id="comment-471639" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://2.gravatar.com/avatar/2ed8332b3d781839221b5d761d1faf98?s=40&#038;d=retro&#038;r=g' srcset="http://2.gravatar.com/avatar/2ed8332b3d781839221b5d761d1faf98?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">P</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-471639" class="ct-commenttime"><time pubdate datetime="2016-11-21T17:59:14+00:00">November 21, 2016 at 17:59</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>Pls leave arrifana out of this, its crowded af as it is right now.</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+				<li class="comment even thread-odd thread-alt depth-1" id="li-comment-471706">
+					<article id="comment-471706" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://2.gravatar.com/avatar/e5755143fa389dc85fc5518cda882031?s=40&#038;d=retro&#038;r=g' srcset="http://2.gravatar.com/avatar/e5755143fa389dc85fc5518cda882031?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Reece Hargreaves</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-471706" class="ct-commenttime"><time pubdate datetime="2016-11-29T04:54:38+00:00">November 29, 2016 at 04:54</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>You did an impressive template, Mary Lou.<br />
+Thanks!</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+				<li class="comment odd alt thread-even depth-1" id="li-comment-471725">
+					<article id="comment-471725" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://2.gravatar.com/avatar/bbbe7912f9a2cb6e9b50d04183434808?s=40&#038;d=retro&#038;r=g' srcset="http://2.gravatar.com/avatar/bbbe7912f9a2cb6e9b50d04183434808?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Vasil Bekyarov</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-471725" class="ct-commenttime"><time pubdate datetime="2016-12-05T14:02:45+00:00">December 5, 2016 at 14:02</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>Wonderful template! Thank you for sharing.</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+				<li class="comment even thread-odd thread-alt depth-1" id="li-comment-471995">
+					<article id="comment-471995" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://1.gravatar.com/avatar/157f31fa54156619cab7ba9f26eeef47?s=40&#038;d=retro&#038;r=g' srcset="http://1.gravatar.com/avatar/157f31fa54156619cab7ba9f26eeef47?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Scott</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-471995" class="ct-commenttime"><time pubdate datetime="2017-01-12T07:21:24+00:00">January 12, 2017 at 07:21</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>Anyone know where to plugin an API from a API source like Magicseaweed or NOAA on this given code?</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+				<li class="comment odd alt thread-even depth-1" id="li-comment-472276">
+					<article id="comment-472276" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://2.gravatar.com/avatar/e01744b3afb280e4004811e4a77d9d08?s=40&#038;d=retro&#038;r=g' srcset="http://2.gravatar.com/avatar/e01744b3afb280e4004811e4a77d9d08?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Nec</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-472276" class="ct-commenttime"><time pubdate datetime="2017-01-24T12:20:29+00:00">January 24, 2017 at 12:20</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>Hey- for some reason the waves do not show up anymore- is there an issue?</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					<ul class="children">
+				<li class="comment byuser comment-author-pbotelho even depth-2" id="li-comment-472303">
+					<article id="comment-472303" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://0.gravatar.com/avatar/01032c326d152e9641c7a03e720b9b49?s=40&#038;d=retro&#038;r=g' srcset="http://0.gravatar.com/avatar/01032c326d152e9641c7a03e720b9b49?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Pedro Botelho</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-472303" class="ct-commenttime"><time pubdate datetime="2017-01-25T01:14:57+00:00">January 25, 2017 at 01:14</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>Thanks for letting us know! It was an HTTPS problem because of our recent switch. We&#8217;ve fixed it now 🙂 (you might need to do a hard reload).</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+				<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-473270">
+					<article id="comment-473270" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://2.gravatar.com/avatar/8b4013e6e6945b7ce4d3a7ca98dfcb3c?s=40&#038;d=retro&#038;r=g' srcset="http://2.gravatar.com/avatar/8b4013e6e6945b7ce4d3a7ca98dfcb3c?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">rocky_nupt</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-473270" class="ct-commenttime"><time pubdate datetime="2017-02-24T12:54:49+00:00">February 24, 2017 at 12:54</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>So cool!!but why it can&#8217;t run normally on chrome?</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+				<li class="comment even thread-even depth-1" id="li-comment-473585">
+					<article id="comment-473585" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://2.gravatar.com/avatar/b517dc6b071086eefe5846e3e88d1b57?s=40&#038;d=retro&#038;r=g' srcset="http://2.gravatar.com/avatar/b517dc6b071086eefe5846e3e88d1b57?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Ricardo</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-473585" class="ct-commenttime"><time pubdate datetime="2017-04-03T02:30:08+01:00">April 3, 2017 at 02:30</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>How can I load data from another place to use it?</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+				<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-473736">
+					<article id="comment-473736" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://0.gravatar.com/avatar/07c97339c7ade73cc932cd49c5dd7897?s=40&#038;d=retro&#038;r=g' srcset="http://0.gravatar.com/avatar/07c97339c7ade73cc932cd49c5dd7897?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Jason</span> <a href="https://tympanus.net/codrops/2016/11/18/surf-report-template/#comment-473736" class="ct-commenttime"><time pubdate datetime="2017-05-05T20:53:50+01:00">May 5, 2017 at 20:53</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>It&#8217;s great!!!<br />
+But as rocky_nupt mentioned above, waves do not show up on Chrome.(I can see it on IE)<br />
+On the other hand, Icons such as thermometor and wind-arrow do not show up in IE, but I can see it on Chrome.<br />
+Is there anyone who can let me get advised how to fix it?</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+		</ol>
+		<p class="ct-talign-right">
+				</p>
+				
+
+
+		<div class="ct-comment-form">	
+				<div class="clr"></div>
+	</div>
+
+</section><!-- #comments -->
+				</div>
+				<aside class="ct-sidebar">		
+	<div class="ct-pat">
+		
+		<!-- Weekly Sponsor -->
+				<a class="cos" href="http://bit.ly/mailchimpCodrops" target="_blank" rel="nofollow sponsored">
+			<IMG SRC="https://ad.doubleclick.net/ddm/ad/N2434.3091281BUYSELLADS/B23623815.263128345;sz=1x1;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?" BORDER="0" HEIGHT="1" WIDTH="1" style="position:absolute;opacity:0;"/>
+			<img class="cos__img" src="https://tympanus.net/codrops/wp-content/banners/mailchimp.png" alt="Mailchimp"/>
+			<div class="cos__text">Your app is up and running! Now what? Seamlessly connect it to your marketing data. That’s what.</div>
+		</a>
+    			<!--/ End Weekly Sponsor -->
+		<!--  Sidebar sponsors  -->	
+		<a class="cos" href="http://bit.ly/DiviCodropsSidebar" target="_blank" rel="nofollow sponsored">
+			<img class="cos__img" src="https://tympanus.net/codrops/wp-content/banners/divi-premade-layouts-01.jpg" alt="Divi"/>
+			<div class="cos__text">Over 800 pre-made website layouts come packaged right inside of Divi for free. Jumpstart your design!</div>
+		</a>
+		<!--/ Sidebar sponsors -->
+
+		<!--div id="bsap_1275127" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div-->
+		<!-- 125x125 -->
+		<div id="bsap_1243201" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div>
+	</div>
+	<div class="ct-pat">
+		<div id="bsap_1298539" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div>
+	</div>
+    		
+    	<div class="clr"></div>
+</aside>
+
+				<div class="clr"></div>
+			    </div>
+</div>
+		<footer class="ct-footer">
+			<div class="ct-inner">
+				<nav>
+					<ul>
+						<li><a href="/codrops/category/tutorials/">Tutorials</a></li>
+						<li><a href="/codrops/category/articles/">Articles</a></li>
+						<li><a href="/codrops/category/playground/">Playground</a></li>
+						<li><a href="/codrops/category/blueprints/">Blueprints</a></li>
+					</ul>
+					<ul>
+						<li><a href="/codrops/css_reference/">CSS Reference</a></li>
+						<li><a href="/codrops/category/news/">News</a></li>
+						<li><a href="/codrops/category/freebies/">Freebies</a></li>
+						<li><a href="/codrops/collective/">Collective</a></li>
+					</ul>
+					<ul>
+						<li><a href="/codrops/about/">About</a></li>
+						<li><a href="/codrops/contact/">Contact</a></li>
+						<li><a href="/codrops/archives/">Archives</a></li>
+						<li><a href="/codrops/deals/">Deals</a></li>
+					</ul>
+					<ul>
+						<li><a href="/codrops/advertise/">Advertise</a></li>
+						<li><a href="/codrops/privacy-policy/">Privacy Policy</a></li>
+						<li><a href="/codrops/licensing/">License</a></li>
+						<li><a href="/codrops/credits/">Credits</a></li>
+					</ul>
+					<ul>
+						<li>Content delivered by <a href="https://www.stackpath.com/" title="Content Distribution Network" target="blank">StackPath</a></li>
+						<li>&copy; Codrops 2020</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+		<div id="cookie-law-info-bar"><span>Codrops uses cookies for its advertisement solutions and for analytics. We hope you're ok with this, but you can opt-out if you wish. Read our <a href="https://www.iubenda.com/privacy-policy/92067710">Privacy Policy</a> and <a href="https://www.iubenda.com/privacy-policy/92067710/cookie-policy">Cookie Policy</a>. <a role='button' tabindex='0' data-cli_action="accept" id="cookie_action_close_header"  class="small cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display:inline-block; ">OK</a></span></div><div id="cookie-law-info-again" style="display:none;"><span id="cookie_hdr_showagain">Privacy & Cookies Policy</span></div><div class="cli-modal" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+    <div class="cli-modal-content cli-bar-popup">
+      <button type="button" class="cli-modal-close" id="cliModalClose">
+        <svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+        <span class="wt-cli-sr-only">Close</span>
+      </button>
+      <div class="cli-modal-body">
+        <div class="cli-container-fluid cli-tab-container">
+    <div class="cli-row">
+        <div class="cli-col-12 cli-align-items-stretch cli-px-0">
+            <div class="cli-privacy-overview">
+                                                   
+                <div class="cli-privacy-content">
+                    <div class="cli-privacy-content-text"></div>
+                </div>
+                <a class="cli-privacy-readmore" data-readmore-text="Show more" data-readless-text="Show less"></a>            </div>
+        </div>  
+        <div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+              
+                            <div class="cli-tab-section">
+                    <div class="cli-tab-header">
+                        <a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab" >
+                            Necessary 
+                        </a>
+                    
+                    <span class="cli-necessary-caption">Always Enabled</span>                     </div>
+                    <div class="cli-tab-content">
+                        <div class="cli-tab-pane cli-fade" data-id="necessary">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+              
+                       
+        </div>
+    </div> 
+</div> 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<script type="text/javascript">
+  /* <![CDATA[ */
+  cli_cookiebar_settings='{"animate_speed_hide":"500","animate_speed_show":"500","background":"#989898","border":"#444","border_on":false,"button_1_button_colour":"#0099cc","button_1_button_hover":"#007aa3","button_1_link_colour":"#fff","button_1_as_button":true,"button_1_new_win":false,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#0099cc","button_2_as_button":false,"button_2_hidebar":false,"button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":true,"button_3_new_win":false,"button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#fff","button_4_as_button":true,"font_family":"inherit","header_fix":false,"notify_animate_hide":false,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"accept_close_reload":false,"reject_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#ffffff","show_once_yn":false,"show_once":"10000","logging_on":false,"as_popup":false,"popup_overlay":true,"bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"}';
+  /* ]]> */
+</script><script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/comment-reply.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/js/typeahead.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/js/hogan.min.js?ver=5.3.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wp_typeahead = {"ajaxurl":"https:\/\/tympanus.net\/codrops\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/js/wp-typeahead.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
+		</div><!--ct-container-->
+	</body>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Page Caching using disk: enhanced (Requested URI contains query) 
+Content Delivery Network via codropspz-tympanus.netdna-ssl.com
+Application Monitoring using New Relic
+
+Served from: tympanus.net @ 2020-03-30 08:45:59 by W3 Total Cache
+-->

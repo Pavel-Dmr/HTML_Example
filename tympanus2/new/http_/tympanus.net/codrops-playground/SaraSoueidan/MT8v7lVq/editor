@@ -1,0 +1,228 @@
+<script>window.window = window.window || {};window.gl_data = {"gl_editor":{"gl_code":{"html":"<div class=\"container\">\n  <p>The full list of 147 colors in CSS, sorted in alphabetical order.<\/p>\n  <table>\n    <tr>\n      <th>Color<\/th>\n      <th>Name<\/th>\n      <th>Hex Value<\/th>\n      <th>Decimal Value<\/th>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: aliceblue \"><\/td>\n      <td>aliceblue<\/td>\n      <td>#f0f8ff<\/td>\n      <td>240,248,255 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: antiquewhite \"><\/td>\n      <td>antiquewhite<\/td>\n      <td>#faebd7<\/td>\n      <td>250,235,215 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: aqua\"><\/td>\n      <td>aqua<\/td>\n      <td>#00ffff<\/td>\n      <td>0,255,255 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: aquamarine\"><\/td>\n      <td>aquamarine<\/td>\n      <td>#7fffd4<\/td>\n      <td>127,255,212<\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: azure\"><\/td>\n      <td>azure<\/td>\n      <td>#f0ffff<\/td>\n      <td>240,255,255<\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: beige\"><\/td>\n      <td>beige<\/td>\n      <td>#f5f5dc<\/td>\n      <td>245,245,220<\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: bisque\"><\/td>\n      <td>bisque<\/td>\n      <td>#ffe4c4<\/td>\n      <td>255,228,196<\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: black\"><\/td>\n      <td>black<\/td>\n      <td>#000000<\/td>\n      <td>0,0,0<\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: blanchedalmond\"><\/td>\n      <td>blanchedalmond<\/td>\n      <td>#ffebcd<\/td>\n      <td>255,235,205<\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: blue\"><\/td>\n      <td>blue<\/td>\n      <td>#0000ff<\/td>\n      <td>0,0,255<\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: blueviolet\"><\/td>\n      <td>blueviolet<\/td>\n      <td>#8a2be2<\/td>\n      <td>138,43,226 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: brown\"><\/td>\n      <td>brown<\/td>\n      <td>#a52a2a<\/td>\n      <td>165,42,42 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: burlywood\"><\/td>\n      <td>burlywood<\/td>\n      <td>#deb887<\/td>\n      <td>222,184,135 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: cadetblue\"><\/td>\n      <td>cadetblue<\/td>\n      <td>#5f9ea0<\/td>\n      <td>95,158,160 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: chartreuse\"><\/td>\n      <td>chartreuse<\/td>\n      <td>#7fff00<\/td>\n      <td>127,255,0 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: chocolate\"><\/td>\n      <td>chocolate<\/td>\n      <td>#d2691e<\/td>\n      <td>210,105,30 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: coral\"><\/td>\n      <td>coral<\/td>\n      <td>#ff7f50<\/td>\n      <td>255,127,80 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: cornflowerblue\"><\/td>\n      <td>cornflowerblue<\/td>\n      <td>#6495ed<\/td>\n      <td>100,149,237<\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: cornsilk\"><\/td>\n      <td>cornsilk<\/td>\n      <td>#fff8dc<\/td>\n      <td>255,248,220 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: crimson\"><\/td>\n      <td>crimson<\/td>\n      <td>#dc143c<\/td>\n      <td>220,20,60<\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: cyan\"><\/td>\n      <td>cyan<\/td>\n      <td>#00ffff<\/td>\n      <td>0,255,255 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkblue\"><\/td>\n      <td>darkblue<\/td>\n      <td>#00008b<\/td>\n      <td>0,0,139 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkcyan\"><\/td>\n      <td>darkcyan<\/td>\n      <td>#008b8b<\/td>\n      <td>0,139,139 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkgoldenrod\"><\/td>\n      <td>darkgoldenrod<\/td>\n      <td>#b8860b<\/td>\n      <td>184,134,11 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkgray\"><\/td>\n      <td>darkgray<\/td>\n      <td>#a9a9a9<\/td>\n      <td>169,169,169 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkgreen\"><\/td>\n      <td>darkgreen<\/td>\n      <td>#006400<\/td>\n      <td>0,100,0 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkgrey\"><\/td>\n      <td>darkgrey<\/td>\n      <td>#a9a9a9<\/td>\n      <td>169,169,169 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkkhaki\"><\/td>\n      <td>darkkhaki<\/td>\n      <td>#bdb76b<\/td>\n      <td>189,183,107 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkmagenta\"><\/td>\n      <td>darkmagenta<\/td>\n      <td>#8b008b<\/td>\n      <td>139,0,139 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkolivegreen\"><\/td>\n      <td>darkolivegreen<\/td>\n      <td>#556b2f<\/td>\n      <td>85,107,47 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkorange\"><\/td>\n      <td>darkorange<\/td>\n      <td>#ff8c00<\/td>\n      <td>255,140,0 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkorchid\"><\/td>\n      <td>darkorchid<\/td>\n      <td>#9932cc<\/td>\n      <td>153,50,204 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkred\"><\/td>\n      <td>darkred<\/td>\n      <td>#8b0000<\/td>\n      <td>139,0,0 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darksalmon\"><\/td>\n      <td>darksalmon<\/td>\n      <td>#e9967a <\/td>\n      <td>233,150,122 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkseagreen\"><\/td>\n      <td>darkseagreen<\/td>\n      <td>#8fbc8f<\/td>\n      <td>143,188,143 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkslateblue\"><\/td>\n      <td>darkslateblue<\/td>\n      <td>#483d8b<\/td>\n      <td>72,61,139 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkslategray\"><\/td>\n      <td>darkslategray<\/td>\n      <td>#2f4f4f<\/td>\n      <td>47,79,79 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkslategrey\"><\/td>\n      <td>darkslategrey<\/td>\n      <td>#2f4f4f<\/td>\n      <td>47,79,79 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkturquoise\"><\/td>\n      <td>darkturquoise<\/td>\n      <td>#00ced1<\/td>\n      <td>0,206,209 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: darkviolet\"><\/td>\n      <td>darkviolet<\/td>\n      <td>#9400d3<\/td>\n      <td>148,0,211 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: deepPink\"><\/td>\n      <td>deepPink<\/td>\n      <td>#ff1493<\/td>\n      <td>255,20,147 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: deepskyblue\"><\/td>\n      <td>deepskyblue<\/td>\n      <td>#00bfff<\/td>\n      <td>0,191,255 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: dimgray\"><\/td>\n      <td>dimgray<\/td>\n      <td>#696969<\/td>\n      <td>105,105,105 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: dimgrey\"><\/td>\n      <td>dimgrey<\/td>\n      <td>#696969<\/td>\n      <td>105,105,105 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: dodgerblue\"><\/td>\n      <td>dodgerblue<\/td>\n      <td>#1e90ff<\/td>\n      <td>30,144,255 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: firebrick\"><\/td>\n      <td>firebrick<\/td>\n      <td>#b22222<\/td>\n      <td>178,34,34 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: floralwhite\"><\/td>\n      <td>floralwhite<\/td>\n      <td>#fffaf0<\/td>\n      <td>255,250,240 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: forestgreen\"><\/td>\n      <td>forestgreen<\/td>\n      <td>#228b22<\/td>\n      <td>34,139,34 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: fuchsia\"><\/td>\n      <td>fuchsia<\/td>\n      <td>#ff00ff<\/td>\n      <td>255,0,255 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: gainsboro\"><\/td>\n      <td>gainsboro<\/td>\n      <td>#dcdcdc<\/td>\n      <td>220,220,220 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: ghostwhite\"><\/td>\n      <td>ghostwhite<\/td>\n      <td>#f8f8ff<\/td>\n      <td>248,248,255 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: gold\"><\/td>\n      <td>gold<\/td>\n      <td>#ffd700<\/td>\n      <td>255,215,0 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: goldenrod\"><\/td>\n      <td>goldenrod<\/td>\n      <td>#daa520<\/td>\n      <td>218,165,32 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: gray\"><\/td>\n      <td>gray<\/td>\n      <td>#808080<\/td>\n      <td>128,128,128 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: green\"><\/td>\n      <td>green<\/td>\n      <td>#008000<\/td>\n      <td>0,128,0 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: greenyellow\"><\/td>\n      <td>greenyellow<\/td>\n      <td>#adff2f<\/td>\n      <td>173,255,47 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: grey\"><\/td>\n      <td>grey<\/td>\n      <td>#808080<\/td>\n      <td>128,128,128 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: honeydew\"><\/td>\n      <td>honeydew<\/td>\n      <td>#f0fff0<\/td>\n      <td>240,255,240 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: hotpink\"><\/td>\n      <td>hotpink<\/td>\n      <td>#ff69b4<\/td>\n      <td>255,105,180 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: indianred\"><\/td>\n      <td>indianred<\/td>\n      <td>#cd5c5c<\/td>\n      <td>205,92,92 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: indigo\"><\/td>\n      <td>indigo<\/td>\n      <td>#4b0082<\/td>\n      <td>75,0,130 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: ivory\"><\/td>\n      <td>ivory<\/td>\n      <td>#fffff0<\/td>\n      <td>255,255,240 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: khaki\"><\/td>\n      <td>khaki<\/td>\n      <td>#f0e68c<\/td>\n      <td>240,230,140 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lavender\"><\/td>\n      <td>lavender<\/td>\n      <td>#e6e6fa<\/td>\n      <td>230,230,250 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lavenderblush\"><\/td>\n      <td>lavenderblush<\/td>\n      <td>#fff0f5 <\/td>\n      <td>255,240,245 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lawngreen\"><\/td>\n      <td>lawngreen<\/td>\n      <td>#7cfc00<\/td>\n      <td>124,252,0 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lemonchiffon\"><\/td>\n      <td>lemonchiffon<\/td>\n      <td>#fffacd <\/td>\n      <td>255,250,205 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lightblue\"><\/td>\n      <td>lightblue<\/td>\n      <td>#add8e6<\/td>\n      <td>173,216,230 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lightcoral\"><\/td>\n      <td>lightcoral<\/td>\n      <td>#f08080<\/td>\n      <td>240,128,128 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lightcyan\"><\/td>\n      <td>lightcyan<\/td>\n      <td>#e0ffff<\/td>\n      <td>224,255,255 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lightgoldenrodyellow\"><\/td>\n      <td>lightgoldenrodyellow<\/td>\n      <td>#fafad2<\/td>\n      <td>250,250,210<\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lightgray\"><\/td>\n      <td>lightgray<\/td>\n      <td>#d3d3d3<\/td>\n      <td>211,211,211 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lightgreen\"><\/td>\n      <td>lightgreen<\/td>\n      <td>#90ee90<\/td>\n      <td>144,238,144 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lightgrey\"><\/td>\n      <td>lightgrey<\/td>\n      <td>#d3d3d3<\/td>\n      <td>211,211,211 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lightpink\"><\/td>\n      <td>lightpink<\/td>\n      <td>#ffb6c1<\/td>\n      <td>255,182,193 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lightsalmon\"><\/td>\n      <td>lightsalmon<\/td>\n      <td>#ffa07a<\/td>\n      <td>255,160,122 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lightseagreen\"><\/td>\n      <td>lightseagreen<\/td>\n      <td>#20b2aa<\/td>\n      <td>32,178,170 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lightskyblue\"><\/td>\n      <td>lightskyblue<\/td>\n      <td>#87cefa<\/td>\n      <td>135,206,250 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lightslategray\"><\/td>\n      <td>lightslategray<\/td>\n      <td>#778899<\/td>\n      <td>119,136,153 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lightslategrey\"><\/td>\n      <td>lightslategrey<\/td>\n      <td>#778899<\/td>\n      <td>119,136,153 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lightsteelblue\"><\/td>\n      <td>lightsteelblue<\/td>\n      <td>#b0c4de<\/td>\n      <td>176,196,222 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lightyellow\"><\/td>\n      <td>lightyellow<\/td>\n      <td>#ffffe0<\/td>\n      <td>255,255,224 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: lime\"><\/td>\n      <td>lime<\/td>\n      <td>#00ff00<\/td>\n      <td>0,255,0 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: limegreen\"><\/td>\n      <td>limegreen<\/td>\n      <td>#32cd32<\/td>\n      <td>50,205,50 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: linen\"><\/td>\n      <td>linen<\/td>\n      <td>#faf0e6<\/td>\n      <td>250,240,230 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: magenta\"><\/td>\n      <td>magenta<\/td>\n      <td>#ff00ff<\/td>\n      <td>255,0,255 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: maroon\"><\/td>\n      <td>maroon<\/td>\n      <td>#800000<\/td>\n      <td>128,0,0 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: mediumaquamarine\"><\/td>\n      <td>mediumaquamarine<\/td>\n      <td>#66cdaa<\/td>\n      <td>102,205,170 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: mediumblue\"><\/td>\n      <td>mediumblue<\/td>\n      <td>#0000cd<\/td>\n      <td>0,0,205 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: mediumorchid\"><\/td>\n      <td>mediumorchid<\/td>\n      <td>#ba55d3<\/td>\n      <td>186,85,211 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: mediumpurple\"><\/td>\n      <td>mediumpurple<\/td>\n      <td>#9370db<\/td>\n      <td>147,112,219 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: mediumseagreen\"><\/td>\n      <td>mediumseagreen<\/td>\n      <td>#3cb371<\/td>\n      <td>60,179,113 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: mediumslateblue\"><\/td>\n      <td>mediumslateblue<\/td>\n      <td>#7b68ee<\/td>\n      <td>123,104,238 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: mediumspringgreen\"><\/td>\n      <td>mediumspringgreen<\/td>\n      <td>#00fa9a<\/td>\n      <td>0,250,154 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: mediumturquoise\"><\/td>\n      <td>mediumturquoise<\/td>\n      <td>#48d1cc<\/td>\n      <td>72,209,204 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: mediumvioletred\"><\/td>\n      <td>mediumvioletred<\/td>\n      <td>#c71585<\/td>\n      <td>199,21,133 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: midnightblue\"><\/td>\n      <td>midnightblue<\/td>\n      <td>#191970<\/td>\n      <td>25,25,112 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: mintcream\"><\/td>\n      <td>mintcream<\/td>\n      <td>#f5fffa<\/td>\n      <td>245,255,250 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: mistyrose\"><\/td>\n      <td>mistyrose<\/td>\n      <td>#ffe4e1<\/td>\n      <td>255,228,225 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: moccasin\"><\/td>\n      <td>moccasin<\/td>\n      <td>#ffe4b5<\/td>\n      <td>255,228,181 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: navajowhite\"><\/td>\n      <td>navajowhite<\/td>\n      <td>#ffdead<\/td>\n      <td>255,222,173 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: navy\"><\/td>\n      <td>navy<\/td>\n      <td>#000080<\/td>\n      <td>0,0,128 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: oldlace\"><\/td>\n      <td>oldlace<\/td>\n      <td>#fdf5e6<\/td>\n      <td>253,245,230 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: olive\"><\/td>\n      <td>olive<\/td>\n      <td>#808000<\/td>\n      <td>128,128,0 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: olivedrab\"><\/td>\n      <td>olivedrab<\/td>\n      <td>#6b8e23<\/td>\n      <td>107,142,35 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: orange\"><\/td>\n      <td>orange<\/td>\n      <td>#ffa500<\/td>\n      <td>255,165,0 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: orangered\"><\/td>\n      <td>orangered<\/td>\n      <td>#ff4500<\/td>\n      <td>255,69,0 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: orchid\"><\/td>\n      <td>orchid<\/td>\n      <td>#da70d6<\/td>\n      <td>218,112,214 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: palegoldenrod\"><\/td>\n      <td>palegoldenrod<\/td>\n      <td>#eee8aa<\/td>\n      <td>238,232,170 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: palegreen\"><\/td>\n      <td>palegreen<\/td>\n      <td>#98fb98<\/td>\n      <td>152,251,152 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: paleturquoise\"><\/td>\n      <td>paleturquoise<\/td>\n      <td>#afeeee<\/td>\n      <td>175,238,238 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: palevioletred\"><\/td>\n      <td>palevioletred<\/td>\n      <td>#db7093<\/td>\n      <td>219,112,147 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: papayawhip\"><\/td>\n      <td>papayawhip<\/td>\n      <td>#ffefd5<\/td>\n      <td>255,239,213 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: peachpuff\"><\/td>\n      <td>peachpuff<\/td>\n      <td>#ffdab9<\/td>\n      <td>255,218,185 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: peru\"><\/td>\n      <td>peru<\/td>\n      <td>#cd853f<\/td>\n      <td>205,133,63 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: pink\"><\/td>\n      <td>pink<\/td>\n      <td>#ffc0cb<\/td>\n      <td>255,192,203 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: plum\"><\/td>\n      <td>plum<\/td>\n      <td>#dda0dd<\/td>\n      <td>221,160,221 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: powderblue\"><\/td>\n      <td>powderblue<\/td>\n      <td>#b0e0e6<\/td>\n      <td>176,224,230 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: purple\"><\/td>\n      <td>purple<\/td>\n      <td>#800080<\/td>\n      <td>128,0,128 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: rebeccapurple\"><\/td>\n      <td>rebeccapurple<\/td>\n      <td>#663399<\/td>\n      <td>102,51,153 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: red\"><\/td>\n      <td>red<\/td>\n      <td>#ff0000<\/td>\n      <td>255,0,0 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: rosybrown\"><\/td>\n      <td>rosybrown<\/td>\n      <td>#bc8f8f<\/td>\n      <td>188,143,143 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: royalblue\"><\/td>\n      <td>royalblue<\/td>\n      <td>#4169e1<\/td>\n      <td>65,105,225 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: saddlebrown\"><\/td>\n      <td>saddlebrown<\/td>\n      <td>#8b4513<\/td>\n      <td>139,69,19 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: salmon\"><\/td>\n      <td>salmon<\/td>\n      <td>#fa8072<\/td>\n      <td>250,128,114 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: sandybrown\"><\/td>\n      <td>sandybrown<\/td>\n      <td>#f4a460<\/td>\n      <td>244,164,96 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: seagreen\"><\/td>\n      <td>seagreen<\/td>\n      <td>#2e8b57<\/td>\n      <td>46,139,87 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: seashell\"><\/td>\n      <td>seashell<\/td>\n      <td>#fff5ee<\/td>\n      <td>255,245,238 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: sienna\"><\/td>\n      <td>sienna<\/td>\n      <td>#a0522d<\/td>\n      <td>160,82,45 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: silver\"><\/td>\n      <td>silver<\/td>\n      <td>#c0c0c0<\/td>\n      <td>192,192,192 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: skyblue\"><\/td>\n      <td>skyblue<\/td>\n      <td>#87ceeb<\/td>\n      <td>135,206,235 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: slateblue\"><\/td>\n      <td>slateblue<\/td>\n      <td>#6a5acd<\/td>\n      <td>106,90,205 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: slategray\"><\/td>\n      <td>slategray<\/td>\n      <td>#708090<\/td>\n      <td>112,128,144 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: slategrey\"><\/td>\n      <td>slategrey<\/td>\n      <td>#708090<\/td>\n      <td>112,128,144 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: snow\"><\/td>\n      <td>snow<\/td>\n      <td>#fffafa<\/td>\n      <td>255,250,250 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: springgreen\"><\/td>\n      <td>springgreen<\/td>\n      <td>#00ff7f<\/td>\n      <td>0,255,127 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: steelblue\"><\/td>\n      <td>steelblue<\/td>\n      <td>#4682b4<\/td>\n      <td>70,130,180 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: tan\"><\/td>\n      <td>tan<\/td>\n      <td>#d2b48c<\/td>\n      <td>210,180,140 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: teal\"><\/td>\n      <td>teal<\/td>\n      <td>#008080<\/td>\n      <td>0,128,128 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: thistle\"><\/td>\n      <td>thistle<\/td>\n      <td>#d8bfd8<\/td>\n      <td>216,191,216 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: tomato\"><\/td>\n      <td>tomato<\/td>\n      <td>#ff6347<\/td>\n      <td>255,99,71 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: turquoise\"><\/td>\n      <td>turquoise<\/td>\n      <td>#40e0d0<\/td>\n      <td>64,224,208 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: violet\"><\/td>\n      <td>violet<\/td>\n      <td>#ee82ee<\/td>\n      <td>238,130,238 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: wheat\"><\/td>\n      <td>wheat<\/td>\n      <td>#f5deb3<\/td>\n      <td>245,222,179 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: white\"><\/td>\n      <td>white<\/td>\n      <td>#ffffff<\/td>\n      <td>255,255,255 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: whitesmoke\"><\/td>\n      <td>whitesmoke<\/td>\n      <td>#f5f5f5<\/td>\n      <td>245,245,245 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: yellow\"><\/td>\n      <td>yellow<\/td>\n      <td>#ffff00<\/td>\n      <td>255,255,0 <\/td>\n    <\/tr>\n    <tr>\n      <td style=\"background-color: yellowgreen\"><\/td>\n      <td>yellowgreen<\/td>\n      <td>#9acd32<\/td>\n      <td>154,205,50 <\/td>\n    <\/tr>\n  <\/table>\n<\/div>  ","css":"body {\n  font-size: 1.1em;\n  background-color: #fff;\n  font-family: 'Lato', sans-serif;\n}\n\n.container {\n  margin: 40px auto;\n  max-width: 650px;\n}\n\ntable {\n  margin: 50px auto;\n  width: 100%;\n  border-collapse: collapse;\n}\n\nth,\ntd,\ntr {\n  padding: 1em;\n  border: 1px solid #eee;\n}\n\ntd:nth-of-type(3) {\n  text-transform: uppercase;\n}\n\ntr:nth-child(odd) {\n  background-color: #f5f5f5;\n}","js":""},"gl_uuid":"MT8v7lVq","gl_title":"#cssref &lt;color&gt; (2)","gl_description":"Demo for the Codrops CSS Reference entry <a href=\"http:\/\/tympanus.net\/codrops\/?post_type=css_reference&p=19889\">&lt;color&gt;<\/a>","gl_tags":"","gl_isPicked":false,"gl_isPrivate":false,"gl_hasAd":false,"gl_url_editor":"http:\/\/tympanus.net\/codrops-playground\/SaraSoueidan\/MT8v7lVq\/editor"},"gl_assets":{"normalize":"http:\/\/tympanus.net\/codrops-playground\/demolibs\/normalize.min.css"},"gl_user_auth":false,"gl_user_owner":false,"gl_panels":{"html":true,"css":true,"js":true,"result":true},"gl_rootLocation":"codrops-playground","gl_outputLocation":"https:\/\/suru.tympanus.net\/"};</script><!DOCTYPEhtml>
+
+<html lang="en" class="page-default">
+
+	<head>
+				<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+<meta name="_token" content="84xSqigqVLjItwFYAzc8eVrha6yzXaYdhQXcGNbI" />
+<meta name="description" content="Demo for the Codrops CSS Reference entry &lt;a href=&quot;http://tympanus.net/codrops/?post_type=css_reference&amp;p=19889&quot;&gt;&lt;color&gt;&lt;/a&gt;" />
+<meta name="keywords" content="" />
+<meta name="author" content="SaraSoueidan" />
+
+				<link rel="apple-touch-icon" sizes="57x57" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon-160x160.png" sizes="160x160">
+		<link rel="icon" type="image/png" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon-32x32.png" sizes="32x32">
+		<link rel="shortcut icon" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon.ico">
+		<meta name="msapplication-TileColor" content="#edf2f5">
+		<meta name="msapplication-TileImage" content="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/mstile-144x144.png">
+		<meta name="msapplication-config" content="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		
+				<script src="//use.typekit.net/lci1icx.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		
+		<title>#cssref &lt;color&gt; (2) - Codrops Playground</title>
+
+		<link rel="stylesheet" type="text/css" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/js/p/all-css-cm.min.css" />
+<link rel="stylesheet" type="text/css" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/css/style-editor.min.css" />
+
+		<script src="/codrops-playground/332d5270da28388399324d79ffcf4a45/js/p/all-h-demolayout.min.js"></script>
+
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59174661-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body>
+		<noscript>
+	<div class="no-js-message"><i class="fa fa-fw fa-exclamation-triangle"></i><span>This web application requires JavaScript to work. Please enable JavaScript in your browser.</span></div>
+</noscript>		
+		<div id="cdeditor" class="editor-wrap theme-light">
+	<div class="controls">
+		<h1 class="logo">
+	<a>
+		<img src="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/codrops.svg" alt=""/>
+		<span class="hide">Codrops Playground</span>
+	</a>
+</h1>
+		
+				<div class="meta meta--guest">
+								<button class="meta__icon button--text button--silent" data-dialog="demo-info-dialog">
+				<i class="fa fa-circle-info meta__icon"></i>
+						</button>
+			<h1 class="meta__title"><span class="meta__em js-demo-title">#cssref &lt;color&gt; (2)</span> by <span class="meta__em">SaraSoueidan</span></h1>
+		</div>
+
+		<div class="actions actions--side">
+	<button class="button button--action button--icon button--runjs hide" id="runjs"><i class="fa fa-refresh"></i><span>Run</span></button>
+	<div class="action action--ddown">
+		<button class="button button--empty button--dd" id="layout-button" title="Settings">
+			<i class="fa fa-cogwheel"></i>
+		</button>
+		<div class="ddown">
+			<div class="control js-control-code">
+				<span class="control__field">
+					<input type="checkbox" id="option-result" data-panel="result" checked />
+					<i class="fa fa-unchecked control__box control__box--off"></i>
+					<i class="fa fa-check control__box control__box--on"></i>
+					<label for="option-result">Result</label>
+				</span>
+				<span class="control__field">
+					<input type="checkbox" id="option-html" data-panel="html" checked />
+					<i class="fa fa-unchecked control__box control__box--off"></i>
+					<i class="fa fa-check control__box control__box--on"></i>
+					<label for="option-html">HTML</label>
+				</span>
+				<span class="control__field">
+					<input type="checkbox" id="option-css" data-panel="css" checked />
+					<i class="fa fa-unchecked control__box control__box--off"></i>
+					<i class="fa fa-check control__box control__box--on"></i>
+					<label for="option-css">CSS</label>
+				</span>
+				<span class="control__field">
+					<input type="checkbox" id="option-js" data-panel="js" checked />
+					<i class="fa fa-unchecked control__box control__box--off"></i>
+					<i class="fa fa-check control__box control__box--on"></i>
+					<label for="option-js">JS</label>
+				</span>
+			</div>
+			<div class="control control--highlight">
+				<span class="control__field">
+					<input type="checkbox" id="autorunjs" checked />
+					<i class="fa fa-unchecked control__box control__box--off"></i>
+					<i class="fa fa-check control__box control__box--on"></i>
+					<label for="autorunjs">Autorun JS</label>
+				</span>
+			</div>
+			<div class="control control--layout cf">
+				<span class="control__field control__field--half">
+					<input type="radio" id="layout-result-code_horizontal" data-layout="result-code" data-orientation="horizontal" name="layouts" />
+					<svg width="60" height="60" viewBox="0 0 60 60" preserveAspectRatio="none">
+						<path d="m5.5,36.5l16,0l0,18l-16,0l0,-18z"/><path d="m21.5,36.5l17,0l0,18l-17,0l0,-18z"/><path d="m38.5,36.5l16,0l0,18l-16,0l0,-18z"/><path d="m5.5,4.5l49,0l0,32l-49,0l0,-32z"/>
+					</svg>
+				</span>
+				<span class="control__field control__field--half">
+					<input type="radio" id="layout-code-result_horizontal" data-layout="code-result" data-orientation="horizontal" name="layouts" />
+					<svg width="60" height="60" viewBox="0 0 60 60" preserveAspectRatio="none">
+						<path d="M54.5,22.5h-16v-18h16V22.5z"/><path d="M38.5,22.5h-17v-18h17V22.5z"/><path d="M21.5,22.5h-16v-18h16V22.5z"/><path d="M54.5,54.5h-49v-32h49V54.5z"/>
+					</svg>
+				</span>
+				<span class="control__field control__field--half">
+					<input type="radio" id="layout-code-result_vertical" data-layout="code-result" data-orientation="vertical" name="layouts" />
+					<svg width="60" height="60" viewBox="0 0 60 60" preserveAspectRatio="none">
+						<path d="M23,5v16H5V5H23z"/><path d="M23,21v17H5V21H23z"/><path d="M23,38v16H5V38H23z"/><path d="M55,5v49H23V5H55z"/>
+					</svg>
+				</span>
+				<span class="control__field control__field--half">
+					<input type="radio" id="layout-result-code_vertical" data-layout="result-code" data-orientation="vertical" name="layouts" />
+					<svg width="60" height="60" viewBox="0 0 60 60" preserveAspectRatio="none">
+						<path d="M55,5v16H37V5H55z"/><path d="M55,21v17H37V21H55z"/><path d="M55,38v16H37V38H55z"/><path d="M37,5v49H5V5H37z"/>
+					</svg>
+				</span>
+			</div>
+
+		</div>	</div>	<div class="action" data-dialog="info-version-dialog">
+		<button class="button button--empty" title="About">
+			<i class="fa fa-circle-question-mark"></i>
+		</button>
+	</div>
+
+	
+</div>
+	</div>	<div class="editor">
+	<div class="panel result">
+		<!--iframe></iframe-->
+	</div>
+	<div class="panel code view-html-css-js">
+		<div class="panel-single html">
+			<div class="panel-header">
+				<h3 class="panel-header__title">HTML</h3>
+				<div class="panel-header__options">
+					<button class="panel-option panel-option--remove" data-panel="html"><i class="fa fa-fw fa-remove"></i></button>
+					<button class="panel-option panel-option--expand" data-panel="html"><i class="fa fa-fw fa-expand"></i><i class="fa fa-fw fa-contract"></i></button>
+				</div>
+			</div>
+			<div class="panel-edit html-edit"></div>
+		</div>
+		<div class="panel-single css">
+			<div class="panel-header">
+				<h3 class="panel-header__title">CSS</h3>
+				<div class="panel-header__options">
+					<button class="panel-option panel-option--remove" data-panel="css"><i class="fa fa-fw fa-remove"></i></button>
+					<button class="panel-option panel-option--expand" data-panel="css"><i class="fa fa-fw fa-expand"></i><i class="fa fa-fw fa-contract"></i></button>
+				</div>
+			</div>
+			<div class="panel-edit css-edit"></div>
+		</div>
+		<div class="panel-single js">
+			<div class="panel-header">
+				<h3 class="panel-header__title">JS</h3>
+				<div class="panel-header__options">
+					<button class="panel-option panel-option--remove" data-panel="js"><i class="fa fa-fw fa-remove"></i></button>
+					<button class="panel-option panel-option--expand" data-panel="js"><i class="fa fa-fw fa-expand"></i><i class="fa fa-fw fa-contract"></i></button>
+				</div>
+			</div>
+			<div class="panel-edit js-edit"></div>
+		</div>
+		<div class="dragme dragme--first"></div>
+		<div class="dragme dragme--second"></div>
+	</div>
+	<div class="dragme--main-helper"></div>
+	<div class="dragme dragme--main"></div>
+</div>	
+	<input id="page-action" type="hidden" value="edit"/>
+</div>
+	<div id="demo-info-dialog" class="dialog dialog--overlay">
+	<div class="dialog__inner">
+		<button class="dialog__close" data-dialog-close><i class="fa fa-fw fa-close"></i></button>
+		<div class="text-block">
+			<h2>#cssref &lt;color&gt; (2)</h2>
+			<span class="silent">by <strong>SaraSoueidan</strong> on <time datetime="2015-02-02T10:32:34">February 2, 2015</time></span>
+			<div><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<?xml encoding="UTF-8"><html><body><p>Demo for the Codrops CSS Reference entry <a href="http://tympanus.net/codrops/?post_type=css_reference&amp;p=19889">&lt;color&gt;</a></p></body></html>
+</div>
+					</div>
+	</div>
+</div>
+
+<div id="info-version-dialog" class="dialog dialog--overlay">
+	<div class="dialog__inner">
+		<button class="dialog__close" data-dialog-close><i class="fa fa-fw fa-close"></i></button>
+		<div class="text-block align-center">
+			<h1 class="logo logo--large">
+				<img src="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/codrops.svg" alt="Codrops Logo">
+				<span>Codrops Playground</span>
+			</h1>
+			<h3 class="silent">Version 0.0.9 (alpha)</h3>
+			<p>Codrops Playground is currently in development with many features to come, including mobile support. We are in alpha stage right now, so if you find a bug, please send a mail to <a href="mailto:playground@codrops.com">playground@codrops.com</a> or use the <a href="http://tympanus.net/codrops/contact/">contact form</a> on Codrops.</p>
+			<p>If you'd like to stay updated, follow us on Twitter <a href="https://twitter.com/codrops">@codrops</a>. <strong>Thank you and stay tuned :)</strong></p>
+		</div>
+	</div>
+</div>
+
+
+		
+
+<script src="/codrops-playground/332d5270da28388399324d79ffcf4a45/js/p/all-b-demolayout.min.js"></script>
+	</body>
+</html>

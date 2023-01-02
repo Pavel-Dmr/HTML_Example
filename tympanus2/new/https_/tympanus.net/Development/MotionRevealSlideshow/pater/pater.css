@@ -1,0 +1,145 @@
+/* Pater */
+.pater {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 1rem 0.5rem;
+	font-family: "sofia-pro", Arial, sans-serif;
+	background: #585ad5;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+.pater::after {
+	content: 'Sponsor';
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 10px;
+	padding: 0 0.25rem;
+	color: #2a2b77;
+}
+
+.pater__pixel {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.pater svg {
+	display: none;
+}
+
+.pater__title {
+	position: relative;
+	font-size: 3.35vw;
+	margin: 0 0 0 3rem;
+	color: #fff;
+}
+
+.pater__text-hover {
+	display: none;
+}
+
+.pater__img {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -1rem;
+	height: 2rem;
+}
+
+@media screen and (min-width: 53em) {
+	.pater {
+		right: 0;
+		bottom: 0;
+		max-width: 50vw;
+		height: 250px;
+		width: 386px;
+		left: auto;
+		top: auto;
+		padding: 0;
+		pointer-events: none;
+		background: transparent;
+		transform: scale(0.855);
+		transform-origin: 100% 100%;
+	}
+
+	.pater::after {
+		display: none;
+	}
+
+	.pater__pixel {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.pater svg {
+		display: block;
+		max-width: 100%;
+	}
+
+	.pater__title {
+		position: absolute;
+		font-size: 28px;
+		left: 46px;
+		line-height: 1.25;
+		text-align: center;
+		width: 60%;
+		bottom: 60px;
+		margin: 0;
+		color: #fff;
+		transition: opacity 0.3s;
+	}
+
+	.pater:hover .pater__title {
+		opacity: 0;
+	}
+
+	.pater__text-hover {
+		position: absolute;
+		display: block;
+		top: 60px;
+		left: 0;
+		width: 82%;
+		text-align: center;
+		font-size: 18px;
+		color: #fff;
+		opacity: 0;
+		transform: translate3d(0,30px,0);
+		transition: opacity 0.3s, transform 0.3s;
+	}
+
+	.pater__img {
+		bottom: 5px;
+		left: 35px;
+		margin-top: 0;
+		top: auto;
+		display: block;
+		opacity: 0;
+		height: 157px;
+		transform: translate3d(0,30px,0);
+		transition: opacity 0.3s, transform 0.3s;
+	}
+	.pater:hover .pater__img,
+	.pater:hover .pater__text-hover {
+		opacity: 1;
+		transform: translate3d(0,0,0);
+	}
+
+	.pater:hover .pater__img {
+		transition-delay: 0.2s;
+	}
+
+	.pater__arrow-circle:hover {
+		fill: #FF3D57;
+		transition: fill 0.3s;
+	}
+
+	.pater__arrow-circle:hover + .pater__arrow {
+		fill: #FFCD03;
+		transition: fill 0.3s;
+	}
+}

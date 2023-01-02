@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>풀 스크린 3D레이아웃</title>
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/Main.js"></script>
+  </head>
+  <body>
+    <!-- TODO wrap 시작 -->
+    <div class="wrap">
+      <!-- nav 영역에 보여줄 버튼(메뉴) -->
+      <a href="#" class="btnMenu">
+        <!-- 햄버거 메뉴 아이콘 -->
+        <i class="fa fa-navicon"></i>
+      </a>
+      <!-- 내비게이션 메뉴(좌측 사이드바) 영역 -->
+      <nav class="sidebar">
+        <!-- 로고영역 -->
+        <h1><img src="images/logo.png" alt="" /></h1>
+        <!-- 메뉴(#gnb) -->
+        <!-- ul#gnb>(li>a)*3-->
+        <ul id="gnb">
+          <li><a href="#">Homme</a></li>
+          <li><a href="#">Girl</a></li>
+          <li><a href="#">Kids</a></li>
+        </ul>
+      </nav>
+      <!-- 3개의 컨텐츠 박스(페이지)를 구성하는 영역 -->
+      <section class="">
+        <!-- 페이지1 : Homme -->
+        <!-- TODO page1 on 클래스 : 기본적으로 보여지는 페이지 -->
+        <div class="page1 on">
+          <p><strong>Vogue Homme</strong></p>
+          <p></p>
+          <p>
+            <em
+              ><a href="#"><i class="fa fa-twitter"></i></a
+            ></em>
+            <em
+              ><a href="#"><i class="fa fa-facebook"></i></a
+            ></em>
+            <em
+              ><a href="#"><i class="fa fa-envelope"></i></a
+            ></em>
+          </p>
+          <p></p>
+          <p></p>
+          <p><span>Travis Crown</span></p>
+          <p>
+            <video autoplay loop preload muted>
+              <source src="media/vid.mp4" type="video/mp4" />
+            </video>
+          </p>
+          <p></p>
+          <p><span>Best Qualified Goods</span></p>
+          <p></p>
+          <p><span>Sports</span></p>
+        </div>
+        <!-- 페이지2 : Girl -->
+        <div class="page2">
+          <p><span>tremendous</span></p>
+          <p></p>
+          <p><strong>Vogue Girl</strong></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p><span>Accessories</span></p>
+          <p></p>
+          <p><span>Jewelry</span></p>
+          <p></p>
+          <p></p>
+        </div>
+        <!-- 페이지3 : Kids -->
+        <div class="page3">
+          <p></p>
+          <p><span>Play &amp; Dolls</span></p>
+          <p></p>
+          <p><strong>Vogue Kids</strong></p>
+          <p></p>
+          <p><span>Clothes</span></p>
+          <p></p>
+        </div>
+      </section>
+    </div>
+    <!-- TODO wrap 종료 -->
+  </body>
+</html>

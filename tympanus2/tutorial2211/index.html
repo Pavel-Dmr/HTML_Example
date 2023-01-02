@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Image Overlay with Toolbar - Codrops</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <script type="text/javascript" src="jquery-1.3.2.js"></script>
+        <style>
+            .image_container{
+                width:500px;
+                height:375px;
+                padding:5px;              
+                background-color:#f7f7f7;
+                border:1px solid #ccc;
+                -moz-box-shadow: 0 1px 3px #777;
+                -webkit-box-shadow: 0 1px 3px #777;
+                margin:40px auto;
+            }           
+            .transparent{
+                opacity: 0.6;
+            }
+            ul.toolbar{
+                position:absolute;
+                width:500px;
+                height:52px;
+                margin:0px;
+                padding:0px;
+                background-color:#fff;
+                border-bottom:2px solid #ccc;
+                list-style-type:none;				
+            }
+            ul.toolbar li{
+                display:inline;                            
+            }
+            ul.toolbar li a, .navigation a{ 
+                float:left;
+                cursor:pointer;
+                width:70px;
+                height:52px;
+                opacity: 0.6;
+            }		
+            ul.toolbar li a:hover, .navigation a:hover{                
+                opacity: 1.0;
+            }
+            a.label{
+                background:#fff url(icons/label.png) no-repeat center center;
+            }
+            a.fav{
+                background:#fff url(icons/favorite.png) no-repeat center center;
+            }
+            a.shop{
+                background:#fff url(icons/shopping_cart.png) no-repeat center center;
+            }
+            a.zoomin{
+                background:#fff url(icons/zoom_in.png) no-repeat center center;
+            }
+            a.zoomout{
+                background:#fff url(icons/zoom_out.png) no-repeat center center;
+            }
+            a.fullscreen{
+                background:#fff url(icons/fullscreen.png) no-repeat center center;
+            }
+            a.info{
+                background:#fff url(icons/info.png) no-repeat center center;
+            }
+            a.edit{
+                background:#fff url(icons/edit.png) no-repeat center center;
+            }
+
+            .navigation{
+                width:500px;
+                height:52px;
+                position:absolute;
+                margin-top:-58px;
+                border-top:2px solid #ccc;
+                background-color:#fff;
+            }
+
+            a.previous{
+                float:left;
+                background:#fff url(icons/prev.png) no-repeat center center;
+            }
+            a.next{
+                float:right;
+                background:#fff url(icons/next.png) no-repeat center center;
+            }
+            span.price{
+                position:absolute;
+                color:#888;
+                font-weight:bold;
+                font-size:26px;
+                margin:10px 0px 0px 140px;
+                font-family: Arial;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="image_container" id="img_cont">            
+            <ul class="toolbar transparent" id="tlbar" style="display:none;">
+                <li><a class="zoomin"></a></li>
+                <li><a class="zoomout"></a></li>
+                <li><a class="shop"></a></li>
+                <li><a class="fav"></a></li>
+                <li><a class="edit"></a></li>
+                <li><a class="label"></a></li>
+                <li><a class="info"></a></li>
+            </ul>
+            <img src="example.jpg" alt="example" width="500" height="375"/> 
+            <div class="navigation transparent" id="nav" style="display:none;">
+                <a class="previous"></a>
+                <a class="next"></a>
+                <span class="price">$ 0.99</span>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function() {
+                $('#img_cont').hover(
+                function () {
+                    $('#tlbar').slideDown(200);
+                    $('#nav').slideDown(200);
+                },
+                function () {
+                    $('#tlbar').slideUp(200);
+                    $('#nav').slideUp(200);
+                }
+            );
+                $('#tlbar,#nav').hover(
+                function () {
+                    $(this).removeClass('transparent');
+                },
+                function () {
+                    $(this).addClass('transparent');
+                }
+            );
+            });
+        </script>
+    </body>
+</html>

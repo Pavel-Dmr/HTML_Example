@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Photo Desk</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery.photodesk.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.1.css" media="screen" />
+        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.transform-0.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.animate-shadow-min.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox-1.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.photodesk-1.0.0.min.js"></script>
+    </head>
+    <body style="background: #ccc;">
+        <div id="pd_container" style="width: 100%; height: 700px;">
+            <div class="pd_photo">
+                <a href="photos/1.jpg" title="Long Description, more text. More text and even more ...">
+                    <img src="photos/1.jpg" alt=""/>
+                </a>
+                Title 1
+            </div>
+            <div class="pd_photo">
+                <a href="photos/2.jpg" title="Long Description, more text. More text and">
+                    <img src="photos/2.jpg" alt=""/>
+                </a>
+                Title 2
+            </div>
+            <div class="pd_photo">
+                <a href="photos/3.jpg" title="Long Description, more text. More text and">
+                    <img src="photos/3.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="pd_photo">
+                <a href="photos/4.jpg" title="Long Description, more text. More text and">
+                    <img src="photos/4.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="pd_photo">
+                <a href="photos/5.jpg" title="Long Description, more text. More text and">
+                    <img src="photos/5.jpg" alt=""/>
+                </a>
+            </div>
+        </div>
+
+        <!-- The JavaScript -->
+        <script type="text/javascript">
+            $('#pd_container').photoDesk({
+                onDelete: function() {
+                    return window.confirm('Are you sure you wish to delete this image?');
+                }
+            });
+        </script>
+    </body>
+</html>

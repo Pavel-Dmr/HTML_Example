@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*  Reset  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: #bbb;
+}
+
+img {
+    border: 0;
+}

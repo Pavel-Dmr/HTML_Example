@@ -1,0 +1,27 @@
+/* Main stuff */
+.box-with-text {
+  background-image: -webkit-linear-gradient(#e06084 50%, white 50%);
+  background-position: 0 0;
+  -webkit-background-clip: text;
+  background-size: 100% 50px;
+  background-repeat: repeat;
+  -webkit-animation: stripes 1s linear infinite;
+  animation: stripes 1s linear infinite;
+  -webkit-text-fill-color: transparent; }
+
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 0 -50px; } }
+@keyframes stripes {
+  100% {
+    background-position: 0 -50px; } }
+/* Other stuff */
+.box-with-text {
+  text-align: center;
+  overflow: hidden;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font: 800 27em/1  'Open Sans', Impact;
+  margin-bottom: 100px; }
+
+/*# sourceMappingURL=style3.css.map */

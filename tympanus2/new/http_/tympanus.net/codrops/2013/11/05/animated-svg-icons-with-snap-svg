@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+	<html dir="ltr" lang="en-US"> 
+	<head> 
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Animated SVG Icons with Snap.svg</title>
+				<meta name="author" content="Team Codrops">
+		<link rel="stylesheet" type="text/css" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/main.css?v444" />
+		<link rel="stylesheet" type="text/css" media="print" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/main_print.css?v5" />
+		<link rel="profile" href="http://gmpg.org/xfn/11" />	
+		<script src="//use.typekit.net/pdd7wbw.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		<link rel="shortcut icon" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/favicon.ico">
+		<link rel="apple-touch-icon" sizes="144x144" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/apple-touch-icon-144x144.png">
+		<link rel="icon" type="image/png" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/favicon-196x196.png" sizes="196x196">
+		<!-- 857AADD2-739C-4BF6-A8D3-4986BE868A0C -->
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="msapplication-TileImage" content="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/mstile-144x144.png">
+		<meta name="msapplication-config" content="/codrops/wp-content/themes/codropstheme03/favicons/browserconfig.xml">
+			   
+		
+<!-- This site is optimized with the Yoast SEO plugin v13.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Using SVGs on websites is becoming more and more easy with great libraries like Snap.svg. Today we want to explore what we can do with it and animate some SVG icons as a practical example."/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Animated SVG Icons with Snap.svg" />
+<meta property="og:description" content="Using SVGs on websites is becoming more and more easy with great libraries like Snap.svg. Today we want to explore what we can do with it and animate some SVG icons as a practical example." />
+<meta property="og:url" content="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/" />
+<meta property="og:site_name" content="Codrops" />
+<meta property="article:publisher" content="https://www.facebook.com/codrops/" />
+<meta property="article:tag" content="animation" />
+<meta property="article:tag" content="icons" />
+<meta property="article:tag" content="svg" />
+<meta property="article:section" content="Playground" />
+<meta property="article:published_time" content="2013-11-05T14:43:50+00:00" />
+<meta property="article:modified_time" content="2019-03-30T05:20:56+00:00" />
+<meta property="og:updated_time" content="2019-03-30T05:20:56+00:00" />
+<meta property="og:image" content="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2013/11/AnimatedSVGIcons.jpg" />
+<meta property="og:image:secure_url" content="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2013/11/AnimatedSVGIcons.jpg" />
+<meta property="og:image:width" content="580" />
+<meta property="og:image:height" content="315" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://tympanus.net/codrops/#website","url":"https://tympanus.net/codrops/","name":"Codrops","inLanguage":"en-US","description":"Useful resources and inspiration for creative minds","potentialAction":{"@type":"SearchAction","target":"https://tympanus.net/codrops/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/#primaryimage","inLanguage":"en-US","url":"https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2013/11/AnimatedSVGIcons.jpg","width":580,"height":315},{"@type":"WebPage","@id":"https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/#webpage","url":"https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/","name":"Animated SVG Icons with Snap.svg","isPartOf":{"@id":"https://tympanus.net/codrops/#website"},"inLanguage":"en-US","primaryImageOfPage":{"@id":"https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/#primaryimage"},"datePublished":"2013-11-05T14:43:50+00:00","dateModified":"2019-03-30T05:20:56+00:00","author":{"@id":"https://tympanus.net/codrops/#/schema/person/86f093aed04d33810cd8aa366741b658"},"description":"Using SVGs on websites is becoming more and more easy with great libraries like Snap.svg. Today we want to explore what we can do with it and animate some SVG icons as a practical example."},{"@type":["Person"],"@id":"https://tympanus.net/codrops/#/schema/person/86f093aed04d33810cd8aa366741b658","name":"Mary Lou","image":{"@type":"ImageObject","@id":"https://tympanus.net/codrops/#authorlogo","inLanguage":"en-US","url":"http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=96&d=retro&r=g","caption":"Mary Lou"},"description":"ML is a freelance web designer and developer with a passion for interaction design. She studied Cognitive Science and Computational Logic and has a weakness for the smell of freshly ground peppercorns.","sameAs":[]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Codrops &raquo; Animated SVG Icons with Snap.svg Comments Feed" href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='prismatic-blocks-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/prismatic/css/styles-blocks.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='avatar-manager-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/avatar-manager/assets/css/avatar-manager.min.css?ver=1.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=1.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=1.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp_typeahead_css-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/css/typeahead.css?ver=5.3.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/avatar-manager/assets/js/avatar-manager.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[]};
+var log_object = {"ajax_url":"https:\/\/tympanus.net\/codrops\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public.js?ver=1.8.3'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/highlight.pack.js?ver=85'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/highlight.user.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/cos.js?ver=5.3.2'></script>
+<link rel='https://api.w.org/' href='https://tympanus.net/codrops/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://tympanus.net/codrops/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3.2" />
+<link rel='shortlink' href='https://tympanus.net/codrops/?p=16851' />
+<link rel="alternate" type="application/json+oembed" href="https://tympanus.net/codrops/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftympanus.net%2Fcodrops%2F2013%2F11%2F05%2Fanimated-svg-icons-with-snap-svg%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://tympanus.net/codrops/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftympanus.net%2Fcodrops%2F2013%2F11%2F05%2Fanimated-svg-icons-with-snap-svg%2F&#038;format=xml" />
+<script type="text/javascript">document.documentElement.className += " js";</script>
+		<script type="text/javascript">
+			var cli_flush_cache=1;
+		</script>
+				<script src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/search.js"></script>
+		
+		<script type="text/javascript">
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-7243260-2']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+
+			  function recordOutboundLink(link, category, action) {
+				_gat._getTrackerByName()._trackEvent(category, action);
+				setTimeout('document.location = "' + link.href + '"', 100);
+			}
+		</script>
+		<noscript>
+			<link rel="stylesheet" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/noscript.css"/>
+		</noscript>
+		<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "WebSite",
+		  "url": "https://tympanus.net/codrops/",
+		  "potentialAction": {
+		    "@type": "SearchAction",
+		    "target": "https://tympanus.net/codrops/?s={search_term_string}",
+		    "query-input": "required name=search_term_string"
+		  }
+		}
+		</script>
+		<script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+	</head>
+	<body id="codrops-body">
+				<!-- BuySellAds.com Ad Code -->
+		<script type="text/javascript">
+			(function(){
+				var bsa = document.createElement('script');
+				bsa.type = 'text/javascript';
+				bsa.async = true;
+				bsa.src = '//s3.buysellads.com/ac/bsa.js';
+				(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+			})();
+		</script>
+		<!-- END BuySellAds.com Ad Code -->	
+				<div class="ct-container">
+			<header class="ct-header">
+				<div class="ct-inner ct-cf">
+
+											<div class="ct-branding">
+							<a class="ct-logo" href="/codrops" rel="home"><img src="/codrops/wp-content/themes/codropstheme03/images/codrops-logo.svg" alt="Codrops logo" /></a>
+						</div>
+					
+					<div class="ct-nav-wrapper">
+						<nav class="ct-nav-main">
+						   <ul>
+								<li><a href="/codrops/category/tutorials/">Tutorials</a></li>
+								<li><a href="/codrops/category/playground/">Playground</a></li>
+								<li><a href="/codrops/category/articles/">Articles</a></li>
+								<li><a href="/codrops/collective/">Collective</a></li>
+								<li><a href="/codrops/css_reference/">CSS Reference</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="ct-header-items-right ct-cf">
+						<div class="ct-search" id="ct-search">
+							<form method="get" id="searchform" action="https://tympanus.net/codrops/">
+								<div class="ct-search-input-wrap">
+									<input class="ct-search-input" placeholder="Search on Codrops..." type="text" value="" name="s" id="s"/>
+								</div>
+								<input type="hidden" name="search-type" value="posts" />
+								<input class="ct-search-submit" type="submit" id="go" value=""><span class="ct-icon-search"></span>
+							</form>
+						</div>
+						<ul class="ct-connect">
+							<li><a class="ct-icon-feed" href="http://feeds2.feedburner.com/tympanus"><span>Rss Feed</span></a></li>
+							<li><a class="ct-icon-mail" href="http://eepurl.com/dJBUCo"><span>Email Updates</span></a></li>
+							<li><a class="ct-icon-twitter" href="http://www.twitter.com/codrops"><span>Codrops on Twitter</span></a></li>
+							<li><a class="ct-icon-facebook" href="http://www.facebook.com/pages/Codrops/159107397912"><span>Codrops on Facebook</span></a></li>
+							<li><a class="ct-icon-github" href="https://github.com/codrops"><span>Codrops on Github</span></a></li>
+							<li><a class="ct-icon-instagram" href="https://instagram.com/codropsss"><span>Codrops on Instagram</span></a></li>
+						</ul>
+					</div><!--/ct-header-items-right-->
+
+				</div><!-- ct-inner -->
+			</header><div class="ct-content">
+    <div class="ct-inner">		
+		
+				
+								
+				<div class="ct-main ct-main-post" id="ct-main" role="main">
+					<div class="ct-post">
+						<article id="post-16851" class="post-16851 post type-post status-publish format-standard has-post-thumbnail hentry category-playground tag-animation tag-icons tag-svg">
+							<header>
+								<h1 class="ct-h-shd entry-title">
+									Animated SVG Icons with Snap.svg									
+																	</h1>
+								<div class="ct-post-excerpt">Using SVGs on websites is becoming more and more easy with great libraries like Snap.svg. Today we want to explore what we can do with it and animate some SVG icons as a practical example.</div>								<div class="ct-subline entry-meta ">
+									<div class="ct-subline__author">
+																																	<span class="byline author vcard">
+													By 
+													<a href="https://tympanus.net/codrops/author/crnacura/" title="Posts by Mary Lou" class="author url fn" rel="author">Mary Lou</a>												</span>
+																															in
+										<a href="https://tympanus.net/codrops/category/playground/">Playground</a> on 
+											
+
+										<time class="ct-subline__pubtime" pubdate="pubdate">November 5, 2013</time>
+
+																			</div>
+								</div>
+							</header>		
+							<div class="ct-post-content">
+								
+
+								
+																		    <div class="ct-post-featured-img">
+									    	<a href="http://tympanus.net/Development/AnimatedSVGIcons/" title="Animated SVG Icons with Snap.svg Demo"><img width="580" height="315" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2013/11/AnimatedSVGIcons.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="AnimatedSVGIcons" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2013/11/AnimatedSVGIcons.jpg 580w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2013/11/AnimatedSVGIcons-300x162.jpg 300w" sizes="(max-width: 580px) 100vw, 580px" /></a>
+									    </div>
+									
+								
+																	<div class="ct-demo-links">
+										<a class="ct-demo-link ct-demo-link--view" href="http://tympanus.net/Development/AnimatedSVGIcons/">View demo</a>
+										<a class="ct-demo-link ct-demo-link--download" href="http://tympanus.net/Development/AnimatedSVGIcons/AnimatedSVGIcons.zip">Download Source</a> 
+									</div>
+																
+
+																											
+											<!-- Weekly Sponsor -->
+																						<p class="ct-msponsor-article">
+												<span>From our sponsor:</span> <a href="https://ad.doubleclick.net/ddm/clk/459321073;263127775;j" target="_blank" rel="sponsored nofollow">Market smarter with Mailchimp's automated messaging tools.</a>
+												<IMG SRC="https://ad.doubleclick.net/ddm/ad/N2434.3091281BUYSELLADS/B23623815.263127775;sz=1x1;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?" BORDER="0" HEIGHT="1" WIDTH="1" style="position:absolute;opacity:0;"/>
+											</p>
+																						<!--/ End Weekly Sponsor -->
+											
+																																			
+								<p>SVG has been one of the most underused technologies when it comes to web development. Despite it&#8217;s usefulness and powerful possibilities it&#8217;s still a mystery to many and when it comes to integrating it and using animations, many developers don&#8217;t know where to start. With great libraries like <a href="http://snapsvg.io/">Snap.svg</a> the use of SVG assets becomes more easy and today we&#8217;d like to explore how to animate SVG icons. </p>
+<p>You&#8217;ve surely seen some great examples of animated icons using CSS transitions and animations like the <a href="http://codepen.io/bennettfeely/pen/twbyA">Navicon Transformicons</a> by <a href="http://bennettfeely.com/">Bennett Feely</a> which were explained in this excellent collaborative <a href="http://sarasoueidan.com/blog/navicon-transformicons/index.html" title="Navicon Transformicons: Animated Navigation Icons with CSS Transforms">tutorial</a> by Sara Soueidan. We want to try to do something similar using SVG icons with the help of Snap.svg.</p>
+<p><strong>Please note that we are working with a modern JavaScript library for manipulating our SVGs. Older and non-supporting browsers will not be capable of all features.</strong></p>
+<p>The first thing we do is to create some SVG icons using an SVG editor like <a href="http://inkscape.org/">Inkscape</a>. We used a size of 64&#215;64 pixel for the icons.<br />
+<img src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2013/11/Inkscape.jpg" alt="Inkscape" width="814" height="451" class="alignnone size-full wp-image-16853" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2013/11/Inkscape.jpg 814w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2013/11/Inkscape-300x166.jpg 300w" sizes="(max-width: 814px) 100vw, 814px" /></p>
+<p>For each icon we want a special animation to happen. For example, for the zoom icon we&#8217;ll want to scale up the plus path. We&#8217;ll define what will happen for each icon in our script.<br />
+We&#8217;ll add the icons dynamically to our page using Snap.svg and if SVG is not supported we&#8217;ll simply show a background image for the span elements that we use to wrap each graphic:</p>
+<pre class="brush:html">
+&lt;section class="si-icons"&gt;
+	&lt;span class="si-icon si-icon-play" data-icon-name="play"&gt;&lt;/span&gt;
+	&lt;span class="si-icon si-icon-monitor" data-icon-name="monitor"&gt;&lt;/span&gt;
+	&lt;!-- ... --&gt;
+&lt;/section&gt;
+</pre>
+<p>With the help of Modernizr we can define the fallback in our CSS:</p>
+<pre class="brush:css">
+.no-svg .si-icon-play { background-image: url('../png/play.png') }
+
+.no-svg .si-icon-monitor { background-image: url('../png/monitor.png') }
+</pre>
+<p>The PNG icons were generated with the fabulous <a href="http://iconizr.com/">iconizr tool</a>. You could as well use CSS sprites and define a active class but we decided to just do a very simple fallback for this demo.  </p>
+<p>If you add the class &#8220;si-icon-reverse&#8221; to the span, the icon will be initially rendered with the reversed &#8220;shape&#8221;. For instance, if you want to display the stop icon rather than the play icon, you can achieve that in the following way:</p>
+<pre class="brush:html">
+	&lt;span class="si-icon si-icon-reverse" data-icon-name="play"&gt;&lt;/span&gt;
+</pre>
+<div class="ct-ad-article-wrapper ct-ad-article-wrapper-in" style="padding:1rem;"><div class="ct-ad-article"><img class="ct-ad-img" style="display: none;" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/images/advertisement.jpg" /><div id="bsap_1279993" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div><div style="clear:both;"></div></div></div>
+<p>Now let&#8217;s take a look at what we are doing in the JavaScript. The idea is to do something with each icon. That can be some kind of transformation, like a rotation or a scale, or a change of a path altogether. With the Snap.svg we can dynamically load our SVGs, which we store in a folder, and manipulate them in a very practical way thanks to the powerful API. </p>
+<p>The configuration variable for the icons, &#8220;svgIconConfig&#8221; has all the animation settings for each icon.<br />
+Let&#8217;s take a look at its logic: </p>
+<pre class="brush:xml">
+[icon name - same name given to the data-icon-name] : { 
+	url : [url of the svg file],
+	animation : [array of animation configs for each element]
+}
+</pre>
+<p>Each animation config can have the following structure:</p>
+<pre class="brush:xml">
+{ 
+	el : [element selector], 
+	animProperties : [animation config for the initial/from and final/to state]
+}
+</pre>
+<p>Let&#8217;s take a look at some possible values for the initial and final state:</p>
+<pre class="brush:xml">
+from : { 
+	val : [animation name value pairs],
+	after : [attribute name value pairs to be applied when the animation ends],
+	before : [attribute name value pairs to be applied before the animation starts],
+	delayFactor : [animation delay factor],
+	animAfter : [animation name value pairs to be applied when the animation ends] 
+}
+</pre>
+<p>A real example would be the following: </p>
+<pre class="brush:js">
+myIconName : { 
+	url : 'svgs/myIconName.svg',
+	animation : [
+		{ 
+			el : 'path:nth-child(5)', 
+			animProperties : { 
+				from : { val : '{"path" : "m 61.693118,24.434001 -59.386236,0 29.692524,19.897984 z"}', animAfter : '{"stroke" : "#000"}' }, 
+				to : { val : '{"path" : "m 61.693118,24.434001 -59.386236,0 29.692524,-19.7269617 z"}', animAfter : '{"stroke" : "#444"}' }
+				} 
+		},
+		{ 
+			el : 'rect:nth-child(3)', 
+			animProperties : { 
+				from : { val : '{"transform" : "t0 0"}', after : '{ "opacity" : 0 }' }, 
+				to : { val : '{"transform" : "t-10 -10"}', before : '{ "opacity" : 1 }' }
+			} 
+		}
+]
+}
+</pre>
+<p>You can initialize the icons like this:</p>
+<pre class="brush:js">
+new svgIcon( element, configuration [, options] );
+</pre>
+<p>And these are the possible options:</p>
+<pre class="brush:js">
+{
+    speed : 200, // animation speed
+    easing : mina.linear, // animation esing
+    evtoggle : 'click', // event: click || mouseover
+    size : { w : 64, h : 64 }, // size
+    onLoad : function() { return false; }, // callback on svg load
+    onToggle : function() { return false; } // callback on toggle (click or mouseover/mouseout)
+}
+</pre>
+<p>Check out the demo to see some examples for different sizes, easings and activations (on click and on hover).</p>
+<p>We hope you enjoy this experiment and find it useful!</p>
+
+																	<div class="ct-github-link"><a href="https://github.com/codrops/AnimatedSVGIcons">Find this project on Github</a></div>
+								
+																																
+																	<div class="ct-post-nav">
+										<div class="ct-post-prev">        
+											<a href="https://tympanus.net/codrops/2013/10/30/medium-style-page-transition/" rel="prev">Medium-Style Page Transition</a> 
+										</div>
+										<div class="ct-post-next">
+											<a href="https://tympanus.net/codrops/2013/11/07/css-overlay-techniques/" rel="next">CSS Overlay Techniques</a> 
+										</div>
+										<div class="clr"></div>
+									</div> <!-- ct-post-nav -->
+																
+							</div>
+						</article>
+						<p class="ct-tags">
+							Tagged with: <a href="https://tympanus.net/codrops/tag/animation/" rel="tag">animation</a> <a href="https://tympanus.net/codrops/tag/icons/" rel="tag">icons</a> <a href="https://tympanus.net/codrops/tag/svg/" rel="tag">svg</a>						</p>
+						<div class="clr"></div>
+					</div>
+
+																							
+											            <div class="ct-author-info ct-box">
+					                <div class="ct-author-avatar">
+					                    <img alt='' src='http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=80&#038;d=retro&#038;r=g' srcset="http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=160&#038;d=retro&#038;r=g 2x" class='avatar avatar-80 photo' height='80' width='80' />					                </div><!-- .author-avatar -->
+
+					                <div class="ct-author-page-desc">
+					                    <h3><a href="https://tympanus.net/codrops/author/crnacura/">Mary Lou</a></h3>
+					                    <p>ML is a freelance web designer and developer with a passion for interaction design. She studied Cognitive Science and Computational Logic and has a weakness for the smell of freshly ground peppercorns.</p>
+					                    																				<p class="ct-author-page-url">
+											<a href="http://www.codrops.com" target="_blank">http://www.codrops.com</a>
+										</p>
+																				<div>
+											<ul class="ct-social-profiles">
+																																					<li><a class="ct-social-twitter" href="http://twitter.com/crnacura"><span>Twitter</span></a></li>
+																																					<li><a class="ct-social-dribbble" href="http://dribbble.com/crnacura"><span>Dribbble</span></a></li>
+																																					<li><a class="ct-social-instagram" href="https://www.instagram.com/codropsss/"><span>Instagram</span></a></li>
+																																																													<li><a class="ct-social-github" href="https://github.com/crnacura"><span>Github</span></a></li>
+																																																																																			</ul>
+										</div>
+					                </div>
+					            </div>
+					        
+						<!-- Related posts -->
+												<div class="ct-related-post">
+							
+									<div class="ct-related-item">
+										<div class="ct-latest-thumb-related">
+											<a href="https://tympanus.net/codrops/2019/01/31/custom-cursor-effects/">
+												<img width="300" height="225" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/01/CustoCursors_featured-300x225.jpg" class="attachment-medium size-medium wp-post-image" alt="CustoCursors_featured" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/01/CustoCursors_featured-300x225.jpg 300w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/01/CustoCursors_featured-768x576.jpg 768w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/01/CustoCursors_featured.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" />											</a>
+										</div>
+										<h3><a href="https://tympanus.net/codrops/2019/01/31/custom-cursor-effects/">Custom Cursor Effects</a></h3>
+									</div>
+												
+								
+									<div class="ct-related-item">
+										<div class="ct-latest-thumb-related">
+											<a href="https://tympanus.net/codrops/2019/01/15/svg-filters-101/">
+												<img width="300" height="225" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/01/SVGFilters101_featured-300x225.jpg" class="attachment-medium size-medium wp-post-image" alt="SVGFilters101_featured" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/01/SVGFilters101_featured-300x225.jpg 300w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/01/SVGFilters101_featured-768x576.jpg 768w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/01/SVGFilters101_featured.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" />											</a>
+										</div>
+										<h3><a href="https://tympanus.net/codrops/2019/01/15/svg-filters-101/">SVG Filters 101</a></h3>
+									</div>
+												
+								
+									<div class="ct-related-item">
+										<div class="ct-latest-thumb-related">
+											<a href="https://tympanus.net/codrops/2019/02/27/text-trail-effect/">
+												<img width="300" height="225" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/02/TextTrailEffect_featured-300x225.jpg" class="attachment-medium size-medium wp-post-image" alt="TextTrailEffect_featured" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/02/TextTrailEffect_featured-300x225.jpg 300w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/02/TextTrailEffect_featured-768x576.jpg 768w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2019/02/TextTrailEffect_featured.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" />											</a>
+										</div>
+										<h3><a href="https://tympanus.net/codrops/2019/02/27/text-trail-effect/">Text Trail Effect</a></h3>
+									</div>
+												
+														</div>
+																						<div class="ct-row">
+						
+<div class="ct-sharing ct-box">
+	<!-- Begin Mailchimp Signup Form -->
+	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		#mc_embed_signup{background: transparent; clear:left; width:100%; text-align: left;}
+		/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+		   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+	</style>
+	<style type="text/css">
+		#mc_embed_signup form { text-align: left; padding: 0;}
+		#mc-embedded-subscribe-form input[type=checkbox]{vertical-align: top;display: inline; width: auto;margin-right: 5px;}
+		#mergeRow-gdpr {margin-top: 20px;}
+		#mergeRow-gdpr fieldset label {font-weight: normal;}
+		#mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}
+		#mc_embed_signup input.email {width: 100%;margin: 0 auto 1rem; box-shadow:none;padding:5px 10px;height:50px;font-size: 0.9rem;border-radius:0;font-family:inherit;font-weight:bold;color: rgb(75, 94, 115);border:0;}
+		#mc_embed_signup input.email:focus {border-color: #66afe9; box-shadow: none;outline:none;}
+		#mc_embed_signup label {padding: 0;}    
+		#mc_embed_signup .button {background: #000;color:#fff;border-radius:0;transition:none;height:auto; padding:10px 20px;font-size:0.9rem; line-height:inherit;}
+		#mc_embed_signup .button:hover {background: #333;}
+	</style>
+	<div id="mc_embed_signup">
+		<form action="https://tympanus.us10.list-manage.com/subscribe/post?u=10ffec652b0f54fe5d8682ac0&amp;id=a9cab6dcf0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		    <div id="mc_embed_signup_scroll">
+			<label for="mce-EMAIL"><h3>Subscribe to Codrops</h3></label>
+			<p>Stay up to date with the latest web design and development news and relevant updates from Codrops.</p>
+			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+		    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_10ffec652b0f54fe5d8682ac0_a9cab6dcf0" tabindex="-1" value=""></div>
+		    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+		    </div>
+		</form>
+	</div>
+</div>
+
+
+
+						<div class="ct-bottom-ads ct-box">
+							<h3>CSS Reference</h3>
+							<p>Learn about all important CSS properties from the basics with our extensive and easy-to-read CSS Reference.</p><p>It doesn't matter if you are a beginner or intermediate, <a href="/codrops/css_reference/">start learning CSS now</a>.</p>
+						</div>
+					</div>
+						<section id="comments" class="ct-comments">
+	
+		
+			<div class="ct-commenttitle">
+			<h2 id="comments-title">
+				<span>Feedback</span>
+				<sup>95</sup>
+			</h2>
+						<span>Comments are closed.</span>
+					</div>
+		
+				<nav class="ct-commentnav">
+			<a class="prev page-numbers" href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-3/#comments">&laquo; Previous</a>
+<a class="page-numbers" href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-1/#comments">1</a>
+<a class="page-numbers" href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-2/#comments">2</a>
+<a class="page-numbers" href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-3/#comments">3</a>
+<span aria-current="page" class="page-numbers current">4</span> 
+		</nav>
+		
+		<ol class="ct-commentlist">
+							<li class="comment even thread-even depth-1" id="li-comment-468057">
+					<article id="comment-468057" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://0.gravatar.com/avatar/0c31817f2f14eaffba316462b825d2ec?s=40&#038;d=retro&#038;r=g' srcset="http://0.gravatar.com/avatar/0c31817f2f14eaffba316462b825d2ec?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Erik</span> <a href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-4/#comment-468057" class="ct-commenttime"><time pubdate datetime="2015-11-28T00:58:09+00:00">November 28, 2015 at 00:58</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>Hi, what if i want a multi state animation? For example want to have a shape A morphing into B and afterwards into C? Thanks for answer.</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					<ul class="children">
+				<li class="comment odd alt depth-2" id="li-comment-469432">
+					<article id="comment-469432" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://1.gravatar.com/avatar/d8a764fbc7988006fe42a3319ca64bc0?s=40&#038;d=retro&#038;r=g' srcset="http://1.gravatar.com/avatar/d8a764fbc7988006fe42a3319ca64bc0?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Martin</span> <a href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-4/#comment-469432" class="ct-commenttime"><time pubdate datetime="2016-02-16T23:16:40+00:00">February 16, 2016 at 23:16</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>I also needed this and after some tests i got it working. But this is not related to this &#8220;Animate SVG Icons&#8221; tutorial. It&#8217;s just the easiest way to morph svg between paths with snap svg. Here is a example:<br />
+<a href="http://codepen.io/anon/pen/RrOWNx" title="svg morph with snap svg" rel="nofollow">http://codepen.io/anon/pen/RrOWNx</a></p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+				<li class="comment even thread-odd thread-alt depth-1" id="li-comment-468237">
+					<article id="comment-468237" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://1.gravatar.com/avatar/1042fce59dc3efc2dde0ff801f0e326d?s=40&#038;d=retro&#038;r=g' srcset="http://1.gravatar.com/avatar/1042fce59dc3efc2dde0ff801f0e326d?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Matt</span> <a href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-4/#comment-468237" class="ct-commenttime"><time pubdate datetime="2015-12-19T14:17:00+00:00">December 19, 2015 at 14:17</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>This is really awesome icon set. Thanks for sharing!</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+				<li class="comment odd alt thread-even depth-1" id="li-comment-469107">
+					<article id="comment-469107" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://0.gravatar.com/avatar/3e471b0c53aabacde23a4bc94456a216?s=40&#038;d=retro&#038;r=g' srcset="http://0.gravatar.com/avatar/3e471b0c53aabacde23a4bc94456a216?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">byJeka</span> <a href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-4/#comment-469107" class="ct-commenttime"><time pubdate datetime="2016-01-12T13:45:05+00:00">January 12, 2016 at 13:45</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>this is cool) Thanks</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+				<li class="comment even thread-odd thread-alt depth-1" id="li-comment-469173">
+					<article id="comment-469173" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://1.gravatar.com/avatar/af46febaf7e8a6c8e729d3e20d79ad79?s=40&#038;d=retro&#038;r=g' srcset="http://1.gravatar.com/avatar/af46febaf7e8a6c8e729d3e20d79ad79?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Dybo</span> <a href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-4/#comment-469173" class="ct-commenttime"><time pubdate datetime="2016-01-16T14:43:39+00:00">January 16, 2016 at 14:43</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>Hi,</p>
+<p>can i roll back the effect when clicking on another object??<br />
+Meaning, if i click on a &#8220;menu&#8221; icon and then cliking on another icon, the first one rollback alone.<br />
+Can i do this?? thanks</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+				<li class="comment odd alt thread-even depth-1" id="li-comment-469478">
+					<article id="comment-469478" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://2.gravatar.com/avatar/8959c87228f3792811e99f0dc3a32c6b?s=40&#038;d=retro&#038;r=g' srcset="http://2.gravatar.com/avatar/8959c87228f3792811e99f0dc3a32c6b?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Rajkumar</span> <a href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-4/#comment-469478" class="ct-commenttime"><time pubdate datetime="2016-02-22T07:57:01+00:00">February 22, 2016 at 07:57</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>super</p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+				<li class="comment even thread-odd thread-alt depth-1" id="li-comment-469619">
+					<article id="comment-469619" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://1.gravatar.com/avatar/aa76c86f627c06413473de2bb133cadc?s=40&#038;d=retro&#038;r=g' srcset="http://1.gravatar.com/avatar/aa76c86f627c06413473de2bb133cadc?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Alexey</span> <a href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-4/#comment-469619" class="ct-commenttime"><time pubdate datetime="2016-03-04T16:23:18+00:00">March 4, 2016 at 16:23</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>Hello!<br />
+Help me, please.<br />
+I can&#8217;t open the example. I downloaded a source, and when i open index.html i see <a href="https://yadi.sk/i/mZ2kmP_Spv2ja" title="this" rel="nofollow"></a></p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					<ul class="children">
+				<li class="comment odd alt depth-2" id="li-comment-469620">
+					<article id="comment-469620" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt='' src='http://1.gravatar.com/avatar/aa76c86f627c06413473de2bb133cadc?s=40&#038;d=retro&#038;r=g' srcset="http://1.gravatar.com/avatar/aa76c86f627c06413473de2bb133cadc?s=80&#038;d=retro&#038;r=g 2x" class='avatar avatar-40 photo' height='40' width='40' />								</span>
+								<span class="ct-commentauthorname">Alexey</span> <a href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-4/#comment-469620" class="ct-commenttime"><time pubdate datetime="2016-03-04T16:24:47+00:00">March 4, 2016 at 16:24</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						
+												<div class="ct-commentcontent">
+														<p>i see this &#8211; <a href="https://yadi.sk/i/mZ2kmP_Spv2ja" rel="nofollow ugc">https://yadi.sk/i/mZ2kmP_Spv2ja</a></p>
+						</div>
+
+						<div class="ct-commentreply">
+																				</div><!-- .reply -->
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		</ol>
+		<p class="ct-talign-right">
+				</p>
+				<nav class="ct-commentnav">
+			 <a class="prev page-numbers" href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-3/#comments">&laquo; Previous</a>
+<a class="page-numbers" href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-1/#comments">1</a>
+<a class="page-numbers" href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-2/#comments">2</a>
+<a class="page-numbers" href="https://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/comment-page-3/#comments">3</a>
+<span aria-current="page" class="page-numbers current">4</span> 
+		</nav>
+				
+
+
+		<div class="ct-comment-form">	
+				<div class="clr"></div>
+	</div>
+
+</section><!-- #comments -->
+				</div>
+				<aside class="ct-sidebar">		
+	<div class="ct-pat">
+		
+		<!-- Weekly Sponsor -->
+				<a class="cos" href="http://bit.ly/mailchimpCodrops" target="_blank" rel="nofollow sponsored">
+			<IMG SRC="https://ad.doubleclick.net/ddm/ad/N2434.3091281BUYSELLADS/B23623815.263128345;sz=1x1;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?" BORDER="0" HEIGHT="1" WIDTH="1" style="position:absolute;opacity:0;"/>
+			<img class="cos__img" src="https://tympanus.net/codrops/wp-content/banners/mailchimp.png" alt="Mailchimp"/>
+			<div class="cos__text">Your app is up and running! Now what? Seamlessly connect it to your marketing data. That’s what.</div>
+		</a>
+    			<!--/ End Weekly Sponsor -->
+		<!--  Sidebar sponsors  -->	
+		<a class="cos" href="http://bit.ly/DiviCodropsSidebar" target="_blank" rel="nofollow sponsored">
+			<img class="cos__img" src="https://tympanus.net/codrops/wp-content/banners/divi-premade-layouts-01.jpg" alt="Divi"/>
+			<div class="cos__text">Over 800 pre-made website layouts come packaged right inside of Divi for free. Jumpstart your design!</div>
+		</a>
+		<!--/ Sidebar sponsors -->
+
+		<!--div id="bsap_1275127" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div-->
+		<!-- 125x125 -->
+		<div id="bsap_1243201" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div>
+	</div>
+	<div class="ct-pat">
+		<div id="bsap_1298539" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div>
+	</div>
+    		
+    	<div class="clr"></div>
+</aside>
+
+				<div class="clr"></div>
+			    </div>
+</div>
+		<footer class="ct-footer">
+			<div class="ct-inner">
+				<nav>
+					<ul>
+						<li><a href="/codrops/category/tutorials/">Tutorials</a></li>
+						<li><a href="/codrops/category/articles/">Articles</a></li>
+						<li><a href="/codrops/category/playground/">Playground</a></li>
+						<li><a href="/codrops/category/blueprints/">Blueprints</a></li>
+					</ul>
+					<ul>
+						<li><a href="/codrops/css_reference/">CSS Reference</a></li>
+						<li><a href="/codrops/category/news/">News</a></li>
+						<li><a href="/codrops/category/freebies/">Freebies</a></li>
+						<li><a href="/codrops/collective/">Collective</a></li>
+					</ul>
+					<ul>
+						<li><a href="/codrops/about/">About</a></li>
+						<li><a href="/codrops/contact/">Contact</a></li>
+						<li><a href="/codrops/archives/">Archives</a></li>
+						<li><a href="/codrops/deals/">Deals</a></li>
+					</ul>
+					<ul>
+						<li><a href="/codrops/advertise/">Advertise</a></li>
+						<li><a href="/codrops/privacy-policy/">Privacy Policy</a></li>
+						<li><a href="/codrops/licensing/">License</a></li>
+						<li><a href="/codrops/credits/">Credits</a></li>
+					</ul>
+					<ul>
+						<li>Content delivered by <a href="https://www.stackpath.com/" title="Content Distribution Network" target="blank">StackPath</a></li>
+						<li>&copy; Codrops 2020</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+		<div id="cookie-law-info-bar"><span>Codrops uses cookies for its advertisement solutions and for analytics. We hope you're ok with this, but you can opt-out if you wish. Read our <a href="https://www.iubenda.com/privacy-policy/92067710">Privacy Policy</a> and <a href="https://www.iubenda.com/privacy-policy/92067710/cookie-policy">Cookie Policy</a>. <a role='button' tabindex='0' data-cli_action="accept" id="cookie_action_close_header"  class="small cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display:inline-block; ">OK</a></span></div><div id="cookie-law-info-again" style="display:none;"><span id="cookie_hdr_showagain">Privacy & Cookies Policy</span></div><div class="cli-modal" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+    <div class="cli-modal-content cli-bar-popup">
+      <button type="button" class="cli-modal-close" id="cliModalClose">
+        <svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+        <span class="wt-cli-sr-only">Close</span>
+      </button>
+      <div class="cli-modal-body">
+        <div class="cli-container-fluid cli-tab-container">
+    <div class="cli-row">
+        <div class="cli-col-12 cli-align-items-stretch cli-px-0">
+            <div class="cli-privacy-overview">
+                                                   
+                <div class="cli-privacy-content">
+                    <div class="cli-privacy-content-text"></div>
+                </div>
+                <a class="cli-privacy-readmore" data-readmore-text="Show more" data-readless-text="Show less"></a>            </div>
+        </div>  
+        <div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+              
+                            <div class="cli-tab-section">
+                    <div class="cli-tab-header">
+                        <a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab" >
+                            Necessary 
+                        </a>
+                    
+                    <span class="cli-necessary-caption">Always Enabled</span>                     </div>
+                    <div class="cli-tab-content">
+                        <div class="cli-tab-pane cli-fade" data-id="necessary">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+              
+                       
+        </div>
+    </div> 
+</div> 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<script type="text/javascript">
+  /* <![CDATA[ */
+  cli_cookiebar_settings='{"animate_speed_hide":"500","animate_speed_show":"500","background":"#989898","border":"#444","border_on":false,"button_1_button_colour":"#0099cc","button_1_button_hover":"#007aa3","button_1_link_colour":"#fff","button_1_as_button":true,"button_1_new_win":false,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#0099cc","button_2_as_button":false,"button_2_hidebar":false,"button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":true,"button_3_new_win":false,"button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#fff","button_4_as_button":true,"font_family":"inherit","header_fix":false,"notify_animate_hide":false,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"accept_close_reload":false,"reject_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#ffffff","show_once_yn":false,"show_once":"10000","logging_on":false,"as_popup":false,"popup_overlay":true,"bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"}';
+  /* ]]> */
+</script><script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/comment-reply.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/js/typeahead.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/js/hogan.min.js?ver=5.3.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wp_typeahead = {"ajaxurl":"https:\/\/tympanus.net\/codrops\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/js/wp-typeahead.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
+		</div><!--ct-container-->
+	</body>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Page Caching using disk: enhanced 
+Content Delivery Network via codropspz-tympanus.netdna-ssl.com
+Application Monitoring using New Relic
+
+Served from: tympanus.net @ 2020-03-30 07:15:09 by W3 Total Cache
+-->

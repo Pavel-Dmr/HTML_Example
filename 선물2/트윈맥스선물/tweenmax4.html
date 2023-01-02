@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title> jQuery </title>
+		<link rel="stylesheet" type="text/css" href="../common/css/reset.css">
+		<script type="text/javascript" src="../common/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery.superscrollorama.js"></script>
+		<script type="text/javascript" src="../common/js/TweenMax.js"></script>
+
+		<!-- 스타일 -->
+		<style type="text/css">
+		#container { position:relative; min-height:700px; }
+		#container img.mvisual { position:absolute; left:50%; margin-left:-1000px; max-width:inherit; }
+		.content { position:relative; margin:0 auto; width:1240px; }
+
+		.mvis { position:relative; width:1240px; height:761px; }
+		.mvis div.mtxt { position:absolute; left:305px; top:145px; padding-top:50px; width:630px; font-family:'ns'; font-size:40px; color:#fff; text-align:center; line-height:70px; background:url('img/tweenmax2/main_txt_clip.png') 0 0 no-repeat; }
+		.mvis div.mtxt span.s1 { font-size:50px; font-weight:bold; }
+		.mvis div.mtxt span.s2 { font-size:68px; }
+		.mvis a.mbtn { position:absolute; left:50%; bottom:200px; margin-left:-147px; display:block; width:292px; height:60px; line-height:60px; border:1px solid #fff; font-size:22px; color:#fff; text-align:center; }
+		.mvis a.scroll { position:absolute; left:50%; bottom:40px; margin-left:-55px; display:block; width:110px; padding-top:45px; font-size:14px; color:#fff; background:url('img/tweenmax2/icon_mouse.png') 50% 0 no-repeat; text-align:center; }
+
+		.main_section1 { position:relative; height:874px; overflow:hidden; }
+		.main_section1 div.bg { position:absolute; left:50%; top:0; margin-left:-1000px; }
+		.main_section1 p.tit { position:relative; margin:0 auto 42px; width:850px; padding-top:70px; font-size:30px; color:#e93d7b; text-align:center; padding-bottom:40px; }
+		.main_section1 p.tit span.line { position:absolute; left:25px; bottom:0; display:block; width:100%; height:1px; background:#bebcbc; width:800px; }
+		.main_section1 p.tit span.clip { position:absolute; left:50%; top:130px; margin-left:-29px; display:block; width:28px; height:23px; padding:0 15px; background:#fff; opacity:0; filter:alpha(opacity=0); }
+		.main_section1 div.mbox { position:relative; margin:0 auto; width:1240px; }
+		.main_section1 div.mbox ul { width:1240px; height:610px; }
+		.main_section1 div.mbox li { position:absolute; font-size:40px; letter-spacing:-2px; font-family:'nbl'; overflow:hidden; }
+		.main_section1 div.mbox li.li1 { left:0; top:0; width:400px; height:382px; color:#ac8888; }
+		.main_section1 div.mbox li.li2 { left:420px; top:0; width:400px; height:382px; color:#b98181; }
+		.main_section1 div.mbox li.li3 { left:840px; top:0; padding:45px 32px 0; width:336px; height:163px; background:url('img/tweenmax2/mbox03.png') 0 0 no-repeat; font-family:'ngb'; font-size:32px; color:#5d5f81; text-align:center; line-height:1.2; }
+		.main_section1 div.mbox li.li3 div.htxt { padding-bottom:22px; background:url('img/tweenmax2/tit_line.jpg') 50% bottom no-repeat; }
+		.main_section1 div.mbox li.li3 span { font-size:20px; }
+		.main_section1 div.mbox li.li4 { left:0; top:402px; width:400px; height:208px; color:#aca188; }
+		.main_section1 div.mbox li.li5 { left:420px; top:402px; width:400px; height:208px; color:#866b7b; }
+		.main_section1 div.mbox li.li6 { left:840px; top:228px; width:400px; height:382px; color:#6a5959; }
+		.main_section1 div.mbox li div.mt { position:absolute; left:32px; top:45px; }
+		.main_section1 div.mbox li div.mt span { font-weight:bold; }
+		.main_section1 div.mbox li div.cover { position:absolute; left:0; top:0; width:100%; height:100%; background:url('img/tweenmax2/cover_bg.png') 0 0 repeat; display:none; }
+		.main_section1 div.mbox li div.cover a { position:absolute; left:50%; top:50%; margin:-41px 0 0 -41px; }
+		.main_section1 div.mbox li > img { transition:transform .7s; -webkit-transition:transform .7s; }
+		.main_section1 div.mbox li:hover > img { transform:scale(1.05, 1.05); -webkit-transform:scale(1.05, 1.05); }
+
+		.main_section2 { position:relative; height:201px; background:url('img/tweenmax2/main_bg2.jpg') 50% 0 no-repeat; }
+		.main_section2 div.mbg { position:absolute; left:50%; top:0; margin-left:-1000px; }
+		.main_section2 div.mt_wrap { position:relative; margin:0 auto; width:1240px; height:201px; }
+		.main_section2 div.mtxt { position:absolute; font-family:'nm'; font-size:30px; color:#a52236; letter-spacing:-1.5px; }
+		.main_section2 div.mtxt1 { left:60px; top:48px; width:350px; overflow:hidden; }
+		.main_section2 div.mtxt1 p { width:350px; text-align:right; line-height:1.2; }
+		*:first-child+html .main_section2 div.mtxt1 { width:360px; }
+		*:first-child+html .main_section2 div.mtxt1 p { width:360px; }
+		.main_section2 div.mtxt2 { left:820px; top:118px; width:420px; overflow:hidden; }
+		.main_section2 div.mtxt2 p { width:420px; text-align:left; }
+
+		.main_section3 { padding-top:70px; height:915px; background:url('img/tweenmax2/main_bg3.jpg') 50% 0 no-repeat; }
+		.main_section3 div.md_inner { position:relative; margin:0 auto; width:1240px; height:626px; }
+		.main_section3 div.md_txt { position:absolute; left:50%; margin-left:-225px; top:70px; width:450px; overflow:hidden; }
+		.main_section3 div.md_txt p { width:450px; font-family:'ns'; font-size:43px; color:#494949; line-height:53px; text-align:center; }
+		.main_section3 div.md_txt span { font-weight:bold; }
+		.main_section3 div.director_l { position:absolute; left:0; top:0; }
+		.main_section3 div.director_r { position:absolute; right:0; top:0; }
+		.main_section3 div.md_circle { position:absolute; padding-top:91px; width:251px; height:160px; text-align:center; }
+		.main_section3 div.md_circle1 { left:387px; top:303px; background:url('img/tweenmax2/main_circle1.png') 0 0 no-repeat; }
+		.main_section3 div.md_circle2 { left:625px; top:303px; background:url('img/tweenmax2/main_circle2.png') 0 0 no-repeat; }
+		.main_section3 div.md_circle p.name { font-size:20px; color:#fff; }
+		.main_section3 div.md_circle p.name span { font-size:30px; }
+		.main_section3 div.md_circle p.part { padding-top:13px; font-size:24px; color:#fff; }
+
+		.main_section3 ul.mfbox { margin:0 auto; width:1240px; height:212px; }
+		.main_section3 ul.mfbox > li { position:relative; float:left; width:310px; height:212px; overflow:hidden; }
+		.main_section3 ul.mfbox li img.bg { transition:transform .7s; -webkit-transition:transform .7s; }
+		.main_section3 ul.mfbox li:hover img.bg { transform:scale(1.05, 1.05); -webkit-transform:scale(1.05, 1.05); }
+		.main_section3 ul.mfbox li.li1 dl { position:absolute; left:55px; top:30px; width:200px; text-align:center; }
+		.main_section3 ul.mfbox li.li1 dl dt { margin-bottom:15px; }
+		.main_section3 ul.mfbox li.li1 dl dd a { display:block; width:200px; height:44px; line-height:44px; background:url('img/tweenmax2/btn_bg1.png') 0 0 no-repeat; font-size:18px; color:#b76f6f; }
+
+		.main_section3 ul.mfbox li.li2 a.kakao_id { position:absolute; left:55px; top:135px; width:200px; height:44px; line-height:44px; background:url('img/tweenmax2/btn_bg2.png') 0 0 no-repeat; font-size:22px; color:#fed600; text-align:center; }
+		.main_section3 ul.mfbox li.li2 a.kakao_id span { font-family:'Arial'; }
+
+		.main_section3 ul.mfbox li.li3 dl { position:absolute; left:55px; top:45px; width:200px; text-align:center; }
+		.main_section3 ul.mfbox li.li3 dl dt { margin-bottom:20px; }
+		.main_section3 ul.mfbox li.li3 dl dd a { display:block; width:200px; height:44px; line-height:44px; background:url('img/tweenmax2/btn_bg3.png') 0 0 no-repeat; font-size:18px; color:#fff; }
+
+		.main_section3 ul.mfbox li.li4 { padding:35px 30px 0; width:250px; height:177px; background:#fff; }
+		.main_section3 ul.mfbox li.li4 div.time_info { margin-bottom:10px; padding-left:103px; min-height:107px; background:url('img/tweenmax2/clock_bg.jpg') 0 0 no-repeat; }
+		.main_section3 ul.mfbox li.li4 p.tit { padding:5px 0 10px; font-size:18px; font-weight:bold; color:#2e2d2d; }
+		.main_section3 ul.mfbox li.li4 ul li { font-size:14px; color:#2e2d2d; line-height:20px; }
+		.main_section3 ul.mfbox li.li4 div.tel { margin:0 auto; width:229px; height:29px; }
+		.main_section3 ul.mfbox li.li4 div.tel span { float:left; display:block; font-family:'Myriad Pro'; }
+		.main_section3 ul.mfbox li.li4 div.tel span.num { width:19px; height:24px; padding-top:5px; background:url('img/tweenmax2/num_bg.jpg') 0 0 no-repeat; font-size:20px; font-weight:bold; color:#fff; text-align:center; margin-left:2px; }
+		.main_section3 ul.mfbox li.li4 div.tel span.num:first-child { margin-left:0; }
+		.main_section3 ul.mfbox li.li4 div.tel span.dash { font-size:27px; color:#454545; margin-left:2px; height:29px; line-height:29px; }
+		</style>
+		<!-- // 스타일 -->
+
+	</head>
+	<body>
+
+		<div id="container">
+				<img class="mvisual" src="img/tweenmax2/vis.jpg" alt="" />
+				<div class="content">
+					<div class="mvis">
+						<div class="mtxt">매일 <span class="s1">더</span> 아름다워지기를 꿈꾸는<br /><span class="s2">당신을 기다립니다</span></div>
+						<a href="#" class="mbtn">청라 성형외과 소개</a>
+						<a href="#" class="scroll">SCROLL DOWN</a>
+					</div>
+					<!-- // mvis -->
+				</div>
+				<!-- // content -->
+				<div class="main_section1">
+					<div class="bg"><img src="img/tweenmax2/main_bg1.jpg" alt="" /></div>
+					<p class="tit">
+						고객에게 가장 아름다운 라인을 선물하기 위해 최선을 다합니다.
+						<span class="line"></span>
+						<span class="clip"><img src="img/tweenmax2/icon_tit.png" alt="" /></span>
+					</p>
+					<div class="mbox">
+						<ul>
+							<li class="li1">
+								<img src="img/tweenmax2/mbox01.png" alt="" />
+								<div class="mt"><span>눈</span>성형</div>
+								<div class="cover"><a href="#"><img src="img/tweenmax2/btn_more.png" alt="" /></a></div>
+							</li>
+							<li class="li2">
+								<img src="img/tweenmax2/mbox02.png" alt="" />
+								<div class="mt"><span>코</span>성형</div>
+								<div class="cover"><a href="#"><img src="img/tweenmax2/btn_more.png" alt="" /></a></div>
+							</li>
+							<li class="li3">
+								<div class="htxt">
+									<span>안전하고 건강한 아름다움</span><br />
+									청라정형외과
+								</div>
+								<div class="cover"><a href="#"><img src="img/tweenmax2/btn_more.png" alt="" /></a></div>
+							</li>
+							<li class="li4">
+								<img src="img/tweenmax2/mbox04.png" alt="" />
+								<div class="mt"><span>체형</span>성형</div>
+								<div class="cover"><a href="#"><img src="img/tweenmax2/btn_more.png" alt="" /></a></div>
+							</li>
+							<li class="li5">
+								<img src="img/tweenmax2/mbox05.png" alt="" />
+								<div class="mt"><span>동안</span><br />리프팅</div>
+								<div class="cover"><a href="#"><img src="img/tweenmax2/btn_more.png" alt="" /></a></div>
+							</li>
+							<li class="li6">
+								<img src="img/tweenmax2/mbox06.png" alt="" />
+								<div class="mt"><span>피부</span>관리</div>
+								<div class="cover"><a href="#"><img src="img/tweenmax2/btn_more.png" alt="" /></a></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- // main_section1 -->
+				<div class="main_section2">
+					<div class="mbg"><img src="img/tweenmax2/main_bg2-2.jpg" alt="" /></div>
+					<div class="mt_wrap">
+						<div class="mtxt mtxt1"><p>안전하고 건강하게<br />아름다움을 유지할 수 있도록</p></div>
+						<div class="mtxt mtxt2"><p>청라성형외과가 함께합니다.</p></div>
+					</div>
+				</div>
+				<!-- // main_section2 -->
+				<div class="main_section3">
+					<div class="md_inner">
+						<div class="md_txt">
+							<p>청라성형외과의<br />최고 수준 의료진이<br /><span>안전하게 시술</span>합니다</p>
+						</div>
+						<div class="director_l"><img src="img/tweenmax2/director_l.png" alt="김동현 원장, 성형외과" /></div>
+						<div class="director_r"><img src="img/tweenmax2/director_r.png" alt="안현수 원장, 마취통증의학과" /></div>
+						<div class="md_circle md_circle1">
+							<p class="name"><span>김동현</span> 원장</p>
+							<p class="part">성형외과</p>
+						</div>
+						<div class="md_circle md_circle2">
+							<p class="name"><span>안현수</span> 원장</p>
+							<p class="part">마취통증의학과</p>
+						</div>
+					</div>
+					<!-- // md_inner -->
+					<ul class="mfbox">
+						<li class="li1">
+							<img class="bg" src="img/tweenmax2/mbox_bg1.jpg" alt="" />
+							<dl>
+								<dt><img src="img/tweenmax2/mbox_icon1.png" alt="" /></dt>
+								<dd><a href="#">온라인상담</a></dd>
+							</dl>
+						</li>
+						<li class="li2">
+							<img src="img/tweenmax2/mbox_bg2.jpg" alt="" />
+							<a href="javascript:void(0);" class="kakao_id">ID : <span>jsjps7582</span></a>
+						</li>
+						<li class="li3">
+							<img class="bg" src="img/tweenmax2/mbox_bg3.jpg" alt="" />
+							<dl>
+								<dt><img src="img/tweenmax2/mbox_icon2.png" alt="" /></dt>
+								<dd><a href="#">병원 안전시스템</a></dd>
+							</dl>
+						</li>
+						<li class="li4">
+							<div class="time_info">
+								<p class="tit">진료시간</p>
+								<ul>
+									<li>평일 10:00 ~ 19:00</li>
+									<li>토요일 09:00 ~ 15:00</li>
+									<li>일요일, 공휴일 휴진</li>
+								</ul>
+							</div>
+							<div class="tel">
+								<span class="num">0</span>
+								<span class="num">3</span>
+								<span class="num">2</span>
+								<span class="dash">-</span>
+								<span class="num">8</span>
+								<span class="num">1</span>
+								<span class="num">9</span>
+								<span class="dash">-</span>
+								<span class="num">7</span>
+								<span class="num">5</span>
+								<span class="num">8</span>
+								<span class="num">2</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- // main_section3 -->
+		</div>
+		<!-- // container -->
+
+		<!-- 스크립트 -->
+		<script type="text/javascript">
+		// Main Animation ( Parallax Scroll )
+		contentAni = new TimelineLite();
+		contentAni
+			.append(TweenMax.from($('.mvis div.mpop'), .5, {css:{top:0, opacity:0}, ease: Quad.easeOut}))
+			.append(TweenMax.from($('.mvis div.mtxt'), .5, {css:{top:100, opacity:0}, ease: Quad.easeOut}))
+			.append(TweenMax.from($('.mvis a.mbtn'), .5, {css:{bottom:100, opacity:0}, ease: Quad.easeOut}))
+			.append(TweenMax.from($('.mvis a.scroll'), .5, {css:{opacity:0, bottom: 0}, ease: Quad.easeOut, onComplete: function(){
+				scrollTwinkle();
+				function scrollTwinkle(){
+					$('.mvis a.scroll').delay(2000).animate({opacity: 0.5}, 600, function(){
+						$(this).animate({opacity: 1}, 600, function(){
+							scrollTwinkle();
+						});
+					});
+				}
+			}}));
+
+		$('.mvis a.scroll').on('click', function(){
+			$('html, body').stop().animate({'scrollTop': $('.main_section1').offset().top - $('#header').height()}, 300);
+			return false;
+		});
+
+		var controller = $.superscrollorama({
+			reverse: false
+		});
+		controller.addTween('.main_section1', TweenMax.from($('.main_section1 div.bg'), 5, {css:{opacity: 0, top: -100, 'margin-left': -900}, ease: Quad.easeOut}), 1, -300);
+		controller.addTween('.main_section1', TweenMax.from($('.main_section1 p.tit span.line'), 1, {delay:.5, css:{opacity: 0, width: 0}, ease: Quad.easeOut, onComplete: function(){
+			$('.main_section1 p.tit span.clip').animate({'opacity': 1}, 300);
+		}}), 1, -300);
+
+		controller.addTween('.main_section2', TweenMax.to($('.main_section2 div.mbg'), .5, {css:{opacity: 0}, ease: Quad.easeOut}), 1, -200);
+		controller.addTween('.main_section2', TweenMax.from($('.main_section2 div.mtxt1'), .5, {delay:.5, css:{opacity: 0, width: 0}, ease: Quad.easeOut}), 1, -200);
+		controller.addTween('.main_section2', TweenMax.from($('.main_section2 div.mtxt2'), .5, {delay:1, css:{opacity: 0, width: 0}, ease: Quad.easeOut}), 1, -200);
+
+		controller.addTween('.main_section3', TweenMax.from($('.main_section3 div.director_l'), .4, {css:{opacity: 0, left: -100}, ease: Quad.easeOut}), 1, 100);
+		controller.addTween('.main_section3', TweenMax.from($('.main_section3 div.director_r'), .4, {delay:.4, css:{opacity: 0, right: -100}, ease: Quad.easeOut}), 1, 100);
+		controller.addTween('.main_section3', TweenMax.from($('.main_section3 div.md_circle1'), .4, {delay:.8, css:{opacity: 0, top: 353, rotation: 90, scale: 2}, ease: Quad.easeOut}), 1, 100);
+		controller.addTween('.main_section3', TweenMax.from($('.main_section3 div.md_circle2'), .4, {delay:1.2, css:{opacity: 0, top: 353, rotation: -90, scale: 2}, ease: Quad.easeOut}), 1, 100);
+		controller.addTween('.main_section3', TweenMax.from($('.main_section3 div.md_txt'), .8, {delay:1.4, css:{opacity: 0, width: 0}, ease: Quad.easeOut}), 1, 100);
+
+		$('.main_section1 div.mbox li').on('mouseenter', function(){
+			$(this).find('div.cover').stop().fadeIn('fast');
+		});
+		$('.main_section1 div.mbox li').on('mouseleave', function(){
+			$(this).find('div.cover').fadeOut('fast');
+		});
+		</script>
+		<!-- // 스크립트 -->
+
+	</body>
+
+
+</html>

@@ -1,0 +1,33 @@
+a.jbutton{
+  background: transparent url(buttonleft.png) no-repeat top left;
+  display: block;
+  float: left;
+  font: 22px "Tahoma";
+  line-height: 49px; /* This value + 8px should equal height of the button */
+  height: 57px;
+  padding-left: 9px; /* Left part of image */
+  text-decoration: none;
+  outline:none;
+  color:white;
+  cursor:pointer;
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100); 
+  opacity: 1;
+  -moz-opacity: 0.99;
+}
+a.jbutton span{
+  background: transparent url(buttonright.png) no-repeat top right;
+  display: block;
+  padding: 4px 9px 6px 0; /*Set right padding here to 'padding-left' value above*/
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+a.jbutton:link, a.jbutton:visited{
+  color: #F0F0F0; /* button text color */
+}
+a.jbutton:hover{ 
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+}
+a.jbutton:hover span{ 
+  color: #FFFFFF;
+}

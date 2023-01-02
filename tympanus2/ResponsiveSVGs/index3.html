@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Making SVGs Responsive - Demo 3</title>
+		<meta name="description" content="Making SVGs Responsive: SVG embedded using iframe" />
+		<meta name="keywords" content="responsive svg, cross-browser, fluid svg, embedded, iframe" />
+		<meta name="author" content="Sara Soueidan for Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo3.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/PagePreloadingEffect/"><span>Previous Demo</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19623"><span>Back to the Codrops Article</span></a></span>
+			</div>
+			<header class="codrops-header">
+				<h1>Making SVGs Responsive</h1>	
+				<nav class="codrops-demos">
+					<a href="index.html">Using <code>img</code></a>
+					<a href="index2.html">Using <code>object</code></a>
+					<a class="current-demo" href="index3.html">Using <code>iframe</code></a>
+					<a href="index4.html">Using inline <code>svg</code></a>
+					<a href="index5.html">Using <code>background-image</code></a>
+					<a href="index6.html">Adaptive SVG with Media Queries</a>
+				</nav>
+			</header>
+			<div class="content">
+				<p>The gray border is the border of the container with the SVG <code>iframe</code>. <br /><strong>Resize the window to test the SVG fluidity.</strong></p>
+				<h2>SVG as <code>iframe</code> without the padding hack</h2>
+				<div class="container">
+					<iframe src="img/logo.svg">
+						<h3>Fallback text</h3>
+					</iframe>
+				</div>
+				<pre class="code-wrapper">
+					<code>
+&lt;div class="container"&gt;
+  &lt;iframe src="img/logo.svg"&gt;
+    &lt;h3&gt;Fallback text&lt;/h3&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;					
+					</code>
+				</pre>
+				<pre class="code-wrapper">
+					<code>
+.container {
+  border: 10px solid #b6bdc3;
+  width: 100%;
+  background: #fff;
+  margin: 0 auto;
+}
+					</code>
+				</pre>
+				<h2>SVG as <code>iframe</code> with padding hack</h2>
+				<div class="container container--ph">
+					<iframe class="iframe--responsive" src="img/logo.svg">
+						<h3>Fallback text</h3>
+					</iframe>
+				</div>
+				<pre class="code-wrapper">
+					<code>
+&lt;div class="container container--ph"&gt;
+  &lt;iframe class="iframe--responsive" src="img/logo.svg"&gt;
+    &lt;h3&gt;Fallback text&lt;/h3&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;					
+					</code>
+				</pre>
+				<pre class="code-wrapper">
+					<code>
+.container--ph {
+  height: 0;
+  padding-top: 48%;
+  position: relative;
+}
+
+.iframe--responsive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none; /* get rid of the border */
+}
+					</code>
+				</pre>
+			</div>
+		</div><!-- /wrap -->
+	</body>
+</html>

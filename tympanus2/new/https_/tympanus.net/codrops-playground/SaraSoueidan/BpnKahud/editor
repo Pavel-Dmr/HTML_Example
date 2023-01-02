@@ -1,0 +1,228 @@
+<script>window.window = window.window || {};window.gl_data = {"gl_editor":{"gl_code":{"html":"<div class=\"container\">\n  <h1>I am a sticky title. Scroll Down to see me Stick!<\/h1>\n  <p>\n    The heading above me is sticky. When u scroll down, it will get fixed to the top of the viewport once its edge hits that of the viewport.\n  <\/p>\n  <p>\n    The green box on the right is always fixed relative to the viewport no matter now much u scroll vertically and\/or horizontally.\n  <\/p>\n  <p>\n    The following two containers demonstrate relative and absolute positioning.\n  <\/p>\n  <div class=\"element\">\n    <p>The following image has been relatively positioned <img src=\"http:\/\/tympanus.net\/codrops-playground\/assets\/images\/cssref\/properties\/position\/smiley.jpg\" alt=\"\">and shifted from its position by 25px upwards and 250px to the right.<\/p>\n    <p>\n      Its original position in the flow is preserved, and it overlaps surrounding elements since there is not enough margin between them.\n    <\/p>\n  <\/div>\n  <div class=\"context\">\n    <div class=\"absolute\"><\/div>\n    <p>I have established a positioning context for my descendants by getting <code>position: relative<\/code>. My pink square child is positioned absolutely 20px from the bottom and 10px outside my boundaries by using <code>right: -20px<\/code>. It is removed from my normal content flow and can overlap elements beneath it.<\/p>\n    <p>\n      <strong>Try changing the offset values and stretching the pink box horizontally and vertically.<\/strong>\n    <\/p>\n  <\/div>\n\n  <div class=\"fixed\">\n    I am always fixed relative to the viewport!\n  <\/div>\n\n  <div class=\"context context-2\">\n    <div class=\"absolute-stretch\"><\/div>\n    <p>\n      My absolutely positioned element is stretched horizontally using the horizontal offset properties <code>left<\/code> and <code>right<\/code>. It also has a height value set. It is positioned at the bottom using the <code>bottom<\/code> property. Because it has a spefiied height, if you specify a top offset using the <code>top<\/code> property, it will be moved to my top because the <code>top<\/code> property wins.\n    <\/p>\n    <p>\n      Try adding a top offset, to see how it is repositioned. Then, try removing the specified height to see how it stretches vertically to fill the vertical space. Try changing the width and horizontal offsets to see how that changes it, too.\n    <\/p>\n  <\/div>\n<\/div>","css":"body {\n  background-color: #F5F5F5;\n  color: #555;\n  font-size: 1.1em;\n  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  overflow-x: hidden;\n}\n\n.container {\n  margin: 40px auto;\n  max-width: 700px;\n}\n\n.element {\n  padding: 20px;\n  border: 2px solid grey;\n}\n\nh1 {\n  position: -webkit-sticky;\n  position: sticky;\n  top: 0px;\n  padding: 10px;\n  z-index: 1;\n  background-color: #333;\n  color: white;\n}\n\np img {\n  \/* establish positioning context *\/\n  \/* shift position from original position *\/\n\n  position: relative;\n  top: -25px;\n  right: -25px;\n}\n\n.context {\n  \/* general styles *\/\n\n  border: 2px solid grey;\n  min-height: 200px;\n  margin-top: 30px;\n  padding: 20px;\n  \/* establish positioning context *\/\n\n  position: relative;\n}\n\n.absolute {\n  \/* general styles *\/\n\n  height: 150px;\n  width: 150px;\n  background-color: deepPink;\n  color: white;\n  padding: 10px;\n  opacity: .8;\n  \/* position absolutely *\/\n\n  position: absolute;\n  bottom: 20px;\n  right: -20px;\n}\n\n.fixed {\n  color: white;\n  background-color: #009966;\n  padding: 20px;\n  width: 200px;\n  position: fixed;\n  bottom: 50px;\n  left: 50px;\n  z-index: 3;\n}\n\n.context-2 {\n  min-height: 330px;\n}\n\n.absolute-stretch {\n  background-color: deepPink;\n  opacity: .75;\n  \/* play with these values *\/\n\n  height: 100px;\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  \/*top: 0;*\/\n  \/* uncomment this value and then comment the height value to see how the element changes *\/\n}\n","js":""},"gl_uuid":"BpnKahud","gl_title":"#cssref position","gl_description":"Demo for the Codrops CSS Reference entry <a href=\"http:\/\/tympanus.net\/codrops\/?post_type=css_reference&p=21001\">position<\/a>","gl_tags":"","gl_isPicked":false,"gl_isPrivate":false,"gl_hasAd":false,"gl_url_editor":"http:\/\/tympanus.net\/codrops-playground\/SaraSoueidan\/BpnKahud\/editor"},"gl_assets":{"normalize":"http:\/\/tympanus.net\/codrops-playground\/demolibs\/normalize.min.css"},"gl_user_auth":false,"gl_user_owner":false,"gl_panels":{"html":true,"css":true,"js":true,"result":true},"gl_rootLocation":"codrops-playground","gl_outputLocation":"https:\/\/suru.tympanus.net\/"};</script><!DOCTYPEhtml>
+
+<html lang="en" class="page-default">
+
+	<head>
+				<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+<meta name="_token" content="9Xun0yauGN0yr5uGUPFEilyoWmmdtAs7Geok9tup" />
+<meta name="description" content="Demo for the Codrops CSS Reference entry &lt;a href=&quot;http://tympanus.net/codrops/?post_type=css_reference&amp;p=21001&quot;&gt;position&lt;/a&gt;" />
+<meta name="keywords" content="" />
+<meta name="author" content="SaraSoueidan" />
+
+				<link rel="apple-touch-icon" sizes="57x57" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon-160x160.png" sizes="160x160">
+		<link rel="icon" type="image/png" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon-32x32.png" sizes="32x32">
+		<link rel="shortcut icon" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon.ico">
+		<meta name="msapplication-TileColor" content="#edf2f5">
+		<meta name="msapplication-TileImage" content="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/mstile-144x144.png">
+		<meta name="msapplication-config" content="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		
+				<script src="//use.typekit.net/lci1icx.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		
+		<title>#cssref position - Codrops Playground</title>
+
+		<link rel="stylesheet" type="text/css" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/js/p/all-css-cm.min.css" />
+<link rel="stylesheet" type="text/css" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/css/style-editor.min.css" />
+
+		<script src="/codrops-playground/332d5270da28388399324d79ffcf4a45/js/p/all-h-demolayout.min.js"></script>
+
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59174661-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body>
+		<noscript>
+	<div class="no-js-message"><i class="fa fa-fw fa-exclamation-triangle"></i><span>This web application requires JavaScript to work. Please enable JavaScript in your browser.</span></div>
+</noscript>		
+		<div id="cdeditor" class="editor-wrap theme-light">
+	<div class="controls">
+		<h1 class="logo">
+	<a>
+		<img src="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/codrops.svg" alt=""/>
+		<span class="hide">Codrops Playground</span>
+	</a>
+</h1>
+		
+				<div class="meta meta--guest">
+								<button class="meta__icon button--text button--silent" data-dialog="demo-info-dialog">
+				<i class="fa fa-circle-info meta__icon"></i>
+						</button>
+			<h1 class="meta__title"><span class="meta__em js-demo-title">#cssref position</span> by <span class="meta__em">SaraSoueidan</span></h1>
+		</div>
+
+		<div class="actions actions--side">
+	<button class="button button--action button--icon button--runjs hide" id="runjs"><i class="fa fa-refresh"></i><span>Run</span></button>
+	<div class="action action--ddown">
+		<button class="button button--empty button--dd" id="layout-button" title="Settings">
+			<i class="fa fa-cogwheel"></i>
+		</button>
+		<div class="ddown">
+			<div class="control js-control-code">
+				<span class="control__field">
+					<input type="checkbox" id="option-result" data-panel="result" checked />
+					<i class="fa fa-unchecked control__box control__box--off"></i>
+					<i class="fa fa-check control__box control__box--on"></i>
+					<label for="option-result">Result</label>
+				</span>
+				<span class="control__field">
+					<input type="checkbox" id="option-html" data-panel="html" checked />
+					<i class="fa fa-unchecked control__box control__box--off"></i>
+					<i class="fa fa-check control__box control__box--on"></i>
+					<label for="option-html">HTML</label>
+				</span>
+				<span class="control__field">
+					<input type="checkbox" id="option-css" data-panel="css" checked />
+					<i class="fa fa-unchecked control__box control__box--off"></i>
+					<i class="fa fa-check control__box control__box--on"></i>
+					<label for="option-css">CSS</label>
+				</span>
+				<span class="control__field">
+					<input type="checkbox" id="option-js" data-panel="js" checked />
+					<i class="fa fa-unchecked control__box control__box--off"></i>
+					<i class="fa fa-check control__box control__box--on"></i>
+					<label for="option-js">JS</label>
+				</span>
+			</div>
+			<div class="control control--highlight">
+				<span class="control__field">
+					<input type="checkbox" id="autorunjs" checked />
+					<i class="fa fa-unchecked control__box control__box--off"></i>
+					<i class="fa fa-check control__box control__box--on"></i>
+					<label for="autorunjs">Autorun JS</label>
+				</span>
+			</div>
+			<div class="control control--layout cf">
+				<span class="control__field control__field--half">
+					<input type="radio" id="layout-result-code_horizontal" data-layout="result-code" data-orientation="horizontal" name="layouts" />
+					<svg width="60" height="60" viewBox="0 0 60 60" preserveAspectRatio="none">
+						<path d="m5.5,36.5l16,0l0,18l-16,0l0,-18z"/><path d="m21.5,36.5l17,0l0,18l-17,0l0,-18z"/><path d="m38.5,36.5l16,0l0,18l-16,0l0,-18z"/><path d="m5.5,4.5l49,0l0,32l-49,0l0,-32z"/>
+					</svg>
+				</span>
+				<span class="control__field control__field--half">
+					<input type="radio" id="layout-code-result_horizontal" data-layout="code-result" data-orientation="horizontal" name="layouts" />
+					<svg width="60" height="60" viewBox="0 0 60 60" preserveAspectRatio="none">
+						<path d="M54.5,22.5h-16v-18h16V22.5z"/><path d="M38.5,22.5h-17v-18h17V22.5z"/><path d="M21.5,22.5h-16v-18h16V22.5z"/><path d="M54.5,54.5h-49v-32h49V54.5z"/>
+					</svg>
+				</span>
+				<span class="control__field control__field--half">
+					<input type="radio" id="layout-code-result_vertical" data-layout="code-result" data-orientation="vertical" name="layouts" />
+					<svg width="60" height="60" viewBox="0 0 60 60" preserveAspectRatio="none">
+						<path d="M23,5v16H5V5H23z"/><path d="M23,21v17H5V21H23z"/><path d="M23,38v16H5V38H23z"/><path d="M55,5v49H23V5H55z"/>
+					</svg>
+				</span>
+				<span class="control__field control__field--half">
+					<input type="radio" id="layout-result-code_vertical" data-layout="result-code" data-orientation="vertical" name="layouts" />
+					<svg width="60" height="60" viewBox="0 0 60 60" preserveAspectRatio="none">
+						<path d="M55,5v16H37V5H55z"/><path d="M55,21v17H37V21H55z"/><path d="M55,38v16H37V38H55z"/><path d="M37,5v49H5V5H37z"/>
+					</svg>
+				</span>
+			</div>
+
+		</div>	</div>	<div class="action" data-dialog="info-version-dialog">
+		<button class="button button--empty" title="About">
+			<i class="fa fa-circle-question-mark"></i>
+		</button>
+	</div>
+
+	
+</div>
+	</div>	<div class="editor">
+	<div class="panel result">
+		<!--iframe></iframe-->
+	</div>
+	<div class="panel code view-html-css-js">
+		<div class="panel-single html">
+			<div class="panel-header">
+				<h3 class="panel-header__title">HTML</h3>
+				<div class="panel-header__options">
+					<button class="panel-option panel-option--remove" data-panel="html"><i class="fa fa-fw fa-remove"></i></button>
+					<button class="panel-option panel-option--expand" data-panel="html"><i class="fa fa-fw fa-expand"></i><i class="fa fa-fw fa-contract"></i></button>
+				</div>
+			</div>
+			<div class="panel-edit html-edit"></div>
+		</div>
+		<div class="panel-single css">
+			<div class="panel-header">
+				<h3 class="panel-header__title">CSS</h3>
+				<div class="panel-header__options">
+					<button class="panel-option panel-option--remove" data-panel="css"><i class="fa fa-fw fa-remove"></i></button>
+					<button class="panel-option panel-option--expand" data-panel="css"><i class="fa fa-fw fa-expand"></i><i class="fa fa-fw fa-contract"></i></button>
+				</div>
+			</div>
+			<div class="panel-edit css-edit"></div>
+		</div>
+		<div class="panel-single js">
+			<div class="panel-header">
+				<h3 class="panel-header__title">JS</h3>
+				<div class="panel-header__options">
+					<button class="panel-option panel-option--remove" data-panel="js"><i class="fa fa-fw fa-remove"></i></button>
+					<button class="panel-option panel-option--expand" data-panel="js"><i class="fa fa-fw fa-expand"></i><i class="fa fa-fw fa-contract"></i></button>
+				</div>
+			</div>
+			<div class="panel-edit js-edit"></div>
+		</div>
+		<div class="dragme dragme--first"></div>
+		<div class="dragme dragme--second"></div>
+	</div>
+	<div class="dragme--main-helper"></div>
+	<div class="dragme dragme--main"></div>
+</div>	
+	<input id="page-action" type="hidden" value="edit"/>
+</div>
+	<div id="demo-info-dialog" class="dialog dialog--overlay">
+	<div class="dialog__inner">
+		<button class="dialog__close" data-dialog-close><i class="fa fa-fw fa-close"></i></button>
+		<div class="text-block">
+			<h2>#cssref position</h2>
+			<span class="silent">by <strong>SaraSoueidan</strong> on <time datetime="2015-02-02T16:29:32">February 2, 2015</time></span>
+			<div><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<?xml encoding="UTF-8"><html><body><p>Demo for the Codrops CSS Reference entry <a href="http://tympanus.net/codrops/?post_type=css_reference&amp;p=21001">position</a></p></body></html>
+</div>
+					</div>
+	</div>
+</div>
+
+<div id="info-version-dialog" class="dialog dialog--overlay">
+	<div class="dialog__inner">
+		<button class="dialog__close" data-dialog-close><i class="fa fa-fw fa-close"></i></button>
+		<div class="text-block align-center">
+			<h1 class="logo logo--large">
+				<img src="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/codrops.svg" alt="Codrops Logo">
+				<span>Codrops Playground</span>
+			</h1>
+			<h3 class="silent">Version 0.0.9 (alpha)</h3>
+			<p>Codrops Playground is currently in development with many features to come, including mobile support. We are in alpha stage right now, so if you find a bug, please send a mail to <a href="mailto:playground@codrops.com">playground@codrops.com</a> or use the <a href="http://tympanus.net/codrops/contact/">contact form</a> on Codrops.</p>
+			<p>If you'd like to stay updated, follow us on Twitter <a href="https://twitter.com/codrops">@codrops</a>. <strong>Thank you and stay tuned :)</strong></p>
+		</div>
+	</div>
+</div>
+
+
+		
+
+<script src="/codrops-playground/332d5270da28388399324d79ffcf4a45/js/p/all-b-demolayout.min.js"></script>
+	</body>
+</html>

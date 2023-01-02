@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/jquery.bxslider.css" />
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        width: 960px;
+        height: 200px;
+        margin: 0 auto;
+        background-color: pink;
+      }
+
+      section {
+        width: 960px;
+        height: 800px;
+        margin: 0 auto;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>헤더</header>
+    <section>
+      <ul class="bxslider">
+        <li><img src="IMG/images(1).jpg" alt="사진(1)" srcset="" /></li>
+        <li><img src="IMG/images(2).jpg" alt="사진(2)" srcset="" /></li>
+        <li><img src="IMG/images(3).jpg" alt="사진(3)" srcset="" /></li>
+        <li><img src="IMG/images(4).jpg" alt="사진(4)" srcset="" /></li>
+        <li><img src="IMG/images(5).jpg" alt="사진(5)" srcset="" /></li>
+      </ul>
+    </section>
+
+    <script>
+      $(function () {
+        $(".bxslider").bxSlider();
+      });
+    </script>
+  </body>
+</html>

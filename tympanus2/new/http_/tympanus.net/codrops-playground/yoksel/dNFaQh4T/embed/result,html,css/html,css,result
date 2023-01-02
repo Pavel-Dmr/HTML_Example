@@ -1,0 +1,318 @@
+<script>window.window = window.window || {};window.gl_data = {"gl_outputLocation":"https:\/\/suru.tympanus.net\/","gl_code_output":"<!doctype html>\n<html>\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>Codrops-Demo<\/title>\n\n\t\t\n\t<style>\/* Main styles *\/\n@import url(http:\/\/fonts.googleapis.com\/css?family=Open+Sans:800);\n\n.text {\n  fill: none;\n  stroke: url(#p-spots);\n  stroke-width: 8;\n  stroke-linejoin: round;\n}\n\n\/* Colorize & animate pattern *\/\n.g-spots ellipse {\n  stroke-width: 0;\n  stroke-opacity: 1;\n  -webkit-animation: stroke 1.5s infinite;\n  animation: stroke 1.5s infinite;\n}\n\n.g-spots ellipse:nth-child(5n + 1) {\n  fill: #3F0B1B;\n  stroke: #3F0B1B;\n  -webkit-animation-delay: -0.3s;\n  animation-delay: -0.3s;\n}\n\n.g-spots ellipse:nth-child(5n + 2) {\n  fill: #7A1631;\n  stroke: #7A1631;\n  -webkit-animation-delay: -0.6s;\n  animation-delay: -0.6s;\n}\n\n.g-spots ellipse:nth-child(5n + 3) {\n  fill: #CF423C;\n  stroke: #CF423C;\n  -webkit-animation-delay: -0.9s;\n  animation-delay: -0.9s;\n}\n\n.g-spots ellipse:nth-child(5n + 4) {\n  fill: #FC7D49;\n  stroke: #FC7D49;\n  -webkit-animation-delay: -1.2s;\n  animation-delay: -1.2s;\n}\n\n.g-spots ellipse:nth-child(5n + 5) {\n  fill: #FFD462;\n  stroke: #FFD462;\n  -webkit-animation-delay: -1.5s;\n  animation-delay: -1.5s;\n}\n\n\/* Change stroke-width inside animation *\/\n@-webkit-keyframes stroke {\n  50% {\n    stroke-width: 27;\n    stroke-opacity: .5;\n  }\n}\n\n@keyframes stroke {\n  50% {\n    stroke-width: 27;\n    stroke-opacity: .5;\n  }\n}\n\n\/* Other styles *\/\nhtml, body {\n  height: 100%;\n}\n\nbody {\n  background: #21060e -webkit-linear-gradient(0deg, #21060e 50%, #18040a 50%);\n  background: #21060e linear-gradient(90deg, #21060e 50%, #18040a 50%);\n  background-size: .2em 100%;\n  font: 14.5em\/1 Open Sans, Impact;\n  text-transform: uppercase;\n  margin: 0;\n}\n\nsvg {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n}<\/style><\/head>\n\t<body>\n\t\n\t<svg viewBox=\"0 0 600 300\">\n\n  <!-- Pattern -->\n  <pattern\n           id=\"p-spots\"\n           width=\"50\"\n           height=\"50\"\n           viewBox=\"0 0 90 90\"\n           patternUnits=\"userSpaceOnUse\"\n           >\n\n    <g class=\"g-spots\">\n\n      <ellipse rx=\"25\" ry=\"35\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"25\" ry=\"20\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"15\" ry=\"20\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"15\" ry=\"10\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"5\" ry=\"10\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n    <\/g>\n\n    <g class=\"g-spots\"\n       transform=\"translate(45,45)\">\n\n      <ellipse rx=\"25\" ry=\"35\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"25\" ry=\"20\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"15\" ry=\"20\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"15\" ry=\"10\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"5\" ry=\"10\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n    <\/g>\n\n    <g class=\"g-spots\"\n       transform=\"translate(-45,45)\">\n\n      <ellipse rx=\"25\" ry=\"35\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"25\" ry=\"20\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"15\" ry=\"20\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"15\" ry=\"10\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"5\" ry=\"10\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n    <\/g>\n\n    <g class=\"g-spots\"\n       transform=\"translate(-45,-45)\">\n\n      <ellipse rx=\"25\" ry=\"35\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"25\" ry=\"20\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"15\" ry=\"20\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"15\" ry=\"10\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"5\" ry=\"10\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n    <\/g>\n\n    <g class=\"g-spots\"\n       transform=\"translate(45,-45)\">\n\n      <ellipse rx=\"25\" ry=\"35\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"25\" ry=\"20\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"15\" ry=\"20\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"15\" ry=\"10\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n      <ellipse rx=\"5\" ry=\"10\"\n               cx=\"50\"\n               cy=\"50\" \n               ><\/ellipse>\n\n    <\/g>\n\n  <\/pattern>\n\n  <!-- Text -->\n  <text text-anchor=\"middle\"\n        x=\"50%\"\n        y=\"50%\"\n        dy=\".35em\"\n        class=\"text\"\n        >\n    Text\n  <\/text>\n\n<\/svg><script><\/script><\/body>\n<\/html>"};</script><!DOCTYPEhtml>
+
+<html lang="en" class="page-default">
+
+	<head>
+				<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		
+		<title>SVG text with animated stroke pattern | Embed - Codrops Playground</title>
+
+		<link rel="stylesheet" type="text/css" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/css/all-css-embed.min.css" />
+
+		
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59174661-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body>
+		<noscript>
+	<div class="no-js-message"><i class="fa fa-fw fa-exclamation-triangle"></i><span>This web application requires JavaScript to work. Please enable JavaScript in your browser.</span></div>
+</noscript>		
+		<div class="embed">
+	<nav id="embed-nav" class="embed-nav">
+		<h1 class="logo"><img src="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/codrops.svg" alt="Codrops Logo"><span>Codrops Editor</span></h1>
+		<div class="embed-tabs js-tabs">
+			<span class="embed-tab ">HTML</span>			<span class="embed-tab ">CSS</span>						<span data-result class="embed-tab selected">Result</span>		</div>
+		<select class="embed-tabs-select js-tabs-select">
+			<option >HTML</option>			<option >CSS</option>						<option selected>Result</option>		</select>
+		<a class="embed-button js-demo--location" target="_blank" href="https://tympanus.net/codrops-playground/yoksel/dNFaQh4T/editor/html,css,result"><i class="icon icon-edit"></i><span>Edit</span></a>
+		
+								<a class="embed-button js-run-demo" id="rerun" href="#"><i class="icon icon-refresh"></i><span>Run</span></a>	
+						</nav>
+	<div id="embed-content" class="embed-content-wrap">
+				<div class="embed-content embed-content--code embed-content--html ">
+			<pre><code class="html">&lt;svg viewBox=&quot;0 0 600 300&quot;&gt;
+
+  &lt;!-- Pattern --&gt;
+  &lt;pattern
+           id=&quot;p-spots&quot;
+           width=&quot;50&quot;
+           height=&quot;50&quot;
+           viewBox=&quot;0 0 90 90&quot;
+           patternUnits=&quot;userSpaceOnUse&quot;
+           &gt;
+
+    &lt;g class=&quot;g-spots&quot;&gt;
+
+      &lt;ellipse rx=&quot;25&quot; ry=&quot;35&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;25&quot; ry=&quot;20&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;15&quot; ry=&quot;20&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;15&quot; ry=&quot;10&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;5&quot; ry=&quot;10&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+    &lt;/g&gt;
+
+    &lt;g class=&quot;g-spots&quot;
+       transform=&quot;translate(45,45)&quot;&gt;
+
+      &lt;ellipse rx=&quot;25&quot; ry=&quot;35&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;25&quot; ry=&quot;20&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;15&quot; ry=&quot;20&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;15&quot; ry=&quot;10&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;5&quot; ry=&quot;10&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+    &lt;/g&gt;
+
+    &lt;g class=&quot;g-spots&quot;
+       transform=&quot;translate(-45,45)&quot;&gt;
+
+      &lt;ellipse rx=&quot;25&quot; ry=&quot;35&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;25&quot; ry=&quot;20&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;15&quot; ry=&quot;20&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;15&quot; ry=&quot;10&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;5&quot; ry=&quot;10&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+    &lt;/g&gt;
+
+    &lt;g class=&quot;g-spots&quot;
+       transform=&quot;translate(-45,-45)&quot;&gt;
+
+      &lt;ellipse rx=&quot;25&quot; ry=&quot;35&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;25&quot; ry=&quot;20&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;15&quot; ry=&quot;20&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;15&quot; ry=&quot;10&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;5&quot; ry=&quot;10&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+    &lt;/g&gt;
+
+    &lt;g class=&quot;g-spots&quot;
+       transform=&quot;translate(45,-45)&quot;&gt;
+
+      &lt;ellipse rx=&quot;25&quot; ry=&quot;35&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;25&quot; ry=&quot;20&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;15&quot; ry=&quot;20&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;15&quot; ry=&quot;10&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+      &lt;ellipse rx=&quot;5&quot; ry=&quot;10&quot;
+               cx=&quot;50&quot;
+               cy=&quot;50&quot; 
+               &gt;&lt;/ellipse&gt;
+
+    &lt;/g&gt;
+
+  &lt;/pattern&gt;
+
+  &lt;!-- Text --&gt;
+  &lt;text text-anchor=&quot;middle&quot;
+        x=&quot;50%&quot;
+        y=&quot;50%&quot;
+        dy=&quot;.35em&quot;
+        class=&quot;text&quot;
+        &gt;
+    Text
+  &lt;/text&gt;
+
+&lt;/svg&gt;</code></pre>
+		</div>
+		
+				<div class="embed-content embed-content--code embed-content--css ">
+			<pre><code class="css">/* Main styles */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.text {
+  fill: none;
+  stroke: url(#p-spots);
+  stroke-width: 8;
+  stroke-linejoin: round;
+}
+
+/* Colorize &amp; animate pattern */
+.g-spots ellipse {
+  stroke-width: 0;
+  stroke-opacity: 1;
+  -webkit-animation: stroke 1.5s infinite;
+  animation: stroke 1.5s infinite;
+}
+
+.g-spots ellipse:nth-child(5n + 1) {
+  fill: #3F0B1B;
+  stroke: #3F0B1B;
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+.g-spots ellipse:nth-child(5n + 2) {
+  fill: #7A1631;
+  stroke: #7A1631;
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+
+.g-spots ellipse:nth-child(5n + 3) {
+  fill: #CF423C;
+  stroke: #CF423C;
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.g-spots ellipse:nth-child(5n + 4) {
+  fill: #FC7D49;
+  stroke: #FC7D49;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+
+.g-spots ellipse:nth-child(5n + 5) {
+  fill: #FFD462;
+  stroke: #FFD462;
+  -webkit-animation-delay: -1.5s;
+  animation-delay: -1.5s;
+}
+
+/* Change stroke-width inside animation */
+@-webkit-keyframes stroke {
+  50% {
+    stroke-width: 27;
+    stroke-opacity: .5;
+  }
+}
+
+@keyframes stroke {
+  50% {
+    stroke-width: 27;
+    stroke-opacity: .5;
+  }
+}
+
+/* Other styles */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #21060e -webkit-linear-gradient(0deg, #21060e 50%, #18040a 50%);
+  background: #21060e linear-gradient(90deg, #21060e 50%, #18040a 50%);
+  background-size: .2em 100%;
+  font: 14.5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}</code></pre>
+		</div>
+		
+		
+				<div class="embed-content embed-content--result selected">
+			<iframe src="https://suru.tympanus.net/" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"></iframe>
+		</div>
+			</div>
+	</div>
+		<script src="/codrops-playground/332d5270da28388399324d79ffcf4a45/js/p/all-b-embed.min.js"></script>
+	</body>
+</html>

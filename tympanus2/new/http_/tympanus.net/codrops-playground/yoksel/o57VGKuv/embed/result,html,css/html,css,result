@@ -1,0 +1,275 @@
+<script>window.window = window.window || {};window.gl_data = {"gl_outputLocation":"https:\/\/suru.tympanus.net\/","gl_code_output":"<!doctype html>\n<html>\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>Codrops-Demo<\/title>\n\n\t\t\n\t<style>\/* Main styles *\/\n@import url(http:\/\/fonts.googleapis.com\/css?family=Open+Sans:800);\n\n.text {\n  fill: url(#p-stars);\n  stroke: #551F7A;\n  stroke-width: 3;\n}\n\n\/* Colorize & animate pattern *\/\n.g-stars polygon {\n  stroke-width: 0;\n  -webkit-animation: stroke 2s infinite;\n  animation: stroke 2s infinite;\n}\n\n.g-stars polygon:nth-child(5n + 1) {\n  fill: #551F7A;\n  stroke: #551F7A;\n  -webkit-animation-delay: -0.4s;\n  animation-delay: -0.4s;\n}\n\n.g-stars polygon:nth-child(5n + 2) {\n  fill: #BA2799;\n  stroke: #BA2799;\n  -webkit-animation-delay: -0.8s;\n  animation-delay: -0.8s;\n}\n\n.g-stars polygon:nth-child(5n + 3) {\n  fill: #D9587A;\n  stroke: #D9587A;\n  -webkit-animation-delay: -1.2s;\n  animation-delay: -1.2s;\n}\n\n.g-stars polygon:nth-child(5n + 4) {\n  fill: #FFDD00;\n  stroke: #FFDD00;\n  -webkit-animation-delay: -1.6s;\n  animation-delay: -1.6s;\n}\n\n.g-stars polygon:nth-child(5n + 5) {\n  fill: #FFF3A1;\n  stroke: #FFF3A1;\n  -webkit-animation-delay: -2s;\n  animation-delay: -2s;\n}\n\n\/* Change stroke-width within animation *\/\n@-webkit-keyframes stroke {\n  50% {\n    stroke-width: 8;\n  }\n}\n@keyframes stroke {\n  50% {\n    stroke-width: 8;\n  }\n}\n\n\/* Other styles *\/\nhtml, body {\n  height: 100%;\n}\n\nbody {\n  background: #280e39 -webkit-linear-gradient(0deg, #280e39 50%, #220c31 50%);\n  background: #280e39 linear-gradient(90deg, #280e39 50%, #220c31 50%);\n  background-size: .2em 100%;\n  font: 14.5em\/1 Open Sans, Impact;\n  text-transform: uppercase;\n  margin: 0;\n}\n\nsvg {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n}\n<\/style><\/head>\n\t<body>\n\t\n\t<svg viewBox=\"0 0 600 300\">\n\n  <!-- Pattern -->\n  <pattern\n           id=\"p-stars\"\n           width=\"70\"\n           height=\"70\"\n           viewBox=\"0 0 120 120\"\n           patternUnits=\"userSpaceOnUse\"\n           >\n\n    <g class=\"g-stars\">\n      <polygon\n               points=\"15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549 \"\n               transform=\"\n                          scale(.9,.9)\"        \n               ><\/polygon>\n\n      <polygon\n               points=\"15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549\"\n               transform=\"\n                          translate(30,30)\n                          scale(.9,.9)\n                          \" \n               ><\/polygon>\n\n      <polygon\n               points=\"15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549\"\n               transform=\"\n                          translate(90,30)\n                          scale(.9,.9)\n                          \" \n               ><\/polygon>\n\n      <polygon\n               points=\"15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549\"\n               transform=\"\n                          translate(0,60)\n                          scale(.9,.9)\" \n               ><\/polygon>\n\n      <polygon\n               points=\"15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549 \"\n               transform=\"\n                          translate(60,0)\n                          scale(.9,.9)  \n                          \" \n               ><\/polygon>\n\n      <polygon\n               points=\"15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549\"\n               transform=\"\n                          translate(60,60)\n                          scale(.9,.9)  \n                          \" \n               ><\/polygon>\n\n      <polygon\n               points=\"15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549\"\n               transform=\"\n                          translate(90,90)\n                          scale(.9,.9)\n                          \" \n               ><\/polygon>\n\n      <polygon\n               points=\"15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549\"\n               transform=\"\n                          translate(30,90)\n                          scale(.9,.9)\n                          \" \n               ><\/polygon>\n\n\n      <polygon\n               points=\"15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549\"\n               transform=\"\n                          translate(120,60)\n                          scale(.9,.9)\n                          \" \n               ><\/polygon>\n\n      <polygon\n               points=\"15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549\"\n               transform=\"\n                          translate(60,120)\n                          scale(.9,.9)\n                          \" \n               ><\/polygon>\n\n      <polygon\n               points=\"15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549\"\n               transform=\"\n                          translate(0,120)\n                          scale(.9,.9)\n                          \" \n               ><\/polygon>\n\n      <polygon\n               points=\"15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549\"\n               transform=\"\n                          translate(-30,90)\n                          scale(.9,.9)\n                          \" \n               ><\/polygon>\n\n      <!-- Hack to make shapes full  -->\n      <polygon><\/polygon>\n      <polygon><\/polygon>\n      <polygon><\/polygon>\n\n      <polygon\n               points=\"15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549\"\n               transform=\"\n                          translate(120,0)\n                          scale(.9,.9)\n                          \" \n               ><\/polygon>\n\n    <\/g>\n\n  <\/pattern>\n\n  <!-- Text -->\n  <text text-anchor=\"middle\"\n        x=\"50%\"\n        y=\"50%\"\n        dy=\".35em\"\n        class=\"text\"\n        >\n    Text\n  <\/text>\n\n<\/svg><script><\/script><\/body>\n<\/html>"};</script><!DOCTYPEhtml>
+
+<html lang="en" class="page-default">
+
+	<head>
+				<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		
+		<title>SVG text with animated pattern | Embed - Codrops Playground</title>
+
+		<link rel="stylesheet" type="text/css" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/css/all-css-embed.min.css" />
+
+		
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59174661-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body>
+		<noscript>
+	<div class="no-js-message"><i class="fa fa-fw fa-exclamation-triangle"></i><span>This web application requires JavaScript to work. Please enable JavaScript in your browser.</span></div>
+</noscript>		
+		<div class="embed">
+	<nav id="embed-nav" class="embed-nav">
+		<h1 class="logo"><img src="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/codrops.svg" alt="Codrops Logo"><span>Codrops Editor</span></h1>
+		<div class="embed-tabs js-tabs">
+			<span class="embed-tab ">HTML</span>			<span class="embed-tab ">CSS</span>						<span data-result class="embed-tab selected">Result</span>		</div>
+		<select class="embed-tabs-select js-tabs-select">
+			<option >HTML</option>			<option >CSS</option>						<option selected>Result</option>		</select>
+		<a class="embed-button js-demo--location" target="_blank" href="https://tympanus.net/codrops-playground/yoksel/o57VGKuv/editor/html,css,result"><i class="icon icon-edit"></i><span>Edit</span></a>
+		
+								<a class="embed-button js-run-demo" id="rerun" href="#"><i class="icon icon-refresh"></i><span>Run</span></a>	
+						</nav>
+	<div id="embed-content" class="embed-content-wrap">
+				<div class="embed-content embed-content--code embed-content--html ">
+			<pre><code class="html">&lt;svg viewBox=&quot;0 0 600 300&quot;&gt;
+
+  &lt;!-- Pattern --&gt;
+  &lt;pattern
+           id=&quot;p-stars&quot;
+           width=&quot;70&quot;
+           height=&quot;70&quot;
+           viewBox=&quot;0 0 120 120&quot;
+           patternUnits=&quot;userSpaceOnUse&quot;
+           &gt;
+
+    &lt;g class=&quot;g-stars&quot;&gt;
+      &lt;polygon
+               points=&quot;15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549 &quot;
+               transform=&quot;
+                          scale(.9,.9)&quot;        
+               &gt;&lt;/polygon&gt;
+
+      &lt;polygon
+               points=&quot;15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549&quot;
+               transform=&quot;
+                          translate(30,30)
+                          scale(.9,.9)
+                          &quot; 
+               &gt;&lt;/polygon&gt;
+
+      &lt;polygon
+               points=&quot;15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549&quot;
+               transform=&quot;
+                          translate(90,30)
+                          scale(.9,.9)
+                          &quot; 
+               &gt;&lt;/polygon&gt;
+
+      &lt;polygon
+               points=&quot;15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549&quot;
+               transform=&quot;
+                          translate(0,60)
+                          scale(.9,.9)&quot; 
+               &gt;&lt;/polygon&gt;
+
+      &lt;polygon
+               points=&quot;15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549 &quot;
+               transform=&quot;
+                          translate(60,0)
+                          scale(.9,.9)  
+                          &quot; 
+               &gt;&lt;/polygon&gt;
+
+      &lt;polygon
+               points=&quot;15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549&quot;
+               transform=&quot;
+                          translate(60,60)
+                          scale(.9,.9)  
+                          &quot; 
+               &gt;&lt;/polygon&gt;
+
+      &lt;polygon
+               points=&quot;15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549&quot;
+               transform=&quot;
+                          translate(90,90)
+                          scale(.9,.9)
+                          &quot; 
+               &gt;&lt;/polygon&gt;
+
+      &lt;polygon
+               points=&quot;15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549&quot;
+               transform=&quot;
+                          translate(30,90)
+                          scale(.9,.9)
+                          &quot; 
+               &gt;&lt;/polygon&gt;
+
+
+      &lt;polygon
+               points=&quot;15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549&quot;
+               transform=&quot;
+                          translate(120,60)
+                          scale(.9,.9)
+                          &quot; 
+               &gt;&lt;/polygon&gt;
+
+      &lt;polygon
+               points=&quot;15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549&quot;
+               transform=&quot;
+                          translate(60,120)
+                          scale(.9,.9)
+                          &quot; 
+               &gt;&lt;/polygon&gt;
+
+      &lt;polygon
+               points=&quot;15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549&quot;
+               transform=&quot;
+                          translate(0,120)
+                          scale(.9,.9)
+                          &quot; 
+               &gt;&lt;/polygon&gt;
+
+      &lt;polygon
+               points=&quot;15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549&quot;
+               transform=&quot;
+                          translate(-30,90)
+                          scale(.9,.9)
+                          &quot; 
+               &gt;&lt;/polygon&gt;
+
+      &lt;!-- Hack to make shapes full  --&gt;
+      &lt;polygon&gt;&lt;/polygon&gt;
+      &lt;polygon&gt;&lt;/polygon&gt;
+      &lt;polygon&gt;&lt;/polygon&gt;
+
+      &lt;polygon
+               points=&quot;15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549&quot;
+               transform=&quot;
+                          translate(120,0)
+                          scale(.9,.9)
+                          &quot; 
+               &gt;&lt;/polygon&gt;
+
+    &lt;/g&gt;
+
+  &lt;/pattern&gt;
+
+  &lt;!-- Text --&gt;
+  &lt;text text-anchor=&quot;middle&quot;
+        x=&quot;50%&quot;
+        y=&quot;50%&quot;
+        dy=&quot;.35em&quot;
+        class=&quot;text&quot;
+        &gt;
+    Text
+  &lt;/text&gt;
+
+&lt;/svg&gt;</code></pre>
+		</div>
+		
+				<div class="embed-content embed-content--code embed-content--css ">
+			<pre><code class="css">/* Main styles */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.text {
+  fill: url(#p-stars);
+  stroke: #551F7A;
+  stroke-width: 3;
+}
+
+/* Colorize &amp; animate pattern */
+.g-stars polygon {
+  stroke-width: 0;
+  -webkit-animation: stroke 2s infinite;
+  animation: stroke 2s infinite;
+}
+
+.g-stars polygon:nth-child(5n + 1) {
+  fill: #551F7A;
+  stroke: #551F7A;
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+
+.g-stars polygon:nth-child(5n + 2) {
+  fill: #BA2799;
+  stroke: #BA2799;
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+.g-stars polygon:nth-child(5n + 3) {
+  fill: #D9587A;
+  stroke: #D9587A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+
+.g-stars polygon:nth-child(5n + 4) {
+  fill: #FFDD00;
+  stroke: #FFDD00;
+  -webkit-animation-delay: -1.6s;
+  animation-delay: -1.6s;
+}
+
+.g-stars polygon:nth-child(5n + 5) {
+  fill: #FFF3A1;
+  stroke: #FFF3A1;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+/* Change stroke-width within animation */
+@-webkit-keyframes stroke {
+  50% {
+    stroke-width: 8;
+  }
+}
+@keyframes stroke {
+  50% {
+    stroke-width: 8;
+  }
+}
+
+/* Other styles */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #280e39 -webkit-linear-gradient(0deg, #280e39 50%, #220c31 50%);
+  background: #280e39 linear-gradient(90deg, #280e39 50%, #220c31 50%);
+  background-size: .2em 100%;
+  font: 14.5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+</code></pre>
+		</div>
+		
+		
+				<div class="embed-content embed-content--result selected">
+			<iframe src="https://suru.tympanus.net/" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"></iframe>
+		</div>
+			</div>
+	</div>
+		<script src="/codrops-playground/332d5270da28388399324d79ffcf4a45/js/p/all-b-embed.min.js"></script>
+	</body>
+</html>

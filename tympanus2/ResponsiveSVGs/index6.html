@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Making SVGs Responsive - Demo 6</title>
+		<meta name="description" content="Making SVGs Responsive: Responsive SVG with Media Queries" />
+		<meta name="keywords" content="responsive svg, cross-browser, fluid svg, embedded, media query" />
+		<meta name="author" content="Sara Soueidan for Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo6.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/PagePreloadingEffect/"><span>Previous Demo</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19623"><span>Back to the Codrops Article</span></a></span>
+			</div>
+			<header class="codrops-header">
+				<h1>Making SVGs Responsive</h1>	
+				<nav class="codrops-demos">
+					<a href="index.html">Using <code>img</code></a>
+					<a href="index2.html">Using <code>object</code></a>
+					<a href="index3.html">Using <code>iframe</code></a>
+					<a href="index4.html">Using inline <code>svg</code></a>
+					<a href="index5.html">Using <code>background-image</code></a>
+					<a class="current-demo" href="index6.html">Adaptive SVG with Media Queries</a>
+				</nav>
+			</header>
+			<div class="content">
+				<p><strong>Resize the screen to see the SVG adapt.</strong></p>
+				<h2>Adaptive SVG using media queries</h2>
+				<div class="container">
+					<img src="img/logo_mq.svg"/>
+				</div>
+				<pre class="code-wrapper">
+					<code>
+&lt;div class="container"&gt;
+  &lt;img src="img/logo_mq.svg"/&gt;
+&lt;/div&gt;					
+					</code>
+				</pre>
+				<pre class="code-wrapper">
+					<code>
+.container {
+  border: 10px solid #b6bdc3;
+  width: 100%;
+  background: #fff;
+  margin: 0 auto;
+}
+
+/* Required to make image fluid in IE */
+
+img:not(.png) {
+  width: 100%;
+}				
+					</code>
+				</pre>
+				<p>Contents of the SVG file:</p>
+				<pre class="code-wrapper">
+					<code>
+&lt;svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 194 186"&gt;
+  &lt;style&gt;
+    svg * {
+      transition: fill .1s ease-out, opacity .1s ease-out;
+    }
+    @media all and (max-width: 250px) {
+      #curved_bg { 
+        opacity: 0; 
+      }
+      #secondary_content, #primary_content { 
+        fill: #195463; 
+      }
+    }
+    @media all and (max-width: 200px) {
+      #secondary_content {
+        opacity: 0;
+      }
+    }
+    @media all and (max-width: 150px) {
+      #inner-circle, #middle-circle {
+        opacity: 0;
+      }
+    }
+  &lt;/style&gt;
+  &lt;path id="curved_bg" fill="#195463" d="..."/&gt;
+  &lt;g id="primary_content" fill="#ECECEC"&gt;
+      &lt;path id="icon" d="..."/&gt;
+      &lt;path id="inner-circle" d="..."/&gt;
+      &lt;path id="middle-circle" d="..."/&gt;
+  &lt;/g&gt;&lt;!-- /primary content --&gt;
+  &lt;g id="secondary_content" fill="#ECECEC"&gt;
+      &lt;path id="bottom-text" d="..."/&gt;
+      &lt;path id="upper-text" d="..."/&gt;
+      &lt;path id="outer-circle" d="..."/&gt;
+      &lt;circle id="left-dot" cx="31.1" cy="91.5" r="3"/&gt;
+      &lt;circle id="right-dot" cx="163.4" cy="91.5" r="3"/&gt;
+  &lt;/g&gt;&lt;!-- end secondary content --&gt;
+&lt;/svg&gt;
+					</code>
+				</pre>
+			</div>
+		</div><!-- /wrap -->
+	</body>
+</html>

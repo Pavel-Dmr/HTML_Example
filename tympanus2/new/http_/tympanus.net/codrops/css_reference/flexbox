@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+	<html dir="ltr" lang="en-US"> 
+	<head> 
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flexbox | Codrops CSS Reference</title>
+				<meta name="author" content="Team Codrops">
+		<link rel="stylesheet" type="text/css" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/main.css?v444" />
+		<link rel="stylesheet" type="text/css" media="print" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/main_print.css?v5" />
+		<link rel="profile" href="http://gmpg.org/xfn/11" />	
+		<script src="//use.typekit.net/pdd7wbw.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		<link rel="shortcut icon" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/favicon.ico">
+		<link rel="apple-touch-icon" sizes="144x144" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/apple-touch-icon-144x144.png">
+		<link rel="icon" type="image/png" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/favicon-196x196.png" sizes="196x196">
+		<!-- 857AADD2-739C-4BF6-A8D3-4986BE868A0C -->
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="msapplication-TileImage" content="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/mstile-144x144.png">
+		<meta name="msapplication-config" content="/codrops/wp-content/themes/codropstheme03/favicons/browserconfig.xml">
+					<!--single syntax highlighter-->
+			<link rel="stylesheet" type="text/css" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/cssref.css?v10"/>
+			   
+		
+<!-- This site is optimized with the Yoast SEO plugin v13.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Flexbox, or the Flexible Box Layout, is a new layout mode in CSS3 designed for laying out complex applications and web pages."/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://tympanus.net/codrops/css_reference/flexbox/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Flexbox | Codrops CSS Reference" />
+<meta property="og:description" content="Flexbox, or the Flexible Box Layout, is a new layout mode in CSS3 designed for laying out complex applications and web pages." />
+<meta property="og:url" content="https://tympanus.net/codrops/css_reference/flexbox/" />
+<meta property="og:site_name" content="Codrops" />
+<meta property="article:publisher" content="https://www.facebook.com/codrops/" />
+<meta property="og:image" content="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/flex-axes.png" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://tympanus.net/codrops/#website","url":"https://tympanus.net/codrops/","name":"Codrops","inLanguage":"en-US","description":"Useful resources and inspiration for creative minds","potentialAction":{"@type":"SearchAction","target":"https://tympanus.net/codrops/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://tympanus.net/codrops/css_reference/flexbox/#primaryimage","inLanguage":"en-US","url":"https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/flex-axes.png","width":890,"height":568},{"@type":"WebPage","@id":"https://tympanus.net/codrops/css_reference/flexbox/#webpage","url":"https://tympanus.net/codrops/css_reference/flexbox/","name":"Flexbox | Codrops CSS Reference","isPartOf":{"@id":"https://tympanus.net/codrops/#website"},"inLanguage":"en-US","primaryImageOfPage":{"@id":"https://tympanus.net/codrops/css_reference/flexbox/#primaryimage"},"datePublished":"2015-02-03T11:33:14+00:00","dateModified":"2017-05-04T19:15:26+00:00","description":"Flexbox, or the Flexible Box Layout, is a new layout mode in CSS3 designed for laying out complex applications and web pages."}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='prismatic-blocks-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/prismatic/css/styles-blocks.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='avatar-manager-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/avatar-manager/assets/css/avatar-manager.min.css?ver=1.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=1.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=1.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp_typeahead_css-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/css/typeahead.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ciu-display-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/caniuse-shortcode/lib/css/caniuse.min.css?ver=0.0.4' type='text/css' media='all' />
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/avatar-manager/assets/js/avatar-manager.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[]};
+var log_object = {"ajax_url":"https:\/\/tympanus.net\/codrops\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public.js?ver=1.8.3'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/highlight.pack.js?ver=85'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/highlight.user.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/cos.js?ver=5.3.2'></script>
+<link rel='https://api.w.org/' href='https://tympanus.net/codrops/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://tympanus.net/codrops/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3.2" />
+<link rel='shortlink' href='https://tympanus.net/codrops/?p=21058' />
+<link rel="alternate" type="application/json+oembed" href="https://tympanus.net/codrops/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftympanus.net%2Fcodrops%2Fcss_reference%2Fflexbox%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://tympanus.net/codrops/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftympanus.net%2Fcodrops%2Fcss_reference%2Fflexbox%2F&#038;format=xml" />
+<script type="text/javascript">document.documentElement.className += " js";</script>
+		<script type="text/javascript">
+			var cli_flush_cache=1;
+		</script>
+				<script src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/search.js"></script>
+		
+		<script type="text/javascript">
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-7243260-2']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+
+			  function recordOutboundLink(link, category, action) {
+				_gat._getTrackerByName()._trackEvent(category, action);
+				setTimeout('document.location = "' + link.href + '"', 100);
+			}
+		</script>
+		<noscript>
+			<link rel="stylesheet" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/noscript.css"/>
+		</noscript>
+		<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "WebSite",
+		  "url": "https://tympanus.net/codrops/",
+		  "potentialAction": {
+		    "@type": "SearchAction",
+		    "target": "https://tympanus.net/codrops/?s={search_term_string}",
+		    "query-input": "required name=search_term_string"
+		  }
+		}
+		</script>
+		<script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+	</head>
+	<body id="codrops-body">
+				<!-- BuySellAds.com Ad Code -->
+		<script type="text/javascript">
+			(function(){
+				var bsa = document.createElement('script');
+				bsa.type = 'text/javascript';
+				bsa.async = true;
+				bsa.src = '//s3.buysellads.com/ac/bsa.js';
+				(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+			})();
+		</script>
+		<!-- END BuySellAds.com Ad Code -->	
+				<div class="ct-container">
+			<header class="ct-header">
+				<div class="ct-inner ct-cf">
+
+											<div class="ct-branding">
+							<a class="ct-logo" href="/codrops" rel="home"><img src="/codrops/wp-content/themes/codropstheme03/images/codrops-logo.svg" alt="Codrops logo" /></a>
+						</div>
+					
+					<div class="ct-nav-wrapper">
+						<nav class="ct-nav-main">
+						   <ul>
+								<li><a href="/codrops/category/tutorials/">Tutorials</a></li>
+								<li><a href="/codrops/category/playground/">Playground</a></li>
+								<li><a href="/codrops/category/articles/">Articles</a></li>
+								<li><a href="/codrops/collective/">Collective</a></li>
+								<li><a href="/codrops/css_reference/">CSS Reference</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="ct-header-items-right ct-cf">
+						<div class="ct-search" id="ct-search">
+							<form method="get" id="searchform" action="https://tympanus.net/codrops/">
+								<div class="ct-search-input-wrap">
+									<input class="ct-search-input" placeholder="Search on Codrops..." type="text" value="" name="s" id="s"/>
+								</div>
+								<input type="hidden" name="search-type" value="posts" />
+								<input class="ct-search-submit" type="submit" id="go" value=""><span class="ct-icon-search"></span>
+							</form>
+						</div>
+						<ul class="ct-connect">
+							<li><a class="ct-icon-feed" href="http://feeds2.feedburner.com/tympanus"><span>Rss Feed</span></a></li>
+							<li><a class="ct-icon-mail" href="http://eepurl.com/dJBUCo"><span>Email Updates</span></a></li>
+							<li><a class="ct-icon-twitter" href="http://www.twitter.com/codrops"><span>Codrops on Twitter</span></a></li>
+							<li><a class="ct-icon-facebook" href="http://www.facebook.com/pages/Codrops/159107397912"><span>Codrops on Facebook</span></a></li>
+							<li><a class="ct-icon-github" href="https://github.com/codrops"><span>Codrops on Github</span></a></li>
+							<li><a class="ct-icon-instagram" href="https://instagram.com/codropsss"><span>Codrops on Instagram</span></a></li>
+						</ul>
+					</div><!--/ct-header-items-right-->
+
+				</div><!-- ct-inner -->
+			</header><div class="ct-content">
+    <div class="ct-inner">		
+										<div class="ct-main ct-main-post ct-cssref" id="ct-main" role="main">
+					<div class="ct-post">
+						<article id="post-21058" class="post-21058 css_reference type-css_reference status-publish format-standard hentry css-type-css-concept">
+							<header>
+								<div class="ct-cssref-header-inner ct-cssref-header-inner--css-concept">
+									<span class="ct-cssref-head ct-cssref-head--css-concept">
+										<a href="/codrops/css_reference/">CSS Reference</a>
+										<span class='ct-cssref-type'>Concept</span>									</span>
+									<div class="ct-cssref-title" data-title="Flexbox">
+										<h1>Flexbox</h1>
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="ct-cssref-headerbar">
+									<div class="ct-cssref-search">
+										<div class="ct-cssref-searchinput">
+											<form method="get" id="searchform-cssref" action="https://tympanus.net/codrops/">
+												<span class="ct-icon-search"></span>
+												<input placeholder="e.g. mask-image" type="text" value="" name="s" id="s2"/>
+												<input type="hidden" name="search-type" value="css_reference" />
+												<input type="submit" value="" />
+											</form>
+										</div>
+									</div>
+									<nav class="ct-cssref-related">
+																					<span class="ct-cssref-related__title">See also</span>
+										
+																						<a href="https://tympanus.net/codrops/css_reference/grid/">Grid</a>
+																							<a href="https://tympanus.net/codrops/css_reference/subgrid/">Subgrid</a>
+																				</nav>
+								</div>
+							</header>
+							<div class="ct-post-content">
+																<div class="ct-cssref-description">
+<p>
+                    Flexbox, or the Flexible Box Layout, is a new layout mode in CSS3 designed for laying out complex applications and web pages.
+                </p>
+<p>
+                    In CSS 2.1, four layout modes were defined which determine the size and position of boxes based on their relationships with their sibling and ancestor boxes: the <strong>block layout</strong> designed for laying out documents, and that lays elements on a page vertically; the <strong>inline layout</strong> designed for laying out text horizontally inside block-level containers; the <strong>table layout</strong> designed for laying out two-dimensional data in a tabular format; and the <strong>positioned layout</strong> designed for very explicit positioning without much regard for other elements in the document.
+                </p>
+<p>
+                    Flexbox is similar to the block layout, except that it lacks many of the properties that can be used in a block layout, such as <a href="http://tympanus.net/codrops/css_reference/float">floats</a> and <a href="http://tympanus.net/codrops/css_reference/columns">columns</a>. But then again it has more flexibility for distributing space and aligning content in ways that web applications and complex web pages often need. It <a href="http://philipwalton.github.io/solved-by-flexbox/">solves many other layout problems</a> that we have been fighting against and trying to solve for a very long time&mdash;such as vertical centering, for example, among many others.
+                </p>
+<p>
+                    Flexbox allows you to lay out elements in a container, arrange and (re)order them, align them, and distribute the space between (and/or around) them, regardless of their size. It allows you to make them literally flexible&mdash;items inside a container can be stretched and shrunk to accommodate the available space, and can be sized in proportionally to each other, and any available space between or around them can be distributed among them based on a proportion that you get to specify.
+                </p>
+<p>
+                    Using flexbox, you can also lay elements out inside a container in either directions: horizontal or vertical, called the flex directions; you&#8217;re not bound to just one direction as in other layout modes. This allows for the creation of more adaptive and responsive layouts that adapt to the layout changes on different screen sizes and orientations.
+                </p>
+<p>
+                    Last but not least, you can change the visual order of elements inside the container without affecting their actual order in the markup. This means that you can change the order in which certain items appear on the page, while preserving their order in the markup. This is useful for when you want to highlight certain items, such as a featured blog post, even if those items don&#8217;t come first in the markup.
+                </p>
+<h3>Summary of Flexbox Properties</h3>
+<ul>
+<li><code><a href="#section_flex-direction">flex-direction</a></code></li>
+<li><code><a href="#section_flex-wrap">flex-wrap</a></code></li>
+<li><code><a href="#section_flex-flow">flex-flow</a></code></li>
+<li><code><a href="#section_justify-content">justify-content</a></code></li>
+<li><code><a href="#section_align-items">align-items</a></code></li>
+<li><code><a href="#section_align-content">align-content</a></code></li>
+<li><code><a href="#section_order">order</a></code></li>
+<li><code><a href="#section_align-self">align-self</a></code></li>
+<li><code><a href="#section_flex-grow">flex-grow</a></code></li>
+<li><code><a href="#section_flex-shrink">flex-shrink</a></code></li>
+<li><code><a href="#section_flex-basis">flex-basis</a></code></li>
+<li><code><a href="#section_flex">flex</a></code></li>
+</ul>
+<h2>Creating a Flexible Layout: The Flex Container and Items</h2>
+<p>
+                    The first step to start using Flexbox is to create a <strong><em>flex container</em></strong>. Children of a flex container are called the <strong><em>flex items</em></strong>, and are laid out inside the flex container using the Flexbox properties. Some of the Flexbox properties apply to the container, others are applied to the flex items.
+                </p>
+<p>
+                    A flex container is created by setting the <a href="http://tympanus.net/codrops/css_reference/display"><code>display</code></a> property of an element to either <code>flex</code> or <code>inline-flex</code>.
+                </p>
+<pre class="brush:css">
+.flex-container {
+    display: flex;
+}
+/* or */
+.flex-container {
+    display: inline-flex;
+}
+                </pre>
+<p>
+                    <code>display: flex</code> creates a block-level flex container; <code>display: inline-flex</code> creates an inline-level flex container. The flex container becomes a <strong>flex context</strong> for its direct descendants.
+                </p>
+<p>
+                    Children of a flex container, the flex items, are laid out using the Flexbox layout. Any element outside a flex container is not affected by the Flexbox layout defined on it, and will be rendered as it normally would in the page.
+                </p>
+<h3 id="section_concepts-and-terminology">Concepts and Terminology</h3>
+<p>
+                    Before going through the Flexbox properties that control and customize Flexbox layout, there are two concepts and terms that you should get familiar with first: <strong>flex axes</strong> and <strong>flex lines</strong>.
+                </p>
+<h3>Flex Axes</h3>
+<p>
+                    Unlike block and inline layout, whose layout is based on block and inline flow directions, flex layout is based on <strong><em>flex directions</em></strong>.
+                </p>
+<p>
+                    The concept of flex directions is based on the concept of <strong>axes</strong> that determine the directions along which flex items are laid. The following illustration shows the axes defined on a flex container:
+                </p>
+<p>                <img src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/flex-axes.png" alt="flex-axes" width="890" height="568" class="alignnone size-full wp-image-21069" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/flex-axes.png 890w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/flex-axes-300x191.png 300w" sizes="(max-width: 890px) 100vw, 890px" /></p>
+<p>
+                    Depending on the values of the Flexbox properties, flex items will be laid out inside a flex container following either the <strong>main axis</strong> or the <strong>cross axis</strong>.
+                </p>
+<ul>
+<li>
+                        The <em><strong>main axis</strong></em> of a flex container is the primary axis along which flex items are laid out. It extends in the <em><strong>main dimension</strong></em>.
+                    </li>
+<li>
+                        The flex items are placed within the container starting on the <strong><em>main-start</em></strong> side and going toward the <strong><em>main-end</em></strong> side.
+                    </li>
+<li>
+                        A flex item&#8217;s width or height, whichever is in the main dimension, is the item&#8217;s <em><strong>main size</strong></em>. The flex item&#8217;s main size property is either the <a href="http://tympanus.net/codrops/css_reference/width"><code>width</code></a> or <a href="http://tympanus.net/codrops/css_reference/height"><code>height</code></a> property, whichever is in the main dimension.
+                    </li>
+<li>
+                        The axis perpendicular to the main axis is called the <em><strong>cross axis</strong></em>. It extends in the <em><strong>cross dimension</strong></em>.
+                    </li>
+<li>
+                        The width or height of a flex item, whichever is in the cross dimension, is the item&#8217;s <em><strong>cross size</strong></em>. The cross size property is whichever of <a href="http://tympanus.net/codrops/css_reference/width"><code>width</code></a> or <a href="http://tympanus.net/codrops/css_reference/height"><code>height</code></a> that is in the cross dimension.
+                    </li>
+<li>
+                        Flex lines (see next section below) are filled with items and placed into the container starting on the <em><strong>cross-start</strong></em> side of the flex container and going toward the <em><strong>cross-end</strong></em> side.
+                    </li>
+</ul>
+<p>
+                    It is necessary that you familiarize yourself with these concepts before starting to use the Flexbox layout. Everything in the Flexbox layout is relative to these two axes.
+                </p>
+<h3 id="section_flex-lines">Flex Lines</h3>
+<p>
+                    Flex items in a flex container are laid out and aligned within <em>flex lines</em>, a hypothetical line used for grouping and alignment of flex items inside their container. Flex lines follow the main axis. A flex container can be either <strong>single-line</strong> or <strong>multi-line</strong>, depending on the <a href="http://tympanus.net/codrops/css_reference/flexbox#section_flex-wrap"><code>flex-wrap</code></a> property:
+                </p>
+<ul>
+<li>A <strong>single-line</strong> flex container lays out all of its children in a single line, even if that would cause its contents to overflow.</li>
+<li>A <strong>multi-line</strong> flex container breaks its flex items across multiple lines, similar to how text is broken onto a new line when it gets too wide to fit on the existing line. When additional lines are created, they are stacked in the flex container along the cross axis according to the <a href="http://tympanus.net/codrops/css_reference/flexbox#section_flex-wrap"><code>flex-wrap</code></a> property. Every line contains at least one flex item, unless the flex container itself is completely empty.</li>
+</ul>
+<h3>Writing Modes</h3>
+<p>
+                    The above illustration assumes that the writing mode is a left-to-right (LTR) mode. The flex line follows the direction of the text which, in a left-to-right mode, is left to right, top to bottom.
+                </p>
+<p>
+                    However, if you change the direction of the text using the <a href="http://tympanus.net/codrops/css_reference/direction"><code>direction</code></a> property, the direction of the flex line will also change, changing the direction the flex items are laid out along.
+                </p>
+<p>
+                    Also, if the writing mode changes, the directions of both the main axis and cross axis will also change. For example, in a Japanese language layout, the main axis is vertical and the cross axis is horizontal. See the <a href="#section_flex-flow"><code>flex-flow</code></a> property section for an example.
+                </p>
+<p>
+                    For more information about the possible writing modes and directions, see the <a href="http://www.w3.org/TR/css3-writing-modes/">CSS Writing Modes Module</a> and the <a href="http://tympanus.net/codrops/css_reference/direction"><code>direction</code></a> property entry.
+                </p>
+<h2>Flexbox Properties: Flex Container Properties</h2>
+<h3 id="section_flex-direction">The <code>flex-direction</code> Property</h3>
+<pre class="brush:css">
+flex-direction: row | row-reverse | column | column-reverse
+                </pre>
+<p>                <img src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2015/02/flex-direction-illustration.jpg" alt="flex-direction-illustration" width="726" height="591" class="alignnone size-full wp-image-23102" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2015/02/flex-direction-illustration.jpg 726w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2015/02/flex-direction-illustration-300x244.jpg 300w" sizes="(max-width: 726px) 100vw, 726px" /></p>
+<p>
+                    The <code>flex-direction</code> property specifies how flex items are placed in the flex container, by setting the direction of the flex container&#8217;s main axis. This determines the direction that flex items are laid out in. The direction of the axes is affected by the writing mode and directionality of the text (continue reading).
+                </p>
+<p>
+                    The possible values have the following meanings:
+                </p>
+<dl>
+<dt>row</dt>
+<dd>
+                        <strong>This is the initial value.</strong> The flex container&#8217;s main axis has the same orientation as the current writing mode. The main-start is on the left in a left-to-right language, and the main-end is on the right. In a right-to-left language, the main-start is on the right and the main-end is on the left.
+                    </dd>
+<dt>row-reverse</dt>
+<dd>
+                        Same as <code>row</code>, except the main-start and main-end directions are swapped. The flex container&#8217;s main axis has the opposite orientation as the current writing mode.
+                    </dd>
+<dt>column</dt>
+<dd>
+                        The flex container&#8217;s main axis is rotated so that the main-start is at the top and the main-end is at the bottom. Basically, flex items are laid vertically from top to bottom <em>in a horizontal language</em>. If the language is vertical, then the <code>column</code> value will be horizontal with respect to the language.
+                    </dd>
+<dt>column-reverse</dt>
+<dd>
+                        Same as <code>column</code>, except that main-start and main-end directions are swapped.
+                    </dd>
+</dl>
+<p>
+                    Note that the reverse values do not reverse box ordering; like <code>writing-mode</code> and <a href="http://tympanus.net/codrops/css_reference/direction"><code>direction</code></a>, they only change the direction of flow. Painting order, speech order, and sequential navigation orders are not affected.
+                </p>
+<p>
+                    The following demo illustrates the result of applying the four <code>flex-direction</code> values to a flex container.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/GGbkz6J0/embed/result,html,css/' data-height='400px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<p>
+                    The following is the same demo with a different writing mode. The directionality of the text is set to <code>rtl</code> (right-to-left). See how that affects the direction of the main axis and hence the direction that the items are laid out in.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/urMnws5V/embed/result,html,css/' data-height='400px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<p>
+                    It is worth noting at this point that a flex container has initially one flex line, and the flex items are laid on that single line, even if it means that they will overflow the container. In order to have the items wrap and span across multiple lines, the <a href="http://tympanus.net/codrops/css_reference/flexbox#section_flex-wrap"><code>flex-wrap</code></a> property is used (see next section).
+                </p>
+<h3 id="section_flex-wrap">The <code>flex-wrap</code> Property</h3>
+<pre class="brush:css">
+flex-wrap: nowrap | wrap | wrap-reverse
+                </pre>
+<p>               <img src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/flex-wrap-illustration.jpg" alt="flex-wrap-illustration" width="811" height="669" class="alignnone size-full wp-image-21066" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/flex-wrap-illustration.jpg 811w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/flex-wrap-illustration-300x247.jpg 300w" sizes="(max-width: 811px) 100vw, 811px" /></p>
+<p>
+                    The <code>flex-wrap</code> property controls whether the flex container is <a href="#section_flex-lines">single-line or multi-line</a>, and the direction of the cross-axis, which determines the direction new lines are <strong>stacked</strong> in.
+                </p>
+<p>
+                    The possible values have the following meanings:
+                </p>
+<dl>
+<dt>nowrap</dt>
+<dd>
+                        <strong>This is the initial value.</strong> The flex container is single-line, and all items are laid out on that line, even if it means they might overflow the container. The direction of the flex line depends on the directionality of the text (see <a href="#section_flex-direction"><code>flex-direction</code></a> above).
+                    </dd>
+<dt>wrap</dt>
+<dd>
+                        The flex items will wrap onto additional flex lines if there isn&#8217;t enough room for them on the first flex line. Additional flex lines are added in the direction of the cross axis, which is affected by the directionality of the text (see <a href="#section_flex-direction"><code>flex-direction</code></a> above).
+                    </dd>
+<dt>wrap-reverse</dt>
+<dd>
+                        Same as <code>wrap</code>, except the cross-start and cross-end directions are swapped. This means that additional flex lines are added in the opposite direction of the cross axis.
+                    </dd>
+</dl>
+<p>
+                    The following demo illustrates the result of applying the four <code>flex-wrap</code> values to a flex container. Note that the other Flexbox properties are all set to their default values.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/1dApDxDH/embed/result,html,css/' data-height='500px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<p>
+                    The flex items will all try to fit on one line, as you can see in the demo. Using different <code>flex-wrap</code> values, you can change that and have them wrap across multiple lines.
+                </p>
+<h3 id="section_flex-flow">The <code>flex-flow</code> Property</h3>
+<pre class="brush:css">
+flex-flow: &lt;'flex-direction'&gt; &lt;'flex-wrap'&gt;
+                </pre>
+<p>
+                    The flex-flow property is a shorthand for setting the <a href="#section_flex-direction"><code>flex-direction</code></a> and <a href="#section_flex-wrap"><code>flex-wrap</code></a> properties, which together define the flex container&#8217;s main and cross axes.
+                </p>
+<p>
+                    The initial value of the <code>flex-flow</code> property is the concatenation of the initial values of the <a href="#section_flex-direction"><code>flex-direction</code></a> and <a href="#section_flex-wrap"><code>flex-wrap</code></a> properties:
+                </p>
+<pre class="brush:css">
+flex-flow: row nowrap;
+                </pre>
+<p>
+                    The following examples show the result of applying different <code>flex-flow</code> values to a flex container. The examples show the result of applying the <code>row</code> and <code>column</code> values of the <a href="@section_flex-direction"><code>flex-direction</code></a> property with the different values from the <a href="#section_flex-wrap"><code>flex-wrap</code></a> property. Try changing the values of the <code>flex-flow</code> property to include the <code>row-reverse</code> and <code>column-reverse</code> values of the <a href="@section_flex-direction"><code>flex-direction</code></a> property to see how it changes the layout.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/Wrsac8OH/embed/result,html,css/' data-height='800px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<p>
+                    Note that the <code>flex-flow</code> directions are writing mode sensitive. In vertical Japanese, for example, a row flex container lays out its contents from top to bottom, as seen in this example:
+                </p>
+<figure id="attachment_21070" aria-describedby="figcaption_attachment_21070" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 618px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/flex-flow-example.png" alt="flex-flow-example" width="618" height="306" class="size-full wp-image-21070" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/flex-flow-example.png 618w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/flex-flow-example-300x148.png 300w" sizes="(max-width: 618px) 100vw, 618px" /><figcaption id="figcaption_attachment_21070" class="wp-caption-text" itemprop="description">Image showing the difference in layout directions between a horizontal language (English) and a vertical language (Japanese). (<a href="http://www.w3.org/TR/2014/WD-css-flexbox-1-20140325/#propdef-flex-flow">Source</a>)</figcaption></figure>
+<h3 id="section_justify-content">The <code>justify-content</code> Property</h3>
+<pre class="brush:css">
+justify-content: flex-start | flex-end | center | space-between | space-around
+                </pre>
+<p>                <img src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/justify-content-illustration.jpg" alt="justify-content-illustration" width="811" height="669" class="alignnone size-full wp-image-21067" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/justify-content-illustration.jpg 811w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/justify-content-illustration-300x247.jpg 300w" sizes="(max-width: 811px) 100vw, 811px" /></p>
+<p>
+                    The <code>justify-content</code> property aligns flex items <strong>along the main axis</strong> of the current line of the flex container. This is done <em>after</em> any flexible lengths and any auto margins have been resolved. Typically it helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
+                </p>
+<p>
+                    The possible values have the following meanings:
+                </p>
+<dl>
+<dt>flex-start</dt>
+<dd>
+                        <strong>This is the initial value.</strong> Flex items are packed toward the start of the line.
+                    </dd>
+<dt>flex-end</dt>
+<dd>
+                        Flex items are packed toward the end of the line.
+                    </dd>
+<dt>center</dt>
+<dd>
+                        Flex items are packed toward the center of the line, with equal amounts of empty space between the main-start edge of the line and the first item on the line and between the main-end edge of the line and the last item on the line. (If the leftover free-space is negative, the flex items will overflow equally in both directions.)
+                    </dd>
+<dt>space-between</dt>
+<dd>
+                        Flex items are evenly distributed in the line. If the leftover free-space is negative or there is only a single flex item on the line, this value is identical to <code>flex-start</code>. Otherwise, the first flex item on the line is placed on the main-start edge of the line, the last flex item on the line is on the main-end edge of the line, and the remaining flex items on the line are distributed so that the spacing between any two adjacent items is the same.
+                    </dd>
+<dt>space-around</dt>
+<dd>
+                        Flex items are evenly distributed in the line, with half-size spaces on either end. If the leftover free-space is negative or there is only a single flex item on the line, this value is identical to <code>center</code>.  Otherwise, the flex items on the line are distributed such that the spacing between any two adjacent flex items on the line is the same, and the spacing between the first/last flex items and the flex container edges is half the size of the spacing between flex items.
+                    </dd>
+</dl>
+<p>
+                    The following demo shows the result of applying the different <code>justify-content</code> values to a flex container. Other Flexbox properties are set to their default values.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/4RmTtsiS/embed/result,html,css/' data-height='400px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<h3 id="section_align-items">The <code>align-items</code> Property</h3>
+<pre class="brush:css">
+align-items: flex-start | flex-end | center | baseline | stretch
+                </pre>
+<p>                <img src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/align-items-illustration.jpg" alt="align-items-illustration" width="811" height="1174" class="alignnone size-full wp-image-21061" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/align-items-illustration.jpg 811w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/align-items-illustration-207x300.jpg 207w" sizes="(max-width: 811px) 100vw, 811px" /></p>
+<p>
+                    The <code>align-items</code> property is similar to the <a href="#section_justify-content"><code>justify-content</code></a> property, but instead of aligning flex items in the main axis, <code>align-items</code> is used to <strong>align flex items in the cross-axis</strong> (perpendicular to the main axis).
+                </p>
+<p>
+                    The possible values have the following meanings:
+                </p>
+<dl>
+<dt>flex-start</dt>
+<dd>
+                        Flex items are packed toward the cross-start of the line.
+                    </dd>
+<dt>flex-end</dt>
+<dd>
+                        Flex items are packed toward the cross-end of the line.
+                    </dd>
+<dt>center</dt>
+<dd>
+                        Flex items are packed toward the center of the line, with equal amounts of empty space between the cross-start edge of the line and the first item on the line and between the cross-end edge of the line and the last item on the line. (If the leftover free-space is negative, the flex items will overflow equally in both directions.)
+                    </dd>
+<dt>baseline</dt>
+<dd>
+                        Flex items are aligned such that their baselines align. The item with the largest distance between its cross-start margin edge and its baseline is flushed with the cross-start edge of the line.
+                    </dd>
+<dt>stretch</dt>
+<dd>
+                        <strong>This is the initial value.</strong> The flex items are stretched out from the cross-start to the cross-end,  while still respecting the constraints imposed by <a href="http://tympanus.net/codrops/css_reference/min-height"><code>min-height</code></a>/<a href="http://tympanus.net/codrops/css_reference/min-width"><code>min-width</code></a>/<a href="http://tympanus.net/codrops/css_reference/max-height"><code>max-height</code></a>/<a href="http://tympanus.net/codrops/css_reference/max-width"><code>max-width</code></a>. Note that if the flex container&#8217;s height is constrained this value may cause the contents of the flex items to overflow the items.
+                    </dd>
+</dl>
+<p>
+                    The following demo shows the result of applying the different <code>align-items</code> values to a flex container. Other Flexbox properties are set to their default values.
+                </p>
+<p>
+                    When the value of <code>align-items</code> is <code>baseline</code>, notice how the baseline of the numbers in the flex items is aligned (a pink line appears).
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/DnShyE77/embed/result,html,css/' data-height='400px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<p>
+                    Note that the <a href="#section_align-self"><code>align-self</code></a> property allows the alignment specified by <code>align-items</code> to be overridden for individual flex items.
+                </p>
+<h3 id="section_align-content">The <code>align-content</code> Property</h3>
+<pre class="brush:css">
+align-content: flex-start | flex-end | center | space-between | space-around | stretch
+                </pre>
+<p>                <img src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/align-content-illustration.jpg" alt="align-content-illustration" width="811" height="1431" class="alignnone size-full wp-image-21063" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/align-content-illustration.jpg 811w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/align-content-illustration-170x300.jpg 170w" sizes="(max-width: 811px) 100vw, 811px" /></p>
+<p>
+                    The <code>align-content</code> property aligns a flex container&#8217;s lines within the flex container when there is extra space in the cross-axis, similar to how <a href="#section_justify-content"><code>justify-content</code></a> aligns individual items within the main-axis. This property has no effect when the flex container has only a single line.
+                </p>
+<p>
+                    The possible values have the following meanings:
+                </p>
+<dl>
+<dt>flex-start</dt>
+<dd>
+                        Lines are packed toward the cross-start of the flex container.
+                    </dd>
+<dt>flex-end</dt>
+<dd>
+                        Lines are packed toward the cross-end of the flex container.
+                    </dd>
+<dt>center</dt>
+<dd>
+                        Lines are packed toward the center of the flex container, with equal amounts of empty space between the cross-start edge of the container and the first line in the container and between the cross-end edge of the container and the last line in the container. (If the leftover free-space is negative, the lines will overflow equally in both directions.)
+                    </dd>
+<dt>space-between</dt>
+<dd>
+                        Lines are evenly distributed in the flex container. If the leftover free-space is negative this value is identical to <code>flex-start</code>. Otherwise, the cross-start edge of the first line in the flex container is placed on the cross-start content edge of the flex container, the cross-end edge of the last line in the flex container is placed on the cross-end content edge of the flex container, and the remaining lines in the flex container are distributed so that the spacing between any two adjacent lines is the same.
+                    </dd>
+<dt>space-around</dt>
+<dd>
+                        Lines are evenly distributed in the flex container, with half-size spaces on either end. If the leftover free-space is negative this value is identical to center. Otherwise, the lines in the flex container are distributed such that the spacing between any two adjacent lines is the same, and the spacing between the first/last lines and the flex container edges is half the size of the spacing between flex lines.
+                    </dd>
+<dt>stretch</dt>
+<dd>
+                        <strong>This is the initial value.</strong> Lines stretch to take up the remaining space. If the leftover free-space is negative, this value is identical to <code>flex-start</code>. Otherwise, the free-space is split equally between all of the lines, increasing their cross size.
+                    </dd>
+</dl>
+<p>
+                    Note that only flex containers with multiple lines ever have free space in the cross-axis for lines to be aligned in, because in a flex container with a single line the sole line automatically stretches to fill the space (that&#8217;s the default behavior).
+                </p>
+<p>
+                    The following demo shows the result of applying the different <code>align-content</code> values to a flex container. All Flexbox properties are set to their default values, except that the <a href="#section_flex-wrap"><code>flex-wrap</code></a> property is set to <code>wrap</code> to make sure the items are spread across multiple lines, because, as mentioned above, the <code>align-content</code> property only works on a flex container that is multi-line.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/mJAeCSWA/embed/result,html,css/' data-height='800px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<h2>Flexbox Properties: Flex Items Properties</h2>
+<h3 id="section_order">The <code>order</code> Property</h3>
+<pre class="brush:css">
+order: &lt;integer&gt;
+                </pre>
+<p>                <img src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2015/02/order-illustration.png" alt="order-illustration" width="811" height="666" class="alignnone size-full wp-image-25915" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2015/02/order-illustration.png 811w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2015/02/order-illustration-300x246.png 300w" sizes="(max-width: 811px) 100vw, 811px" /></p>
+<p>
+                    Flex items are, by default, displayed and laid out in the same order as they appear in the source document. The <code>order</code> property can be used to change this ordering.
+                </p>
+<p>
+                    The <code>order</code> property controls the order in which flex items <strong>appear</strong> within their flex container, by assigning them to <em>ordinal groups</em>. It takes a single <a href="http://tympanus.net/codrops/css_reference/integer"><code>&lt;integer&gt;</code></a> value, which specifies which ordinal group the flex item belongs to.
+                </p>
+<p>
+                    Then, a flex container lays out its content in order-modified document order, starting from the lowest numbered ordinal group and going up. <strong>Items with the same ordinal group are laid out in the order they appear in the source document</strong>.
+                </p>
+<p>
+                    <strong>The initial order of all flex items is zero (0)</strong> and the flex items are rendered in the order they appear in the source code. The <code>order</code> property can also take negative values.
+                </p>
+<p>
+                    Note that the order in which the flex item appears inside its container changes <strong>only on screen, not in the source document</strong>. This means that screen readers will read the flex items in the order they appear in the document source, not the order specified using the <code>order</code> property. The default traversal order of sequential navigation modes (such as cycling through links, for example using <code>nav-index</code> or <code>tabindex</code>) is also not affected (except in Firefox, which changes the order of traversal of links based on the visual order). Hence, you should use the <code>order</code> property only for visual, not logical, reordering of content.
+                </p>
+<p>
+                    This property could be useful for reordering blog posts, for example, where you may want to feature a blog post at the beginning of the page, even if that article is no longer the latest. The logical order that is accessible for screen readers will be maintained, and the article can be visually replaced without affecting the accessibility.
+                </p>
+<p>
+                    Try changing the order of the items in the following flex container to see how they are reordered visually.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/zdqoJcFo/embed/result,html,css/' data-height='1300px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<h3 id="section_align-self">The <code>align-self</code> Property</h3>
+<pre class="brush:css">
+align-self: auto | flex-start | flex-end | center | baseline | stretch
+                </pre>
+<p>               <img src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2015/02/align-self-illustration.png" alt="align-self-illustration" width="811" height="1500" class="alignnone size-full wp-image-25916" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2015/02/align-self-illustration.png 811w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2015/02/align-self-illustration-162x300.png 162w" sizes="(max-width: 811px) 100vw, 811px" /></p>
+<p>
+                    Flex items can be aligned in the cross axis of the current line of the flex container, similar to <a href="#section_justify-content"><code>justify-content</code></a> but in the perpendicular direction. <a href="#section_align-items"><code>align-items</code></a> sets the default alignment for all of the flex container&#8217;s items. The <code>align-self</code> property allows this default alignment to be overridden for individual flex items. In order to fully understand the values and concepts behind this property, please see the <a href="#section_align-items"><code>align-items</code></a> property description.
+                </p>
+<p>
+                    The possible values have the following meanings:
+                </p>
+<dl>
+<dt>auto</dt>
+<dd>
+                        <strong>This is the initial value.</strong> A value of <code>auto</code> computes to the value of <a href="#section_align-items"><code>align-items</code></a> on the element&#8217;s container, or <code>stretch</code> if the element has no parent. In other words, the item will be aligned based on the default value or the value specified for the <a href="#section_align-items"><code>align-items</code></a> property.
+                    </dd>
+<dt>flex-start</dt>
+<dd>
+                        The flex item is packed toward the cross-start of the line.
+                    </dd>
+<dt>flex-end</dt>
+<dd>
+                        The flex item is packed toward the cross-end of the line.
+                    </dd>
+<dt>center</dt>
+<dd>
+                        The flex item&#8217;s margin box is centered in the cross axis within the line. (If the cross size of the flex line is less than that of the flex item, it will overflow equally in both directions.)
+                    </dd>
+<dt>baseline</dt>
+<dd>
+                        If the flex item&#8217;s inline axis is the same as the cross axis, this value is identical to flex-start. Otherwise, it participates in baseline alignment: all participating flex items on the line are aligned such that their baselines align, and the item with the largest distance between its baseline and its cross-start margin edge is placed flush against the cross-start edge of the line.
+                    </dd>
+<dt>stretch</dt>
+<dd>
+                        The flex item is stretched out from the cross-start to the cross-end, while still respecting the constraints imposed by <a href="http://tympanus.net/codrops/css_reference/min-height"><code>min-height</code></a>/<a href="http://tympanus.net/codrops/css_reference/min-width"><code>min-width</code></a>/<a href="http://tympanus.net/codrops/css_reference/max-height"><code>max-height</code></a>/<a href="http://tympanus.net/codrops/css_reference/max-width"><code>max-width</code></a>. Note that if the flex container&#8217;s height is constrained this value may cause the contents of the flex item to overflow the item.
+                    </dd>
+</dl>
+<p>
+                    In the following demo, the items are aligned inside the flex container first using the <a href="#section_align-items"><code>align-items</code></a> property with a value of <code>center</code>. Any value applied to the third item (with the number three) using <code>align-self</code> will override that applied using <a href="#section_align-items"><code>align-items</code></a>. Change the value of the <code>align-self</code> property to see how the item&#8217;s alignment is affected.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/QbLxkouq/embed/result,html,css/' data-height='600px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<h3 id="section_flex-grow">The <code>flex-grow</code> Property</h3>
+<pre class="brush:css">
+flex-grow: &lt;number&gt;
+                </pre>
+<p>               <img src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/flex-grow-illustration.jpg" alt="flex-grow-illustration" width="811" height="744" class="alignnone size-full wp-image-21065" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/flex-grow-illustration.jpg 811w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/flex-grow-illustration-300x275.jpg 300w" sizes="(max-width: 811px) 100vw, 811px" /></p>
+<p>
+                    The <code>flex-grow</code> property sets the <em>flex grow factor</em> of a flex item. A flex grow factor is a <a href="http://tympanus.net/codrops/css_reference/number"><code>&lt;number&gt;</code></a> which determines how much the flex item will grow relative to the rest of the flex items in the flex container when <strong>positive free space</strong> is distributed. The initial value is zero (0), and negative numbers are invalid.
+                </p>
+<p>
+                    If the flex items are laid out on the flex line such that they <em>don&#8217;t</em> take up the entire space on that line, you can &#8220;expand&#8221; the flex items so that they fill up the entire line. The amount of available space on the line can be distributed among the flex items following a specific proportion that you can specify using the <code>flex-grow</code> property. The higher the <code>flex-grow</code> value, the more the item will be allowed to grow relative to the other items.
+                </p>
+<p>
+                    For example, you can distribute the space among the flex items such that one of these items always gets twice as much space as the others. You can do that by setting the <code>flex-grow</code> property value to <code>2</code> (two). An item with <code>flex-grow: 2</code> will grow twice as much as an item with <code>flex-grow: 1</code>&mdash;it gets twice as much space as the latter. So, for every one pixel that the second item gets, the first item grows by two pixels.
+                </p>
+<p>
+                    Try entering different values for the <code>flex-grow</code> property in the following demo to see how the elements grow.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/oc9Y7Q1y/embed/result,html,css/' data-height='600px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<p>
+                    Note that the <code>flex-grow</code> property is animatable, except between the value zero (0) and other values.
+                </p>
+<p>
+                    The <code>flex-grow</code> property is usually used in conjunction with the <a href="#section_flex-shrink"><code>flex-shrink</code></a> and <a href="#section_flex-basis"><code>flex-basis</code></a> properties, in the shorthand <a href="#section_flex"><code>flex</code></a> property.
+                </p>
+<h3 id="section_flex-shrink">The <code>flex-shrink</code> Property</h3>
+<pre class="brush:css">
+flex-shrink: &lt;number&gt;
+                </pre>
+<p>
+                    The <code>flex-shrink</code> property sets the <em>flex shrink factor</em> of a flex item. A flex shrink factor is a <a href="http://tympanus.net/codrops/css_reference/number"><code>&lt;number&gt;</code></a> which determines how much the flex item will shrink relative to the rest of the flex items in the flex container when <strong>negative free space</strong> is distributed. The flex shrink factor is multiplied by the flex basis (see <a href="#section_flex-basis"><code>flex-basis</code></a>) when distributing negative space. The initial value is zero (1), meaning that the items don&#8217;t shrink by default, and negative numbers are invalid.
+                </p>
+<p>
+                    If the sum of the main sizes (see <a href="#section_concepts-and-terminology">concepts and terminology</a>) of all flex items is greater than the main size of the flex container, you can specify just by how much you want to &#8220;shrink&#8221; the flex items. The amount by which the flex items&#8217; main sizes exceed the container&#8217;s main size is the negative space. Using the <code>flex-shrink</code> property, you can distribute this negative space over the flex items. The negative space is distributed in proportion to <a href="#section_flex-basis"><code>flex-basis</code></a> multiplied by the <code>flex-shrink</code> ratio, where the flex basis is the initial main size of the flex item, before free space is distributed according to the flex factors.
+                </p>
+<p>
+                    For example, you can distribute the space among the flex items such that one of these items always gets twice as much negative space as the others. You can do that by setting the <code>flex-shrink</code> property value to <code>2</code> (two). An item with <code>flex-shrink: 2</code> will shrink twice as much as an item with <code>flex-shrink: 1</code>&mdash;it gets twice as much negative space as the latter. So, for every one pixel that the second item shrinks, the first item shrinks by two pixels. The higher the <code>flex-shrink</code> value, the more the item will shrink relative to the other items.
+                </p>
+<p>
+                    The items in the following demo are laid inside a container that has a main size of <code>500px</code>. Each  of the four items has a main size basis (or a flex basis) of <code>200px</code>. The items (combined) obviously have a larger main size than the container&#8217;s. Because this is a Flexbox layout, the items will automatically shrink to fit inside their container. However, using the <code>flex-shrink</code> property, you can control the ratio by which the items are to be shrunk. Try entering different values for the <code>flex-shrink</code> property in the following demo to see how the elements shrink.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/YgCuO6e1/embed/result,html,css/' data-height='400px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<p>
+                    Note that the <code>flex-shrink</code> property is animatable, except between the value zero (0) and other values.
+                </p>
+<p>
+                    The <code>flex-shrink</code> property is usually used in conjunction with the <a href="#section_flex-basis"><code>flex-basis</code></a> and <a href="#section_flex-grow"><code>flex-grow</code></a> properties, in the shorthand <a href="#section_flex"><code>flex</code></a> property.
+                </p>
+<h3 id="section_flex-basis">The <code>flex-basis</code> Property</h3>
+<pre class="brush:css">
+flex-basis: auto | &lt;'width'&gt;
+                </pre>
+<p>
+                    The <code>flex-basis</code> property takes the same values as the <a href="http://tympanus.net/codrops/css_reference/width"><code>width</code></a> property, and sets the flex basis: the initial <strong>main size</strong> (see <a href="#section_concepts-and-terminology">concepts and terminology</a>) of the flex item, before free space is distributed according to the flex factors (see <a href="#section_flex-shrink"><code>flex-shrink</code></a> and <a href="#section_flex-grow"><code>flex-grow</code></a>).
+                </p>
+<p>
+                    Except for <code>auto</code>, <code>flex-basis</code> is resolved the same way as <a href="http://tympanus.net/codrops/css_reference/width"><code>width</code></a> in horizontal writing modes: percentage values for the <code>flex-basis</code> property are set relative to the flex container&#8217;s inner main size. Also, <code>flex-basis</code> determines the size of the element&#8217;s content box, unless otherwise specified using the <a href="http://tympanus.net/codrops/css_reference/box-sizing"><code>box-sizing</code></a> property.
+                </p>
+<p>
+                    If the specified <code>flex-basis</code> is <code>auto</code>, the used flex basis is the value of the flex item&#8217;s main size property. (This can itself be the keyword <code>auto</code>, which sizes the flex item based on its contents.)
+                </p>
+<p>
+                    The <code>flex-basis</code> property is usually used in conjunction with the <a href="#section_flex-shrink"><code>flex-shrink</code></a> and <a href="#section_flex-grow"><code>flex-grow</code></a> properties, in the shorthand <a href="#section_flex"><code>flex</code></a> property.
+                </p>
+<p>
+                    In the following demo, the <code>flex-basis</code> is used in the <a href="#section_flex"><code>flex</code></a> shorthand. The <a href="#section_flex-shrink"><code>flex-shrink</code></a> and <a href="#section_flex-grow"><code>flex-grow</code></a> properties are set so that the items neither grow nor shrink. The value specified using <code>flex-basis</code> defines the main size of each item. Try changing the values of all three properties in the <a href="#section_flex"><code>flex</code></a> shorthand to see how the width of the items responds. For example, try using a different <a href="#section_flex-grow"><code>flex-grow</code></a> value to see how the size of an item changes after positive space is distributed.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/F3lfFWUQ/embed/result,html,css,js/' data-height='670px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<h3 id="section_flex">The <code>flex</code> Property</h3>
+<pre class="brush:css">
+flex: none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]
+                </pre>
+<p>
+                    The <code>flex</code> property is a shorthand property for setting the <a href="#section_flex-grow"><code>flex-grow</code></a>, <a href="#section_flex-shrink"><code>flex-shrink</code></a>, and <a href="#section_flex-basis"><code>flex-basis</code></a> properties.
+                </p>
+<p>
+                    When an element is a flex item, <code>flex</code> is used instead of the main size property (width or height properties, see <a href="#section_concepts-and-terminology">concepts and terminology</a>) to determine the main size of the element. If an element is not a flex item, <code>flex</code> has no effect.
+                </p>
+<p>
+                    The initial value is <code>0 1 auto</code>. The <a href="#section_flex-grow"><code>flex-grow</code></a> and <a href="#section_flex-shrink"><code>flex-shrink</code></a> properties are optional and can be omitted from the <code>flex</code> declaration.
+                </p>
+<p>
+                    When the <a href="#section_flex-grow"><code>flex-grow</code></a> value is omitted, it is set to <code>1</code>. Note that <code>1</code> is not the initial value of the <a href="#section_flex-grow"><code>flex-grow</code></a> property! It is only the value used when <a href="#section_flex-grow"><code>flex-grow</code></a> is omitted from the shorthand declaration.
+                </p>
+<p>
+                    When the <a href="#section_flex-shrink"><code>flex-shrink</code></a> property is omitted, it is set to <code>1</code>. Note that the flex shrink factor is multiplied by the flex basis when distributing negative space. (See <a href="#section_flex-shrink"><code>flex-shrink</code></a>)
+                </p>
+<p>
+                    When the <a href="#section_flex-basis"><code>flex-basis</code></a> value is omitted, it is set to <code>0%</code>.
+                </p>
+<p>
+                    The initial values of <a href="#section_flex-grow"><code>flex-grow</code></a> and <a href="#section_flex-shrink"><code>flex-shrink</code></a> properties are different from their defaults when omitted in the <code>flex</code> shorthand. This so that the <code>flex</code> shorthand can better accommodate the most common cases.
+                </p>
+<p>
+                    The following are some of the common <code>flex</code> values and their meanings:
+                </p>
+<dl>
+<dt>flex: 0 auto / flex: initial</dt>
+<dd>
+                        This is equivalent to <code>flex: 0 1 auto</code>, which is the initial value. This value sizes the item based on the <a href="http://tympanus.net/codrops/css_reference/width"><code>width</code></a>/<a href="http://tympanus.net/codrops/css_reference/height"><code>height</code></a> properties. (If the item&#8217;s main size property computes to <code>auto</code>, this will size the flex item based on its contents.) Makes the flex item inflexible when there is positive free space, but allows it to shrink to its min-size when there is insufficient space.
+                    </dd>
+<dt>flex: auto</dt>
+<dd>
+                        This is equivalent to <code>flex: 1 1 auto</code>. This value sizes the item based on the <a href="http://tympanus.net/codrops/css_reference/width"><code>width</code></a>/<a href="http://tympanus.net/codrops/css_reference/height"><code>height</code></a> properties, but makes them fully flexible, so that they absorb any free space along the main axis. If all items are either <code>flex: auto</code>, <code>flex: initial</code>, or <code>flex: none</code>, any positive free space after the items have been sized will be distributed evenly to the items with <code>flex: auto</code>.
+                    </dd>
+<dt>flex: none</dt>
+<dd>
+                        This is equivalent to <code>flex: 0 0 auto</code>. This value sizes the item according to the <a href="http://tympanus.net/codrops/css_reference/width"><code>width</code></a>/<a href="http://tympanus.net/codrops/css_reference/height"><code>height</code></a> properties, but makes the flex item fully inflexible. This is similar to <code>initial</code>, except that flex items are not allowed to shrink, even in overflow situations.
+                    </dd>
+<dt>flex: &lt;positive-number&gt;</dt>
+<dd>
+                        This value is equivalent to <code>flex: &lt;positive-number&gt; 1 0%</code>. This value makes the flex item flexible and sets the flex basis to zero, resulting in an item that receives the specified proportion of the free space in the flex container. If all items in the flex container use this pattern, their sizes will be proportional to the specified flex factor.
+                    </dd>
+</dl>
+<p>
+                    Note that, by default, flex items won&#8217;t shrink below their minimum content size (the length of the longest word or fixed-size element). To change this, set the <a href="http://tympanus.net/codrops/css_reference/min-width"><code>min-width</code></a> or <a href="http://tympanus.net/codrops/css_reference/min-height"><code>min-height</code></a> property.
+                </p>
+<p>
+                    Change the value of the <code>flex</code> property in the following demo to see how it affects the flex items. You can also use a different <code>flex</code> value for every item. The demo is set so that the items have a flex basis of <code>100px</code>, and neither shrink nor grow. Play with the values to your liking to get a better understanding of how the property works with different values.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/6KTGKzkw/embed/result,html,css/' data-height='400px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+</div>
+<div class="ct-cssref-examples">
+<h2>Examples</h2>
+<p>
+                    Flexbox provides us with simple solutions for some of the oldest problems and &#8220;holy grails&#8221; in web design.
+                </p>
+<h3>Vertical and Horizontal Centering</h3>
+<p>
+                    Vertical centering has been one of the most sought after CSS solutions for a very long time. With Flexbox, centering an element inside its container becomes as easy as pie. You start by creating a flex container:
+                </p>
+<pre class="brush:css">
+.container {
+    display: flex;
+}
+                </pre>
+<p>
+                    Then, using the <a href="#section_justify-content"><code>justify-content</code></a> property, you center the element across the main axis (horizontally), and using the <a href="#section_align-items"><code>align-items</code></a> property, you center the element vertically.
+                </p>
+<pre class="brush:css">
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+                </pre>
+<p>
+                    And that&#8217;s it! No matter the size of the element, it will always be centered inside its container. The following is a live demo of the above code sample.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/ZrNuiTt7/embed/result,html,css/' data-height='600px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<h3>Equal-Height Multi-Column &#8220;Holy Grail&#8221; Layout</h3>
+<p>
+                    One of many things we usually try to accomplish for our designs but have no straightforward way in CSS to do so, is to create a multi-column (say two-column or three-column) layout where all the columns have the same height no matter how much content each contains. This is typical in two-column blog layouts or multi-column magazine layouts.
+                </p>
+<p>
+                    Using flexbox, creating equal-height columns is as easy as 1 2 3.
+                </p>
+<p>
+                    We&#8217;ll be using a very simple markup for a simple blog.
+                </p>
+<pre class="brush:html">
+&lt;header&gt;&lt;!-- header stuff --&gt;&lt;/header&gt;
+&lt;div class="container"&gt;
+    &lt;section class="main"&gt;&lt;/section&gt;
+    &lt;aside class="sidebar"&gt;&lt;/aside&gt;
+&lt;/div&gt;
+&lt;footer&gt;&lt;!-- footer stuff --&gt;&lt;/footer&gt;
+                </pre>
+<p>
+                    We want to make sure the sidebar has the same height as the main section, no matter the amount of content in each of them. Previously, we used to use hack our way to this using <a href="http://www.vanseodesign.com/css/equal-height-columns/">techniques like faux columns, among others</a>. Using Flexbox, we can achieve equal heights like so:
+                </p>
+<pre class="brush:css">
+.container {
+    display: flex;
+    align-items: stretch;
+}
+                </pre>
+<p>
+                    Then, you can set the widths and flex grow/shrink factors using the <a href="#section_flex"><code>flex</code></a> property to whatever values you want. The following is a live demo showing the equal-height columns in action. The width of the two columns is set using the <a href="#section_flex-basis"><code>flex-basis</code></a> property as part of the <a href="#section_flex"><code>flex</code></a> shorthand, along with the flex grow factor.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/M78s38Ez/embed/result,html,css/' data-height='700px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<p>
+                    Using media queries, you can change the layout of the two columns and have them stack on top of each other on smaller screens, using the <a href="#section_flex-direction"><code>flex-direction</code></a> property.
+                </p>
+<pre class="brush:css">
+@media screen and (max-width:500px) {
+    .container {
+        flex-direction: column;
+
+    }
+}
+                </pre>
+<p>
+                    As mentioned before, you can reorder the way the items appear, too, using the <a href="#section_order"><code>order</code></a> property. So, if you have three columns, for example, and one of these columns contains ads, and you want these ads to appear on top or at the bottom on small screens, or even somewhere in between, you can control the order of appearance once the columns are stacked on top of each other on smaller screens.
+                </p>
+<h3>Sticky Footer</h3>
+<p>
+                    Having the footer stick to the bottom of the page even if the content of the page above the footer is smaller than the viewport is something that almost every one of us has had to do at some point. There have been <a href="http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page">several</a> <a href="http://cbracco.me/css-sticky-footer-effect/">techniques</a> around the web for some time that allow you to do that, but all of them rely on knowing the height of the footer; without knowing the height of the footer, those techniques wouldn&#8217;t work.
+                </p>
+<p>
+                    Flexbox allows us to stick the footer to the bottom of the page (not fixing it, though) easily. You start by laying the flex items vertically using <a href="#section_flex-direction"><code>flex-direction</code></a>. Then, you have the main content section expand/grow using <a href="#section_flex-grow"><code>flex-grow</code></a>, thus pushing the footer down to the bottom of the page. However, the page would need to have a height that&#8217;s equal to the height of the viewport, or more.
+                </p>
+<pre class="brush:html">
+&lt;body&gt;
+    &lt;header&gt;&lt;!-- header stuff --&gt;&lt;/header&gt;
+    &lt;section class="content"&gt;&lt;!-- main content --&gt;&lt;/section&gt;
+    &lt;footer&gt;&lt;!-- footer stuff --&gt;&lt;/footer&gt;
+&lt;/body&gt;
+                </pre>
+<p>
+                    The CSS is simple:
+                </p>
+<pre class="brush:css">
+body {
+    display: flex;
+    /* make sure it's at least as tall as the viewport */
+    min-height: 100vh;
+    /* lay items out vertically */
+    flex-direction: column;
+}
+section.content {
+    flex-grow: 1;
+}
+                </pre>
+<p>
+                    The following is a live demo showing the above code in action:
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/E1XPxxcv/embed/result,html,css/' data-height='400px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<h3>Flexible Navigation</h3>
+<p>
+                    Another way Flexbox helps is with laying out navigation items. Before flexbox, we could lay the items out using either inline, inline-block, or block displays, or by floating the elements next to each other. So, if the navigation takes up the entire horizontal space, and the items aren&#8217;t wide enough (text-wise) to fill up that space, they will be flushed either to the right or to the left, with lots of space on the other side. If you were to spread them to fill the space, you would have to set up specified widths, and do the calculations necessary for that, and then add padding and possible margins to space the items out.
+                </p>
+<p>
+                    As you have guessed, Flexbox makes distributing the navigation item a lot simpler. Using <a href="#section_justify-content"><code>justify-content</code></a>, you can spread the items with space between them.
+                </p>
+<pre class="brush:css">
+ul.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+                </pre>
+<p>
+                    Moreover, you can turn it into a vertical navigation with the items stacked on top of each other on small screens also quite as simply.
+                </p>
+<pre class="brush:css">
+@media screen and (max-width: 430px) {
+    .navigation {
+        flex-direction: column;
+        /* other general styles if needed */
+    }
+}
+                </pre>
+<p>
+                    The following is a live demo of the above code.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/ZCyZwHC9/embed/result,html,css/' data-height='400px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<h3>And a lot more!</h3>
+<p>
+                    There&#8217;s a lot more than Flexbox can do. <a href="http://philipwalton.com">Philip Walton</a> has created a popular page called <a href="http://philipwalton.github.io/solved-by-flexbox/">Solved By Flexbox</a>, which showcases &#8220;problems once hard or impossible to solve with CSS alone, now made trivially easy with Flexbox&#8221;.
+                </p>
+<p>
+                    <a href="http://twitter.com/zomigi">Zoe Mickley Gillenwater</a> has also given a great talk at the SmashingConf, called &#8220;<a href="http://zomigi.com/downloads/Leveling-Up-With-Flexbox_SmashingConf_140319.pdf">Leveling Up With Flexbox</a>&#8220;. Her presentation features a lot of practical use cases for Flexbox, along with ways to start using Flexbox today without worrying about older browsers, by providing decent fallback for these browsers. The examples shown and explained in her slides are definitely worth checking out.
+                </p>
+<p>
+                    You can also refer to one of the many articles in the Further reading section below for more Flexbox examples.
+                </p>
+</p></div>
+<div class="ct-cssref-support">
+<h2>Browser Support</h2>
+<div class="caniuse"><div class="caniuse-header"><h3 class="caniuse-header-title">CSS Flexible Box Layout Module</h3><p>Method of positioning elements in horizontal or vertical stacks. Support includes all properties prefixed with `flex`, as well as `display: flex`, `display: inline-flex`, `align-content`, `align-items`, `align-self`, `justify-content` and `order`.</p>
+<p class="status caniuse-header-status">W3C Candidate Recommendation</p><p class="caniuse-header-supported">Supported from the following versions:</p></div><div class="caniuse-section"><h4>Desktop</h4><ul class="agents caniuse-agents-list"><li class="caniuse-agents-item icon-chrome y" title="Google Chrome - Yes"><span class="caniuse-agents-version version">29</span></li><li class="caniuse-agents-item icon-firefox y" title="Mozilla Firefox - Yes"><span class="caniuse-agents-version version">28</span></li><li class="caniuse-agents-item icon-ie a" title="Internet Explorer - Partial Support"><span class="caniuse-agents-version version">11</span></li><li class="caniuse-agents-item icon-opera y" title="Opera - Yes"><span class="caniuse-agents-version version">12</span></li><li class="caniuse-agents-item icon-safari y" title="Apple Safari - Yes"><span class="caniuse-agents-version version">9</span></li></ul></div><div class="caniuse-section"><h4>Mobile / Tablet</h4><ul class="agents caniuse-agents-list"><li class="caniuse-agents-item icon-ios_saf y" title="iOS Safari - Yes"><span class="caniuse-agents-version version">9.0</span></li><li class="caniuse-agents-item icon-android y" title="Android - Yes"><span class="caniuse-agents-version version">4.4</span></li><li class="caniuse-agents-item icon-op_mini y" title="Opera Mini - Yes"><span class="caniuse-agents-version version">all</span></li><li class="caniuse-agents-item icon-and_chr y" title="Android Chrome - Yes"><span class="caniuse-agents-version version">80</span></li><li class="caniuse-agents-item icon-and_ff y" title="Android Firefox - Yes"><span class="caniuse-agents-version version">68</span></li></ul></div><div class="caniuse-section caniuse-section-legend"><p class="caniuse-section-text caniuse-section-subtext	">* denotes prefix required.</p><ul class="legend caniuse-legend-list"><li class="caniuse-legend-item caniuse-legend-label">Supported:</li><li class="caniuse-legend-item y">Yes</li><li class="caniuse-legend-item n">No</li><li class="caniuse-legend-item a">Partially</li><li class="caniuse-legend-item p">Polyfill</li></ul><p class="stats caniuse-section-text caniuse-section-stats">Stats from <a target="_blank" href="http://caniuse.com/#feat=flexbox">caniuse.com</a></p></div></div>
+<h3>Notes</h3>
+<p>
+                    Over the course of time, the Flexbox syntax has changed. If you browse the web for Flexbox articles, you may stumble across articles that use a syntax that&#8217;s different from the one used in this entry. Some articles may still be using the <a href="http://www.w3.org/TR/2009/WD-css3-flexbox-20090723/">old syntax</a>. The syntax used in this entry is the <a href="http://www.w3.org/TR/2012/WD-css3-flexbox-20120322/">new/latest syntax</a>.
+                </p>
+<p>
+                    As you can see in the browser compatibility table, some older versions of browsers used to support the old syntax. Depending on how many browser versions you want to support, you may need to use both the old and the new Flexbox syntax.
+                </p>
+<p>
+                    If you want to learn more about using the older and newer syntax for wider/older browser support, you can read <a href="http://dev.opera.com/articles/advanced-cross-browser-flexbox/">Advanced Cross-Browser Flexbox</a> at the Dev.Opera Blog.
+                </p>
+</p></div>
+<div class="ct-cssref-further-reading">
+<h2>Further Reading</h2>
+<ul>
+<li>
+                        <a href="http://www.w3.org/TR/2014/WD-css-flexbox-1-20140325/#main-dimension">CSS Flexible Box Layout Module Level 1</a>
+                    </li>
+<li>
+                        <a href="http://code.tutsplus.com/tutorials/an-introduction-to-the-css-flexbox-module--net-25655">An Introduction to the CSS Flexbox Module</a>
+                    </li>
+<li>
+                       <a href="http://philipwalton.github.io/solved-by-flexbox/">Solved By Flexbox</a>
+                    </li>
+<li>
+                        <a href="http://www.sketchingwithcss.com/samplechapter/cheatsheet.html">The Ultimate Flexbox Cheat Sheet</a>
+                    </li>
+<li>
+                        Tool: <a href="http://bennettfeely.com/flexplorer/">Flexplorer</a>
+                    </li>
+<li>
+                        <a href="http://dev.opera.com/articles/flexbox-basics/">Flexbox — Fast Track to Layout Nirvana?</a>
+                    </li>
+<li>
+                        <a href="http://www.smashingmagazine.com/2011/09/19/css3-flexible-box-layout-explained/">CSS3 Flexible Box Layout Explained</a>
+                    </li>
+<li>
+                        <a href="http://www.smashingmagazine.com/2013/05/22/centering-elements-with-flexbox/">Designing CSS Layouts With Flexbox Is As Easy As Pie</a>
+                    </li>
+<li>
+                        <a href="http://zomigi.com/downloads/Leveling-Up-With-Flexbox_SmashingConf_140319.pdf">Leveling Up With Flexbox</a>
+                    </li>
+<li>
+                        <a href="http://chriswrightdesign.com/experiments/flexbox-adventures/">Flexbox Adventures</a> by Chris Wright
+                    </li>
+<li><a href="http://chriswrightdesign.com/experiments/using-flexbox-today/">Using Flexbox Today</a> by Chris Wright </li>
+<li><a href="https://github.com/philipwalton/flexbugs">A community-curated list of flexbox issues and cross-browser workarounds for them</a> on Github.
+                </ul>
+</p></div>
+								<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Entries</h2>
+<ul>
+<li><a href="https://tympanus.net/codrops/css_reference/grid/">Grid</a></li>
+<li><a href="https://tympanus.net/codrops/css_reference/subgrid/">Subgrid</a></li>
+</ul></div>
+</div>		
+							</div>
+							
+							<footer>
+								<p>Written by <a href="https://tympanus.net/codrops/author/sarasoueidan/" title="Posts by Sara Soueidan" rel="author">Sara Soueidan</a>. Last updated May 4, 2017 at 9:15 pm by Mary Lou.</p>
+								<p>Do you have a suggestion, question or want to contribute? <a href="https://github.com/codrops/css-reference-issues">Submit an issue.</a></p>
+							</footer>
+						</article>
+						<div class="clr"></div>
+					</div>
+				</div>
+				<aside class="ct-sidebar">		
+	<div class="ct-pat">
+		
+		<!-- Weekly Sponsor -->
+				<a class="cos" href="http://bit.ly/mailchimpcodrops" target="_blank" rel="nofollow sponsored">
+			<IMG SRC="https://ad.doubleclick.net/ddm/ad/N2434.3091281BUYSELLADS/B23623815.263127775;sz=1x1;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?" BORDER="0" HEIGHT="1" WIDTH="1" style="position:absolute;opacity:0;"/>
+			<img class="cos__img" src="https://tympanus.net/codrops/wp-content/banners/mailchimp.png" alt="Mailchimp"/>
+			<div class="cos__text">You have users exploring your app! Now what? Send them event-triggered automations. That’s what.</div>
+		</a>
+				<!--/ End Weekly Sponsor -->
+		<!--  Sidebar sponsors  -->	
+		<a class="cos" href="http://bit.ly/DiviCodropsSidebar" target="_blank" rel="nofollow sponsored">
+			<img class="cos__img" src="https://tympanus.net/codrops/wp-content/banners/divi-premade-layouts-01.jpg" alt="Divi"/>
+			<div class="cos__text">Over 800 pre-made website layouts come packaged right inside of Divi for free. Jumpstart your design!</div>
+		</a>
+		<!--/ Sidebar sponsors -->
+
+		<!--div id="bsap_1275127" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div-->
+		<!-- 125x125 -->
+		<div id="bsap_1243201" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div>
+	</div>
+	<div class="ct-pat">
+		<div id="bsap_1298539" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div>
+	</div>
+    		
+    	<div class="clr"></div>
+</aside>
+
+				<div class="clr"></div>
+		    </div>
+</div>
+		<footer class="ct-footer">
+			<div class="ct-inner">
+				<nav>
+					<ul>
+						<li><a href="/codrops/category/tutorials/">Tutorials</a></li>
+						<li><a href="/codrops/category/articles/">Articles</a></li>
+						<li><a href="/codrops/category/playground/">Playground</a></li>
+						<li><a href="/codrops/category/blueprints/">Blueprints</a></li>
+					</ul>
+					<ul>
+						<li><a href="/codrops/css_reference/">CSS Reference</a></li>
+						<li><a href="/codrops/category/news/">News</a></li>
+						<li><a href="/codrops/category/freebies/">Freebies</a></li>
+						<li><a href="/codrops/collective/">Collective</a></li>
+					</ul>
+					<ul>
+						<li><a href="/codrops/about/">About</a></li>
+						<li><a href="/codrops/contact/">Contact</a></li>
+						<li><a href="/codrops/archives/">Archives</a></li>
+						<li><a href="/codrops/deals/">Deals</a></li>
+					</ul>
+					<ul>
+						<li><a href="/codrops/advertise/">Advertise</a></li>
+						<li><a href="/codrops/privacy-policy/">Privacy Policy</a></li>
+						<li><a href="/codrops/licensing/">License</a></li>
+						<li><a href="/codrops/credits/">Credits</a></li>
+					</ul>
+					<ul>
+						<li>Content delivered by <a href="https://www.stackpath.com/" title="Content Distribution Network" target="blank">StackPath</a></li>
+						<li>&copy; Codrops 2020</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+		<div id="cookie-law-info-bar"><span>Codrops uses cookies for its advertisement solutions and for analytics. We hope you're ok with this, but you can opt-out if you wish. Read our <a href="https://www.iubenda.com/privacy-policy/92067710">Privacy Policy</a> and <a href="https://www.iubenda.com/privacy-policy/92067710/cookie-policy">Cookie Policy</a>. <a role='button' tabindex='0' data-cli_action="accept" id="cookie_action_close_header"  class="small cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display:inline-block; ">OK</a></span></div><div id="cookie-law-info-again" style="display:none;"><span id="cookie_hdr_showagain">Privacy & Cookies Policy</span></div><div class="cli-modal" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+    <div class="cli-modal-content cli-bar-popup">
+      <button type="button" class="cli-modal-close" id="cliModalClose">
+        <svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+        <span class="wt-cli-sr-only">Close</span>
+      </button>
+      <div class="cli-modal-body">
+        <div class="cli-container-fluid cli-tab-container">
+    <div class="cli-row">
+        <div class="cli-col-12 cli-align-items-stretch cli-px-0">
+            <div class="cli-privacy-overview">
+                                                   
+                <div class="cli-privacy-content">
+                    <div class="cli-privacy-content-text"></div>
+                </div>
+                <a class="cli-privacy-readmore" data-readmore-text="Show more" data-readless-text="Show less"></a>            </div>
+        </div>  
+        <div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+              
+                            <div class="cli-tab-section">
+                    <div class="cli-tab-header">
+                        <a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab" >
+                            Necessary 
+                        </a>
+                    
+                    <span class="cli-necessary-caption">Always Enabled</span>                     </div>
+                    <div class="cli-tab-content">
+                        <div class="cli-tab-pane cli-fade" data-id="necessary">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+              
+                       
+        </div>
+    </div> 
+</div> 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<script type="text/javascript">
+  /* <![CDATA[ */
+  cli_cookiebar_settings='{"animate_speed_hide":"500","animate_speed_show":"500","background":"#989898","border":"#444","border_on":false,"button_1_button_colour":"#0099cc","button_1_button_hover":"#007aa3","button_1_link_colour":"#fff","button_1_as_button":true,"button_1_new_win":false,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#0099cc","button_2_as_button":false,"button_2_hidebar":false,"button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":true,"button_3_new_win":false,"button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#fff","button_4_as_button":true,"font_family":"inherit","header_fix":false,"notify_animate_hide":false,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"accept_close_reload":false,"reject_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#ffffff","show_once_yn":false,"show_once":"10000","logging_on":false,"as_popup":false,"popup_overlay":true,"bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"}';
+  /* ]]> */
+</script><script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/comment-reply.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/js/typeahead.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/js/hogan.min.js?ver=5.3.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wp_typeahead = {"ajaxurl":"https:\/\/tympanus.net\/codrops\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/js/wp-typeahead.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://tympanus.net/codrops-playground/js/p/embed.min.js?ver=1.0.0'></script>
+		</div><!--ct-container-->
+	</body>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Page Caching using disk: enhanced 
+Content Delivery Network via codropspz-tympanus.netdna-ssl.com
+Application Monitoring using New Relic
+
+Served from: tympanus.net @ 2020-03-30 06:03:51 by W3 Total Cache
+-->

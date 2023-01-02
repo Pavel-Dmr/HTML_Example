@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Making SVGs Responsive - Demo 2</title>
+		<meta name="description" content="Making SVGs Responsive: SVG embedded using object" />
+		<meta name="keywords" content="responsive svg, cross-browser, fluid svg, embedded, object" />
+		<meta name="author" content="Sara Soueidan for Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo2.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7243260-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/PagePreloadingEffect/"><span>Previous Demo</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19623"><span>Back to the Codrops Article</span></a></span>
+			</div>
+			<header class="codrops-header">
+				<h1>Making SVGs Responsive</h1>	
+				<nav class="codrops-demos">
+					<a href="index.html">Using <code>img</code></a>
+					<a class="current-demo" href="index2.html">Using <code>object</code></a>
+					<a href="index3.html">Using <code>iframe</code></a>
+					<a href="index4.html">Using inline <code>svg</code></a>
+					<a href="index5.html">Using <code>background-image</code></a>
+					<a href="index6.html">Adaptive SVG with Media Queries</a>
+				</nav>
+			</header>
+			<div class="content">
+				<p>The gray border is the border of the container with the SVG <code>object</code>. <br /><strong>Resize the window to test the SVG fluidity.</strong></p>
+				<h2>SVG as <code>object</code> with fluid width</h2>
+				<div class="container">
+					<object type="image/svg+xml" data="img/logo.svg">
+						<h3>Fallback text</h3>
+					</object>
+				</div>
+				<pre class="code-wrapper">
+					<code>
+&lt;object type="image/svg+xml" data="img/logo.svg"&gt;
+  &lt;h3>Fallback text&lt;/h3&gt;
+&lt;/object&gt;						
+					</code>
+				</pre>
+				<pre class="code-wrapper">
+					<code>
+.container {
+  border: 10px solid #b6bdc3;
+  width: 100%;
+  background: #fff;
+  margin: 0 auto;
+}
+
+/* Required to make image fluid in IE */
+
+object {
+  width: 100%;
+}					</code>
+				</pre>
+			</div>
+		</div><!-- /wrap -->
+		
+
+<!-- For the demo ad only -->   
+<script src="//tympanus.net/codrops/adpacks/demoad.js"></script>
+
+	</body>
+</html>

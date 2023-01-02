@@ -1,0 +1,45 @@
+#menu4 ul {
+    list-style:none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    letter-spacing: -3px;
+    line-height: 1.2em;
+    border-top:5px dotted #c7e7f3;
+    border-bottom:5px dotted #c7e7f3;
+    float:left;
+    clear:both;
+    margin:20px;
+}
+#menu4 ul li{
+    float:left;
+}
+#menu4 ul li a{
+    display:block;
+    text-decoration:none;
+    padding:10px 10px 5px 10px;
+    color:#66b8d8;
+    width:170px;
+}
+#menu4 ul li a span{
+    display:block;
+}
+#menu4 ul li a span.title{
+
+}
+#menu4 ul li a:hover span.title{
+    color:#00adef;
+}
+#menu4 ul li a span.text{
+    padding:0px 5px;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1.6em;
+    color:#c7e7f3;
+    visibility:hidden;
+}
+#menu4 ul li a:hover span.text{
+    visibility:visible;
+}

@@ -1,0 +1,381 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+/*  메인 페이지 스타일  */
+
+/*구글 웹 폰트 지정*/
+@import url(http://fonts.googleapis.com/css?family=Orbitron);
+
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  font-family: orbitron;
+}
+
+.wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  min-height: 768px; /*최소 높이 지정*/
+  min-width: 1024px; /*최소 너비 지정*/
+  perspective: 900px;
+  /*원근감 표시 : 400보다 작으면 원근감이 커진다*/
+}
+/* 메뉴버튼 스타일 */
+.btnMenu {
+  position: fixed;
+  top: 50px;
+  left: 40px;
+  display: inline-block;
+  width: 20px;
+  height: 70px;
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  z-index: 10;
+  animation: menu_animation 0.5s infinite alternate;
+}
+/* 에니메이션 정의 - 심장박동효과 */
+@keyframes menu_animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    color: #fff;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0.7;
+    color: #888;
+  }
+}
+/* 메뉴스타일 */
+nav {
+  position: fixed;
+  width: 150px;
+  height: 100%;
+  background-color: #eee;
+  z-index: 5;
+}
+/* 로고위치 */
+nav h1 {
+  position: absolute;
+  width: 100px;
+  top: 80px;
+  left: 50%;
+  margin: -50px;
+}
+
+nav h1 img {
+  width: 100%;
+  height: auto;
+}
+/* 사이드바 메뉴 목록 위치 지정 */
+nav ul {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  left: 0;
+}
+
+nav li a {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 18px;
+  line-height: 4;
+  text-align: center;
+  transition: all 0.6s;
+}
+
+/* 마우스 호버시 스타일 지정 */
+nav li a:hover {
+  color: #fff;
+  background-color: #000;
+}
+/* 메뉴(카테고리) 그룹효과 */
+nav {
+  transform: rotateY(120deg);
+  transform-origin: left center;
+  /* 회전 중심축은 좌측 중앙 */
+  opacity: 0;
+  transition: all 0.8s;
+}
+nav.on {
+  opacity: 1;
+  transform: rotateY(15deg);
+}
+
+/* TODO Section */
+section {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #555;
+  z-index: 3;
+}
+/* 컨텐츠 그룹효과 */
+section {
+  transform-origin: right center;
+  transition: all 0.6s;
+}
+section.on {
+  transform: rotateY(-10deg);
+}
+section > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  opacity: 0;
+  transition: all 1.5s;
+  perspective: 700px; /*컨텐츠 영역의 원근감*/
+}
+section > div.on {
+  z-index: 5;
+  opacity: 1;
+}
+section > div > p {
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  transition: all 1.5s;
+  transform: rotateX(180deg);
+}
+section > div.on > p {
+  transform: rotateX(0deg);
+}
+
+/* TODO 페이지 관련 */
+.page1 > p {
+  height: 25%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+.page1 > p:nth-child(1) {
+  width: 50%;
+  background-color: #333;
+}
+
+.page1 > p:nth-child(2) {
+  width: 25%;
+  background-color: #ccc;
+  background-image: url(../images/m1.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+}
+
+.page1 > p:nth-child(3) {
+  width: 25%;
+  background-color: #444;
+}
+
+.page1 > p:nth-child(4) {
+  width: 50%;
+  height: 50%;
+  float: right;
+  background-image: url(../images/m2.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.page1 > p:nth-child(5) {
+  width: 25%;
+  float: right;
+  background: url(../images/m3.jpg) no-repeat center top;
+  background-size: contain;
+  background-color: #fff;
+}
+
+.page1 > p:nth-child(6) {
+  width: 25%;
+  background-color: #888;
+  float: right;
+}
+.page1 > p:nth-child(7) {
+  width: 25%;
+  background-color: #444;
+  float: right;
+}
+
+.page1 > p:nth-child(8) {
+  width: 25%;
+  float: right;
+  background: url(../images/m4.jpg) no-repeat center center;
+}
+.page1 > p:nth-child(9) {
+  width: 25%;
+  background-color: #444;
+}
+
+.page1 > p:nth-child(10) {
+  width: 50%;
+  background: url(../images/m5.jpg) no-repeat right center;
+  background-size: cover;
+}
+
+.page1 > p:nth-child(11) {
+  width: 25%;
+  background-color: #222;
+}
+
+.page2 > p {
+  height: 25%;
+  float: left;
+  text-align: center;
+}
+
+.page2 > p:nth-child(1) {
+  width: 25%;
+  background-color: #444;
+}
+
+.page2 > p:nth-child(2) {
+  width: 25%;
+  background: url(../images/w1.jpg) no-repeat 50% 100% / contain;
+  background-color: #fff;
+}
+
+.page2 > p:nth-child(3) {
+  width: 50%;
+  background-color: #222;
+}
+
+.page2 > p:nth-child(4) {
+  width: 25%;
+  height: 49.9%;
+  background: url(../images/w2.jpg) no-repeat right top;
+  background-size: cover;
+  background-color: #fff;
+}
+
+.page2 > p:nth-child(5) {
+  width: 50%;
+  height: 49.9%;
+  background: url(../images/w3.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.page2 > p:nth-child(6) {
+  width: 25%;
+  background: url(../images/w4.jpg) no-repeat center;
+  background-size: contain;
+  background-color: #fff;
+}
+
+.page2 > p:nth-child(7) {
+  width: 25%;
+  background-color: #555;
+}
+
+.page2 > p:nth-child(8) {
+  width: 25%;
+  background: url(../images/w5.jpg) no-repeat center;
+  background-size: cover;
+  background-color: #fff;
+}
+.page2 > p:nth-child(9) {
+  width: 25%;
+  background-color: #555;
+}
+
+.page2 > p:nth-child(10) {
+  width: 25%;
+  background: url(../images/w6.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.page2 > p:nth-child(11) {
+  width: 25%;
+  background: url(../images/w7.jpg) no-repeat center;
+  background-size: cover;
+  background-color: #fff;
+}
+
+.page3 p {
+  width: 25%;
+  height: 25%;
+  float: left;
+}
+
+.page3 p:nth-child(1) {
+  width: 50%;
+  height: 100%;
+  background: url(../images/k1.jpg) no-repeat center top / cover;
+  background-color: #fff;
+}
+
+.page3 p:nth-child(2) {
+  background-color: #555;
+}
+
+.page3 p:nth-child(3) {
+  background: url(../images/k2.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.page3 p:nth-child(4) {
+  width: 50%;
+  background-color: #222;
+}
+
+.page3 > p:nth-child(5) {
+  height: 50%;
+  background: url(../images/k3.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.page3 > p:nth-child(6) {
+  background-color: #777;
+}
+
+.page3 > p:nth-child(7) {
+  background: url(../images/k4.jpg) no-repeat center;
+  background-size: cover;
+}
+
+/* 컨텐츠 텍스트 스타일 */
+
+section > div > p > strong {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -30px;
+}
+section > div > p > span {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -15px;
+}
+
+section > div > p > em > a > i {
+  font-size: 30px !important;
+  color: #eee;
+  position: relative;
+  top: 50%;
+  opacity: 0.5;
+  margin: 0 15px;
+  margin-top: -15px;
+  transition: all 0.3s;
+}
+
+section > div > p > em > a > i:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}

@@ -1,0 +1,240 @@
+<script>window.window = window.window || {};window.gl_data = {"gl_outputLocation":"https:\/\/suru.tympanus.net\/","gl_code_output":"<!doctype html>\n<html>\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>Codrops-Demo<\/title>\n\n\t\t\n\t<style>\/* Main styles *\/\n@import url(http:\/\/fonts.googleapis.com\/css?family=Open+Sans:800);\n\n.text-copy--stroke {\n  fill: transparent;\n  stroke: white;\n  stroke-width: 4;\n}\n\n.text-copy--shadow {\n  fill: rgba(0, 0, 0, 0.25);\n  -webkit-transform: translate(0.06em, 0.06em);\n  -ms-transform: translate(0.06em, 0.06em);\n  transform: translate(0.06em, 0.06em);\n}\n\n.r-fill {\n  fill: url(#p-circles);\n  -webkit-transform-origin: 300px 150px;\n  -ms-transform-origin: 300px 150px;\n  transform-origin: 300px 150px;\n  -webkit-animation: rotate 30s infinite linear;\n  animation: rotate 30s infinite linear;\n}\n\n.c-ring {\n  fill: none;\n  stroke-width: 2;\n  stroke: white;\n}\n\n.c-ring--fill {\n  fill: white;\n  stroke-width: 0;\n  stroke: white;\n  -webkit-animation: stroke 5s infinite;\n  animation: stroke 5s infinite;\n}\n\n@-webkit-keyframes stroke {\n  50% {\n    stroke-width: 15;\n  }\n}\n\n@keyframes stroke {\n  50% {\n    stroke-width: 15;\n  }\n}\n\n@-webkit-keyframes rotate {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes rotate {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n\/* Other styles *\/\nHTML, BODY {\n  height: 100%;\n}\n\nbody {\n  background: hotpink -webkit-radial-gradient(#ff69b4, #9c004e);\n  background: hotpink radial-gradient(#ff69b4, #9c004e);\n  font: 14.5em\/1 Open Sans, Impact;\n  text-transform: uppercase;\n  margin: 0;\n}\n\nsvg {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n}<\/style><\/head>\n\t<body>\n\t\n\t<svg viewBox=\"0 0 600 300\">\n\n  <!-- Symbol with text -->\n  <symbol id=\"s-text\">\n    <text text-anchor=\"middle\"\n          x=\"50%\"\n          y=\"50%\"\n          dy=\".35em\"\n          class=\"text--line\"\n          >\n      Text\n    <\/text>    \n  <\/symbol>\n\n  <!-- Clippath  with text -->\n  <clippath id=\"cp-text\">\n    <text text-anchor=\"middle\"\n          x=\"50%\"\n          y=\"50%\"\n          dy=\".35em\"\n          class=\"text--line\"\n          >\n      Text\n    <\/text>\n  <\/clippath>\n\n  <!-- Pattern -->\n  <pattern\n           id=\"p-circles\"\n           width=\"40\"\n           height=\"40\"\n           viewBox=\"0 0 40 40\"\n           patternUnits=\"userSpaceOnUse\"\n           >\n\n    <circle \n            r=\"12\" cx=\"20\" cy=\"20\"\n            class=\"c-ring\"\n            ><\/circle>\n    <circle \n            r=\"5\" cx=\"20\" cy=\"20\"\n            class=\"c-ring c-ring--fill\"\n            ><\/circle>\n\n    <circle \n            r=\"12\" cx=\"0\" cy=\"0\"\n            class=\"c-ring\"\n            ><\/circle>\n    <circle \n            r=\"12\" cx=\"40\" cy=\"0\"\n            class=\"c-ring\"\n            ><\/circle>\n    <circle \n            r=\"12\" cx=\"40\" cy=\"40\"\n            class=\"c-ring\"\n            ><\/circle>\n    <circle \n            r=\"12\" cx=\"0\" cy=\"40\"\n            class=\"c-ring\"\n            ><\/circle>\n\n    <circle \n            r=\"5\" cx=\"0\" cy=\"0\"\n            class=\"c-ring\"\n            ><\/circle>\n    <circle \n            r=\"5\" cx=\"40\" cy=\"0\"\n            class=\"c-ring\"\n            ><\/circle>\n    <circle \n            r=\"5\" cx=\"40\" cy=\"40\"\n            class=\"c-ring\"\n            ><\/circle>\n    <circle \n            r=\"5\" cx=\"0\" cy=\"40\"\n            class=\"c-ring\"\n            ><\/circle>\n\n  <\/pattern>\n\n  <!-- Copy of text for shadow -->\n  <use xlink:href=\"#s-text\"\n       class=\"text-copy--shadow\"><\/use>\n\n  <!-- Group with clippath and with patterned content -->\n  <g clip-path=\"url(#cp-text)\">\n\n    <circle r=\"70%\"\n            cx=\"300\"\n            cy=\"150\"\n            class=\"r-fill\"\n            ><\/circle>\n  <\/g>\n\n  <!-- Copy of text for stroke -->\n  <use xlink:href=\"#s-text\"\n       class=\"text-copy--stroke\"><\/use>\n\n<\/svg><script><\/script><\/body>\n<\/html>"};</script><!DOCTYPEhtml>
+
+<html lang="en" class="page-default">
+
+	<head>
+				<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		
+		<title>Selectable SVG text with clip-path and animated stroke pattern | Embed - Codrops Playground</title>
+
+		<link rel="stylesheet" type="text/css" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/css/all-css-embed.min.css" />
+
+		
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59174661-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body>
+		<noscript>
+	<div class="no-js-message"><i class="fa fa-fw fa-exclamation-triangle"></i><span>This web application requires JavaScript to work. Please enable JavaScript in your browser.</span></div>
+</noscript>		
+		<div class="embed">
+	<nav id="embed-nav" class="embed-nav">
+		<h1 class="logo"><img src="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/codrops.svg" alt="Codrops Logo"><span>Codrops Editor</span></h1>
+		<div class="embed-tabs js-tabs">
+			<span class="embed-tab ">HTML</span>			<span class="embed-tab ">CSS</span>						<span data-result class="embed-tab selected">Result</span>		</div>
+		<select class="embed-tabs-select js-tabs-select">
+			<option >HTML</option>			<option >CSS</option>						<option selected>Result</option>		</select>
+		<a class="embed-button js-demo--location" target="_blank" href="https://tympanus.net/codrops-playground/yoksel/SLKYjPaz/editor/html,css,result"><i class="icon icon-edit"></i><span>Edit</span></a>
+		
+								<a class="embed-button js-run-demo" id="rerun" href="#"><i class="icon icon-refresh"></i><span>Run</span></a>	
+						</nav>
+	<div id="embed-content" class="embed-content-wrap">
+				<div class="embed-content embed-content--code embed-content--html ">
+			<pre><code class="html">&lt;svg viewBox=&quot;0 0 600 300&quot;&gt;
+
+  &lt;!-- Symbol with text --&gt;
+  &lt;symbol id=&quot;s-text&quot;&gt;
+    &lt;text text-anchor=&quot;middle&quot;
+          x=&quot;50%&quot;
+          y=&quot;50%&quot;
+          dy=&quot;.35em&quot;
+          class=&quot;text--line&quot;
+          &gt;
+      Text
+    &lt;/text&gt;    
+  &lt;/symbol&gt;
+
+  &lt;!-- Clippath  with text --&gt;
+  &lt;clippath id=&quot;cp-text&quot;&gt;
+    &lt;text text-anchor=&quot;middle&quot;
+          x=&quot;50%&quot;
+          y=&quot;50%&quot;
+          dy=&quot;.35em&quot;
+          class=&quot;text--line&quot;
+          &gt;
+      Text
+    &lt;/text&gt;
+  &lt;/clippath&gt;
+
+  &lt;!-- Pattern --&gt;
+  &lt;pattern
+           id=&quot;p-circles&quot;
+           width=&quot;40&quot;
+           height=&quot;40&quot;
+           viewBox=&quot;0 0 40 40&quot;
+           patternUnits=&quot;userSpaceOnUse&quot;
+           &gt;
+
+    &lt;circle 
+            r=&quot;12&quot; cx=&quot;20&quot; cy=&quot;20&quot;
+            class=&quot;c-ring&quot;
+            &gt;&lt;/circle&gt;
+    &lt;circle 
+            r=&quot;5&quot; cx=&quot;20&quot; cy=&quot;20&quot;
+            class=&quot;c-ring c-ring--fill&quot;
+            &gt;&lt;/circle&gt;
+
+    &lt;circle 
+            r=&quot;12&quot; cx=&quot;0&quot; cy=&quot;0&quot;
+            class=&quot;c-ring&quot;
+            &gt;&lt;/circle&gt;
+    &lt;circle 
+            r=&quot;12&quot; cx=&quot;40&quot; cy=&quot;0&quot;
+            class=&quot;c-ring&quot;
+            &gt;&lt;/circle&gt;
+    &lt;circle 
+            r=&quot;12&quot; cx=&quot;40&quot; cy=&quot;40&quot;
+            class=&quot;c-ring&quot;
+            &gt;&lt;/circle&gt;
+    &lt;circle 
+            r=&quot;12&quot; cx=&quot;0&quot; cy=&quot;40&quot;
+            class=&quot;c-ring&quot;
+            &gt;&lt;/circle&gt;
+
+    &lt;circle 
+            r=&quot;5&quot; cx=&quot;0&quot; cy=&quot;0&quot;
+            class=&quot;c-ring&quot;
+            &gt;&lt;/circle&gt;
+    &lt;circle 
+            r=&quot;5&quot; cx=&quot;40&quot; cy=&quot;0&quot;
+            class=&quot;c-ring&quot;
+            &gt;&lt;/circle&gt;
+    &lt;circle 
+            r=&quot;5&quot; cx=&quot;40&quot; cy=&quot;40&quot;
+            class=&quot;c-ring&quot;
+            &gt;&lt;/circle&gt;
+    &lt;circle 
+            r=&quot;5&quot; cx=&quot;0&quot; cy=&quot;40&quot;
+            class=&quot;c-ring&quot;
+            &gt;&lt;/circle&gt;
+
+  &lt;/pattern&gt;
+
+  &lt;!-- Copy of text for shadow --&gt;
+  &lt;use xlink:href=&quot;#s-text&quot;
+       class=&quot;text-copy--shadow&quot;&gt;&lt;/use&gt;
+
+  &lt;!-- Group with clippath and with patterned content --&gt;
+  &lt;g clip-path=&quot;url(#cp-text)&quot;&gt;
+
+    &lt;circle r=&quot;70%&quot;
+            cx=&quot;300&quot;
+            cy=&quot;150&quot;
+            class=&quot;r-fill&quot;
+            &gt;&lt;/circle&gt;
+  &lt;/g&gt;
+
+  &lt;!-- Copy of text for stroke --&gt;
+  &lt;use xlink:href=&quot;#s-text&quot;
+       class=&quot;text-copy--stroke&quot;&gt;&lt;/use&gt;
+
+&lt;/svg&gt;</code></pre>
+		</div>
+		
+				<div class="embed-content embed-content--code embed-content--css ">
+			<pre><code class="css">/* Main styles */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.text-copy--stroke {
+  fill: transparent;
+  stroke: white;
+  stroke-width: 4;
+}
+
+.text-copy--shadow {
+  fill: rgba(0, 0, 0, 0.25);
+  -webkit-transform: translate(0.06em, 0.06em);
+  -ms-transform: translate(0.06em, 0.06em);
+  transform: translate(0.06em, 0.06em);
+}
+
+.r-fill {
+  fill: url(#p-circles);
+  -webkit-transform-origin: 300px 150px;
+  -ms-transform-origin: 300px 150px;
+  transform-origin: 300px 150px;
+  -webkit-animation: rotate 30s infinite linear;
+  animation: rotate 30s infinite linear;
+}
+
+.c-ring {
+  fill: none;
+  stroke-width: 2;
+  stroke: white;
+}
+
+.c-ring--fill {
+  fill: white;
+  stroke-width: 0;
+  stroke: white;
+  -webkit-animation: stroke 5s infinite;
+  animation: stroke 5s infinite;
+}
+
+@-webkit-keyframes stroke {
+  50% {
+    stroke-width: 15;
+  }
+}
+
+@keyframes stroke {
+  50% {
+    stroke-width: 15;
+  }
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* Other styles */
+HTML, BODY {
+  height: 100%;
+}
+
+body {
+  background: hotpink -webkit-radial-gradient(#ff69b4, #9c004e);
+  background: hotpink radial-gradient(#ff69b4, #9c004e);
+  font: 14.5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}</code></pre>
+		</div>
+		
+		
+				<div class="embed-content embed-content--result selected">
+			<iframe src="https://suru.tympanus.net/" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"></iframe>
+		</div>
+			</div>
+	</div>
+		<script src="/codrops-playground/332d5270da28388399324d79ffcf4a45/js/p/all-b-embed.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+.portfolio_wrap { position:relative; margin:0 auto; width:1220px; }
+.portfolio_wrap div.grid { margin-bottom:70px; width:380px; }
+.portfolio_wrap dt { margin-bottom:15px; }
+.portfolio_wrap dt img { width:100%; }
+.portfolio_wrap dd { text-align:center; }
+.portfolio_wrap dd a { font-size:14px; font-family:dotum, '돋움', sans-serif; color:#000; }
+
+@media screen and (max-width:1220px) {
+	.portfolio_wrap { width:800px; }
+}
+@media screen and (max-width:849px) {
+	.portfolio_wrap { width:96%; }
+	.portfolio_wrap div.grid { margin-bottom:30px; width:100%; }
+}

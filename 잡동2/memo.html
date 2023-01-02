@@ -1,0 +1,463 @@
+
+<!DOCTYPE html><html lang='en' class=''>
+<head><meta charset='UTF-8'>
+
+<style class="cp-pen-styles">#board {
+  height: 100%;
+  width: 1100px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#board .block {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #000000;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+}
+
+#board .block div.triangle {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  background-color: #ffffff;
+}
+
+#board .block .color1 {
+  border-bottom: 100px solid #E6F99D;
+}
+
+#board .block .color2 {
+  border-bottom: 100px solid #50CFC9;
+}
+
+#board .block .color3 {
+  border-bottom: 100px solid #EA5455;
+}
+
+#board .block .color4 {
+  border-bottom: 100px solid #F5D97E;
+}
+
+#board .block .color5 {
+  border-bottom: 100px solid #DDDDDD;
+}
+
+#board .block .color6 {
+  border-bottom: 100px solid #5A8DDC;
+}
+
+#board .block .color7 {
+  border-bottom: 100px solid #F5F5F5;
+}
+
+#board .block .color8 {
+  border-bottom: 100px solid #B9E937;
+}
+
+#board .block .color9 {
+  border-bottom: 100px solid #FC5185;
+}
+
+#board .block .color10 {
+  border-bottom: 100px solid #7FDA89;
+}
+
+#board .block .color11 {
+  border-bottom: 100px solid #47A0B4;
+}
+
+#board .block .color12 {
+  border-bottom: 100px solid #FF5733;
+}
+
+#board .block .color13 {
+  border-bottom: 100px solid #FFD00C;
+}
+
+#board .block .color14 {
+  border-bottom: 100px solid #BBE9DB;
+}
+
+#board .block .color15 {
+  border-bottom: 100px solid #F03861;
+}
+
+#board .block .color16 {
+  border-bottom: 100px solid #AECCC6;
+}
+
+#board .block h1 {
+  font-size: 16px;
+  width: 100px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  position: absolute;
+  margin: 10px;
+  top: 0;
+  left: 0;
+}
+
+#board .block p {
+  margin: 0;
+  padding: 0;
+  width: 35%;
+  padding-left: 50%;
+  position: absolute;
+  margin: 5px;
+  bottom: 0;
+  right: 0;
+  font-size: 8px;
+}
+
+.flash {
+  animation: flash 2s ease infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes "flash" {
+  0% {
+    -webkit-transform: scale(0.9);
+  }
+  20% {
+    -webkit-transform: scale(0.5);
+  }
+  40% {
+    -webkit-transform: scale(0.9);
+  }
+  60% {
+    -webkit-transform: scale(0.7);
+  }
+  80% {
+    -webkit-transform: scale(0.9);
+  }
+  90% {
+    -webkit-transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+  }
+}
+
+/* line 18, /Users/sobylmine/Wszystko/CODEWORK/3. memo/scss/partials/_animations.scss */
+.wobble {
+  animation: wobble 2s ease infinite;
+}
+
+@keyframes wobble {
+  0% {
+    transform: translateX(0%);
+  }
+  15% {
+    transform: translateX(-25%) rotate(-5deg);
+  }
+  30% {
+    transform: translateX(20%) rotate(3deg);
+  }
+  45% {
+    transform: translateX(-15%) rotate(-3deg);
+  }
+  60% {
+    transform: translateX(10%) rotate(2deg);
+  }
+  75% {
+    transform: translateX(-5%) rotate(-1deg);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.swing {
+  transform-origin: top center;
+  animation: swing 2s ease infinite;
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.roll-in {
+  animation: roll-in 2s ease infinite;
+}
+
+@keyframes roll-in {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(1080deg);
+  }
+}
+
+.spin {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.wave {
+  animation: wave 2s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  40% {
+    -webkit-transform: translateX(-20%) scale(0.8);
+  }
+  80% {
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+.gelatine {
+  animation: gelatine 0.5s infinite;
+}
+
+@keyframes gelatine {
+  from, to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+.hithere {
+  animation: hithere 1s ease infinite;
+}
+
+@keyframes hithere {
+  30% {
+    transform: scale(1.1);
+  }
+  40%, 60% {
+    transform: rotate(-20deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounce {
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-35%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-17%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-13%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.shake {
+  animation: shake 2s ease infinite;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.squize {
+  animation: squize 2s ease infinite;
+}
+
+@keyframes squize {
+  0%, 100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.7, 1.5);
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "SourceSansPro", sans-serif;
+  font-size: 1.4vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style></head><body>
+	<section id ="game">
+		<div id="board">
+			<div class="block">
+				<div class="triangle color1">
+					<h1 class="spin">Open Sans Pro</h1>
+					<p>is my favourite font</p>
+				</div>
+			</div>
+			<div class="block">
+				<div class="triangle color2">
+					<h1 class="gelatine">&#60;canvas&#62; magic</h1>
+					<p>is what I&nbsp;want to be great at</p>
+				</div>
+			</div>
+			<div class="block">
+				<div class="triangle color3">
+					<h1 class="swing">HTML5 and CSS3</h1>
+					<p>is what I&nbsp;work with everyday</p>
+				</div>
+			</div>
+			<div class="block">
+				<div class="triangle color4">
+					<h1 class="hithere">SVG anima- tions</h1>
+					<p>is what I&nbsp;will learn on next holidays</p>
+				</div>
+			</div>
+			<div class="block">
+				<div class="triangle color5">
+					<h1 class="shake">jQuery</h1>
+					<p>is easy and fun for me</p>
+				</div>
+			</div>
+			<div class="block">
+				<div class="triangle color6">
+					<h1 class="squize">Java- Script</h1>
+					<p>is an everyday challlenge</p>
+				</div>
+			</div>
+			<div class="block">
+				<div class="triangle color7">
+					<h1 class="bounce">Sass</h1>
+					<p>is my favourite thing</p>
+				</div>
+			</div>
+			<div class="block">
+				<div class="triangle color8">
+					<h1 class="roll-in">my bike</h1>
+					<p>is how I&nbsp;get to places</p>
+				</div>
+			</div>
+			<div class="block">
+				<div  class="triangle color9">
+					<h1 class="spin">Graphic Design</h1>
+					<p>is what I&nbsp;have a&nbsp;lot&nbsp;of experi-ence in</p>
+				</div>
+			</div>
+			<div class="block">
+				<div  class="triangle color10">
+					<h1 class="swing">NGO's and Start-ups</h1>
+					<p>is where I&nbsp;like working</p>
+				</div>
+			</div>
+			<div class="block">
+				<div  class="triangle color11">
+					<h1 class="bounce">modern art</h1>
+					<p>is what I'm inter-ested in</p>
+				</div>
+			</div>
+			<div class="block">
+				<div  class="triangle color12">
+					<h1 class="wave">Art- books</h1>
+					<p>is some-thing I&nbsp;will always loook at</p>
+				</div>
+			</div>
+			<div class="block">
+				<div  class="triangle color13">
+					<h1 class="wobble">Photo- graphy</h1>
+					<p>is what I&nbsp;studied and still like</p>
+				</div>
+			</div>
+			<div class="block">
+				<div  class="triangle color14">
+					<h1 class="hithere">coding</h1>
+					<p>is what I&nbsp;want to do for living</p>
+				</div>
+			</div>
+			<div class="block">
+				<div  class="triangle color15">
+					<h1 class="flash">Bongo!</h1>
+					<p>is my dog's name</p>
+				</div>
+			</div>
+			<div class="block">
+				<div  class="triangle color16">
+					<h1 class="shake">digital nomad</h1>
+					<p>is the way of life for me</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body></html>

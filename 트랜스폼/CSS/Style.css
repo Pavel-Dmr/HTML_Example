@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+#wrap {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+}
+
+header {
+  height: 200px;
+  background-color: #ccc;
+}
+
+section {
+  height: 800px;
+  background-color: beige;
+}
+
+.art01 {
+  height: 200px;
+}
+
+.art01 ul li {
+  float: left;
+  width: 200px;
+  height: 150px;
+  border: 1px solid #333;
+  margin-left: 24px;
+}
+
+.art01_btn {
+  height: 90px;
+}
+
+.art01_btn ul li {
+  padding: 20px 0;
+  float: left;
+  width: 200px;
+  border: 1px solid #333;
+  margin-left: 30px;
+  text-align: center;
+}
+
+.art01 ul li img {
+  transition: all 0.3s;
+}
+
+.art01 ul li:nth-child(1).on img {
+  transform: rotateY(360deg);
+}
+
+.art01 ul li:nth-child(2).on img {
+  transform: rotateX(360deg);
+}

@@ -1,0 +1,50 @@
+#menu8 ul {
+    list-style:none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 44px;
+    letter-spacing: -2px;
+    line-height: 1.2em;
+    float:left;
+    clear:both;
+    margin:20px;
+    border:5px solid #fff;
+}
+#menu8 ul li{
+    float:left;
+}
+#menu8 ul li a{
+    display:block;
+    text-decoration:none;
+    padding:5px 10px 5px 10px;
+    background-color:#fff;
+    width:170px;
+    border-left:6px solid #888; 
+}
+#menu8 ul li a span{
+    display:block;
+}
+#menu8 ul li a span.title{
+    color:#888;
+}
+#menu8 ul li a:hover{
+    border-left:6px solid #000;
+}
+#menu8 ul li a:hover span.title{
+    color:#df246f;
+
+}
+#menu8 ul li a span.text{
+    padding:0px 5px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    visibility:hidden;
+    color:#df246f;
+    text-align:right;
+    border-top:5px solid #000;
+}
+#menu8 ul li a:hover span.text{
+    visibility:visible;
+}

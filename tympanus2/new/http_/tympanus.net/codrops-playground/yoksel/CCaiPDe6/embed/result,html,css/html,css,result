@@ -1,0 +1,106 @@
+<script>window.window = window.window || {};window.gl_data = {"gl_outputLocation":"https:\/\/suru.tympanus.net\/","gl_code_output":"<!doctype html>\n<html>\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>Codrops-Demo<\/title>\n\n\t\t\n\t<style>\/* Main styles *\/\n@import url(http:\/\/fonts.googleapis.com\/css?family=Open+Sans:800);\n\n.box-with-text {\n  background-image: -webkit-linear-gradient(crimson 50%, white 50%);\n  background-repeat: repeat;\n  background-position: 0 0;\n  background-size: 100% 50px;\n  -webkit-text-fill-color: transparent;\n  -webkit-background-clip: text;\n  -webkit-animation: stripes 2s linear infinite;\n  animation: stripes 2s linear infinite;\n}\n\n@-webkit-keyframes stripes {\n  100% {\n    background-position: 0 -50px;\n  }\n}\n\n@keyframes stripes {\n  100% {\n    background-position: 0 -50px;\n  }\n}\n\/* Other stuff *\/\nbody {\n  overflow: hidden;\n  background: #000;\n  color: #FFF;\n}\n\n.box-with-text {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  white-space: nowrap;\n  text-align: center;\n  text-transform: uppercase;\n  font: bold 26vmax\/.8 Open Sans, Impact;\n  -webkit-transform: translateX(-50%) translateY(-50%);\n  -ms-transform: translateX(-50%) translateY(-50%);\n  transform: translateX(-50%) translateY(-50%);\n}\n<\/style><\/head>\n\t<body>\n\t\n\t<div class=\"box-with-text\">\n  Text\n<\/div><script><\/script><\/body>\n<\/html>"};</script><!DOCTYPEhtml>
+
+<html lang="en" class="page-default">
+
+	<head>
+				<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		
+		<title>Animation for background-clip: text | Embed - Codrops Playground</title>
+
+		<link rel="stylesheet" type="text/css" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/css/all-css-embed.min.css" />
+
+		
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59174661-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body>
+		<noscript>
+	<div class="no-js-message"><i class="fa fa-fw fa-exclamation-triangle"></i><span>This web application requires JavaScript to work. Please enable JavaScript in your browser.</span></div>
+</noscript>		
+		<div class="embed">
+	<nav id="embed-nav" class="embed-nav">
+		<h1 class="logo"><img src="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/codrops.svg" alt="Codrops Logo"><span>Codrops Editor</span></h1>
+		<div class="embed-tabs js-tabs">
+			<span class="embed-tab ">HTML</span>			<span class="embed-tab ">CSS</span>						<span data-result class="embed-tab selected">Result</span>		</div>
+		<select class="embed-tabs-select js-tabs-select">
+			<option >HTML</option>			<option >CSS</option>						<option selected>Result</option>		</select>
+		<a class="embed-button js-demo--location" target="_blank" href="https://tympanus.net/codrops-playground/yoksel/CCaiPDe6/editor/html,css,result"><i class="icon icon-edit"></i><span>Edit</span></a>
+		
+								<a class="embed-button js-run-demo" id="rerun" href="#"><i class="icon icon-refresh"></i><span>Run</span></a>	
+						</nav>
+	<div id="embed-content" class="embed-content-wrap">
+				<div class="embed-content embed-content--code embed-content--html ">
+			<pre><code class="html">&lt;div class=&quot;box-with-text&quot;&gt;
+  Text
+&lt;/div&gt;</code></pre>
+		</div>
+		
+				<div class="embed-content embed-content--code embed-content--css ">
+			<pre><code class="css">/* Main styles */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.box-with-text {
+  background-image: -webkit-linear-gradient(crimson 50%, white 50%);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 100% 50px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: stripes 2s linear infinite;
+  animation: stripes 2s linear infinite;
+}
+
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+
+@keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+/* Other stuff */
+body {
+  overflow: hidden;
+  background: #000;
+  color: #FFF;
+}
+
+.box-with-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+  font: bold 26vmax/.8 Open Sans, Impact;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+</code></pre>
+		</div>
+		
+		
+				<div class="embed-content embed-content--result selected">
+			<iframe src="https://suru.tympanus.net/" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"></iframe>
+		</div>
+			</div>
+	</div>
+		<script src="/codrops-playground/332d5270da28388399324d79ffcf4a45/js/p/all-b-embed.min.js"></script>
+	</body>
+</html>

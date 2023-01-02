@@ -1,0 +1,228 @@
+<script>window.window = window.window || {};window.gl_data = {"gl_editor":{"gl_code":{"html":"<div class='outer-wrap round'>\n  <ul class='quadrants fill'>\n    <li class='q'>Q I<\/li>\n    <li class='q'>Q II<\/li>\n    <li class='q'>Q III<\/li>\n    <li class='q'>Q IV<\/li>\n  <\/ul>\n  <div class='box centre-me'><\/div>\n  <div class='axis angle-start-axis centre-me'><\/div>\n  <div class='axis h-axis centre-me'><\/div>\n  <div class='moving-line grad-line centre-me'><\/div>\n  <div class='moving-line grad-start centre-me'><\/div>\n  <div class='moving-line grad-end centre-me'><\/div>\n  <ul class='angles fill round'><\/ul>\n<\/div>\n<code class='grad-code'><\/code>\n<p>\n  Demo by <a href=\"http:\/\/codepen.io\/thebabydino\">Ana Tudor<\/a>. Licensed under MIT.\n<\/p>","css":"html,\nbody {\n  min-width: 240px;\n  min-height: 240px;\n  height: 100%;\n  margin: 0;\n}\n\nhtml {\n  font: .8em Verdana, sans-serif;\n  text-align: center;\n}\n\nbody {\n  padding: 20px;\n}\n\n.centre-me {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n}\n\n.fill {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  margin: 0;\n}\n\n.round {\n  border-radius: 50%;\n}\n\n.outer-wrap {\n  position: relative;\n  margin: 4em auto 0;\n}\n\n.outer-wrap ul {\n  list-style: none;\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n\n.q {\n  position: absolute;\n  font-weight: 700;\n}\n\n.q:first-child {\n  top: -1em;\n  right: -1em;\n}\n\n.q:nth-child(2) {\n  right: -1em;\n  bottom: -1em;\n}\n\n.q:nth-child(3) {\n  bottom: -1em;\n  left: -1em;\n}\n\n.q:nth-child(4) {\n  top: -1em;\n  left: -1em;\n}\n\n.angles {\n  -webkit-transform: rotate(-90deg);\n  -ms-transform: rotate(-90deg);\n  transform: rotate(-90deg);\n}\n\n.angle {\n  margin: -1px;\n  border: solid 1px;\n  cursor: pointer;\n  -webkit-transition: box-shadow .3s;\n  transition: box-shadow .3s;\n}\n\n.angle:after {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  margin: -7px;\n  width: 14px;\n  height: 14px;\n  border-radius: 50%;\n  content: '';\n}\n\n.angle:before {\n  position: absolute;\n  top: -10px;\n  left: 11px;\n  padding: 0 3px;\n  border-radius: 4px;\n  box-shadow: 0 0 2px;\n  background: -webkit-linear-gradient(whitesmoke, gainsboro);\n  background: linear-gradient(whitesmoke, gainsboro);\n  color: black;\n}\n\n.sec:before {\n  -webkit-transform: rotate(180deg);\n  -ms-transform: rotate(180deg);\n  transform: rotate(180deg);\n}\n\n.angle:hover,\n.selected {\n  box-shadow: 0 0 1px 3px crimson, 0 0 1px 5px white, 0 0 1px 7px crimson;\n}\n\n.angle:hover:before,\n.selected:before {\n  content: attr(data-angle) '\u00b0';\n}\n\n.major {\n  margin: -2px;\n  border: solid 2px;\n  color: crimson;\n}\n\n.box {\n  margin: -15% -30%;\n  width: 60%;\n  height: 30%;\n  background: -webkit-linear-gradient(90deg, deeppink, yellow, springgreen);\n  background: linear-gradient(0deg, deeppink, yellow, springgreen);\n  -webkit-transition: background-image .75s linear;\n  transition: background-image .75s linear;\n}\n\n.axis {\n  top: -50px;\n  bottom: -50px;\n  width: 1px;\n  background: dimgrey;\n}\n\n.angle-start-axis:before {\n  display: block;\n  min-width: 125px;\n  text-align: left;\n  text-indent: 2px;\n  content: '\u2190 angle start axis';\n}\n\n.h-axis {\n  -webkit-transform: rotate(90deg);\n  -ms-transform: rotate(90deg);\n  transform: rotate(90deg);\n}\n\n.grad-line {\n  top: 12px;\n  bottom: 12px;\n  width: 1px;\n  background: dodgerblue;\n  -webkit-transition: -webkit-transform .75s linear;\n  transition: -webkit-transform .75s linear;\n  transition: transform .75s linear;\n}\n\n.grad-line:before {\n  display: block;\n  margin-top: 7px;\n  min-width: 105px;\n  text-align: left;\n  text-indent: 2px;\n  content: '\u2190 gradient line';\n}\n\n.rev:before {\n  -webkit-transform: rotate(180deg);\n  -ms-transform: rotate(180deg);\n  transform: rotate(180deg);\n  content: 'gradient line \u2192';\n}\n\n.grad-start,\n.grad-end {\n  left: 20%;\n  right: 20%;\n  height: 1px;\n  background: crimson;\n  -webkit-transition: .75s linear;\n  transition: .75s linear;\n}\n\n.grad-end {\n  background: black;\n}\n\n.grad-code {\n  display: inline-block;\n  position: relative;\n  z-index: 1;\n  margin-top: 3em;\n  padding: .5em;\n  background: black;\n  color: white;\n  font: 1.25em monospace;\n}\n\n@media (min-width: 240px) {\n  html {\n    overflow-x: hidden;\n  }\n}\n","js":"(function() {\n  var fullCircle = 360,\n      Demo = function() {\n        \/\/ utility class\n        var EUtil = function() {\n          this.getSize = function(m \/* integer *\/) {\n            var w = document.body.clientWidth, h = document.body.clientHeight, s;\n            s = Math.max(Math.min(Math.min(w,h) - m - 96, 640), 199);\n            return (s%2 !== 0)?s:(s-1);\n          }\n\n          this.setStyle = function(elStyles) {\n            \/*\n        elStyles is an array\n        [\n          [element_1, {property_1_1: value_1_1, property_1_2: value_1_2}], \n          [element_2, {property_2_1: value_2_1}]\n        ]\n        *\/\n            var t, len = elStyles.length,\n                prefixed = {'property': ['transform'], 'value': ['linear-gradient']}, \n                prefixList = ['-webkit-', '-moz', '-o-'], l = prefixList.length;\n            for(var i = 0; i < len; i++) {\n              for(var p in elStyles[i][1]) {\n                if(prefixed['property'][0].indexOf(p) != -1) { \/* check if the property needs to be prefixed *\/\n                  for(var j = 0; j < l; j++)\n                    elStyles[i][0].style[prefixList[j] + p] = elStyles[i][1][p];\n                }\n                if(elStyles[i][1][p].indexOf(prefixed['value'][0]) != -1) { \/* check if the value needs to be prefixed *\/\n                  t = 90 - parseInt(elStyles[i][1][p].split(prefixed['value'][0]+'(')[1].split('deg')[0], 10);\n                  t = prefixed['value'][0] + '(' + t + 'deg' + elStyles[i][1][p].split('deg')[1];\n                  for(var j = 0; j < l; j++)\n                    elStyles[i][0].style[p] = prefixList[j] + t;\n                }\n                elStyles[i][0].style[p] = elStyles[i][1][p]; \/* just set styles, no prefixes *\/\n              }\n            }\n          };\n        };\n\n        \/\/ angle class\n        var Angle = function(angleValue, u, r) {\n          var value = angleValue, \n              selected = (angleValue === 0)?true:false, \n              el = document.createElement('li'); \/* this is a dot on the circle *\/\n          el.setAttribute('class', 'angle centre-me round');\n          this.isSelected = function() \t{ return selected; };\n          this.select = function() \t\t  { selected = true; el.classList.add('selected'); };\n          this.unselect = function() \t\t{ selected = false; el.classList.remove('selected'); };\n          this.getValue = function() \t\t{ return value; };\n          this.getElement = function() \t{ return el; };\n          this.isMajor = function()\t\t  { return value%15 === 0; };\n          this.isSec = function()\t\t\t  { return value > 180; };\n          if(this.isMajor()) el.classList.add('major');\n          if(this.isSec()) el.classList.add('sec');\n          if(this.isSelected()) el.classList.add('selected');\n          if(el.dataset) el.dataset.angle = value;\n          else el.setAttribute('data-angle', value);\n          u.setStyle([[el, {'transform': 'rotate(' + value + 'deg) translate(' + r + 'px)'}]]);\n        };\n\n        var AngleCircle = function() {\n          var angles = [], currentAngle, \n              getSensitivity = function(size) {\n                if(size < 240) return 15; \/* every 15\u00b0 for smallest screen *\/\n                if(size < 320) return 10; \/* every 10\u00b0 *\/\n                if(size < 480) return 6;\n                if(size < 560) return 5;\n                return 3;\n              }\n\n          this.createCircle = function(parent, u) {\n            var parentStyle = window.getComputedStyle(parent, null), \n                margin = parseInt(parentStyle.marginTop.split('px')[0], 10) + 36, \n                size = u.getSize(margin), r = size\/2, s = getSensitivity(size), \n                listWrap = parent.querySelector('.angles');\n            u.setStyle([[parent, {'width': size + 'px', 'height': size + 'px'}]]);\n            listWrap.innerHTML = '';\n            listWrap = parent.removeChild(listWrap);\n            for(var i = 0; i < fullCircle\/s; i++) {\n              currentAngle = new Angle(i*s, u, r);\n              angles.push(currentAngle);\n              listWrap.appendChild(currentAngle.getElement());\n            }\n            parent.appendChild(listWrap);\n          };\n\n          this.getSelected = function() {\n            var len = angles.length;\n            for(var i = 0; i < len; i++)\n              if(angles[i].isSelected()) return angles[i];\n            console.log('error, no angle selected :(');\n            return null;\n          };\n\n          this.getAngle = function(angleValue) {\n            var len = angles.length;\n            for(var i = 0; i < len; i++) \n              if(angles[i].getValue() == angleValue) return angles[i];\n            console.log('error, no angle with such value :(');\n            return null;\n          };\n\n          this.select = function(angleValue) {\n            var len = angles.length, selectedAngle = this.getSelected();\n            if(angleValue == selectedAngle.getValue()) {\n              console.log('already selected :)');\n              return -1;\n            }\n            this.getAngle(angleValue).select();\n            selectedAngle.unselect();\n          };\n        };\n\n        this.init = function() {\n          var u = new EUtil(), wrap = document.querySelector('.outer-wrap'), \n              box = wrap.querySelector('.box'), \n              codeEl = document.querySelector('.grad-code'), \n              codetxt = 'linear-gradient(0deg, deeppink, yellow, lime)', \n              gradLine = document.querySelector('.grad-line'), \n              gradStart = document.querySelector('.grad-start'), \n              gradEnd = document.querySelector('.grad-end'), \n              angleCircle = new AngleCircle(), currentAngle = 0;\n\n          angleCircle.createCircle(wrap, u);\n          u.setStyle([[gradLine, {'transform': 'rotate(0)'}], \n                      [gradStart, {'transform': 'rotate(0)', 'left': '-10%', 'right': '50%', 'top': '65%'}], \n                      [gradEnd, {'transform': 'rotate(0)', 'left': '50%', 'right': '-10%', 'top': '35%'}], \n                      [box, {'backgroundImage': codetxt}]]);\n          codeEl.innerHTML = codetxt;\n          if(gradLine.classList.contains('rev')) gradLine.classList.remove('rev');\n\n          wrap.addEventListener('click', function(e) {\n            var t = e.target, a, dif;\n            if(t.classList.contains('angle')) {\n              if(t.dataset) a = parseInt(t.dataset.angle, 10);\n              else a = parseInt(t.getAttribute('data-angle'), 10);\n              if(angleCircle.select(a) == -1) return;\n              dif = a - currentAngle%360;\n              currentAngle += (Math.abs(dif) > 180) ? (Math.abs(dif) - 360)*Math.abs(dif)\/dif : dif;\n              codetxt = 'linear-gradient(' + currentAngle + 'deg, deeppink, yellow, lime)';\n              u.setStyle([[gradLine, {'transform': 'rotate(' + currentAngle + 'deg)'}], \n                          [gradStart, {'transform': 'rotate(' + currentAngle + 'deg)'}], \n                          [gradEnd, {'transform': 'rotate(' + currentAngle + 'deg)'}], \n                          [box, {'backgroundImage': codetxt}]]);\n              codetxt = 'linear-gradient(' + ((currentAngle%360>=0)?(currentAngle%360):(360+currentAngle%360)) + 'deg, deeppink, yellow, lime)';\n              codeEl.innerHTML = codetxt;\n              if(a > 90 && a < 270) gradLine.classList.add('rev');\n              else gradLine.classList.remove('rev');\n              if(a >= 0 && a < 90)\n                u.setStyle([[gradStart, {'left': '-10%', 'right': '50%', 'top': '65%'}], \n                            [gradEnd, {'left': '50%', 'right': '-10%', 'top': '35%'}]]);\n              if(a >= 90 && a < 180)\n                u.setStyle([[gradStart, {'left': '-10%', 'right': '50%', 'top': '35%'}], \n                            [gradEnd, {'left': '50%', 'right': '-10%', 'top': '65%'}]]);\n              if(a >= 180 && a < 270)\n                u.setStyle([[gradStart, {'left': '50%', 'right': '-10%', 'top': '35%'}], \n                            [gradEnd, {'left': '-10%', 'right': '50%', 'top': '65%'}]]);\n              if(a >= 270 && a < 360)\n                u.setStyle([[gradStart, {'left': '50%', 'right': '-10%', 'top': '65%'}], \n                            [gradEnd, {'left': '-10%', 'right': '50%', 'top': '35%'}]]);\n\n            }\n          }, false);\n        };\n      }\n\n  var d = new Demo();\n  d.init();\n  window.addEventListener('resize', function(e) { d.init(); }, false);\n}());"},"gl_uuid":"J2bjwG00","gl_title":"#cssref linear-gradient()","gl_description":"Demo for the Codrops CSS Reference entry <a href=\"http:\/\/tympanus.net\/codrops\/?post_type=css_reference&p=19959\">linear-gradient()<\/a>","gl_tags":"","gl_isPicked":false,"gl_isPrivate":false,"gl_hasAd":false,"gl_url_editor":"http:\/\/tympanus.net\/codrops-playground\/SaraSoueidan\/J2bjwG00\/editor"},"gl_assets":{"normalize":"http:\/\/tympanus.net\/codrops-playground\/demolibs\/normalize.min.css"},"gl_user_auth":false,"gl_user_owner":false,"gl_panels":{"html":true,"css":true,"js":true,"result":true},"gl_rootLocation":"codrops-playground","gl_outputLocation":"https:\/\/suru.tympanus.net\/"};</script><!DOCTYPEhtml>
+
+<html lang="en" class="page-default">
+
+	<head>
+				<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+<meta name="_token" content="iYq8JEnU62iS0J9jLruA6oidGpM5U4MmUojgFWLN" />
+<meta name="description" content="Demo for the Codrops CSS Reference entry &lt;a href=&quot;http://tympanus.net/codrops/?post_type=css_reference&amp;p=19959&quot;&gt;linear-gradient()&lt;/a&gt;" />
+<meta name="keywords" content="" />
+<meta name="author" content="SaraSoueidan" />
+
+				<link rel="apple-touch-icon" sizes="57x57" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon-160x160.png" sizes="160x160">
+		<link rel="icon" type="image/png" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon-32x32.png" sizes="32x32">
+		<link rel="shortcut icon" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/favicon.ico">
+		<meta name="msapplication-TileColor" content="#edf2f5">
+		<meta name="msapplication-TileImage" content="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/mstile-144x144.png">
+		<meta name="msapplication-config" content="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		
+				<script src="//use.typekit.net/lci1icx.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		
+		<title>#cssref linear-gradient() - Codrops Playground</title>
+
+		<link rel="stylesheet" type="text/css" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/js/p/all-css-cm.min.css" />
+<link rel="stylesheet" type="text/css" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/css/style-editor.min.css" />
+
+		<script src="/codrops-playground/332d5270da28388399324d79ffcf4a45/js/p/all-h-demolayout.min.js"></script>
+
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59174661-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body>
+		<noscript>
+	<div class="no-js-message"><i class="fa fa-fw fa-exclamation-triangle"></i><span>This web application requires JavaScript to work. Please enable JavaScript in your browser.</span></div>
+</noscript>		
+		<div id="cdeditor" class="editor-wrap theme-light">
+	<div class="controls">
+		<h1 class="logo">
+	<a>
+		<img src="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/codrops.svg" alt=""/>
+		<span class="hide">Codrops Playground</span>
+	</a>
+</h1>
+		
+				<div class="meta meta--guest">
+								<button class="meta__icon button--text button--silent" data-dialog="demo-info-dialog">
+				<i class="fa fa-circle-info meta__icon"></i>
+						</button>
+			<h1 class="meta__title"><span class="meta__em js-demo-title">#cssref linear-gradient()</span> by <span class="meta__em">SaraSoueidan</span></h1>
+		</div>
+
+		<div class="actions actions--side">
+	<button class="button button--action button--icon button--runjs hide" id="runjs"><i class="fa fa-refresh"></i><span>Run</span></button>
+	<div class="action action--ddown">
+		<button class="button button--empty button--dd" id="layout-button" title="Settings">
+			<i class="fa fa-cogwheel"></i>
+		</button>
+		<div class="ddown">
+			<div class="control js-control-code">
+				<span class="control__field">
+					<input type="checkbox" id="option-result" data-panel="result" checked />
+					<i class="fa fa-unchecked control__box control__box--off"></i>
+					<i class="fa fa-check control__box control__box--on"></i>
+					<label for="option-result">Result</label>
+				</span>
+				<span class="control__field">
+					<input type="checkbox" id="option-html" data-panel="html" checked />
+					<i class="fa fa-unchecked control__box control__box--off"></i>
+					<i class="fa fa-check control__box control__box--on"></i>
+					<label for="option-html">HTML</label>
+				</span>
+				<span class="control__field">
+					<input type="checkbox" id="option-css" data-panel="css" checked />
+					<i class="fa fa-unchecked control__box control__box--off"></i>
+					<i class="fa fa-check control__box control__box--on"></i>
+					<label for="option-css">CSS</label>
+				</span>
+				<span class="control__field">
+					<input type="checkbox" id="option-js" data-panel="js" checked />
+					<i class="fa fa-unchecked control__box control__box--off"></i>
+					<i class="fa fa-check control__box control__box--on"></i>
+					<label for="option-js">JS</label>
+				</span>
+			</div>
+			<div class="control control--highlight">
+				<span class="control__field">
+					<input type="checkbox" id="autorunjs" checked />
+					<i class="fa fa-unchecked control__box control__box--off"></i>
+					<i class="fa fa-check control__box control__box--on"></i>
+					<label for="autorunjs">Autorun JS</label>
+				</span>
+			</div>
+			<div class="control control--layout cf">
+				<span class="control__field control__field--half">
+					<input type="radio" id="layout-result-code_horizontal" data-layout="result-code" data-orientation="horizontal" name="layouts" />
+					<svg width="60" height="60" viewBox="0 0 60 60" preserveAspectRatio="none">
+						<path d="m5.5,36.5l16,0l0,18l-16,0l0,-18z"/><path d="m21.5,36.5l17,0l0,18l-17,0l0,-18z"/><path d="m38.5,36.5l16,0l0,18l-16,0l0,-18z"/><path d="m5.5,4.5l49,0l0,32l-49,0l0,-32z"/>
+					</svg>
+				</span>
+				<span class="control__field control__field--half">
+					<input type="radio" id="layout-code-result_horizontal" data-layout="code-result" data-orientation="horizontal" name="layouts" />
+					<svg width="60" height="60" viewBox="0 0 60 60" preserveAspectRatio="none">
+						<path d="M54.5,22.5h-16v-18h16V22.5z"/><path d="M38.5,22.5h-17v-18h17V22.5z"/><path d="M21.5,22.5h-16v-18h16V22.5z"/><path d="M54.5,54.5h-49v-32h49V54.5z"/>
+					</svg>
+				</span>
+				<span class="control__field control__field--half">
+					<input type="radio" id="layout-code-result_vertical" data-layout="code-result" data-orientation="vertical" name="layouts" />
+					<svg width="60" height="60" viewBox="0 0 60 60" preserveAspectRatio="none">
+						<path d="M23,5v16H5V5H23z"/><path d="M23,21v17H5V21H23z"/><path d="M23,38v16H5V38H23z"/><path d="M55,5v49H23V5H55z"/>
+					</svg>
+				</span>
+				<span class="control__field control__field--half">
+					<input type="radio" id="layout-result-code_vertical" data-layout="result-code" data-orientation="vertical" name="layouts" />
+					<svg width="60" height="60" viewBox="0 0 60 60" preserveAspectRatio="none">
+						<path d="M55,5v16H37V5H55z"/><path d="M55,21v17H37V21H55z"/><path d="M55,38v16H37V38H55z"/><path d="M37,5v49H5V5H37z"/>
+					</svg>
+				</span>
+			</div>
+
+		</div>	</div>	<div class="action" data-dialog="info-version-dialog">
+		<button class="button button--empty" title="About">
+			<i class="fa fa-circle-question-mark"></i>
+		</button>
+	</div>
+
+	
+</div>
+	</div>	<div class="editor">
+	<div class="panel result">
+		<!--iframe></iframe-->
+	</div>
+	<div class="panel code view-html-css-js">
+		<div class="panel-single html">
+			<div class="panel-header">
+				<h3 class="panel-header__title">HTML</h3>
+				<div class="panel-header__options">
+					<button class="panel-option panel-option--remove" data-panel="html"><i class="fa fa-fw fa-remove"></i></button>
+					<button class="panel-option panel-option--expand" data-panel="html"><i class="fa fa-fw fa-expand"></i><i class="fa fa-fw fa-contract"></i></button>
+				</div>
+			</div>
+			<div class="panel-edit html-edit"></div>
+		</div>
+		<div class="panel-single css">
+			<div class="panel-header">
+				<h3 class="panel-header__title">CSS</h3>
+				<div class="panel-header__options">
+					<button class="panel-option panel-option--remove" data-panel="css"><i class="fa fa-fw fa-remove"></i></button>
+					<button class="panel-option panel-option--expand" data-panel="css"><i class="fa fa-fw fa-expand"></i><i class="fa fa-fw fa-contract"></i></button>
+				</div>
+			</div>
+			<div class="panel-edit css-edit"></div>
+		</div>
+		<div class="panel-single js">
+			<div class="panel-header">
+				<h3 class="panel-header__title">JS</h3>
+				<div class="panel-header__options">
+					<button class="panel-option panel-option--remove" data-panel="js"><i class="fa fa-fw fa-remove"></i></button>
+					<button class="panel-option panel-option--expand" data-panel="js"><i class="fa fa-fw fa-expand"></i><i class="fa fa-fw fa-contract"></i></button>
+				</div>
+			</div>
+			<div class="panel-edit js-edit"></div>
+		</div>
+		<div class="dragme dragme--first"></div>
+		<div class="dragme dragme--second"></div>
+	</div>
+	<div class="dragme--main-helper"></div>
+	<div class="dragme dragme--main"></div>
+</div>	
+	<input id="page-action" type="hidden" value="edit"/>
+</div>
+	<div id="demo-info-dialog" class="dialog dialog--overlay">
+	<div class="dialog__inner">
+		<button class="dialog__close" data-dialog-close><i class="fa fa-fw fa-close"></i></button>
+		<div class="text-block">
+			<h2>#cssref linear-gradient()</h2>
+			<span class="silent">by <strong>SaraSoueidan</strong> on <time datetime="2015-02-02T13:33:11">February 2, 2015</time></span>
+			<div><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<?xml encoding="UTF-8"><html><body><p>Demo for the Codrops CSS Reference entry <a href="http://tympanus.net/codrops/?post_type=css_reference&amp;p=19959">linear-gradient()</a></p></body></html>
+</div>
+					</div>
+	</div>
+</div>
+
+<div id="info-version-dialog" class="dialog dialog--overlay">
+	<div class="dialog__inner">
+		<button class="dialog__close" data-dialog-close><i class="fa fa-fw fa-close"></i></button>
+		<div class="text-block align-center">
+			<h1 class="logo logo--large">
+				<img src="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/codrops.svg" alt="Codrops Logo">
+				<span>Codrops Playground</span>
+			</h1>
+			<h3 class="silent">Version 0.0.9 (alpha)</h3>
+			<p>Codrops Playground is currently in development with many features to come, including mobile support. We are in alpha stage right now, so if you find a bug, please send a mail to <a href="mailto:playground@codrops.com">playground@codrops.com</a> or use the <a href="http://tympanus.net/codrops/contact/">contact form</a> on Codrops.</p>
+			<p>If you'd like to stay updated, follow us on Twitter <a href="https://twitter.com/codrops">@codrops</a>. <strong>Thank you and stay tuned :)</strong></p>
+		</div>
+	</div>
+</div>
+
+
+		
+
+<script src="/codrops-playground/332d5270da28388399324d79ffcf4a45/js/p/all-b-demolayout.min.js"></script>
+	</body>
+</html>

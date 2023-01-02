@@ -1,0 +1,60 @@
+#menu10 ul {
+    list-style:none;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    letter-spacing: -3px;
+    line-height: 1.2em;
+    float:left;
+    clear:both;
+    margin:20px;
+    border:3px solid #5F3B2F;
+}
+#menu10 ul li{
+    float:left;
+}
+#menu10 ul li a{
+    display:block;
+    text-decoration:none;
+    padding:5px 10px 5px 10px;
+    background-color:#955542;
+    width:170px;
+    text-align:center;
+}
+#menu10 ul li a span{
+    display:block;
+}
+#menu10 ul li a span.title{
+    color:#fff;
+    padding-bottom:5px;
+}
+#menu10 ul li a:hover{
+
+}
+#menu10 ul li a:hover span.title{
+    font-family: Georgia, serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 2em;
+    color:#fff;
+    border:1px dashed #fff;
+    padding-bottom:3px;
+    background-color:#AF6C57;
+}
+#menu10 ul li a span.text{
+    padding:0px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    color:#fff;
+    background-color:#5F3B2F;
+    visibility:hidden;
+    border-bottom:1px groove #AF6C57;
+}
+#menu10 ul li a:hover span.text{
+    line-height: 3.4em;
+    visibility:visible;
+}

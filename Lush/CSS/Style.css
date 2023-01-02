@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+#header {
+  width: 1200px;
+  height: 250px;
+  position: relative;
+  border: 1px solid #333;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+#logo {
+  position: absolute;
+  border: 2px solid #333;
+  width: 250px;
+  height: 90px;
+  left: 50%;
+  top: 50%;
+  margin-left: -125px;
+  margin-top: -45px;
+  /*로고 정중앙*/
+}
+#logo img {
+  width: 100%;
+  height: 100%;
+}
+#nav_Icon {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+#nav_Icon ul li {
+  float: left;
+  margin-left: 15px;
+}
+#gnb {
+  float: right;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+#gnb ul li {
+  float: left;
+  padding: 0 10px;
+  background: url(../images/bar.gif) no-repeat right center;
+}
+#gnb ul li:last-child {
+  background: none;
+}
+
+.main_nav {
+  position: absolute;
+  top: 220px;
+  width: 100%;
+  height: 30px;
+  background-color: aqua;
+  left: 0;
+}
+
+.main_nav > ul {
+  width: 1200px;
+  height: 30px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.main_nav > ul > li {
+  float: left;
+  position: relative;
+}
+/* > 자식선택자 */
+.main_nav ul li {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+}
+.main_nav ul li a {
+  display: block;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+}
+/*a  inline 요소이므로 넓이 높이를 주려면
+   반드시 display:block;*/
+.main_nav ul li ul {
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  display: none;
+}
+/*background:rgba  a alpha(불투명도- opacity )*/
+
+/*하위 ul  숨김 display:none;*/
+.main_nav ul li:hover ul {
+  display: block;
+  height: 240px;
+  padding: 10px 0;
+}
+/*li:hover 하위 ul  보임  display:block;*/
+/*그라디언트  - colorzilla.com 을 사용*/
+#main {
+  width: 1200px;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+}
+
+.main_nav ul:hover + li ul {
+  display: block;
+  height: 240px;
+  padding: 10px 0;
+}
+
+.main_nav ul:hover + .shadow {
+  height: 250px;
+}
+.shadow {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 100%;
+  height: 0;
+  background-color: bisque;
+}

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+	<html dir="ltr" lang="en-US"> 
+	<head> 
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>z-index | Codrops CSS Reference</title>
+				<meta name="author" content="Team Codrops">
+		<link rel="stylesheet" type="text/css" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/main.css?v444" />
+		<link rel="stylesheet" type="text/css" media="print" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/main_print.css?v5" />
+		<link rel="profile" href="http://gmpg.org/xfn/11" />	
+		<script src="//use.typekit.net/pdd7wbw.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		<link rel="shortcut icon" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/favicon.ico">
+		<link rel="apple-touch-icon" sizes="144x144" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/apple-touch-icon-144x144.png">
+		<link rel="icon" type="image/png" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/favicon-196x196.png" sizes="196x196">
+		<!-- 857AADD2-739C-4BF6-A8D3-4986BE868A0C -->
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="msapplication-TileImage" content="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/mstile-144x144.png">
+		<meta name="msapplication-config" content="/codrops/wp-content/themes/codropstheme03/favicons/browserconfig.xml">
+					<!--single syntax highlighter-->
+			<link rel="stylesheet" type="text/css" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/cssref.css?v10"/>
+			   
+		
+<!-- This site is optimized with the Yoast SEO plugin v13.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="z-index explained on the Codrops CSS Reference"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://tympanus.net/codrops/css_reference/z-index/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="z-index | Codrops CSS Reference" />
+<meta property="og:description" content="z-index explained on the Codrops CSS Reference" />
+<meta property="og:url" content="https://tympanus.net/codrops/css_reference/z-index/" />
+<meta property="og:site_name" content="Codrops" />
+<meta property="article:publisher" content="https://www.facebook.com/codrops/" />
+<meta property="og:image" content="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/axes.png" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://tympanus.net/codrops/#website","url":"https://tympanus.net/codrops/","name":"Codrops","inLanguage":"en-US","description":"Useful resources and inspiration for creative minds","potentialAction":{"@type":"SearchAction","target":"https://tympanus.net/codrops/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://tympanus.net/codrops/css_reference/z-index/#primaryimage","inLanguage":"en-US","url":"https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/axes.png","width":1015,"height":465,"caption":"axes"},{"@type":"WebPage","@id":"https://tympanus.net/codrops/css_reference/z-index/#webpage","url":"https://tympanus.net/codrops/css_reference/z-index/","name":"z-index | Codrops CSS Reference","isPartOf":{"@id":"https://tympanus.net/codrops/#website"},"inLanguage":"en-US","primaryImageOfPage":{"@id":"https://tympanus.net/codrops/css_reference/z-index/#primaryimage"},"datePublished":"2015-02-03T11:33:14+00:00","dateModified":"2015-02-04T15:28:57+00:00","description":"z-index explained on the Codrops CSS Reference"}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='prismatic-blocks-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/prismatic/css/styles-blocks.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='avatar-manager-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/avatar-manager/assets/css/avatar-manager.min.css?ver=1.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=1.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=1.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp_typeahead_css-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/css/typeahead.css?ver=5.3.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/avatar-manager/assets/js/avatar-manager.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[]};
+var log_object = {"ajax_url":"https:\/\/tympanus.net\/codrops\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public.js?ver=1.8.3'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/highlight.pack.js?ver=85'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/highlight.user.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/cos.js?ver=5.3.2'></script>
+<link rel='https://api.w.org/' href='https://tympanus.net/codrops/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://tympanus.net/codrops/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3.2" />
+<link rel='shortlink' href='https://tympanus.net/codrops/?p=21041' />
+<link rel="alternate" type="application/json+oembed" href="https://tympanus.net/codrops/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftympanus.net%2Fcodrops%2Fcss_reference%2Fz-index%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://tympanus.net/codrops/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftympanus.net%2Fcodrops%2Fcss_reference%2Fz-index%2F&#038;format=xml" />
+<script type="text/javascript">document.documentElement.className += " js";</script>
+		<script type="text/javascript">
+			var cli_flush_cache=1;
+		</script>
+				<script src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/search.js"></script>
+		
+		<script type="text/javascript">
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-7243260-2']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+
+			  function recordOutboundLink(link, category, action) {
+				_gat._getTrackerByName()._trackEvent(category, action);
+				setTimeout('document.location = "' + link.href + '"', 100);
+			}
+		</script>
+		<noscript>
+			<link rel="stylesheet" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/noscript.css"/>
+		</noscript>
+		<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "WebSite",
+		  "url": "https://tympanus.net/codrops/",
+		  "potentialAction": {
+		    "@type": "SearchAction",
+		    "target": "https://tympanus.net/codrops/?s={search_term_string}",
+		    "query-input": "required name=search_term_string"
+		  }
+		}
+		</script>
+		<script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+	</head>
+	<body id="codrops-body">
+				<!-- BuySellAds.com Ad Code -->
+		<script type="text/javascript">
+			(function(){
+				var bsa = document.createElement('script');
+				bsa.type = 'text/javascript';
+				bsa.async = true;
+				bsa.src = '//s3.buysellads.com/ac/bsa.js';
+				(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+			})();
+		</script>
+		<!-- END BuySellAds.com Ad Code -->	
+				<div class="ct-container">
+			<header class="ct-header">
+				<div class="ct-inner ct-cf">
+
+											<div class="ct-branding">
+							<a class="ct-logo" href="/codrops" rel="home"><img src="/codrops/wp-content/themes/codropstheme03/images/codrops-logo.svg" alt="Codrops logo" /></a>
+						</div>
+					
+					<div class="ct-nav-wrapper">
+						<nav class="ct-nav-main">
+						   <ul>
+								<li><a href="/codrops/category/tutorials/">Tutorials</a></li>
+								<li><a href="/codrops/category/playground/">Playground</a></li>
+								<li><a href="/codrops/category/articles/">Articles</a></li>
+								<li><a href="/codrops/collective/">Collective</a></li>
+								<li><a href="/codrops/css_reference/">CSS Reference</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="ct-header-items-right ct-cf">
+						<div class="ct-search" id="ct-search">
+							<form method="get" id="searchform" action="https://tympanus.net/codrops/">
+								<div class="ct-search-input-wrap">
+									<input class="ct-search-input" placeholder="Search on Codrops..." type="text" value="" name="s" id="s"/>
+								</div>
+								<input type="hidden" name="search-type" value="posts" />
+								<input class="ct-search-submit" type="submit" id="go" value=""><span class="ct-icon-search"></span>
+							</form>
+						</div>
+						<ul class="ct-connect">
+							<li><a class="ct-icon-feed" href="http://feeds2.feedburner.com/tympanus"><span>Rss Feed</span></a></li>
+							<li><a class="ct-icon-mail" href="http://eepurl.com/dJBUCo"><span>Email Updates</span></a></li>
+							<li><a class="ct-icon-twitter" href="http://www.twitter.com/codrops"><span>Codrops on Twitter</span></a></li>
+							<li><a class="ct-icon-facebook" href="http://www.facebook.com/pages/Codrops/159107397912"><span>Codrops on Facebook</span></a></li>
+							<li><a class="ct-icon-github" href="https://github.com/codrops"><span>Codrops on Github</span></a></li>
+							<li><a class="ct-icon-instagram" href="https://instagram.com/codropsss"><span>Codrops on Instagram</span></a></li>
+						</ul>
+					</div><!--/ct-header-items-right-->
+
+				</div><!-- ct-inner -->
+			</header><div class="ct-content">
+    <div class="ct-inner">		
+										<div class="ct-main ct-main-post ct-cssref" id="ct-main" role="main">
+					<div class="ct-post">
+						<article id="post-21041" class="post-21041 css_reference type-css_reference status-publish format-standard hentry css-type-css-property">
+							<header>
+								<div class="ct-cssref-header-inner ct-cssref-header-inner--css-property">
+									<span class="ct-cssref-head ct-cssref-head--css-property">
+										<a href="/codrops/css_reference/">CSS Reference</a>
+										<span class='ct-cssref-type'>Property</span>									</span>
+									<div class="ct-cssref-title" data-title="z-index">
+										<h1>z-index</h1>
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="ct-cssref-headerbar">
+									<div class="ct-cssref-search">
+										<div class="ct-cssref-searchinput">
+											<form method="get" id="searchform-cssref" action="https://tympanus.net/codrops/">
+												<span class="ct-icon-search"></span>
+												<input placeholder="e.g. mask-image" type="text" value="" name="s" id="s2"/>
+												<input type="hidden" name="search-type" value="css_reference" />
+												<input type="submit" value="" />
+											</form>
+										</div>
+									</div>
+									<nav class="ct-cssref-related">
+																					<span class="ct-cssref-related__title">See also</span>
+										
+																						<a href="https://tympanus.net/codrops/css_reference/position/">position</a>
+																				</nav>
+								</div>
+							</header>
+							<div class="ct-post-content">
+																<div class="ct-cssref-description">
+<p>
+                    The <code>z-index</code> property is used to specify the z-order of an element when it overlaps other elements.
+                </p>
+<p>That is, it specifies whether the element is shown on top of other elements that it overlaps, or behind (or under) them.</p>
+<p>
+                    The z-order is the order of the element on the z-axis. An element with a higher z-order (or z-index) will overlap other elements with lower z-orders, and will be <em>closer to the viewer</em>. For someone looking at the screen, an element with a higher z-order is placed <em>in front</em> of other elements with lower z-orders.
+                </p>
+<p>
+                    An element&#8217;s z-index specifies its order inside a <em><strong>stacking context</strong></em>, and can also establish a stacking context <em>on</em> it too.
+                </p>
+<p>
+                    In order to understand how <code>z-index</code> works, it is important to understand what stacking contexts are, how and when they are created, and how they work and interact with each other.
+                </p>
+<p>
+                    In short, a stacking context is a group of elements on a page, that <strong>have a common parent</strong>. The parent is <strong>the root of the stacking context</strong>, and the elements are then placed in the stacking order inside that element. The root element (<code>html</code>) is the &#8220;global&#8221; stacking context which contains all elements and other stacking contexts in a page.
+                </p>
+<p>
+                    Elements inside a stacking context are <strong>restricted to the boundaries of the context</strong>. So, an element that is contained in a stacking context can never be brought in front of an element that is contained in another stacking context with a higher <code>z-index</code>, even if you give your element a <code>z-index</code> value that is larger than the <code>z-index</code> of the element in the other context.
+                </p>
+<h3>Understanding Stacking Contexts</h3>
+<p>
+                    The browser lays elements out on a page according to a natural flow. When elements overlap on the page, the browser needs to decide which element to place on top of other elements (which one is closer to the viewer)&mdash;it needs to decide which element gets a larger z-order.
+                </p>
+<p>
+                    A web page and every element in it has a system of coordinates. This system includes a 3-dimensional z-axis on which elements are &#8220;stacked&#8221;. The direction of the z-axis is towards the viewer. The x-axis points to the right of the screen, and the y-axis points to the bottom.
+                </p>
+<figure id="attachment_21048" aria-describedby="figcaption_attachment_21048" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 1015px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/axes.png" alt="axes" width="1015" height="465" class="size-full wp-image-21048" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/axes.png 1015w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/axes-300x137.png 300w" sizes="(max-width: 1015px) 100vw, 1015px" /><figcaption id="figcaption_attachment_21048" class="wp-caption-text" itemprop="description">The 3-dimensional coordinate system of a stacking context. The elements inside a stacking context are placed, or &#8220;stacked&#8221;, in front of each other on the z-axis. The position of an element on the z-axis, or it&#8217;s z-order, is determined by the <code>z-index</code> property.</figcaption></figure>
+<p>
+                    Normally, the browser would lay elements out in a specific order that is specified in the CSS specification:<br />
+                    Elements that come first in the DOM tree are placed first, and elements that come after those are placed on top of the previous ones. But it&#8217;s not always that simple. The order mentioned works only when all the elements on the page flow naturally on the page. That is, this works when there are no elements whose position in the flow has been changed or that have been completely removed from the flow.
+                </p>
+<p>
+                    There are two ways in CSS that affect the flow and position of an element:
+                </p>
+<ul>
+<li>Positioning an element using the <a href="http://tympanus.net/codrops/css_reference/position"><code>position</code></a> property. An element with a <a href="http://tympanus.net/codrops/css_reference/position"><code>position</code></a> value other than the default <code>static</code> is called a <em>positioned element</em>.</li>
+<li>Changing the flow of the element by floating it using the <a href="http://tympanus.net/codrops/css_reference/float"><code>float</code></a> property.</li>
+</ul>
+<p>
+                    When the page contains floated elements, absolutely positioned elements, fixed elements, or relatively positioned elements (elements <em>shifted</em> from their normal position by a certain amount), along with inline elements, the browser lays them out in a different way. The elements are laid out from the closest to the viewer to furthest back as follows:
+                </p>
+<ul>
+<li>Positioned elements in order of appearance in the source code. Latest in the source code are closest to the viewer.</li>
+<li>Inline elements&mdash;such as text and images&mdash;that are in-flow and non-positioned (their <a href="http://tympanus.net/codrops/css_reference/position"><code>position</code></a> is <code>static</code>).</li>
+<li>Non-positioned floated elements in the order of appearance in the source code.</li>
+<li>Non-positioned and non-floated block-level elements.</li>
+<li>The root element&mdash;<code>html</code>&mdash;which is the root of the &#8220;global&#8221; stacking context which contains all elements on the page.</li>
+</ul>
+<p>
+                    This is the default stacking order applied by the browser when it renders elements on the page.
+                </p>
+<figure id="attachment_21043" aria-describedby="figcaption_attachment_21043" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 814px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/default-stacking-order.png" alt="default-stacking-order" width="814" height="615" class="size-full wp-image-21043" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/default-stacking-order.png 814w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/default-stacking-order-300x226.png 300w" sizes="(max-width: 814px) 100vw, 814px" /><figcaption id="figcaption_attachment_21043" class="wp-caption-text" itemprop="description">3D representation of the default stacking order of the browser.</figcaption></figure>
+<p>
+                    If you want to change the order in which the positioned elements, for example, are rendered on the z-axis, you can use the <code>z-index</code> property. For example, if you have two absolutely positioned elements that overlap at some point, and you want one of them to be shown in front of the other one even if it comes before it in the source code, you can use the <code>z-index</code> property to do that.
+                </p>
+<p>
+                    The very first important thing to note at this point is that <strong><u>the <code>z-index</code> property will only work on positioned elements</u></strong>. So, even if you give an element a <code>z-index</code> value to bring it in front of other elements, the <code>z-index</code> will have no effect on the element unless it is positioned; i.e. unless it has a <a href="http://tympanus.net/codrops/css_reference/position"><code>position</code></a> value other than the default <code>static</code>.
+                </p>
+<p>
+                    So, if the positioned elements have z-indexes, the elements are laid out from the closest to the viewer to furthest back as follows:
+                </p>
+<ul>
+<li>Positioned elements with positive <code>z-index</code> values. Higher values are closer to the screen. Then, in the order they appear in the source code.</li>
+<li>Positioned elements with <code>z-index: 0;</code> or <code>z-index: auto;</code>.</li>
+<li>Inline elements&mdash;such as text and images&mdash;that are in-flow and non-positioned (their <a href="http://tympanus.net/codrops/css_reference/position"><code>position</code></a> is <code>static</code>).</li>
+<li>Non-positioned floated elements in the order of appearance in the source code.</li>
+<li>Non-positioned and non-floated block-level elements.</li>
+<li>Positioned elements with negative <code>z-index</code> values. Lower <code>z-index</code> values go further back. Then, in the order they appear in the source code.</li>
+<li>The root element&mdash;<code>html</code>&mdash;which is the root of the &#8220;global&#8221; stacking context which contains all elements on the page.</li>
+</ul>
+<figure id="attachment_21054" aria-describedby="figcaption_attachment_21054" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 814px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/new-stacking-order.png" alt="new-stacking-order" width="814" height="793" class="size-full wp-image-21054" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/new-stacking-order.png 814w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/new-stacking-order-300x292.png 300w" sizes="(max-width: 814px) 100vw, 814px" /><figcaption id="figcaption_attachment_21054" class="wp-caption-text" itemprop="description">3D representation of the new stacking order of the browser.</figcaption></figure>
+<p>
+                    When we set a <code>z-index</code> value on a positioned element, it specifies that element&#8217;s order in the stacking context that it belongs to, and it will be rendered on the screen according to the steps mentioned above.
+                </p>
+<p>
+                    Another thing happens when we set an element&#8217;s <code>z-index</code>, though. The element that gets a <code>z-index</code> value other than the default value <code>auto</code><sup>[1]</sup> actually <strong>creates a stacking context for all its positioned descendant elements</strong>. We mentioned earlier that every stacking context has a root element which contains all the elements inside it. When you apply the <code>z-index</code> property to an element, it will specify the element&#8217;s z-order in its containing context, and it will also <strong>create a new stacking context with that element as its root</strong>.
+                </p>
+<p>
+                    When an element becomes a new stacking context, its positioned descendants are then stacked inside it following the same rules that we mentioned earlier for the element itself. So, if we were to rewrite the rendering process above one more time, it would look like the following:
+                </p>
+<ul>
+<li><strong>Stacking contexts formed by positioned elements</strong> with positive <code>z-index</code> values. Higher values are closer to the screen. Then, in the order they appear in the source code.</li>
+<li>Positioned elements with <code>z-index: 0;</code> or <code>z-index: auto;</code>.</li>
+<li>Inline elements&mdash;such as text and images&mdash;that are in-flow and non-positioned (their <a href="http://tympanus.net/codrops/css_reference/position"><code>position</code></a> is <code>static</code>).</li>
+<li>Non-positioned floated elements in the order of appearance in the source code.</li>
+<li>Non-positioned and non-floated block-level elements.</li>
+<li><strong>Stacking contexts formed by positioned elements</strong> with negative <code>z-index</code> values. Lower <code>z-index</code> values go further back. Then, in the order they appear in the source code.</li>
+<li>The root element&mdash;<code>html</code>&mdash;which is the root of the &#8220;global&#8221; stacking context which contains all elements on the page.</li>
+</ul>
+<p>
+                    [1] A positioned element with a value of <code>z-index: auto</code> is <strong><em>treated as if</em> it created a new stacking context</strong>, but any positioned descendants and descendants which actually create a new stacking context should be considered part of the parent stacking context, not this new one.</strong>
+                </p>
+<p>
+                    So, when we use the <code>z-index</code> property to determine the order of positioned elements in their stack, we&#8217;re also creating &#8220;atomic&#8221; stacking contexts, where each element becomes a stacking context for all its positioned descendants.<br />
+                    With all this, root element becomes a stacking context for &#8220;regular&#8221; elements and for atomic stacking contexts formed by positioned elements on the page.
+                </p>
+<figure id="attachment_21053" aria-describedby="figcaption_attachment_21053" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 814px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/global-and-atomic-stacking-contexts.png" alt="Image showing the global context with atomic contexts" width="814" height="490" class="size-full wp-image-21053" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/global-and-atomic-stacking-contexts.png 814w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/global-and-atomic-stacking-contexts-300x180.png 300w" sizes="(max-width: 814px) 100vw, 814px" /><figcaption id="figcaption_attachment_21053" class="wp-caption-text" itemprop="description">Image showing the global context with atomic contexts</figcaption></figure>
+<p>
+                    An element which becomes a new stacking context for its descendants will contain its positioned descendants inside it at all times, and, as we mentioned earlier, elements inside a stacking context are <strong>restricted to the boundaries of the context</strong>. So, any descendant of the new stacking context can never be brought in front of a descendant of another sibling stacking context with a higher <em>z-index</em>, even if you give that descendant a <code>z-index</code> value that is larger than the <code>z-index</code> of the element in the other context.
+                </p>
+<p>
+                    To better understand stacking contexts, we&#8217;re going to give some examples of  objects that you can use to visualize stacking contexts on a page.
+                </p>
+<h3>Visualizing Stacking Contexts</h3>
+<p>
+                    You can think of an element forming a stacking context as one of those stacking towers you may have played with when you were a kid. A tower is the &#8220;context&#8221; for a bunch of circular wooden pieces that you <strong>stack</strong> on top of each other.
+                </p>
+<figure id="attachment_21045" aria-describedby="figcaption_attachment_21045" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 814px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/stacking-tower.jpg" alt="stacking-tower" width="814" height="814" class="size-full wp-image-21045" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/stacking-tower.jpg 814w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/stacking-tower-105x105.jpg 105w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/stacking-tower-300x300.jpg 300w" sizes="(max-width: 814px) 100vw, 814px" /><figcaption id="figcaption_attachment_21045" class="wp-caption-text" itemprop="description">A wooden stacking tower. Circular colored pieces resemble elements inside a stacking context. The wooden tower (base) is the stacking context which contains the pieces.</figcaption></figure>
+<p>
+                    Now, think of two towers next to each other, each with a stack of circles on, standing next to each other. These two towers are similar to two positioned elements on the page, each of which forms a stacking context for its descendants.
+                </p>
+<figure id="attachment_21046" aria-describedby="figcaption_attachment_21046" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 300px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/stacking-towers.jpg" alt="stacking-towers" width="300" height="198" class="size-full wp-image-21046" /><figcaption id="figcaption_attachment_21046" class="wp-caption-text" itemprop="description">Each stacking tower represents a stacking context for a bunch of wooded pieces.</figcaption></figure>
+<p>
+                    It gets a little more complex (but not difficult) when two stacking contexts overlap. In order to understand what happens when stacking contexts overlap,<br />
+                    think of a hamburger sandwich. Yes, a hamburger sandwich.
+                </p>
+<p>
+                    Each hamburger contains slices of food stacked on top of each other (cheese, tomato, onions, maybe meat if you&#8217;re not a vegetarian). Each hamburger represents a stacking context for the slices of food inside it. Another hamburger next to the second one is also a stacking context for the slices inside it. Now, imagine placing two hamburgers on top of each other (are you already hungry at this point?). The two hamburgers on top of each other represent two positioned elements on a page that overlap. By stacking both hamburgers on top of each other, you&#8217;ve practically given the one on top a higher stacking order than the one in the bottom.
+                </p>
+<p>
+                    As you can imagine, the slices of food inside the lower hamburger cannot be positioned higher than a slice of food from the upper hamburger&mdash;they are confined inside their stacking context, and will remain within its boundaries that no matter how high a <code>z-index</code> one of them may get.
+                </p>
+<figure id="attachment_21044" aria-describedby="figcaption_attachment_21044" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 640px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/hamburger-stack.jpg" alt="hamburger-stack" width="640" height="740" class="size-full wp-image-21044" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/hamburger-stack.jpg 640w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/hamburger-stack-259x300.jpg 259w" sizes="(max-width: 640px) 100vw, 640px" /><figcaption id="figcaption_attachment_21044" class="wp-caption-text" itemprop="description">A wooden hamburger tower. The hamburger is the context, and the slices of food inside it are stacked on top of each other relative to their stacking context.</figcaption></figure>
+<p>
+                    The following image shows an example of a real-life stacking context. This table is made up of several layers that overlap. Each layer is a context for stacking books and other stuff on it. The books on the second layer from the bottom are always below the content stacked on the upper layer. Unless the layers are changed and repositioned (given different z-orders), that will always be the case.
+                </p>
+<figure id="attachment_21047" aria-describedby="figcaption_attachment_21047" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 600px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/tables-context.jpg" alt="tables-context" width="600" height="540" class="size-full wp-image-21047" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/tables-context.jpg 600w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/tables-context-300x270.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /><figcaption id="figcaption_attachment_21047" class="wp-caption-text" itemprop="description">A table with multiple layers each representing a stacking context</figcaption></figure>
+<p>
+                    The only way the content of a stacking context <strong>A</strong> can be placed in front of the content of another stacking context <strong>B</strong> is if you give <strong>A</strong> a higher <code>z-index</code> than <strong>B</strong>, and if, of course, the two of them are part of the same stacking context.
+                </p>
+<p>
+                    The last visualizing example we&#8217;re going to talk about is probably one of the best that describe how elements are painted on a page.<br />
+                    The web page is practically like a painting canvas. The browser paints the elements on the canvas in a certain order just like a painter paints objects on his canvas, starting with the furthest first, and then the closest to the viewer next. The following painting analogy was explained by a <a href="http://css-tricks.com/almanac/properties/z/z-index/#comment-166855">&#8220;Mr. Z&#8221;</a>:
+                </p>
+<blockquote><p>
+                    If you think in terms of the “painters algorithm”, where objects are painted onto a scene back-to-front, then a stacking context is like a painting within a painting. You first paint everything in the stacking context back-to-front in the proper order, then slap the whole result in wherever it belongs when you come to paint its parent context.
+                </p></blockquote>
+<p>
+                    <strong>The stacking algorithm is the same in every atomic stacking context as it is in the &#8220;global&#8221; root (<code>html</code>) context</strong>.
+                </p>
+<p>
+                    <strong>Backgrounds and borders of the element forming the stacking context always come behind</strong> (or below, depending on how you&#8217;re visualizing it) all the elements inside a context.
+                </p>
+<p>
+                    The main points we mentioned so far can be summarized in the following lines from the CSS Specification:
+                </p>
+<blockquote>
+<p>The order in which the rendering tree is painted onto the canvas is described in terms of stacking contexts. Stacking contexts can contain further stacking contexts. A stacking context is atomic from the point of view of its parent stacking context; boxes in other stacking contexts may not come between any of its boxes.</p>
+<p>Each box belongs to one stacking context. Each positioned box in a given stacking context has an integer stack level, which is its position on the z-axis relative to other stack levels within the same stacking context. Boxes with greater stack levels are always formatted in front of boxes with lower stack levels. Boxes may have negative stack levels. Boxes with the same stack level in a stacking context are stacked back-to-front according to document tree order.</p>
+<p>The root element forms the root stacking context. Other stacking contexts are generated by any positioned element (including relatively positioned elements) having a computed value of &#8216;z-index&#8217; other than &#8216;auto&#8217;. Stacking contexts are not necessarily related to containing blocks.</p>
+</blockquote>
+<h3>A Simple Example</h3>
+<p>
+                    The following example shows three boxes: <code>#first</code>, <code>#second</code>, and <code>#third</code>. According to the normal flow of the page, if these three boxes were to be positioned absolutely and overlap, the first box will be positioned behind the other two, the third one will be positioned in front of the other two, and the second box will be positioned in between.
+                </p>
+<pre class="brush:html">
+&lt;div id="first"&gt;First&lt;/div&gt;
+&lt;div id="second"&gt;Second&lt;/div&gt;
+&lt;div id="third"&gt;Third&lt;/div&gt;
+                </pre>
+<pre class="brush:css">
+#first, #second, #third {
+    /* general styling here */
+    /* ... */
+
+    position: absolute;
+}
+
+#first {
+    /* position offsets.. */
+}
+
+#second {
+    /* position offsets... */
+}
+
+#third {
+    /* position offsets... */
+}
+                </pre>
+<figure id="attachment_21049" aria-describedby="figcaption_attachment_21049" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 814px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/normal-stack.png" alt="normal-stack" width="814" height="426" class="size-full wp-image-21049" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/normal-stack.png 814w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/normal-stack-300x157.png 300w" sizes="(max-width: 814px) 100vw, 814px" /><figcaption id="figcaption_attachment_21049" class="wp-caption-text" itemprop="description">Overlapping absolutely positioned boxes are stacked by default according to their order in the source document.</figcaption></figure>
+<p>
+                    Adding a positive <code>z-index</code> value to the first box will bring it in front of the other two boxes.
+                </p>
+<pre class="brush:css">
+#first {
+    /* ... */
+    z-index: 1;
+}
+                </pre>
+<figure id="attachment_21052" aria-describedby="figcaption_attachment_21052" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 814px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/z-index-stack.png" alt="z-index-stack" width="814" height="414" class="size-full wp-image-21052" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/z-index-stack.png 814w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/z-index-stack-300x152.png 300w" sizes="(max-width: 814px) 100vw, 814px" /><figcaption id="figcaption_attachment_21052" class="wp-caption-text" itemprop="description">The first box brought in front of the other boxes (to the top of the stack) by giving it a positive <code>z-index</code> value.</figcaption></figure>
+<p>
+                    Giving an even higher <code>z-index</code> to the second box will bring it to the top of the stack.
+                </p>
+<pre class="brush:css">
+#second {
+    /* ... */
+    z-index: 2;
+}
+                </pre>
+<figure id="attachment_21050" aria-describedby="figcaption_attachment_21050" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 814px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/z-index-stack-2.png" alt="z-index-stack-2" width="814" height="422" class="size-full wp-image-21050" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/z-index-stack-2.png 814w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/z-index-stack-2-300x155.png 300w" sizes="(max-width: 814px) 100vw, 814px" /><figcaption id="figcaption_attachment_21050" class="wp-caption-text" itemprop="description">The second box brought in front of the other boxes (to the top of the stack) by giving it a z-index value greater than the z-index of the first box.</figcaption></figure>
+<p>
+                    Last but not least, we&#8217;re going to create an atomic stacking context in the first box. We&#8217;re going to create a stacking context on the first box by using <code>z-index: 0;</code>. Then we&#8217;re going to try to give a descendant of the first box a very high <code>z-index</code> to try to bring it to the front of the second box. That, of course, is not going to work, because the descendant is confined in the stacking context of the first box, and as long as the first box is positioned behind the second box, there is no <code>z-index</code> value high enough that could bring the descendant in front of the second box.
+                </p>
+<figure id="attachment_21051" aria-describedby="figcaption_attachment_21051" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 814px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/z-index-stack-3.png" alt="z-index-stack-3" width="814" height="420" class="size-full wp-image-21051" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/z-index-stack-3.png 814w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/z-index-stack-3-300x154.png 300w" sizes="(max-width: 814px) 100vw, 814px" /><figcaption id="figcaption_attachment_21051" class="wp-caption-text" itemprop="description">The descendant of the first box cannot be stacked in front of the second box as long as its stacking context is positioned behind the second box.</figcaption></figure>
+<p>
+                    The best way to really understand stacking contexts and the <code>z-index</code> property is to fiddle with some code and see how that affects the layout and rendering of elements on the page. So, here is the live example for the above screenshots. Play with the values of the <code>z-index</code> property, change positions and stacking contexts, add and remove elements, and see how that affects the order in which the boxes are laid out on the screen.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/1dZYT658/embed/result,html,css/' data-height='400px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<h2>Trivia &amp; Notes</h2>
+<p>
+                    The <code>z-index</code> property <strong>is not the only property that creates a stacking context on an element</strong>. Other properties create stacking contexts as well, so you need to be careful when using those properties in order to avoid layout problems you may face. Many developers spend hours struggling with layout issues without realizing that a property creating a stacking context on an element is the reason why their elements aren&#8217;t being laid out the way they expect them to be.
+                </p>
+<p>
+                    Other properties known to create stacking contexts on elements are:
+                </p>
+<ul>
+<li>
+                        <a href="http://tympanus.net/codrops/css_reference/opacity"><code>opacity</code></a>
+                    </li>
+<li>
+                        <a href="http://tympanus.net/codrops/css_reference/filter"><code>filter</code></a>
+                    </li>
+<li>
+                        <code>clip-path</code>
+                    </li>
+<li>
+                        <a href="http://tympanus.net/codrops/css_reference/transform"><code>transform</code></a>
+                    </li>
+<li>
+                        <a href="http://www.w3.org/TR/css3-regions/">CSS Regions</a>
+                    </li>
+<li>
+                        <a href="http://www.w3.org/TR/css3-page/">Paged Media</a>
+                    </li>
+</ul>
+<p>
+                    For example, if you apply an opacity to an element using <a href="http://tympanus.net/codrops/css_reference/opacity"><code>opacity</code></a>, any descendant of that element will be rendered below any of the element&#8217;s siblings with higher z-orders. It works the opposite way too: if an element <strong>A</strong> is stacked on top of another element <strong>B</strong>, and then its parent A&#8217; that is behind <strong>B</strong> gets an opacity value other than 1, element <strong>A</strong> is moved back behind <strong>B</strong> because it is bound to its stacking context <strong>A&#8217;</strong> which, in turn, is behind <strong>B</strong>. A live example of this can be seen in <a href="http://philipwalton.com/articles/what-no-one-told-you-about-z-index/">this excellent post</a> by Philip Walton.
+                </p>
+<p>
+                    Another important note is that <code>z-index</code> still complies to the element&#8217;s overflow behavior. This means that if the element&#8217;s overflow is hidden using <code>overflow: hidden;</code> (See <a href="http://tympanus.net/codrops/css_reference/overflow"><code>overflow</code></a>), a positioned descendant with a <code>z-index</code> may be clipped off and not rendered, just like any other descendant that might overflow the element. So, if/when one of your positioned elements with a <code>z-index</code> isn&#8217;t being rendered, make sure its parent&#8217;s overflow is not hidden.
+                </p>
+</p></div>
+<div class="ct-cssref-info">
+<h2>Official Syntax</h2>
+<ul>
+<li>
+                       <strong>Syntax: </strong> </p>
+<pre class="brush:css">
+z-index: auto | &lt;integer&gt; | inherit</pre>
+</li>
+<li>
+                        <strong>Initial: </strong> auto
+                    </li>
+<li>
+                       <strong>Applies To: </strong> positioned elements
+                    </li>
+<li>
+                        <strong>Animatable: </strong> yes, as an integer
+                    </li>
+</ul></div>
+<div class="ct-cssref-values">
+<h2>Values</h2>
+<dl>
+<dt>&lt;integer&gt;</dt>
+<dd>
+                        This integer is the stack level (order) of the element in the current stacking context. The element also establishes a new stacking context.
+                    </dd>
+<dt>auto</dt>
+<dd>
+                        The stack level (order) of the element in the current stacking context is 0. The element does not establish a new stacking context unless it is the root element.
+                    </dd>
+<dt>inherit</dt>
+<dd>
+                        The element inherits its <code>z-index</code> value from its parent.
+                    </dd>
+</dl></div>
+<div class="ct-cssref-examples">
+<h2>Examples</h2>
+<pre class="brush:css">
+.one {
+    position: relative;
+    z-index: -1;
+}
+
+.two {
+    position: absolute;
+    z-index: 3;
+}
+                </pre>
+</p></div>
+<div class="ct-cssref-demo">
+<h2>Live Demo</h2>
+<p>
+                    One example where the <code>z-index</code> property comes in handy is fixed headers. A header usually comes first in the source document, and so, according to the normal flow, it would be rendered behind other elements on the page. By fixing the header using <code>position: fixed;</code>, it is moved to the top of the stack in the root element&#8217;s stacking context. Mission accomplished.
+                </p>
+<p>
+                    BUT, the header may be overlapped by other elements in the root context with higher z-indeces. In order to make sure the header stays on top of other elements on the page, a positive <code>z-index</code> value should be given to it. The actual value of the <code>z-index</code> depends on your knowledge of the page. If you know that there are no other positioned elements with higher stacking orders than the header, then <code>z-index: 1</code> can be enough to keep the header on top. If you don&#8217;t control the content of the page and don&#8217;t know whether there are other elements with higher stacking orders, you could give it a higher value to make sure it stays on top no matter how many elements are stacked in the context; <code>z-index: 9999;</code> is a common value to ensure that, although it may ne unnecessary at times. As mentioned before, it depends on your page.
+                </p>
+<pre class="brush:css">
+header {
+    /* general styles can go here */
+    /* ... */
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    /* not needed unless you know that other elements my overlap it */
+    z-index: 10;
+}
+                </pre>
+<p>
+                    The following is a live demo of this example. The header has been positioned and set to be fixed to the top of the page (without a <code>z-index</code>). Another element (blue one) on the page has also been positioned and given <code>z-index: 1</code>. The other element will be positioned in front of the header once they overlap. Scroll the page to see that happen. Then, add a <code>z-index</code> value to the header, that is greater than 1, to see how it will be positioned on top of the blue element.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/zOS233Vp/embed/result,html,css/' data-height='400px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+
+<p>
+                    The following shows examples of different elements with different positions and with stacking contexts. Play around with the values of the <code>z-index</code> and add/remove/change positions to see how that affects the stacking order.
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/KaMJnTWK/embed/result,html,css/' data-height='400px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+</div>
+<div class="ct-cssref-support">
+<h2>Browser Support</h2>
+<p>
+                    The <code>z-index</code> property works in all major browsers: Chrome, Firefox, Safari, Opera, Internet Explorer, and on Android and iOS.
+                </p>
+</p></div>
+<div class="ct-cssref-further-reading">
+<h2>Further Reading</h2>
+<ul>
+<li>
+                       <a href="http://www.w3.org/TR/CSS2/visuren.html#z-index">CSS Visual Formatting Model</a>
+                    </li>
+<li>
+                        <a href="http://www.w3.org/TR/CSS21/zindex.html">Elaborate Description of Stacking Contexts &ndash; W3C</a>
+                    </li>
+<li>
+                        <a href="http://timkadlec.com/2008/01/detailed-look-at-stacking-in-css/">Detailed Look at Stacking in CSS</a> by Tim Kadlec
+                    </li>
+<li>
+                        <a href="http://webdesign.tutsplus.com/articles/what-you-may-not-know-about-the-z-index-property--webdesign-16892">What You May Not Know About The z-index Property</a> on Web Design Tutsplus
+                    </li>
+<li>
+                        <a href="http://www.impressivewebs.com/a-detailed-look-at-the-z-index-css-property/">A Detailed Look At The z-index CSS Property</a> by Louis Lazaris
+                    </li>
+<li>
+                        <a href="http://coding.smashingmagazine.com/2009/09/15/the-z-index-css-property-a-comprehensive-look/">The z-index Property &#8211; A Comprehensive Look</a> on Smashing Magazine
+                    </li>
+<li>
+                        <a href="http://philipwalton.com/articles/what-no-one-told-you-about-z-index/">What No One Told You About The z-index Property</a> by Philip Walton
+                    </li>
+<li>
+                        <a href="http://www.vanseodesign.com/css/css-stack-z-index/">Z-Index And The CSS Stack: Which Element Displays First?</a> by Steven Bradley
+                    </li>
+</ul></div>
+								<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Entries</h2>
+<ul>
+<li><a href="https://tympanus.net/codrops/css_reference/position/">position</a></li>
+</ul></div>
+</div>		
+							</div>
+							
+							<footer>
+								<p>Written by <a href="https://tympanus.net/codrops/author/sarasoueidan/" title="Posts by Sara Soueidan" rel="author">Sara Soueidan</a>. Last updated February 4, 2015 at 4:28 pm by Mary Lou.</p>
+								<p>Do you have a suggestion, question or want to contribute? <a href="https://github.com/codrops/css-reference-issues">Submit an issue.</a></p>
+							</footer>
+						</article>
+						<div class="clr"></div>
+					</div>
+				</div>
+				<aside class="ct-sidebar">		
+	<div class="ct-pat">
+		
+		<!-- Weekly Sponsor -->
+				<a class="cos" href="http://bit.ly/mailchimpcodrops" target="_blank" rel="nofollow sponsored">
+			<IMG SRC="https://ad.doubleclick.net/ddm/ad/N2434.3091281BUYSELLADS/B23623815.263127775;sz=1x1;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?" BORDER="0" HEIGHT="1" WIDTH="1" style="position:absolute;opacity:0;"/>
+			<img class="cos__img" src="https://tympanus.net/codrops/wp-content/banners/mailchimp.png" alt="Mailchimp"/>
+			<div class="cos__text">You have users exploring your app! Now what? Send them event-triggered automations. That’s what.</div>
+		</a>
+				<!--/ End Weekly Sponsor -->
+		<!--  Sidebar sponsors  -->	
+		<a class="cos" href="http://bit.ly/DiviCodropsSidebar" target="_blank" rel="nofollow sponsored">
+			<img class="cos__img" src="https://tympanus.net/codrops/wp-content/banners/divi-premade-layouts-01.jpg" alt="Divi"/>
+			<div class="cos__text">Over 800 pre-made website layouts come packaged right inside of Divi for free. Jumpstart your design!</div>
+		</a>
+		<!--/ Sidebar sponsors -->
+
+		<!--div id="bsap_1275127" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div-->
+		<!-- 125x125 -->
+		<div id="bsap_1243201" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div>
+	</div>
+	<div class="ct-pat">
+		<div id="bsap_1298539" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div>
+	</div>
+    		
+    	<div class="clr"></div>
+</aside>
+
+				<div class="clr"></div>
+		    </div>
+</div>
+		<footer class="ct-footer">
+			<div class="ct-inner">
+				<nav>
+					<ul>
+						<li><a href="/codrops/category/tutorials/">Tutorials</a></li>
+						<li><a href="/codrops/category/articles/">Articles</a></li>
+						<li><a href="/codrops/category/playground/">Playground</a></li>
+						<li><a href="/codrops/category/blueprints/">Blueprints</a></li>
+					</ul>
+					<ul>
+						<li><a href="/codrops/css_reference/">CSS Reference</a></li>
+						<li><a href="/codrops/category/news/">News</a></li>
+						<li><a href="/codrops/category/freebies/">Freebies</a></li>
+						<li><a href="/codrops/collective/">Collective</a></li>
+					</ul>
+					<ul>
+						<li><a href="/codrops/about/">About</a></li>
+						<li><a href="/codrops/contact/">Contact</a></li>
+						<li><a href="/codrops/archives/">Archives</a></li>
+						<li><a href="/codrops/deals/">Deals</a></li>
+					</ul>
+					<ul>
+						<li><a href="/codrops/advertise/">Advertise</a></li>
+						<li><a href="/codrops/privacy-policy/">Privacy Policy</a></li>
+						<li><a href="/codrops/licensing/">License</a></li>
+						<li><a href="/codrops/credits/">Credits</a></li>
+					</ul>
+					<ul>
+						<li>Content delivered by <a href="https://www.stackpath.com/" title="Content Distribution Network" target="blank">StackPath</a></li>
+						<li>&copy; Codrops 2020</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+		<div id="cookie-law-info-bar"><span>Codrops uses cookies for its advertisement solutions and for analytics. We hope you're ok with this, but you can opt-out if you wish. Read our <a href="https://www.iubenda.com/privacy-policy/92067710">Privacy Policy</a> and <a href="https://www.iubenda.com/privacy-policy/92067710/cookie-policy">Cookie Policy</a>. <a role='button' tabindex='0' data-cli_action="accept" id="cookie_action_close_header"  class="small cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display:inline-block; ">OK</a></span></div><div id="cookie-law-info-again" style="display:none;"><span id="cookie_hdr_showagain">Privacy & Cookies Policy</span></div><div class="cli-modal" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+    <div class="cli-modal-content cli-bar-popup">
+      <button type="button" class="cli-modal-close" id="cliModalClose">
+        <svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+        <span class="wt-cli-sr-only">Close</span>
+      </button>
+      <div class="cli-modal-body">
+        <div class="cli-container-fluid cli-tab-container">
+    <div class="cli-row">
+        <div class="cli-col-12 cli-align-items-stretch cli-px-0">
+            <div class="cli-privacy-overview">
+                                                   
+                <div class="cli-privacy-content">
+                    <div class="cli-privacy-content-text"></div>
+                </div>
+                <a class="cli-privacy-readmore" data-readmore-text="Show more" data-readless-text="Show less"></a>            </div>
+        </div>  
+        <div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+              
+                            <div class="cli-tab-section">
+                    <div class="cli-tab-header">
+                        <a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab" >
+                            Necessary 
+                        </a>
+                    
+                    <span class="cli-necessary-caption">Always Enabled</span>                     </div>
+                    <div class="cli-tab-content">
+                        <div class="cli-tab-pane cli-fade" data-id="necessary">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+              
+                       
+        </div>
+    </div> 
+</div> 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<script type="text/javascript">
+  /* <![CDATA[ */
+  cli_cookiebar_settings='{"animate_speed_hide":"500","animate_speed_show":"500","background":"#989898","border":"#444","border_on":false,"button_1_button_colour":"#0099cc","button_1_button_hover":"#007aa3","button_1_link_colour":"#fff","button_1_as_button":true,"button_1_new_win":false,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#0099cc","button_2_as_button":false,"button_2_hidebar":false,"button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":true,"button_3_new_win":false,"button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#fff","button_4_as_button":true,"font_family":"inherit","header_fix":false,"notify_animate_hide":false,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"accept_close_reload":false,"reject_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#ffffff","show_once_yn":false,"show_once":"10000","logging_on":false,"as_popup":false,"popup_overlay":true,"bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"}';
+  /* ]]> */
+</script><script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/comment-reply.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/js/typeahead.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/js/hogan.min.js?ver=5.3.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wp_typeahead = {"ajaxurl":"https:\/\/tympanus.net\/codrops\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/js/wp-typeahead.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://tympanus.net/codrops-playground/js/p/embed.min.js?ver=1.0.0'></script>
+		</div><!--ct-container-->
+	</body>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Page Caching using disk: enhanced 
+Content Delivery Network via codropspz-tympanus.netdna-ssl.com
+Application Monitoring using New Relic
+
+Served from: tympanus.net @ 2020-03-30 05:25:15 by W3 Total Cache
+-->

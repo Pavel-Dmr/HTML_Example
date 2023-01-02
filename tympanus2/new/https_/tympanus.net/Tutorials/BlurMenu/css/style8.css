@@ -1,0 +1,46 @@
+h1{
+	color:#000;
+}
+h1 span, .more ul{
+	color: #333;
+}
+.bmenu{
+    padding: 0px;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+.bmenu li{
+    font-size: 50px;
+    display: block;
+}
+.bmenu li a{
+	white-space: nowrap;
+	color: transparent;
+	display: block;
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 0px 0px 6px #000;
+	letter-spacing: 1px;
+	-moz-transform: scale(0.4); 
+	-ms-transform: scale(0.4); 
+	-o-transform: scale(0.4); 
+	-webkit-transform: scale(0.4); 
+	transform: scale(0.4); 
+	-webkit-transition: all 0.7s linear;
+	-moz-transition: all 0.7s linear;
+	-o-transition: all 0.7s linear;
+	-ms-transition: all 0.7s linear;
+	transition: all 0.7s linear;
+}
+.bmenu:hover li a{
+	text-shadow: 0px 0px 15px #000;
+}
+.bmenu li a:hover{
+	text-shadow: 0px 0px 1px #000;
+	color:#000;
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	-o-transform: scale(1); 
+	-webkit-transform: scale(1); 
+	transform: scale(1); 
+}

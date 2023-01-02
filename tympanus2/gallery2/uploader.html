@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+   <script type="text/javascript" src="scripts/jquery-1.3.2.min.js"></script>
+  
+  
+  <!--for the uploadify-->
+  <link href="css/default.css" rel="stylesheet" type="text/css" />
+  <link href="css/uploadify.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="scripts/swfobject.js"></script>
+  <script type="text/javascript" src="scripts/jquery.uploadify.v2.1.0.min.js"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+	//uploadify:
+	$("#uploadify").uploadify({
+		'uploader'       : 'scripts/uploadify.swf',
+		'script'         : 'scripts/uploadify.php',
+		'cancelImg'      : 'cancel.png',
+		'folder'         : 'images',
+		'queueID'        : 'fileQueue',
+		'auto'           : true,
+		'multi'          : true,
+		'queueSizeLimit' : 5,
+		'fileDesc'		 : 'jpg, gif',
+		'fileExt'		 : '*.jpg;*.gif',
+		'sizeLimit'      : '512000',//max size bytes - 500kb
+		'checkScript'    : 'scripts/check.php', //if we take this out, it will never replace files, otherwise asks if we want to replace
+		'onAllComplete'  : function() {
+								//$('#switch-effect').unbind('change');
+								//$('#toggle-slideshow').unbind('click');
+							}
+	});
+  
+  });    
+  </script>
+
+  <title>AD-Gallery + Uploadify + classe.upload</title>
+</head>
+<body>
+  
+  <!--uploadify-->
+  	
+    <div style="float:left;">
+	  	<div id="fileQueue"></div>
+		<div>you can select more than one file at once</div>
+	  	<input type="file" name="uploadify" id="uploadify" />
+	  	<p><a href="javascript:jQuery('#uploadify').uploadifyClearQueue()">Cancel All Uploads</a></p>
+  	</div>
+<a href="index.html">back</a>  
+	
+</body>
+</html>

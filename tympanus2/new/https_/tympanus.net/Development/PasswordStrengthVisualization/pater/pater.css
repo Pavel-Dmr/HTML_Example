@@ -1,0 +1,86 @@
+.pater {
+	position: relative;
+	width: 100%;
+	display: grid;
+	text-align: left;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	margin: -5vmin 0 10vh 0;
+	pointer-events: auto;
+	text-decoration: none;
+}
+
+.pater:hover,
+.pater:focus {
+	color: var(--color-link);
+}
+
+.pater__img {
+	position: relative;
+	display: none;
+	width: 170px;
+	grid-area: 2 / 1 / 3 / 2;
+	display: flex;
+}
+
+.pater__img img:nth-child(2) {
+	position: absolute;
+	opacity: 0;
+}
+
+.pater__title {
+	margin: 0;
+	padding: 0 10px;
+	font-size: 1rem;
+	font-weight: normal;
+	align-self: center;
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.pater__title::before {
+	content: 'Our Sponsor';
+	display: block;
+	padding: 0 0 10px 0;
+	vertical-align: middle;
+	font-size: 0.75em;
+	grid-area: 1 / 1 / 2 / 3;
+}
+
+.pater:hover .pater__title {
+	opacity: 0;
+}
+
+.pater__title,
+.pater__description {
+	align-self: end;
+	grid-area: 2 / 2 / 3 / 3;
+	transition: opacity 0.5s;
+}
+
+.pater__description {
+	margin: 0;
+	padding: 10px 0 0 10px;
+	opacity: 0;
+	font-size: 1rem;
+}
+
+.pater:hover .pater__description {
+	opacity: 1;
+}
+
+.pater__description strong {
+	display: block;
+	padding-top: 5px;
+}
+
+@media screen and (max-width: 45em) {
+	.pater__img {
+		width: 70px;
+	}
+	.pater__description {
+		display: none;
+	}
+	.pater:hover .pater__title {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,45 @@
+body {
+  height: 3300px;
+}
+h1 {
+  font-size: 100%;
+}
+
+.indicator {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+
+li {
+  list-style: none;
+  height: 60px;
+  top: 40px;
+  width: 60px;
+  position: fixed;
+}
+
+#item_01 {
+  background: #000;
+  left: 20px;
+}
+
+#item_02 {
+  background: #333;
+  left: 100px;
+}
+
+#item_03 {
+  background: #ff358b;
+  left: 180px;
+}
+
+#item_04 {
+  background: #01b0f0;
+  left: 260px;
+}
+
+#item_05 {
+  background: #aeee00;
+  left: 350px;
+}

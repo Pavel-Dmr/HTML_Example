@@ -1,0 +1,55 @@
+/* Main stuff */
+.text {
+  fill: url(http://tympanus.net/Tutorials/AnimatedTextFills/index8.html#p-stars);
+  stroke: #C2C2C2;
+  stroke-width: 3; }
+
+/* Colorize & animate pattern */
+.g-stars polygon {
+  stroke-width: 0;
+  -webkit-animation: stroke 2s infinite;
+  animation: stroke 2s infinite; }
+  .g-stars polygon:nth-child(5n + 1) {
+    fill: #e06084;
+    stroke: #e06084;
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s; }
+  .g-stars polygon:nth-child(5n + 2) {
+    fill: #ddd;
+    stroke: #ddd;
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s; }
+  .g-stars polygon:nth-child(5n + 3) {
+    fill: #333;
+    stroke: #333;
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s; }
+  .g-stars polygon:nth-child(5n + 4) {
+    fill: #aaa;
+    stroke: #aaa;
+    -webkit-animation-delay: -1.6s;
+    animation-delay: -1.6s; }
+  .g-stars polygon:nth-child(5n + 5) {
+    fill: #888;
+    stroke: #888;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s; }
+
+/* Change stroke-width within animation */
+@-webkit-keyframes stroke {
+  50% {
+    stroke-width: 8; } }
+@keyframes stroke {
+  50% {
+    stroke-width: 8; } }
+/* Other stuff */
+.content {
+  font: 800 14.5em/1  'Open Sans', Impact; }
+
+svg {
+  width: 90%;
+  margin: 0 auto 50px;
+  display: block;
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=style8.css.map */

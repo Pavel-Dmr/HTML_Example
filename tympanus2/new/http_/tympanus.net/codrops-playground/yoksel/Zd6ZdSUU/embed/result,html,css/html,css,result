@@ -1,0 +1,220 @@
+<script>window.window = window.window || {};window.gl_data = {"gl_outputLocation":"https:\/\/suru.tympanus.net\/","gl_code_output":"<!doctype html>\n<html>\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>Codrops-Demo<\/title>\n\n\t\t\n\t<style>\/* Main styles *\/\n\n@import url(http:\/\/fonts.googleapis.com\/css?family=Open+Sans:800);\n\n.svg-inverted-mask {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n}\n\n.mask__shape {\n  fill: white;\n}\n\n.box-with-text {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n}\n\n.text-fill {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  padding-top: 35vw;\n  padding-left: 100%;\n  margin: auto;\n  overflow: hidden;\n  -webkit-transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n}\n\n.shape--fill {\n  fill: lightgoldenrodyellow;\n}\n\n\/* Transparent copy of text to keep patterned text selectable *\/\n.text--transparent {\n  fill: transparent;\n}\n\n\/* Element with animated shadows *\/\n.shadows {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  width: 1vmax;\n  height: 1vmax;\n  background: gold;\n  border-radius: 50%;\n  box-shadow: 0 0 0 2vmax purple, 0 0 0 4vmax crimson, 0 0 0 6vmax red, 0 0 0 8vmax orangered, 0 0 0 10vmax tomato, 0 0 0 12vmax gold, 0 0 0 14vmax yellow, 0 0 0 16vmax yellowgreen, 0 0 0 18vmax turquoise, 0 0 0 20vmax royalblue, 0 0 0 22vmax mediumslateblue, 0 0 0 24vmax mediumorchid, 0 0 0 26vmax purple, 0 0 0 28vmax crimson, 0 0 0 30vmax red, 0 0 0 32vmax orangered, 0 0 0 34vmax tomato, 0 0 0 36vmax gold, 0 0 0 38vmax yellow, 0 0 0 40vmax yellowgreen, 0 0 0 42vmax turquoise, 0 0 0 44vmax royalblue, 0 0 0 46vmax mediumslateblue, 0 0 0 48vmax mediumorchid, 0 0 0 50vmax darkviolet, 0 0 0 52vmax purple, 0 0 0 54vmax crimson, 0 0 0 56vmax red, 0 0 0 58vmax orangered, 0 0 0 60vmax tomato, 0 0 0 62vmax gold, 0 0 0 64vmax yellow, 0 0 0 66vmax yellowgreen, 0 0 0 68vmax turquoise, 0 0 0 70vmax royalblue, 0 0 0 72vmax mediumslateblue, 0 0 0 74vmax mediumorchid, 0 0 0 76vmax darkviolet, 0 0 0 78vmax purple, 0 0 0 80vmax crimson, 0 0 0 82vmax red, 0 0 0 84vmax orangered, 0 0 0 86vmax tomato, 0 0 0 88vmax gold, 0 0 0 90vmax yellow;\n  -webkit-animation: shadows-move 4s linear infinite;\n  animation: shadows-move 4s linear infinite;\n}\n\n@media (min-aspect-ratio: 1 \/ 2) {\n  .text-fill {\n    padding-top: 35vw;\n  }\n}\n\n@media (min-aspect-ratio: 2 \/ 1) {\n  .text-fill {\n    padding-top: 70vh;\n    padding-left: 190vh;\n  }\n}\n\n@-webkit-keyframes shadows-move {\n  25% {\n    box-shadow: 0 0 0 2vmax royalblue, 0 0 0 4vmax mediumslateblue, 0 0 0 6vmax mediumorchid, 0 0 0 8vmax purple, 0 0 0 10vmax crimson, 0 0 0 12vmax red, 0 0 0 14vmax orangered, 0 0 0 16vmax tomato, 0 0 0 18vmax gold, 0 0 0 20vmax yellow, 0 0 0 22vmax yellowgreen, 0 0 0 24vmax turquoise, 0 0 0 26vmax royalblue, 0 0 0 28vmax mediumslateblue, 0 0 0 30vmax mediumorchid, 0 0 0 32vmax darkviolet, 0 0 0 34vmax purple, 0 0 0 36vmax crimson, 0 0 0 38vmax red, 0 0 0 40vmax orangered, 0 0 0 42vmax tomato, 0 0 0 44vmax gold, 0 0 0 46vmax yellow, 0 0 0 48vmax yellowgreen, 0 0 0 50vmax turquoise, 0 0 0 52vmax royalblue, 0 0 0 54vmax mediumslateblue, 0 0 0 56vmax mediumorchid, 0 0 0 58vmax darkviolet, 0 0 0 60vmax purple, 0 0 0 62vmax crimson, 0 0 0 64vmax red, 0 0 0 66vmax orangered, 0 0 0 68vmax tomato, 0 0 0 70vmax gold, 0 0 0 72vmax yellow, 0 0 0 74vmax yellowgreen, 0 0 0 76vmax turquoise, 0 0 0 78vmax royalblue, 0 0 0 80vmax mediumslateblue, 0 0 0 82vmax mediumorchid, 0 0 0 84vmax darkviolet, 0 0 0 86vmax purple, 0 0 0 88vmax crimson, 0 0 0 90vmax red;\n  }\n  45% {\n    box-shadow: 0 0 0 2vmax yellow, 0 0 0 4vmax yellowgreen, 0 0 0 6vmax turquoise, 0 0 0 8vmax royalblue, 0 0 0 10vmax mediumslateblue, 0 0 0 12vmax mediumorchid, 0 0 0 14vmax purple, 0 0 0 16vmax crimson, 0 0 0 18vmax red, 0 0 0 20vmax orangered, 0 0 0 22vmax tomato, 0 0 0 24vmax gold, 0 0 0 26vmax yellow, 0 0 0 28vmax yellowgreen, 0 0 0 30vmax turquoise, 0 0 0 32vmax royalblue, 0 0 0 34vmax mediumslateblue, 0 0 0 36vmax mediumorchid, 0 0 0 38vmax darkviolet, 0 0 0 40vmax purple, 0 0 0 42vmax crimson, 0 0 0 44vmax red, 0 0 0 46vmax orangered, 0 0 0 48vmax tomato, 0 0 0 50vmax gold, 0 0 0 52vmax yellow, 0 0 0 54vmax yellowgreen, 0 0 0 56vmax turquoise, 0 0 0 58vmax royalblue, 0 0 0 60vmax mediumslateblue, 0 0 0 62vmax mediumorchid, 0 0 0 64vmax darkviolet, 0 0 0 66vmax purple, 0 0 0 68vmax crimson, 0 0 0 70vmax red, 0 0 0 72vmax orangered, 0 0 0 74vmax tomato, 0 0 0 76vmax gold, 0 0 0 78vmax yellow, 0 0 0 80vmax yellowgreen, 0 0 0 82vmax turquoise, 0 0 0 84vmax royalblue, 0 0 0 86vmax mediumslateblue, 0 0 0 88vmax mediumorchid, 0 0 0 90vmax darkviolet;\n  }\n  75% {\n    box-shadow: 0 0 0 2vmax orangered, 0 0 0 4vmax tomato, 0 0 0 6vmax gold, 0 0 0 8vmax yellow, 0 0 0 10vmax yellowgreen, 0 0 0 12vmax turquoise, 0 0 0 14vmax royalblue, 0 0 0 16vmax mediumslateblue, 0 0 0 18vmax mediumorchid, 0 0 0 20vmax purple, 0 0 0 22vmax crimson, 0 0 0 24vmax red, 0 0 0 26vmax orangered, 0 0 0 28vmax tomato, 0 0 0 30vmax gold, 0 0 0 32vmax yellow, 0 0 0 34vmax yellowgreen, 0 0 0 36vmax turquoise, 0 0 0 38vmax royalblue, 0 0 0 40vmax mediumslateblue, 0 0 0 42vmax mediumorchid, 0 0 0 44vmax darkviolet, 0 0 0 46vmax purple, 0 0 0 48vmax crimson, 0 0 0 50vmax red, 0 0 0 52vmax orangered, 0 0 0 54vmax tomato, 0 0 0 56vmax gold, 0 0 0 58vmax yellow, 0 0 0 60vmax yellowgreen, 0 0 0 62vmax turquoise, 0 0 0 64vmax royalblue, 0 0 0 66vmax mediumslateblue, 0 0 0 68vmax mediumorchid, 0 0 0 70vmax darkviolet, 0 0 0 72vmax purple, 0 0 0 74vmax crimson, 0 0 0 76vmax red, 0 0 0 78vmax orangered, 0 0 0 80vmax tomato, 0 0 0 82vmax gold, 0 0 0 84vmax yellow, 0 0 0 86vmax yellowgreen, 0 0 0 88vmax turquoise, 0 0 0 90vmax royalblue;\n  }\n}\n@keyframes shadows-move {\n  25% {\n    box-shadow: 0 0 0 2vmax royalblue, 0 0 0 4vmax mediumslateblue, 0 0 0 6vmax mediumorchid, 0 0 0 8vmax purple, 0 0 0 10vmax crimson, 0 0 0 12vmax red, 0 0 0 14vmax orangered, 0 0 0 16vmax tomato, 0 0 0 18vmax gold, 0 0 0 20vmax yellow, 0 0 0 22vmax yellowgreen, 0 0 0 24vmax turquoise, 0 0 0 26vmax royalblue, 0 0 0 28vmax mediumslateblue, 0 0 0 30vmax mediumorchid, 0 0 0 32vmax darkviolet, 0 0 0 34vmax purple, 0 0 0 36vmax crimson, 0 0 0 38vmax red, 0 0 0 40vmax orangered, 0 0 0 42vmax tomato, 0 0 0 44vmax gold, 0 0 0 46vmax yellow, 0 0 0 48vmax yellowgreen, 0 0 0 50vmax turquoise, 0 0 0 52vmax royalblue, 0 0 0 54vmax mediumslateblue, 0 0 0 56vmax mediumorchid, 0 0 0 58vmax darkviolet, 0 0 0 60vmax purple, 0 0 0 62vmax crimson, 0 0 0 64vmax red, 0 0 0 66vmax orangered, 0 0 0 68vmax tomato, 0 0 0 70vmax gold, 0 0 0 72vmax yellow, 0 0 0 74vmax yellowgreen, 0 0 0 76vmax turquoise, 0 0 0 78vmax royalblue, 0 0 0 80vmax mediumslateblue, 0 0 0 82vmax mediumorchid, 0 0 0 84vmax darkviolet, 0 0 0 86vmax purple, 0 0 0 88vmax crimson, 0 0 0 90vmax red;\n  }\n  45% {\n    box-shadow: 0 0 0 2vmax yellow, 0 0 0 4vmax yellowgreen, 0 0 0 6vmax turquoise, 0 0 0 8vmax royalblue, 0 0 0 10vmax mediumslateblue, 0 0 0 12vmax mediumorchid, 0 0 0 14vmax purple, 0 0 0 16vmax crimson, 0 0 0 18vmax red, 0 0 0 20vmax orangered, 0 0 0 22vmax tomato, 0 0 0 24vmax gold, 0 0 0 26vmax yellow, 0 0 0 28vmax yellowgreen, 0 0 0 30vmax turquoise, 0 0 0 32vmax royalblue, 0 0 0 34vmax mediumslateblue, 0 0 0 36vmax mediumorchid, 0 0 0 38vmax darkviolet, 0 0 0 40vmax purple, 0 0 0 42vmax crimson, 0 0 0 44vmax red, 0 0 0 46vmax orangered, 0 0 0 48vmax tomato, 0 0 0 50vmax gold, 0 0 0 52vmax yellow, 0 0 0 54vmax yellowgreen, 0 0 0 56vmax turquoise, 0 0 0 58vmax royalblue, 0 0 0 60vmax mediumslateblue, 0 0 0 62vmax mediumorchid, 0 0 0 64vmax darkviolet, 0 0 0 66vmax purple, 0 0 0 68vmax crimson, 0 0 0 70vmax red, 0 0 0 72vmax orangered, 0 0 0 74vmax tomato, 0 0 0 76vmax gold, 0 0 0 78vmax yellow, 0 0 0 80vmax yellowgreen, 0 0 0 82vmax turquoise, 0 0 0 84vmax royalblue, 0 0 0 86vmax mediumslateblue, 0 0 0 88vmax mediumorchid, 0 0 0 90vmax darkviolet;\n  }\n  75% {\n    box-shadow: 0 0 0 2vmax orangered, 0 0 0 4vmax tomato, 0 0 0 6vmax gold, 0 0 0 8vmax yellow, 0 0 0 10vmax yellowgreen, 0 0 0 12vmax turquoise, 0 0 0 14vmax royalblue, 0 0 0 16vmax mediumslateblue, 0 0 0 18vmax mediumorchid, 0 0 0 20vmax purple, 0 0 0 22vmax crimson, 0 0 0 24vmax red, 0 0 0 26vmax orangered, 0 0 0 28vmax tomato, 0 0 0 30vmax gold, 0 0 0 32vmax yellow, 0 0 0 34vmax yellowgreen, 0 0 0 36vmax turquoise, 0 0 0 38vmax royalblue, 0 0 0 40vmax mediumslateblue, 0 0 0 42vmax mediumorchid, 0 0 0 44vmax darkviolet, 0 0 0 46vmax purple, 0 0 0 48vmax crimson, 0 0 0 50vmax red, 0 0 0 52vmax orangered, 0 0 0 54vmax tomato, 0 0 0 56vmax gold, 0 0 0 58vmax yellow, 0 0 0 60vmax yellowgreen, 0 0 0 62vmax turquoise, 0 0 0 64vmax royalblue, 0 0 0 66vmax mediumslateblue, 0 0 0 68vmax mediumorchid, 0 0 0 70vmax darkviolet, 0 0 0 72vmax purple, 0 0 0 74vmax crimson, 0 0 0 76vmax red, 0 0 0 78vmax orangered, 0 0 0 80vmax tomato, 0 0 0 82vmax gold, 0 0 0 84vmax yellow, 0 0 0 86vmax yellowgreen, 0 0 0 88vmax turquoise, 0 0 0 90vmax royalblue;\n  }\n}\n\n\/* Other styles *\/\nhtml, body {\n  height: 100%;\n}\n\nbody {\n  background: #fafad2;\n  font: 14.5em\/1 Open Sans, Impact;\n  text-transform: uppercase;\n  margin: 0;\n}\n\n.svg-defs {\n  width: 0;\n  height: 0;\n}<\/style><\/head>\n\t<body>\n\t\n\t<!-- Invisible SVG -->\n<svg viewBox=\"0 0 600 300\" class=\"svg-defs\">\n  <!-- Symbol wth text -->\n  <symbol id=\"s-text\">\n    <text text-anchor=\"middle\"\n          x=\"50%\"\n          y=\"50%\"\n          dy=\".35em\"\n          class=\"text\"\n          >\n      Text\n    <\/text>    \n  <\/symbol>\n\n  <!-- Mask with text -->\n  <mask id=\"m-text\"\n        maskunits=\"userSpaceOnUse\"\n        maskcontentunits=\"userSpaceOnUse\">\n    <rect\n          width=\"100%\"\n          height=\"100%\"\n          class=\"mask__shape\">\n    <\/rect>\n    <use xlink:href=\"#s-text\"\n         class=\"text-mask\"\n         ><\/use>\n  <\/mask>\n<\/svg>\n\n<div class=\"box-with-text\">\n  <!-- Content for text -->\n  <div class=\"text-fill\">\n    <!-- Element with animated shadows -->\n    <div class=\"shadows\"><\/div>\n  <\/div>\n\n  <!-- SVG to cover text fill -->\n  <svg viewBox=\"0 0 600 300\"\n       class=\"svg-inverted-mask\">\n    <!-- Big shape with hole in form of text -->\n    <rect\n          width=\"100%\"\n          height=\"100%\"\n          mask=\"url(#m-text)\"\n          class=\"shape--fill\"\/>\n    <!-- Transparent copy of text to keep\n         patterned text selectable -->\n    <use xlink:href=\"#s-text\"\n         class=\"text--transparent\"\n         ><\/use>\n  <\/svg> \n<\/div><script><\/script><\/body>\n<\/html>"};</script><!DOCTYPEhtml>
+
+<html lang="en" class="page-default">
+
+	<head>
+				<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		
+		<title>SVG text fill with animated box-shadow | Embed - Codrops Playground</title>
+
+		<link rel="stylesheet" type="text/css" href="/codrops-playground/332d5270da28388399324d79ffcf4a45/css/all-css-embed.min.css" />
+
+		
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59174661-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body>
+		<noscript>
+	<div class="no-js-message"><i class="fa fa-fw fa-exclamation-triangle"></i><span>This web application requires JavaScript to work. Please enable JavaScript in your browser.</span></div>
+</noscript>		
+		<div class="embed">
+	<nav id="embed-nav" class="embed-nav">
+		<h1 class="logo"><img src="/codrops-playground/332d5270da28388399324d79ffcf4a45/img/codrops.svg" alt="Codrops Logo"><span>Codrops Editor</span></h1>
+		<div class="embed-tabs js-tabs">
+			<span class="embed-tab ">HTML</span>			<span class="embed-tab ">CSS</span>						<span data-result class="embed-tab selected">Result</span>		</div>
+		<select class="embed-tabs-select js-tabs-select">
+			<option >HTML</option>			<option >CSS</option>						<option selected>Result</option>		</select>
+		<a class="embed-button js-demo--location" target="_blank" href="https://tympanus.net/codrops-playground/yoksel/Zd6ZdSUU/editor/html,css,result"><i class="icon icon-edit"></i><span>Edit</span></a>
+		
+								<a class="embed-button js-run-demo" id="rerun" href="#"><i class="icon icon-refresh"></i><span>Run</span></a>	
+						</nav>
+	<div id="embed-content" class="embed-content-wrap">
+				<div class="embed-content embed-content--code embed-content--html ">
+			<pre><code class="html">&lt;!-- Invisible SVG --&gt;
+&lt;svg viewBox=&quot;0 0 600 300&quot; class=&quot;svg-defs&quot;&gt;
+  &lt;!-- Symbol wth text --&gt;
+  &lt;symbol id=&quot;s-text&quot;&gt;
+    &lt;text text-anchor=&quot;middle&quot;
+          x=&quot;50%&quot;
+          y=&quot;50%&quot;
+          dy=&quot;.35em&quot;
+          class=&quot;text&quot;
+          &gt;
+      Text
+    &lt;/text&gt;    
+  &lt;/symbol&gt;
+
+  &lt;!-- Mask with text --&gt;
+  &lt;mask id=&quot;m-text&quot;
+        maskunits=&quot;userSpaceOnUse&quot;
+        maskcontentunits=&quot;userSpaceOnUse&quot;&gt;
+    &lt;rect
+          width=&quot;100%&quot;
+          height=&quot;100%&quot;
+          class=&quot;mask__shape&quot;&gt;
+    &lt;/rect&gt;
+    &lt;use xlink:href=&quot;#s-text&quot;
+         class=&quot;text-mask&quot;
+         &gt;&lt;/use&gt;
+  &lt;/mask&gt;
+&lt;/svg&gt;
+
+&lt;div class=&quot;box-with-text&quot;&gt;
+  &lt;!-- Content for text --&gt;
+  &lt;div class=&quot;text-fill&quot;&gt;
+    &lt;!-- Element with animated shadows --&gt;
+    &lt;div class=&quot;shadows&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- SVG to cover text fill --&gt;
+  &lt;svg viewBox=&quot;0 0 600 300&quot;
+       class=&quot;svg-inverted-mask&quot;&gt;
+    &lt;!-- Big shape with hole in form of text --&gt;
+    &lt;rect
+          width=&quot;100%&quot;
+          height=&quot;100%&quot;
+          mask=&quot;url(#m-text)&quot;
+          class=&quot;shape--fill&quot;/&gt;
+    &lt;!-- Transparent copy of text to keep
+         patterned text selectable --&gt;
+    &lt;use xlink:href=&quot;#s-text&quot;
+         class=&quot;text--transparent&quot;
+         &gt;&lt;/use&gt;
+  &lt;/svg&gt; 
+&lt;/div&gt;</code></pre>
+		</div>
+		
+				<div class="embed-content embed-content--code embed-content--css ">
+			<pre><code class="css">/* Main styles */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.svg-inverted-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.mask__shape {
+  fill: white;
+}
+
+.box-with-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.text-fill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-top: 35vw;
+  padding-left: 100%;
+  margin: auto;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.shape--fill {
+  fill: lightgoldenrodyellow;
+}
+
+/* Transparent copy of text to keep patterned text selectable */
+.text--transparent {
+  fill: transparent;
+}
+
+/* Element with animated shadows */
+.shadows {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1vmax;
+  height: 1vmax;
+  background: gold;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2vmax purple, 0 0 0 4vmax crimson, 0 0 0 6vmax red, 0 0 0 8vmax orangered, 0 0 0 10vmax tomato, 0 0 0 12vmax gold, 0 0 0 14vmax yellow, 0 0 0 16vmax yellowgreen, 0 0 0 18vmax turquoise, 0 0 0 20vmax royalblue, 0 0 0 22vmax mediumslateblue, 0 0 0 24vmax mediumorchid, 0 0 0 26vmax purple, 0 0 0 28vmax crimson, 0 0 0 30vmax red, 0 0 0 32vmax orangered, 0 0 0 34vmax tomato, 0 0 0 36vmax gold, 0 0 0 38vmax yellow, 0 0 0 40vmax yellowgreen, 0 0 0 42vmax turquoise, 0 0 0 44vmax royalblue, 0 0 0 46vmax mediumslateblue, 0 0 0 48vmax mediumorchid, 0 0 0 50vmax darkviolet, 0 0 0 52vmax purple, 0 0 0 54vmax crimson, 0 0 0 56vmax red, 0 0 0 58vmax orangered, 0 0 0 60vmax tomato, 0 0 0 62vmax gold, 0 0 0 64vmax yellow, 0 0 0 66vmax yellowgreen, 0 0 0 68vmax turquoise, 0 0 0 70vmax royalblue, 0 0 0 72vmax mediumslateblue, 0 0 0 74vmax mediumorchid, 0 0 0 76vmax darkviolet, 0 0 0 78vmax purple, 0 0 0 80vmax crimson, 0 0 0 82vmax red, 0 0 0 84vmax orangered, 0 0 0 86vmax tomato, 0 0 0 88vmax gold, 0 0 0 90vmax yellow;
+  -webkit-animation: shadows-move 4s linear infinite;
+  animation: shadows-move 4s linear infinite;
+}
+
+@media (min-aspect-ratio: 1 / 2) {
+  .text-fill {
+    padding-top: 35vw;
+  }
+}
+
+@media (min-aspect-ratio: 2 / 1) {
+  .text-fill {
+    padding-top: 70vh;
+    padding-left: 190vh;
+  }
+}
+
+@-webkit-keyframes shadows-move {
+  25% {
+    box-shadow: 0 0 0 2vmax royalblue, 0 0 0 4vmax mediumslateblue, 0 0 0 6vmax mediumorchid, 0 0 0 8vmax purple, 0 0 0 10vmax crimson, 0 0 0 12vmax red, 0 0 0 14vmax orangered, 0 0 0 16vmax tomato, 0 0 0 18vmax gold, 0 0 0 20vmax yellow, 0 0 0 22vmax yellowgreen, 0 0 0 24vmax turquoise, 0 0 0 26vmax royalblue, 0 0 0 28vmax mediumslateblue, 0 0 0 30vmax mediumorchid, 0 0 0 32vmax darkviolet, 0 0 0 34vmax purple, 0 0 0 36vmax crimson, 0 0 0 38vmax red, 0 0 0 40vmax orangered, 0 0 0 42vmax tomato, 0 0 0 44vmax gold, 0 0 0 46vmax yellow, 0 0 0 48vmax yellowgreen, 0 0 0 50vmax turquoise, 0 0 0 52vmax royalblue, 0 0 0 54vmax mediumslateblue, 0 0 0 56vmax mediumorchid, 0 0 0 58vmax darkviolet, 0 0 0 60vmax purple, 0 0 0 62vmax crimson, 0 0 0 64vmax red, 0 0 0 66vmax orangered, 0 0 0 68vmax tomato, 0 0 0 70vmax gold, 0 0 0 72vmax yellow, 0 0 0 74vmax yellowgreen, 0 0 0 76vmax turquoise, 0 0 0 78vmax royalblue, 0 0 0 80vmax mediumslateblue, 0 0 0 82vmax mediumorchid, 0 0 0 84vmax darkviolet, 0 0 0 86vmax purple, 0 0 0 88vmax crimson, 0 0 0 90vmax red;
+  }
+  45% {
+    box-shadow: 0 0 0 2vmax yellow, 0 0 0 4vmax yellowgreen, 0 0 0 6vmax turquoise, 0 0 0 8vmax royalblue, 0 0 0 10vmax mediumslateblue, 0 0 0 12vmax mediumorchid, 0 0 0 14vmax purple, 0 0 0 16vmax crimson, 0 0 0 18vmax red, 0 0 0 20vmax orangered, 0 0 0 22vmax tomato, 0 0 0 24vmax gold, 0 0 0 26vmax yellow, 0 0 0 28vmax yellowgreen, 0 0 0 30vmax turquoise, 0 0 0 32vmax royalblue, 0 0 0 34vmax mediumslateblue, 0 0 0 36vmax mediumorchid, 0 0 0 38vmax darkviolet, 0 0 0 40vmax purple, 0 0 0 42vmax crimson, 0 0 0 44vmax red, 0 0 0 46vmax orangered, 0 0 0 48vmax tomato, 0 0 0 50vmax gold, 0 0 0 52vmax yellow, 0 0 0 54vmax yellowgreen, 0 0 0 56vmax turquoise, 0 0 0 58vmax royalblue, 0 0 0 60vmax mediumslateblue, 0 0 0 62vmax mediumorchid, 0 0 0 64vmax darkviolet, 0 0 0 66vmax purple, 0 0 0 68vmax crimson, 0 0 0 70vmax red, 0 0 0 72vmax orangered, 0 0 0 74vmax tomato, 0 0 0 76vmax gold, 0 0 0 78vmax yellow, 0 0 0 80vmax yellowgreen, 0 0 0 82vmax turquoise, 0 0 0 84vmax royalblue, 0 0 0 86vmax mediumslateblue, 0 0 0 88vmax mediumorchid, 0 0 0 90vmax darkviolet;
+  }
+  75% {
+    box-shadow: 0 0 0 2vmax orangered, 0 0 0 4vmax tomato, 0 0 0 6vmax gold, 0 0 0 8vmax yellow, 0 0 0 10vmax yellowgreen, 0 0 0 12vmax turquoise, 0 0 0 14vmax royalblue, 0 0 0 16vmax mediumslateblue, 0 0 0 18vmax mediumorchid, 0 0 0 20vmax purple, 0 0 0 22vmax crimson, 0 0 0 24vmax red, 0 0 0 26vmax orangered, 0 0 0 28vmax tomato, 0 0 0 30vmax gold, 0 0 0 32vmax yellow, 0 0 0 34vmax yellowgreen, 0 0 0 36vmax turquoise, 0 0 0 38vmax royalblue, 0 0 0 40vmax mediumslateblue, 0 0 0 42vmax mediumorchid, 0 0 0 44vmax darkviolet, 0 0 0 46vmax purple, 0 0 0 48vmax crimson, 0 0 0 50vmax red, 0 0 0 52vmax orangered, 0 0 0 54vmax tomato, 0 0 0 56vmax gold, 0 0 0 58vmax yellow, 0 0 0 60vmax yellowgreen, 0 0 0 62vmax turquoise, 0 0 0 64vmax royalblue, 0 0 0 66vmax mediumslateblue, 0 0 0 68vmax mediumorchid, 0 0 0 70vmax darkviolet, 0 0 0 72vmax purple, 0 0 0 74vmax crimson, 0 0 0 76vmax red, 0 0 0 78vmax orangered, 0 0 0 80vmax tomato, 0 0 0 82vmax gold, 0 0 0 84vmax yellow, 0 0 0 86vmax yellowgreen, 0 0 0 88vmax turquoise, 0 0 0 90vmax royalblue;
+  }
+}
+@keyframes shadows-move {
+  25% {
+    box-shadow: 0 0 0 2vmax royalblue, 0 0 0 4vmax mediumslateblue, 0 0 0 6vmax mediumorchid, 0 0 0 8vmax purple, 0 0 0 10vmax crimson, 0 0 0 12vmax red, 0 0 0 14vmax orangered, 0 0 0 16vmax tomato, 0 0 0 18vmax gold, 0 0 0 20vmax yellow, 0 0 0 22vmax yellowgreen, 0 0 0 24vmax turquoise, 0 0 0 26vmax royalblue, 0 0 0 28vmax mediumslateblue, 0 0 0 30vmax mediumorchid, 0 0 0 32vmax darkviolet, 0 0 0 34vmax purple, 0 0 0 36vmax crimson, 0 0 0 38vmax red, 0 0 0 40vmax orangered, 0 0 0 42vmax tomato, 0 0 0 44vmax gold, 0 0 0 46vmax yellow, 0 0 0 48vmax yellowgreen, 0 0 0 50vmax turquoise, 0 0 0 52vmax royalblue, 0 0 0 54vmax mediumslateblue, 0 0 0 56vmax mediumorchid, 0 0 0 58vmax darkviolet, 0 0 0 60vmax purple, 0 0 0 62vmax crimson, 0 0 0 64vmax red, 0 0 0 66vmax orangered, 0 0 0 68vmax tomato, 0 0 0 70vmax gold, 0 0 0 72vmax yellow, 0 0 0 74vmax yellowgreen, 0 0 0 76vmax turquoise, 0 0 0 78vmax royalblue, 0 0 0 80vmax mediumslateblue, 0 0 0 82vmax mediumorchid, 0 0 0 84vmax darkviolet, 0 0 0 86vmax purple, 0 0 0 88vmax crimson, 0 0 0 90vmax red;
+  }
+  45% {
+    box-shadow: 0 0 0 2vmax yellow, 0 0 0 4vmax yellowgreen, 0 0 0 6vmax turquoise, 0 0 0 8vmax royalblue, 0 0 0 10vmax mediumslateblue, 0 0 0 12vmax mediumorchid, 0 0 0 14vmax purple, 0 0 0 16vmax crimson, 0 0 0 18vmax red, 0 0 0 20vmax orangered, 0 0 0 22vmax tomato, 0 0 0 24vmax gold, 0 0 0 26vmax yellow, 0 0 0 28vmax yellowgreen, 0 0 0 30vmax turquoise, 0 0 0 32vmax royalblue, 0 0 0 34vmax mediumslateblue, 0 0 0 36vmax mediumorchid, 0 0 0 38vmax darkviolet, 0 0 0 40vmax purple, 0 0 0 42vmax crimson, 0 0 0 44vmax red, 0 0 0 46vmax orangered, 0 0 0 48vmax tomato, 0 0 0 50vmax gold, 0 0 0 52vmax yellow, 0 0 0 54vmax yellowgreen, 0 0 0 56vmax turquoise, 0 0 0 58vmax royalblue, 0 0 0 60vmax mediumslateblue, 0 0 0 62vmax mediumorchid, 0 0 0 64vmax darkviolet, 0 0 0 66vmax purple, 0 0 0 68vmax crimson, 0 0 0 70vmax red, 0 0 0 72vmax orangered, 0 0 0 74vmax tomato, 0 0 0 76vmax gold, 0 0 0 78vmax yellow, 0 0 0 80vmax yellowgreen, 0 0 0 82vmax turquoise, 0 0 0 84vmax royalblue, 0 0 0 86vmax mediumslateblue, 0 0 0 88vmax mediumorchid, 0 0 0 90vmax darkviolet;
+  }
+  75% {
+    box-shadow: 0 0 0 2vmax orangered, 0 0 0 4vmax tomato, 0 0 0 6vmax gold, 0 0 0 8vmax yellow, 0 0 0 10vmax yellowgreen, 0 0 0 12vmax turquoise, 0 0 0 14vmax royalblue, 0 0 0 16vmax mediumslateblue, 0 0 0 18vmax mediumorchid, 0 0 0 20vmax purple, 0 0 0 22vmax crimson, 0 0 0 24vmax red, 0 0 0 26vmax orangered, 0 0 0 28vmax tomato, 0 0 0 30vmax gold, 0 0 0 32vmax yellow, 0 0 0 34vmax yellowgreen, 0 0 0 36vmax turquoise, 0 0 0 38vmax royalblue, 0 0 0 40vmax mediumslateblue, 0 0 0 42vmax mediumorchid, 0 0 0 44vmax darkviolet, 0 0 0 46vmax purple, 0 0 0 48vmax crimson, 0 0 0 50vmax red, 0 0 0 52vmax orangered, 0 0 0 54vmax tomato, 0 0 0 56vmax gold, 0 0 0 58vmax yellow, 0 0 0 60vmax yellowgreen, 0 0 0 62vmax turquoise, 0 0 0 64vmax royalblue, 0 0 0 66vmax mediumslateblue, 0 0 0 68vmax mediumorchid, 0 0 0 70vmax darkviolet, 0 0 0 72vmax purple, 0 0 0 74vmax crimson, 0 0 0 76vmax red, 0 0 0 78vmax orangered, 0 0 0 80vmax tomato, 0 0 0 82vmax gold, 0 0 0 84vmax yellow, 0 0 0 86vmax yellowgreen, 0 0 0 88vmax turquoise, 0 0 0 90vmax royalblue;
+  }
+}
+
+/* Other styles */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #fafad2;
+  font: 14.5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.svg-defs {
+  width: 0;
+  height: 0;
+}</code></pre>
+		</div>
+		
+		
+				<div class="embed-content embed-content--result selected">
+			<iframe src="https://suru.tympanus.net/" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"></iframe>
+		</div>
+			</div>
+	</div>
+		<script src="/codrops-playground/332d5270da28388399324d79ffcf4a45/js/p/all-b-embed.min.js"></script>
+	</body>
+</html>

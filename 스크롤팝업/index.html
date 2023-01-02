@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+    <script src="./js/script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>현재스크롤위치 : <span id="sTop">000</span></h1>
+
+    <!-- TODO ===== 상단 네비게이션 바 시작  -->
+    <!-- nav>ul>(li>a[href="#"]{Mainmenu$)*6 -->
+    <nav>
+      <ul>
+        <li class="on"><a href="#">Mainmenu1</a></li>
+        <li><a href="#">Mainmenu2</a></li>
+        <li><a href="#">Mainmenu3</a></li>
+        <li><a href="#">Mainmenu4</a></li>
+        <li><a href="#">Mainmenu5</a></li>
+        <li><a href="#">Mainmenu6</a></li>
+      </ul>
+    </nav>
+    <!-- TODO 상단 네비게이션 바 종료 ===== -->
+
+    <!-- TODO ===== 스크롤 단위로 나눠진 페이지 영역 시작-->
+    <!-- section>(div#area$.main>p{area1})*6 -->
+    <section>
+      <div id="area1" class="main">
+        <p>area1</p>
+      </div>
+      <div id="area2" class="main">
+        <p>area1</p>
+      </div>
+      <div id="area3" class="main">
+        <p>area1</p>
+      </div>
+      <div id="area4" class="main">
+        <p>area1</p>
+      </div>
+      <div id="area5" class="main">
+        <p>area1</p>
+      </div>
+      <div id="area6" class="main">
+        <p>area1</p>
+      </div>
+    </section>
+    <!-- TODO 스크롤 단위로 나눠진 페이지 영역 종료 ===== -->
+    <!-- TODO ===== 따라 다니는 고정창 -->
+    <!-- div#floatdiv>ul>(li>span#btn$)*6 -->
+    <div id="floatdiv">
+      <ul>
+        <li class="on"><span id="btn1"></span></li>
+        <li><span id="btn2"></span></li>
+        <li><span id="btn3"></span></li>
+        <li><span id="btn4"></span></li>
+        <li><span id="btn5"></span></li>
+        <li><span id="btn6"></span></li>
+      </ul>
+    </div>
+
+    <div id="leftdiv">
+      <div class="leftdiv_title on"></div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div id="pdt_basic">
+      <img src="images/pdt_basic.png" alt="" />
+    </div>
+
+    <div id="popup">
+      <img src="images/popup.jpg" usemap="#pop" />
+      <map name="pop" id="pop">
+        <area shape="rect" coords="252,330,295,348" href="#" alt="창닫기" />
+        <area
+          shape="rect"
+          coords="95,332,215,345"
+          href="#"
+          alt="오늘하루열지않음"
+        />
+      </map>
+    </div>
+    <div id="notice_wrap">
+      <img src="images/popup1.jpg" alt="팝업공지" />
+      <p class="closeWrap">
+        <input type="checkbox" name="expiresChk" id="expiresChk" />
+        <label for="expiresChk">3일동안 이 창 열지않기</label>
+        <button class="closeBtn">닫기</button>
+      </p>
+    </div>
+  </body>
+</html>

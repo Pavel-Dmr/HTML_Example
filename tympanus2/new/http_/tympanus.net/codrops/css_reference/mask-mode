@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+	<html dir="ltr" lang="en-US"> 
+	<head> 
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>mask-mode | Codrops CSS Reference</title>
+				<meta name="author" content="Team Codrops">
+		<link rel="stylesheet" type="text/css" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/main.css?v444" />
+		<link rel="stylesheet" type="text/css" media="print" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/main_print.css?v5" />
+		<link rel="profile" href="http://gmpg.org/xfn/11" />	
+		<script src="//use.typekit.net/pdd7wbw.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		<link rel="shortcut icon" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/favicon.ico">
+		<link rel="apple-touch-icon" sizes="144x144" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/apple-touch-icon-144x144.png">
+		<link rel="icon" type="image/png" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/favicon-196x196.png" sizes="196x196">
+		<!-- 857AADD2-739C-4BF6-A8D3-4986BE868A0C -->
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="msapplication-TileImage" content="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/favicons/mstile-144x144.png">
+		<meta name="msapplication-config" content="/codrops/wp-content/themes/codropstheme03/favicons/browserconfig.xml">
+					<!--single syntax highlighter-->
+			<link rel="stylesheet" type="text/css" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/cssref.css?v10"/>
+			   
+		
+<!-- This site is optimized with the Yoast SEO plugin v13.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="mask-mode explained on the Codrops CSS Reference"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://tympanus.net/codrops/css_reference/mask-mode/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="mask-mode | Codrops CSS Reference" />
+<meta property="og:description" content="mask-mode explained on the Codrops CSS Reference" />
+<meta property="og:url" content="https://tympanus.net/codrops/css_reference/mask-mode/" />
+<meta property="og:site_name" content="Codrops" />
+<meta property="article:publisher" content="https://www.facebook.com/codrops/" />
+<meta property="og:image" content="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/mask-image.png" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://tympanus.net/codrops/#website","url":"https://tympanus.net/codrops/","name":"Codrops","inLanguage":"en-US","description":"Useful resources and inspiration for creative minds","potentialAction":{"@type":"SearchAction","target":"https://tympanus.net/codrops/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://tympanus.net/codrops/css_reference/mask-mode/#primaryimage","inLanguage":"en-US","url":"https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/mask-image.png","width":400,"height":400,"caption":"mask-image"},{"@type":"WebPage","@id":"https://tympanus.net/codrops/css_reference/mask-mode/#webpage","url":"https://tympanus.net/codrops/css_reference/mask-mode/","name":"mask-mode | Codrops CSS Reference","isPartOf":{"@id":"https://tympanus.net/codrops/#website"},"inLanguage":"en-US","primaryImageOfPage":{"@id":"https://tympanus.net/codrops/css_reference/mask-mode/#primaryimage"},"datePublished":"2015-02-03T11:34:30+00:00","dateModified":"2017-09-05T11:44:11+00:00","description":"mask-mode explained on the Codrops CSS Reference"}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='prismatic-blocks-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/prismatic/css/styles-blocks.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='avatar-manager-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/avatar-manager/assets/css/avatar-manager.min.css?ver=1.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=1.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=1.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp_typeahead_css-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/css/typeahead.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ciu-display-css'  href='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/caniuse-shortcode/lib/css/caniuse.min.css?ver=0.0.4' type='text/css' media='all' />
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/avatar-manager/assets/js/avatar-manager.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[]};
+var log_object = {"ajax_url":"https:\/\/tympanus.net\/codrops\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public.js?ver=1.8.3'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/highlight.pack.js?ver=85'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/highlight.user.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/cos.js?ver=5.3.2'></script>
+<link rel='https://api.w.org/' href='https://tympanus.net/codrops/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://tympanus.net/codrops/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3.2" />
+<link rel='shortlink' href='https://tympanus.net/codrops/?p=20873' />
+<link rel="alternate" type="application/json+oembed" href="https://tympanus.net/codrops/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftympanus.net%2Fcodrops%2Fcss_reference%2Fmask-mode%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://tympanus.net/codrops/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftympanus.net%2Fcodrops%2Fcss_reference%2Fmask-mode%2F&#038;format=xml" />
+<script type="text/javascript">document.documentElement.className += " js";</script>
+		<script type="text/javascript">
+			var cli_flush_cache=1;
+		</script>
+				<script src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/js/search.js"></script>
+		
+		<script type="text/javascript">
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-7243260-2']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+
+			  function recordOutboundLink(link, category, action) {
+				_gat._getTrackerByName()._trackEvent(category, action);
+				setTimeout('document.location = "' + link.href + '"', 100);
+			}
+		</script>
+		<noscript>
+			<link rel="stylesheet" href="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/noscript.css"/>
+		</noscript>
+		<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "WebSite",
+		  "url": "https://tympanus.net/codrops/",
+		  "potentialAction": {
+		    "@type": "SearchAction",
+		    "target": "https://tympanus.net/codrops/?s={search_term_string}",
+		    "query-input": "required name=search_term_string"
+		  }
+		}
+		</script>
+		<script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+	</head>
+	<body id="codrops-body">
+				<!-- BuySellAds.com Ad Code -->
+		<script type="text/javascript">
+			(function(){
+				var bsa = document.createElement('script');
+				bsa.type = 'text/javascript';
+				bsa.async = true;
+				bsa.src = '//s3.buysellads.com/ac/bsa.js';
+				(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+			})();
+		</script>
+		<!-- END BuySellAds.com Ad Code -->	
+				<div class="ct-container">
+			<header class="ct-header">
+				<div class="ct-inner ct-cf">
+
+											<div class="ct-branding">
+							<a class="ct-logo" href="/codrops" rel="home"><img src="/codrops/wp-content/themes/codropstheme03/images/codrops-logo.svg" alt="Codrops logo" /></a>
+						</div>
+					
+					<div class="ct-nav-wrapper">
+						<nav class="ct-nav-main">
+						   <ul>
+								<li><a href="/codrops/category/tutorials/">Tutorials</a></li>
+								<li><a href="/codrops/category/playground/">Playground</a></li>
+								<li><a href="/codrops/category/articles/">Articles</a></li>
+								<li><a href="/codrops/collective/">Collective</a></li>
+								<li><a href="/codrops/css_reference/">CSS Reference</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="ct-header-items-right ct-cf">
+						<div class="ct-search" id="ct-search">
+							<form method="get" id="searchform" action="https://tympanus.net/codrops/">
+								<div class="ct-search-input-wrap">
+									<input class="ct-search-input" placeholder="Search on Codrops..." type="text" value="" name="s" id="s"/>
+								</div>
+								<input type="hidden" name="search-type" value="posts" />
+								<input class="ct-search-submit" type="submit" id="go" value=""><span class="ct-icon-search"></span>
+							</form>
+						</div>
+						<ul class="ct-connect">
+							<li><a class="ct-icon-feed" href="http://feeds2.feedburner.com/tympanus"><span>Rss Feed</span></a></li>
+							<li><a class="ct-icon-mail" href="http://eepurl.com/dJBUCo"><span>Email Updates</span></a></li>
+							<li><a class="ct-icon-twitter" href="http://www.twitter.com/codrops"><span>Codrops on Twitter</span></a></li>
+							<li><a class="ct-icon-facebook" href="http://www.facebook.com/pages/Codrops/159107397912"><span>Codrops on Facebook</span></a></li>
+							<li><a class="ct-icon-github" href="https://github.com/codrops"><span>Codrops on Github</span></a></li>
+							<li><a class="ct-icon-instagram" href="https://instagram.com/codropsss"><span>Codrops on Instagram</span></a></li>
+						</ul>
+					</div><!--/ct-header-items-right-->
+
+				</div><!-- ct-inner -->
+			</header><div class="ct-content">
+    <div class="ct-inner">		
+										<div class="ct-main ct-main-post ct-cssref" id="ct-main" role="main">
+					<div class="ct-post">
+						<article id="post-20873" class="post-20873 css_reference type-css_reference status-publish format-standard hentry css-type-css-property">
+							<header>
+								<div class="ct-cssref-header-inner ct-cssref-header-inner--css-property">
+									<span class="ct-cssref-head ct-cssref-head--css-property">
+										<a href="/codrops/css_reference/">CSS Reference</a>
+										<span class='ct-cssref-type'>Property</span>									</span>
+									<div class="ct-cssref-title" data-title="mask-mode">
+										<h1>mask-mode</h1>
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="ct-cssref-headerbar">
+									<div class="ct-cssref-search">
+										<div class="ct-cssref-searchinput">
+											<form method="get" id="searchform-cssref" action="https://tympanus.net/codrops/">
+												<span class="ct-icon-search"></span>
+												<input placeholder="e.g. mask-image" type="text" value="" name="s" id="s2"/>
+												<input type="hidden" name="search-type" value="css_reference" />
+												<input type="submit" value="" />
+											</form>
+										</div>
+									</div>
+									<nav class="ct-cssref-related">
+																					<span class="ct-cssref-related__title">See also</span>
+										
+																						<a href="https://tympanus.net/codrops/css_reference/mask/">mask</a>
+																							<a href="https://tympanus.net/codrops/css_reference/mask-type/">mask-type</a>
+																				</nav>
+								</div>
+							</header>
+							<div class="ct-post-content">
+																<div class="ct-cssref-description">
+<p>
+                    The <code>mask-mode</code> property is used to specify whether the CSS <a href="http://tympanus.net/codrops/css_reference/mask-image">mask layer image</a> is treated as an <strong>alpha mask</strong> or a <strong>luminance mask</strong>.
+                </p>
+<h3>Mask Modes: Alpha vs Luminance</h3>
+<h4>Alpha Masks</h4>
+<p>
+                    An alpha mask is an image that has an <strong><em>alpha channel</em></strong>, and the alpha values are used as the mask values. A very simple example of an alpha channel is a simple PNG image with black and transparent areas.
+                </p>
+<figure id="attachment_20823" aria-describedby="figcaption_attachment_20823" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 400px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/mask-image.png" alt="mask-image" width="400" height="400" class="size-full wp-image-20823" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/mask-image.png 400w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/mask-image-105x105.png 105w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/mask-image-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" /><figcaption id="figcaption_attachment_20823" class="wp-caption-text" itemprop="description">An image (PNG) with an alpha channel.</figcaption></figure>
+<p>
+                    In graphics, an alpha channel is a portion of each pixel&#8217;s data that is reserved for transparency information. The alpha channel is used extensively in masking operations&mdash;it specifies how the pixel&#8217;s colors should be merged with another pixel when the two are overlaid, one on top of the other. Different parts of the image would have different levels of transparency depending on how much you wanted the masked element to show through.
+                </p>
+<p>
+                    In the case of a black and transparent image as the one showed above, the black areas have an alpha value of one (1), and the transparent areas have an alpha value of zero (0).
+                </p>
+<p>
+                    When an image with an alpha channel is used as an alpha mask, the areas where the image is black (fully opaque) are the areas where the element will be visible, and the areas where the image is transparent, the element will not show. Translucent areas will show the element with a certain level of transparency.  The mask value at a given point is simply the value of the alpha channel at that point. The color channels (if present) do not contribute to the mask value.
+                </p>
+<p>
+                    You can think of it this way: you can imagine your element as one layer and the mask image as another layer placed on top of it, and then get an eraser and start erasing all the parts of the element that are not covered by the black parts of the mask.
+                </p>
+<p>
+                    The best way to show how an image with different alpha values affects an element it is used to mask is by using a simple gradient image. The gradient starts fully opaque at the top and then ends with a fully transparent value at the bottom. The element that this mask is applied to will be fully visible where the gradient is opaque, translucent where the alpha channel ranges between 0 and 1 (exclusively), and invisible where the gradient is transparent.
+                </p>
+<figure id="attachment_20876" aria-describedby="figcaption_attachment_20876" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 300px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/alpha-mask-example-small.jpg" alt="alpha-mask-example-small" width="300" height="553" class="size-full wp-image-20876" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/alpha-mask-example-small.jpg 300w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/alpha-mask-example-small-162x300.jpg 162w" sizes="(max-width: 300px) 100vw, 300px" /><figcaption id="figcaption_attachment_20876" class="wp-caption-text" itemprop="description">Result of applying an alpha gradient mask to an image.</figcaption></figure>
+<h4>Luminance Masks</h4>
+<p>
+                    A luminance mask is similar to an alpha mask, except that instead of using an image&#8217;s alpha channel values as mask values, the image&#8217;s <strong>luminance values</strong> should be used.
+                </p>
+<p>
+                    For example, a very simple luminance mask is similar to the simple alpha mask we showed above, but instead of using black areas to define where the element will show, the black areas would be white:
+                </p>
+<figure id="attachment_22403" aria-describedby="figcaption_attachment_22403" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 400px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2015/01/mask-image-luminance.png" alt="A simple luminance mask image with a transparent background" width="400" height="401" class="size-full wp-image-22403" /><figcaption id="figcaption_attachment_22403" class="wp-caption-text" itemprop="description">A simple luminance mask image with a transparent background</figcaption></figure>
+<p>
+                    When a luminance mask is used, the mask value at a given point is computed from the color channel values by computing the luminance from the color channels first, and then multiplying the computed luminance value by the corresponding alpha value to produce the mask value.
+                </p>
+<p>
+                    A luminance mask can contain any color, not just white. The luminance value is then determined by the RGB values of the mask and the luminance coefficients as follows: <strong>luma = (0.2126 * R + 0.7152 * G + 0.0722 * B)</strong>. To determine the transparency of the object, the alpha channel of the object is then multiplied by the luminance value and the alpha channel of the mask.
+                </p>
+<p>
+                    So, if you have a colorful image, that has some fully transparent areas, the element will not show where the image is transparent, but where the image has an alpha value of 1, the value of the mask depends on the colors used (per pixel). See the following image for an example. The masked image shows through the different colors in a different way.
+                </p>
+<figure id="attachment_20875" aria-describedby="figcaption_attachment_20875" class="wp-caption alignnone" itemscope itemtype="http://schema.org/ImageObject" style="width: 300px"><img itemprop="contentURL" src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/luminance-mask-example-small.jpg" alt="luminance-mask-example-small" width="300" height="553" class="size-full wp-image-20875" srcset="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/luminance-mask-example-small.jpg 300w, https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/10/luminance-mask-example-small-162x300.jpg 162w" sizes="(max-width: 300px) 100vw, 300px" /><figcaption id="figcaption_attachment_20875" class="wp-caption-text" itemprop="description">Result of applying a gradient mask to an image with its mode set to <code>luminance</code>.</figcaption></figure>
+<h2>Trivia &amp; Notes</h2>
+<p>
+                    Regardless of the method used (alpha or luminance), the procedure for calculating mask values assumes the content of the mask is a four-channel RGBA graphics object. For other types of graphics objects, special handling is required as follows.
+                </p>
+<ul>
+<li>
+                        For a three-channel RGB graphics object that is used in a mask (e.g., when referencing a three-channel image file), the effect is as if the object were converted into a four-channel RGBA image with the alpha channel uniformly set to 1.
+                    </li>
+<li>
+                        For a single-channel image that is used in a mask (e.g., when referencing a single-channel grayscale image file), the effect is as if the object were converted into a four-channel RGBA image, where the single channel from the referenced object is used to compute the three color channels and the alpha channel is uniformly set to 1.
+                    </li>
+</ul>
+<p>
+                    Also, SVG graphics elements (e.g., <code>&lt;circle&gt;</code> or <code>&lt;text&gt;</code>) are all treated as four-channel RGBA images for the purposes of masking operations.
+                </p>
+<p>
+                    Also note that the <code>mask-mode</code> property must not affect the masking mode of <a href="http://tympanus.net/codrops/css_reference/mask-border-source"><code>mask-border-source</code></a>.
+                </p>
+</p></div>
+<div class="ct-cssref-info">
+<h2>Official Syntax</h2>
+<ul>
+<li>
+                       <strong>Syntax: </strong>  </p>
+<pre class="brush:css">
+mask-mode: &lt;masking-mode&gt;#
+
+/* where */
+
+&lt;masking-mode&gt; = alpha | luminance | match-source
+                       </pre>
+</li>
+<li>
+                        <strong>Initial: </strong> match-source
+                    </li>
+<li>
+                       <strong>Applies To: </strong> All elements. In SVG, it applies to container elements without the &lt;defs&gt; element and all graphics elements
+                    </li>
+<li>
+                        <strong>Animatable: </strong> no
+                    </li>
+</ul>
+<h3>Notes</h3>
+<p>
+                    The hash tag (#) indicates that the property takes any number of mask modes. The list of mask modes is comma-separated.
+                </p>
+<p>
+                    When the <code>mask-mode</code> property takes a list of comma-separated values, each value is applied to a corresponding mask layer image specified in the <a href="http://tympanus.net/codrops/css_reference/mask-image"><code>mask-image</code></a> property (first value for the first image, second value for the second image, and so on).
+                </p>
+</p></div>
+<div class="ct-cssref-values">
+<h2>Values</h2>
+<dl>
+<dt>alpha</dt>
+<dd>
+                        A value of <code>alpha</code> indicates that the alpha values of the mask layer image should be used as the mask values.
+                    </dd>
+<dt>luminance</dt>
+<dd>
+                        A value of <code>luminance</code> indicates that the luminance values of the mask layer image should be used as the mask values.
+                    </dd>
+<dt>auto</dt>
+<dd>
+                        If the mask reference of the <a href="http://tympanus.net/codrops/css_reference/mask-image"><code>mask-image</code></a> property is an SVG <code>&lt;mask&gt;</code> element, the luminance values of the mask layer image should be used as the mask values.</p>
+<p>
+                            If the mask reference of the <a href="http://tympanus.net/codrops/css_reference/mask-image"><code>mask-image</code></a> property is a CSS <a href="http://tympanus.net/codrops/css_reference/image-value"><code>&lt;image&gt;</code></a> element, the alpha values of the mask layer image should be used as the mask values.
+                        </p>
+</dd>
+</dl>
+<h3>Notes</h3>
+<p>
+                    The <a href="http://tympanus.net/codrops/css_reference/mask-type"><code>mask-type</code></a> property can be used to set the type of an SVG <code>mask</code>. The <code>mask-mode</code> property <strong>overrides</strong> the value specified in the <a href="http://tympanus.net/codrops/css_reference/mask-type"><code>mask-type</code></a> property.
+                </p>
+</p></div>
+<div class="ct-cssref-examples">
+<h2>Examples</h2>
+<p>
+                    The following example sets the <code>mask-mode</code> of a CSS gradient image to luminance and then uses it as a mask.
+                </p>
+<pre class="brush:css">
+.img {
+    mask-image: linear-gradient(black, purple, yellow, transparent);
+    mask-mode: luminance;
+}
+                </pre>
+<p>
+                    The following references an SVG <code>&lt;mask&gt;</code> and specifies its mode using the <code>mask-mode</code> property <em>and</em> the <a href="http://tympanus.net/codrops/css_reference/mask-type"><code>mask-type</code></a> property. The <code>mask-mode</code> value overrides that of the <a href="http://tympanus.net/codrops/css_reference/mask-type"><code>mask-type</code></a>&#8216;s value.
+                </p>
+<pre class="brush:css">
+.el {
+    mask-image: url(#SVGMask);
+    mask-type: luminance;
+    mask-mode: alpha;
+}
+                </pre>
+<pre class="brush:html">
+&lt;mask id="SVGMask" maskContentUnits="objectBoundingBox"&gt;
+  &lt;radialGradient id="radialFill"&gt;
+    &lt;stop stop-color="white" offset="0"/&gt;
+    &lt;stop stop-color="black" offset="1"/&gt;
+  &lt;/radialGradient&gt;
+  &lt;circle fill="url(#radialFill)" cx="0.5" cy="0.5" r="0.5"/&gt;
+&lt;/mask&gt;
+                </pre>
+</p></div>
+<div class="ct-cssref-demo">
+<h2>Live Demo</h2>
+<p>
+                    The following demo uses a colorful gradient image as a mask. The gradient also has transparent parts, and some black. Since we&#8217;re using a CSS gradient, the <code>mask-mode</code> will default to <code>alpha</code>. Try changing the <code>mask-mode</code> value to see how the masked image areas change.
+                </p>
+<p>
+                    <em>Note that the demo currently doesn&#8217;t work in any browser as the <code>mask-mode</code> property isn&#8217;t yet implemented anywhere.</em>
+                </p>
+<a class='codrops-embed' href='//tympanus.net/codrops-playground/SaraSoueidan/LBPnMf0X/embed/result,html,css/' data-height='500px' data-width='100%'>
+View this demo on the Codrops Playground</a>
+</div>
+<div class="ct-cssref-support">
+<h2>Browser Support</h2>
+<div class="caniuse"><div class="caniuse-header"><h3 class="caniuse-header-title">CSS Masks</h3><p>Method of displaying part of an element, using a selected image as a mask</p>
+<p class="status caniuse-header-status">W3C Candidate Recommendation</p><p class="caniuse-header-supported">Supported from the following versions:</p></div><div class="caniuse-section"><h4>Desktop</h4><ul class="agents caniuse-agents-list"><li class="caniuse-agents-item icon-chrome n" title="Google Chrome - No"><span class="caniuse-agents-version version">No</span></li><li class="caniuse-agents-item icon-firefox y" title="Mozilla Firefox - Yes"><span class="caniuse-agents-version version">53</span></li><li class="caniuse-agents-item icon-ie n" title="Internet Explorer - No"><span class="caniuse-agents-version version">No</span></li><li class="caniuse-agents-item icon-opera n" title="Opera - No"><span class="caniuse-agents-version version">No</span></li><li class="caniuse-agents-item icon-safari n" title="Apple Safari - No"><span class="caniuse-agents-version version">No</span></li></ul></div><div class="caniuse-section"><h4>Mobile / Tablet</h4><ul class="agents caniuse-agents-list"><li class="caniuse-agents-item icon-ios_saf n" title="iOS Safari - No"><span class="caniuse-agents-version version">No</span></li><li class="caniuse-agents-item icon-android n" title="Android - No"><span class="caniuse-agents-version version">No</span></li><li class="caniuse-agents-item icon-op_mini n" title="Opera Mini - No"><span class="caniuse-agents-version version">No</span></li><li class="caniuse-agents-item icon-and_chr n" title="Android Chrome - No"><span class="caniuse-agents-version version">No</span></li><li class="caniuse-agents-item icon-and_ff y" title="Android Firefox - Yes"><span class="caniuse-agents-version version">68</span></li></ul></div><div class="caniuse-section caniuse-section-legend"><p class="caniuse-section-text caniuse-section-subtext	">* denotes prefix required.</p><ul class="legend caniuse-legend-list"><li class="caniuse-legend-item caniuse-legend-label">Supported:</li><li class="caniuse-legend-item y">Yes</li><li class="caniuse-legend-item n">No</li><li class="caniuse-legend-item a">Partially</li><li class="caniuse-legend-item p">Polyfill</li></ul><p class="stats caniuse-section-text caniuse-section-stats">Stats from <a target="_blank" href="http://caniuse.com/#feat=css-masks">caniuse.com</a></p></div></div>
+<h3>Notes</h3>
+<p>
+                    This module, as you can see in the support table above, hasn&#8217;t been fully implemented in all browsers, so you&#8217;re probably not going to be able to use all features even in browsers that have implemented certain properties (for the time being).
+                </p>
+<p>
+                    In the meantime, you can check out this open source <a href="https://github.com/awgreenblatt/css-graphics">feature support table</a> by Alan Greenblatt on GitHub. The purpose of this table is to provide some insight into what the current state of affairs is with various browser implementations of CSS Clipping and Masking features.
+                </p>
+</p></div>
+<div class="ct-cssref-further-reading">
+<h2>Further Reading</h2>
+<ul>
+<li>
+                       <a href="http://www.w3.org/TR/css-masking-1/#the-mask-mode">CSS Masking Module Level 1</a>
+                    </li>
+</ul></div>
+								<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Entries</h2>
+<ul>
+<li><a href="https://tympanus.net/codrops/css_reference/mask/">mask</a></li>
+<li><a href="https://tympanus.net/codrops/css_reference/mask-type/">mask-type</a></li>
+</ul></div>
+</div>		
+							</div>
+							
+							<footer>
+								<p>Written by <a href="https://tympanus.net/codrops/author/sarasoueidan/" title="Posts by Sara Soueidan" rel="author">Sara Soueidan</a>. Last updated September 5, 2017 at 1:44 pm by Mary Lou.</p>
+								<p>Do you have a suggestion, question or want to contribute? <a href="https://github.com/codrops/css-reference-issues">Submit an issue.</a></p>
+							</footer>
+						</article>
+						<div class="clr"></div>
+					</div>
+				</div>
+				<aside class="ct-sidebar">		
+	<div class="ct-pat">
+		
+		<!-- Weekly Sponsor -->
+				<a class="cos" href="http://bit.ly/mailchimpCodrops" target="_blank" rel="nofollow sponsored">
+			<IMG SRC="https://ad.doubleclick.net/ddm/ad/N2434.3091281BUYSELLADS/B23623815.263128345;sz=1x1;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?" BORDER="0" HEIGHT="1" WIDTH="1" style="position:absolute;opacity:0;"/>
+			<img class="cos__img" src="https://tympanus.net/codrops/wp-content/banners/mailchimp.png" alt="Mailchimp"/>
+			<div class="cos__text">Your app is up and running! Now what? Seamlessly connect it to your marketing data. That’s what.</div>
+		</a>
+    			<!--/ End Weekly Sponsor -->
+		<!--  Sidebar sponsors  -->	
+		<a class="cos" href="http://bit.ly/DiviCodropsSidebar" target="_blank" rel="nofollow sponsored">
+			<img class="cos__img" src="https://tympanus.net/codrops/wp-content/banners/divi-premade-layouts-01.jpg" alt="Divi"/>
+			<div class="cos__text">Over 800 pre-made website layouts come packaged right inside of Divi for free. Jumpstart your design!</div>
+		</a>
+		<!--/ Sidebar sponsors -->
+
+		<!--div id="bsap_1275127" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div-->
+		<!-- 125x125 -->
+		<div id="bsap_1243201" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div>
+	</div>
+	<div class="ct-pat">
+		<div id="bsap_1298539" class="bsarocks bsap_af25dfd2f1908889af7a1aa5f4dcbd9e"></div>
+	</div>
+    		
+    	<div class="clr"></div>
+</aside>
+
+				<div class="clr"></div>
+		    </div>
+</div>
+		<footer class="ct-footer">
+			<div class="ct-inner">
+				<nav>
+					<ul>
+						<li><a href="/codrops/category/tutorials/">Tutorials</a></li>
+						<li><a href="/codrops/category/articles/">Articles</a></li>
+						<li><a href="/codrops/category/playground/">Playground</a></li>
+						<li><a href="/codrops/category/blueprints/">Blueprints</a></li>
+					</ul>
+					<ul>
+						<li><a href="/codrops/css_reference/">CSS Reference</a></li>
+						<li><a href="/codrops/category/news/">News</a></li>
+						<li><a href="/codrops/category/freebies/">Freebies</a></li>
+						<li><a href="/codrops/collective/">Collective</a></li>
+					</ul>
+					<ul>
+						<li><a href="/codrops/about/">About</a></li>
+						<li><a href="/codrops/contact/">Contact</a></li>
+						<li><a href="/codrops/archives/">Archives</a></li>
+						<li><a href="/codrops/deals/">Deals</a></li>
+					</ul>
+					<ul>
+						<li><a href="/codrops/advertise/">Advertise</a></li>
+						<li><a href="/codrops/privacy-policy/">Privacy Policy</a></li>
+						<li><a href="/codrops/licensing/">License</a></li>
+						<li><a href="/codrops/credits/">Credits</a></li>
+					</ul>
+					<ul>
+						<li>Content delivered by <a href="https://www.stackpath.com/" title="Content Distribution Network" target="blank">StackPath</a></li>
+						<li>&copy; Codrops 2020</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+		<div id="cookie-law-info-bar"><span>Codrops uses cookies for its advertisement solutions and for analytics. We hope you're ok with this, but you can opt-out if you wish. Read our <a href="https://www.iubenda.com/privacy-policy/92067710">Privacy Policy</a> and <a href="https://www.iubenda.com/privacy-policy/92067710/cookie-policy">Cookie Policy</a>. <a role='button' tabindex='0' data-cli_action="accept" id="cookie_action_close_header"  class="small cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display:inline-block; ">OK</a></span></div><div id="cookie-law-info-again" style="display:none;"><span id="cookie_hdr_showagain">Privacy & Cookies Policy</span></div><div class="cli-modal" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+    <div class="cli-modal-content cli-bar-popup">
+      <button type="button" class="cli-modal-close" id="cliModalClose">
+        <svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+        <span class="wt-cli-sr-only">Close</span>
+      </button>
+      <div class="cli-modal-body">
+        <div class="cli-container-fluid cli-tab-container">
+    <div class="cli-row">
+        <div class="cli-col-12 cli-align-items-stretch cli-px-0">
+            <div class="cli-privacy-overview">
+                                                   
+                <div class="cli-privacy-content">
+                    <div class="cli-privacy-content-text"></div>
+                </div>
+                <a class="cli-privacy-readmore" data-readmore-text="Show more" data-readless-text="Show less"></a>            </div>
+        </div>  
+        <div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+              
+                            <div class="cli-tab-section">
+                    <div class="cli-tab-header">
+                        <a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab" >
+                            Necessary 
+                        </a>
+                    
+                    <span class="cli-necessary-caption">Always Enabled</span>                     </div>
+                    <div class="cli-tab-content">
+                        <div class="cli-tab-pane cli-fade" data-id="necessary">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+              
+                       
+        </div>
+    </div> 
+</div> 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<script type="text/javascript">
+  /* <![CDATA[ */
+  cli_cookiebar_settings='{"animate_speed_hide":"500","animate_speed_show":"500","background":"#989898","border":"#444","border_on":false,"button_1_button_colour":"#0099cc","button_1_button_hover":"#007aa3","button_1_link_colour":"#fff","button_1_as_button":true,"button_1_new_win":false,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#0099cc","button_2_as_button":false,"button_2_hidebar":false,"button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":true,"button_3_new_win":false,"button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#fff","button_4_as_button":true,"font_family":"inherit","header_fix":false,"notify_animate_hide":false,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"accept_close_reload":false,"reject_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#ffffff","show_once_yn":false,"show_once":"10000","logging_on":false,"as_popup":false,"popup_overlay":true,"bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"}';
+  /* ]]> */
+</script><script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/comment-reply.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/js/typeahead.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/js/hogan.min.js?ver=5.3.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wp_typeahead = {"ajaxurl":"https:\/\/tympanus.net\/codrops\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/plugins/wp-typeahead/js/wp-typeahead.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://codropspz-tympanus.netdna-ssl.com/codrops/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://tympanus.net/codrops-playground/js/p/embed.min.js?ver=1.0.0'></script>
+		</div><!--ct-container-->
+	</body>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Page Caching using disk: enhanced 
+Content Delivery Network via codropspz-tympanus.netdna-ssl.com
+Application Monitoring using New Relic
+
+Served from: tympanus.net @ 2020-03-30 06:19:52 by W3 Total Cache
+-->

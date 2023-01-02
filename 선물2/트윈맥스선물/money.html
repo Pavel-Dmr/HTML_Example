@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title> jQuery </title>
+		<link rel="stylesheet" type="text/css" href="../common/css/reset.css">
+		<script type="text/javascript" src="../common/js/jquery.min.js"></script>
+
+		<!-- 스타일 -->
+		<style type="text/css">
+		.moneyWrapper { position:relative; width:100%; overflow:hidden; }
+		.moneyWrapper > div { position:absolute; }
+		.moneyWrapper > div.money { display:none; }
+		</style>
+		<!-- // 스타일 -->
+
+	</head>
+	<body>
+
+		<div class="moneyWrapper">
+			<div class="money"><img src="img/money.png" alt="" /></div>
+		</div>
+
+		<!-- 스크립트 -->
+		<script type="text/javascript" src="../common/js/TweenMax.js"></script>
+		<script type="text/javascript">
+		var i = 0, len = 120;
+		var pos = [];
+		var moneyRepeatState = true;
+		var wH = $(window).height();
+
+		$('.moneyWrapper').css( 'height', wH );
+		while(i<len){
+			i++;
+			moneyPos();
+			moneyAction(i);
+		}
+		function moneyAction(i){
+			var RN = Math.round( Math.random()*100 ); /* 0 ~ 100 */
+			var RW = [30, 50, 70];
+			var RWS = Math.round( Math.random()*(RW.length-1) ); /* 0 ~ 2 */
+			var RD = 0;
+			$('.money').clone().appendTo('.moneyWrapper').attr('class', 'money'+i).css({
+				'width': RW[RWS],
+				'left': RN + '%',
+				'top': '-'+RN+'px'
+			});
+
+			TweenMax.to($('.money'+i), pos[0].speed, {bezier:[{x:pos[0].x1,  y:pos[0].y1}, {x:pos[0].x1,  y:pos[0].y2}, {x:pos[0].x2,  y:pos[0].y3}], ease: Bounce.easeOut, onComplete:function(_this, num){
+				$_this = _this;
+				$_this.remove();
+			},delay:RD, autoAlpha:pos[0].alpha, onCompleteParams:[$('.money'+i), i]});
+		}
+		function moneyPos(){
+			pos = [
+			{
+				'x1' : Math.round(Math.random() *130),
+				'y1' : Math.random() * 20+ (wH / 100 * 10), //10~30%
+				'x2' : Math.round(Math.random() *130),
+				'y2' : Math.random() * 30 + (wH / 100 * 90), //40~70%
+				'x3' : Math.round(Math.random() *130),
+				'y3' : Math.random() + (wH / 100 * 120), //80~120%
+				'speed' : Math.round(Math.random()*7 + 2),
+				'delay' : Math.round(Math.random() * 20),
+				'alpha' : 0
+			}
+			];
+		}
+		</script>
+		<!-- // 스크립트 -->
+
+	</body>
+
+
+</html>
